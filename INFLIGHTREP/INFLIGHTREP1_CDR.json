@@ -1,0 +1,52 @@
+{
+    "_timestamp": 1444823113,
+    "_url": "isi.usc.edu/scharp/inflightrep/1",
+    "_rawContent": "MSGID/INFLIGHTREP/1ST FTR WG/3799/DEC//\nTGTREP/MSNO:1170AF/AR332/LATMIN:2312N04353W/1223/S//\nTARWI/4/8/6/1/D//\nSIGHTREP/MSNO:1170AF/AR332/ACTTP:INFANTRY MASSING/LATMIN:2310N04350W\n/1230//\nGENTEXT/INFLIGHT REMARKS/TARGET WAS IN FLAMES. INFANTRY WAS COMPANY\nSIZE AND APPEARED TO BE PREPARING TO ATTACK//\nPOC/FORD/LT/1ST FTR WG/LOC:CAMP SWAMPY/TEL:757-825-5555//",
+    "_content_type": "text/text",
+    "_jsonRep": {
+		"MSGID":
+		{
+		"messageTextFormatIdentifier": "INFLIGHTREP",
+		"originator": "1ST FTR WG",
+		"messageSerialNumber": "3799",
+		"monthName":"DEC"
+		},
+		"TGTREP":
+		{
+		"missionNumber_callSign":"MSNO:1170AF",
+		"requestNumber":"AR332",
+		"targetData": "LATMIN:2312N04353W",
+		"timeOnTarget":"1223",
+		"airMissionResults": "S"
+		},
+		"TARWI":
+		{
+		"lowCloudCover": "4",
+		"lowCloudBaseHeight": "8",
+		"surfaceVisibility": "6",
+		"weatherCondition": "1",
+		"weatherRemarks": "D"
+		},
+		"SIGHTREP":
+		{
+		"missionNumber_callSign":"MSNO:1170AF",
+		"requestNumber":"AR332",
+		"activity_equipment": "ACTTP:INFANTRY MASSING",
+		"activityLocation": "LATMIN:2310N04350W",
+		"timeHourMinuteOfSighting": "1230"
+		},
+		"GENTEXT":
+		{
+		"gentextTextIndicator": "INFLIGHT REMARKS",
+		"freeText": "TARGET WAS IN FLAMES INFANTRY WAS COMPANY SIZE AND APPEARED TO BE PREPARING TO ATTACK"
+		},
+		"POC":
+		{
+		"contactName": "FORD",
+		"rankOrPosition": "LT",
+		"unitIdentifier_callSign": "1ST FTR WG",
+		"pocLocation": "LOC:CAMP SWAMPY",
+		"telephoneNumber_frequency": "TEL:757-825-5555"
+		}
+    }
+}

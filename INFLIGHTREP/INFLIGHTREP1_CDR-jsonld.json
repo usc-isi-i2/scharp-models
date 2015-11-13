@@ -1,0 +1,53 @@
+[
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP29WS234-INFLIGHTREP1_CDR_json-context.json",
+    "recordedAt": {
+        "missionNumber": "1170AF",
+        "a": "MissonEvent",
+        "recordedIn": "http://scharp.isi.edu/data/reports/inflight/INFLIGHTREP-1STFTRWG-3799-DEC",
+        "requestNumber": "AR332",
+        "uri": "http://scharp.isi.edu/data/events/mission/1170AF"
+    },
+    "a": "StatusReport",
+    "action": [
+        {
+            "startTime": "12:23:00",
+            "result": "success",
+            "location": {
+                "geo": {
+                    "a": "GeoCoordinates",
+                    "longitude": "9.89805555556",
+                    "latitude": "23.2005555556"
+                },
+                "a": "Place"
+            },
+            "a": "TargetEngageAction"
+        },
+        {
+            "startTime": "12:30:00",
+            "location": {
+                "geo": {
+                    "a": "GeoCoordinates",
+                    "longitude": "9.84722222222",
+                    "latitude": "23.1666666667"
+                },
+                "a": "Place"
+            },
+            "a": "ViewAction",
+            "object": "INFANTRY MASSING",
+            "type": "activity"
+        }
+    ],
+    "freeText": "TARGET WAS IN FLAMES INFANTRY WAS COMPANY SIZE AND APPEARED TO BE PREPARING TO ATTACK",
+    "hasPart": {
+        "weatherCondition": "1",
+        "surfaceVisibility": "6",
+        "lowCloudBaseHeight": "8",
+        "a": "WeatherReport",
+        "comment": "D",
+        "lowCloudCover": "4"
+    },
+    "type": "INFLIGHTREP",
+    "uri": "http://scharp.isi.edu/data/reports/inflight/INFLIGHTREP-1STFTRWG-3799-DEC"
+}
+]

@@ -1,0 +1,30 @@
+[
+{
+    "@context": "http://localhost:8080/publish/JSON/WSP29WS1-MISREP1_CDR_json-context.json",
+    "startTime": "1999-12-28T03:09:00",
+    "superEvent": {
+        "name": "3231-280",
+        "a": "MissonEvent",
+        "subEvent": "http://scharp.isi.edu/data/events/damage/ZSU23_502114N0084034E",
+        "identifier": {
+            "name": "3231-280",
+            "a": "http://scharp.isi.edu/ontology/thesaurus/identifier/sortieid"
+        },
+        "uri": "http://scharp.isi.edu/data/events/mission/3231-280"
+    },
+    "atLocation": {
+        "a": "GeoCoordinates",
+        "longitude": "1.40083333333",
+        "latitude": "50.3538888889"
+    },
+    "altitude": "120",
+    "name": "ZSU23_502114N0084034E",
+    "a": "DamageEvent",
+    "agent": {
+        "name": "ZSU23",
+        "a": "Equipment",
+        "mission:type": "ZSU23"
+    },
+    "uri": "http://scharp.isi.edu/data/events/damage/ZSU23_502114N0084034E"
+}
+]

@@ -1,0 +1,3145 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+@prefix memex: <http://memexproxy.com/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1a37abn39x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "INFLIGHTREP1_CDR.json" ;
+	km-dev:modelPublicationTime "1446575987817"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"timeOnTarget\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TARWI\"},{\"columnName\":\"lowCloudCover\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"MSGID\"},{\"columnName\":\"originator\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"targetData\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TARWI\"},{\"columnName\":\"lowCloudBaseHeight\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"SIGHTREP\"},{\"columnName\":\"timeHourMinuteOfSighting\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"MSGID\"},{\"columnName\":\"messageTextFormatIdentifier\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"missionNumber_callSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"GENTEXT\"},{\"columnName\":\"freeText\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"MSGID\"},{\"columnName\":\"monthName\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TARWI\"},{\"columnName\":\"surfaceVisibility\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"SIGHTREP\"},{\"columnName\":\"activityLocation\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"airMissionResults\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"SIGHTREP\"},{\"columnName\":\"activity_equipment\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"MSGID\"},{\"columnName\":\"messageSerialNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"requestNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TARWI\"},{\"columnName\":\"weatherCondition\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TARWI\"},{\"columnName\":\"weatherRemarks\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TARWI\"},{\"columnName\":\"lowCloudCover\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"MSGID\"},{\"columnName\":\"msg_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"time_iso\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"missionNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TARWI\"},{\"columnName\":\"lowCloudBaseHeight\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"GENTEXT\"},{\"columnName\":\"freeText\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"MSGID\"},{\"columnName\":\"messageTextFormatIdentifier\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TARWI\"},{\"columnName\":\"surfaceVisibility\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"mission_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"callSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"SIGHTREP\"},{\"columnName\":\"sight_lat\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"lon\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"SIGHTREP\"},{\"columnName\":\"sight_lon\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"requestNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"SIGHTREP\"},{\"columnName\":\"sight_time_iso\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"lat\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"SIGHTREP\"},{\"columnName\":\"sight_type\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"SIGHTREP\"},{\"columnName\":\"sight_desc\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TARWI\"},{\"columnName\":\"weatherCondition\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TARWI\"},{\"columnName\":\"weatherRemarks\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"TGTREP\"},{\"columnName\":\"mission_result\"}]]" ;
+	km-dev:hasModelLabel "INFLIGHTREP1_CDR.json" ;
+	km-dev:hasBaseURI "http://scharp.isi.edu/data/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"MSGID\"},
+                    {\"columnName\": \"messageTextFormatIdentifier\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"msg_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"reports/inflight/\\\" + nonWhitespace(getValue(\\\"messageTextFormatIdentifier\\\")) + \\\"-\\\" + nonWhitespace(getValue(\\\"originator\\\")) + \\\"-\\\" + nonWhitespace(getValue(\\\"messageSerialNumber\\\")) + \\\"-\\\" + nonWhitespace(getValue(\\\"monthName\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"MSGID\\\"},{\\\"columnName\\\":\\\"originator\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"MSGID\\\"},{\\\"columnName\\\":\\\"messageTextFormatIdentifier\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"MSGID\\\"},{\\\"columnName\\\":\\\"monthName\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"MSGID\\\"},{\\\"columnName\\\":\\\"messageSerialNumber\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"MSGID\\\"},{\\\"columnName\\\":\\\"msg_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"missionNumber_callSign\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"mission_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"events/mission/\\\" + getValue(\\\"missionNumber_callSign\\\").split(\\\":\\\")[1]\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"missionNumber_callSign\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"mission_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"airMissionResults\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"mission_result\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"x = getValue(\\\"airMissionResults\\\")\\nif(x == \\\"S\\\" or x == 's'):\\n  return 'success'\\nreturn 'fail'\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"airMissionResults\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"mission_result\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"timeOnTarget\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"time_iso\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"x = getValue(\\\"timeOnTarget\\\")\\nreturn x[0:2] + \\\":\\\" + x[2:4] + \\\":00\\\"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"timeOnTarget\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"time_iso\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.isi.edu/data/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"missionNumber_callSign\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"missionNumber\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"x = getValue(\\\"missionNumber_callSign\\\")\\nif x.find(\\\"MSNO:\\\") == 0:\\n  return x[5:]\\nreturn ''\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"missionNumber_callSign\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"missionNumber\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"missionNumber\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"callSign\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"x = getValue(\\\"missionNumber_callSign\\\")\\nif x.find(\\\"CSIGN:\\\") == 0:\\n  return x[6:]\\nreturn ''\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"missionNumber_callSign\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"callSign\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"targetData\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"lat\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return parse_latitude_longitude(getValue(\\\"targetData\\\"))[0]\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"targetData\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"lon\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return parse_latitude_longitude(getValue(\\\"targetData\\\"))[1]\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"targetData\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"lon\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"SIGHTREP\"},
+                    {\"columnName\": \"timeHourMinuteOfSighting\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"sight_time_iso\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"x = getValue(\\\"timeHourMinuteOfSighting\\\")\\nreturn x[0:2] + \\\":\\\" + x[2:4] + \\\":00\\\"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"timeHourMinuteOfSighting\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_time_iso\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"SIGHTREP\"},
+                    {\"columnName\": \"activityLocation\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"sight_lat\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"x = getValue(\\\"activityLocation\\\")\\nreturn parse_latitude_longitude(x)[0]\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"activityLocation\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"SIGHTREP\"},
+                    {\"columnName\": \"sight_lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"sight_lon\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"x = getValue(\\\"activityLocation\\\")\\nreturn parse_latitude_longitude(x)[1]\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"activityLocation\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_lon\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"SIGHTREP\"},
+                    {\"columnName\": \"activity_equipment\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"sight_type\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"x = getValue(\\\"activity_equipment\\\")\\nif x.find(\\\"ACTTP:\\\") == 0:\\n  type = \\\"activity\\\"\\nelse:\\n  type = \\\"equipment\\\"\\nreturn type\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"activity_equipment\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"SIGHTREP\"},
+                    {\"columnName\": \"sight_type\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"sight_desc\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"x = getValue(\\\"activity_equipment\\\")\\nif x.find(\\\"ACTTP:\\\") == 0:\\n  x = x[6:]\\nelif x.find(\\\"EQPMT:\\\") == 0:\\n  x = x[6:]\\nreturn x\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"activity_equipment\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_desc\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"MSGID\"},
+                    {\"columnName\": \"messageTextFormatIdentifier\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/type\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:StatusReport1 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/StatusReport1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/StatusReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"MSGID\\\"},{\\\"columnName\\\":\\\"messageTextFormatIdentifier\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"MSGID\\\"},{\\\"columnName\\\":\\\"messageTextFormatIdentifier\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"MSGID\"},
+                    {\"columnName\": \"msg_uri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/StatusReport\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/StatusReport1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:StatusReport1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/StatusReport1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/StatusReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"MSGID\\\"},{\\\"columnName\\\":\\\"msg_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"MSGID\\\"},{\\\"columnName\\\":\\\"msg_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"mission_uri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:MissonEvent1 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"mission_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"mission_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TARWI\"},
+                    {\"columnName\": \"lowCloudCover\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/lowCloudCover\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:WeatherReport1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/WeatherReport1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/WeatherReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TARWI\\\"},{\\\"columnName\\\":\\\"lowCloudCover\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TARWI\\\"},{\\\"columnName\\\":\\\"lowCloudCover\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TARWI\"},
+                    {\"columnName\": \"lowCloudBaseHeight\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/lowCloudBaseHeight\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:WeatherReport1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/WeatherReport1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/WeatherReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TARWI\\\"},{\\\"columnName\\\":\\\"lowCloudBaseHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TARWI\\\"},{\\\"columnName\\\":\\\"lowCloudBaseHeight\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TARWI\"},
+                    {\"columnName\": \"surfaceVisibility\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/surfaceVisibility\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:WeatherReport1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/WeatherReport1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/WeatherReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TARWI\\\"},{\\\"columnName\\\":\\\"surfaceVisibility\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TARWI\\\"},{\\\"columnName\\\":\\\"surfaceVisibility\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TARWI\"},
+                    {\"columnName\": \"weatherCondition\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/weatherCondition\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:WeatherReport1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/WeatherReport1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/WeatherReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TARWI\\\"},{\\\"columnName\\\":\\\"weatherCondition\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TARWI\\\"},{\\\"columnName\\\":\\\"weatherCondition\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TARWI\"},
+                    {\"columnName\": \"weatherRemarks\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/comment\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:WeatherReport1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/WeatherReport1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/WeatherReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TARWI\\\"},{\\\"columnName\\\":\\\"weatherRemarks\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TARWI\\\"},{\\\"columnName\\\":\\\"weatherRemarks\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"GENTEXT\"},
+                    {\"columnName\": \"freeText\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/freeText\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:StatusReport1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/StatusReport1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/StatusReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"GENTEXT\\\"},{\\\"columnName\\\":\\\"freeText\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"GENTEXT\\\"},{\\\"columnName\\\":\\\"freeText\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"mission_result\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/result\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:TargetEngageAction1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/TargetEngageAction1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/TargetEngageAction\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"mission_result\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"mission_result\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"time_iso\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/startTime\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:TargetEngageAction1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/TargetEngageAction1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/TargetEngageAction\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"time_iso\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"time_iso\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"missionNumber\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/missionNumber\",
+                    \"DomainLabel\": \"scharp:MissonEvent1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"missionNumber\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"missionNumber\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"callSign\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/callSign\",
+                    \"DomainLabel\": \"scharp:MissonEvent1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"callSign\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"callSign\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"requestNumber\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/requestNumber\",
+                    \"DomainLabel\": \"scharp:MissonEvent1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"requestNumber\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"requestNumber\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"TGTREP\"},
+                    {\"columnName\": \"lon\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates1\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates1\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"lon\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"TGTREP\\\"},{\\\"columnName\\\":\\\"lon\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"SIGHTREP\"},
+                    {\"columnName\": \"sight_time_iso\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/startTime\",
+                    \"DomainLabel\": \"schema:ViewAction1\",
+                    \"DomainId\": \"http://schema.org/ViewAction1\",
+                    \"DomainUri\": \"http://schema.org/ViewAction\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_time_iso\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_time_iso\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"SIGHTREP\"},
+                    {\"columnName\": \"sight_lat\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/latitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates2\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates2\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_lat\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"SIGHTREP\"},
+                    {\"columnName\": \"sight_lon\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/longitude\",
+                    \"DomainLabel\": \"schema:GeoCoordinates2\",
+                    \"DomainId\": \"http://schema.org/GeoCoordinates2\",
+                    \"DomainUri\": \"http://schema.org/GeoCoordinates\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_lon\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_lon\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"SIGHTREP\"},
+                    {\"columnName\": \"sight_type\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/type\",
+                    \"DomainLabel\": \"schema:ViewAction1\",
+                    \"DomainId\": \"http://schema.org/ViewAction1\",
+                    \"DomainUri\": \"http://schema.org/ViewAction\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_type\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"SIGHTREP\"},
+                    {\"columnName\": \"sight_desc\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://schema.org/object\",
+                    \"DomainLabel\": \"schema:ViewAction1\",
+                    \"DomainId\": \"http://schema.org/ViewAction1\",
+                    \"DomainUri\": \"http://schema.org/ViewAction\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_desc\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"SIGHTREP\\\"},{\\\"columnName\\\":\\\"sight_desc\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP13:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://memexproxy.com/ontology/hasNFAPhrase\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/StatusReport1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/StatusReport\",
+                    \"edgeId\": \"http://schema.org/recordedIn\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/StatusReport1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP13:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\",
+                    \"edgeId\": \"http://schema.org/recordedAt\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/StatusReport1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/StatusReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP13:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/WeatherReport\",
+                    \"edgeId\": \"http://schema.org/hasPart\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/StatusReport1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/WeatherReport1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/StatusReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP13:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://schema.org/GeoCoordinates\",
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\",
+                    \"edgeTargetId\": \"http://schema.org/GeoCoordinates1\",
+                    \"edgeSourceUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP7:WS204AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://schema.org/ViewAction\",
+                    \"edgeId\": \"http://schema.org/action\",
+                    \"edgeTargetId\": \"http://schema.org/ViewAction1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/StatusReport1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/StatusReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP7:WS204AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://schema.org/Place\",
+                    \"edgeId\": \"http://schema.org/location\",
+                    \"edgeTargetId\": \"http://schema.org/Place2\",
+                    \"edgeSourceId\": \"http://schema.org/ViewAction1\",
+                    \"edgeSourceUri\": \"http://schema.org/ViewAction\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP7:WS204AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://schema.org/GeoCoordinates\",
+                    \"edgeId\": \"http://schema.org/geo\",
+                    \"edgeTargetId\": \"http://schema.org/GeoCoordinates2\",
+                    \"edgeSourceId\": \"http://schema.org/Place2\",
+                    \"edgeSourceUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP2:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/TargetEngageAction\",
+                    \"edgeId\": \"http://schema.org/action\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/StatusReport1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/TargetEngageAction1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/StatusReport\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP2:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://schema.org/Place\",
+                    \"edgeId\": \"http://schema.org/location\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/TargetEngageAction1\",
+                    \"edgeTargetId\": \"http://schema.org/Place1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/TargetEngageAction\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_35684b62-947d-49d1-9807-f5c429f79e1a a rr:TriplesMap .
+
+_:node1a37abn39x1 km-dev:hasTriplesMap km-dev:TriplesMap_35684b62-947d-49d1-9807-f5c429f79e1a .
+
+km-dev:TriplesMap_35684b62-947d-49d1-9807-f5c429f79e1a km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x2 rr:tableName "INFLIGHTREP1_CDR.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasLogicalTable _:node1a37abn39x2 .
+
+km-dev:TriplesMap_35684b62-947d-49d1-9807-f5c429f79e1a rr:logicalTable _:node1a37abn39x2 ;
+	rr:subjectMap _:node1a37abn39x3 .
+
+_:node1a37abn39x1 km-dev:hasSubjectMap _:node1a37abn39x3 .
+
+_:node1a37abn39x3 km-dev:isPartOfMapping _:node1a37abn39x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/MissonEvent1" ;
+	rr:class scharp:MissonEvent ;
+	rr:template "{[\"_jsonRep\",\"TGTREP\",\"mission_uri\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_7920aef9-745d-4353-81b9-17f5e2097be5 rr:predicate scharp:callSign .
+
+_:node1a37abn39x4 rr:column "[\"_jsonRep\",\"TGTREP\",\"callSign\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x4 .
+
+km-dev:PredicateObjectMap_7920aef9-745d-4353-81b9-17f5e2097be5 rr:objectMap _:node1a37abn39x4 .
+
+km-dev:TriplesMap_35684b62-947d-49d1-9807-f5c429f79e1a rr:predicateObjectMap km-dev:PredicateObjectMap_7920aef9-745d-4353-81b9-17f5e2097be5 .
+
+km-dev:PredicateObjectMap_7920aef9-745d-4353-81b9-17f5e2097be5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7920aef9-745d-4353-81b9-17f5e2097be5 .
+
+km-dev:PredicateObjectMap_96c384eb-1edb-48bf-b847-dfb39e153468 rr:predicate scharp:missionNumber .
+
+_:node1a37abn39x5 rr:column "[\"_jsonRep\",\"TGTREP\",\"missionNumber\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x5 .
+
+km-dev:PredicateObjectMap_96c384eb-1edb-48bf-b847-dfb39e153468 rr:objectMap _:node1a37abn39x5 .
+
+km-dev:TriplesMap_35684b62-947d-49d1-9807-f5c429f79e1a rr:predicateObjectMap km-dev:PredicateObjectMap_96c384eb-1edb-48bf-b847-dfb39e153468 .
+
+km-dev:PredicateObjectMap_96c384eb-1edb-48bf-b847-dfb39e153468 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_96c384eb-1edb-48bf-b847-dfb39e153468 .
+
+km-dev:PredicateObjectMap_957414ca-1e50-4db3-b3bb-e7d21e087965 rr:predicate scharp:requestNumber .
+
+_:node1a37abn39x6 rr:column "[\"_jsonRep\",\"TGTREP\",\"requestNumber\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x6 .
+
+km-dev:PredicateObjectMap_957414ca-1e50-4db3-b3bb-e7d21e087965 rr:objectMap _:node1a37abn39x6 .
+
+km-dev:TriplesMap_35684b62-947d-49d1-9807-f5c429f79e1a rr:predicateObjectMap km-dev:PredicateObjectMap_957414ca-1e50-4db3-b3bb-e7d21e087965 .
+
+km-dev:PredicateObjectMap_957414ca-1e50-4db3-b3bb-e7d21e087965 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_957414ca-1e50-4db3-b3bb-e7d21e087965 .
+
+km-dev:PredicateObjectMap_64a7474b-2181-4494-b1f0-3836514d12be rr:predicate schema:recordedIn .
+
+km-dev:RefObjectMap_2ee9ff88-a8d6-412a-9047-1824bdd7fcba a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap km-dev:RefObjectMap_2ee9ff88-a8d6-412a-9047-1824bdd7fcba .
+
+km-dev:PredicateObjectMap_64a7474b-2181-4494-b1f0-3836514d12be rr:objectMap km-dev:RefObjectMap_2ee9ff88-a8d6-412a-9047-1824bdd7fcba .
+
+km-dev:TriplesMap_35684b62-947d-49d1-9807-f5c429f79e1a rr:predicateObjectMap km-dev:PredicateObjectMap_64a7474b-2181-4494-b1f0-3836514d12be .
+
+km-dev:PredicateObjectMap_64a7474b-2181-4494-b1f0-3836514d12be a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_64a7474b-2181-4494-b1f0-3836514d12be .
+
+km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 a rr:TriplesMap .
+
+_:node1a37abn39x1 km-dev:hasTriplesMap km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 .
+
+km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x7 rr:tableName "INFLIGHTREP1_CDR.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasLogicalTable _:node1a37abn39x7 .
+
+km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 rr:logicalTable _:node1a37abn39x7 ;
+	rr:subjectMap _:node1a37abn39x8 .
+
+_:node1a37abn39x1 km-dev:hasSubjectMap _:node1a37abn39x8 .
+
+_:node1a37abn39x8 km-dev:isPartOfMapping _:node1a37abn39x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/StatusReport1" ;
+	rr:class scharp:StatusReport ;
+	rr:template "{[\"_jsonRep\",\"MSGID\",\"msg_uri\"]}" .
+
+km-dev:PredicateObjectMap_3ddf50a6-a670-4cc7-9fce-c1b99fe0985c rr:predicate scharp:freeText .
+
+_:node1a37abn39x9 rr:column "[\"_jsonRep\",\"GENTEXT\",\"freeText\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x9 .
+
+km-dev:PredicateObjectMap_3ddf50a6-a670-4cc7-9fce-c1b99fe0985c rr:objectMap _:node1a37abn39x9 .
+
+km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 rr:predicateObjectMap km-dev:PredicateObjectMap_3ddf50a6-a670-4cc7-9fce-c1b99fe0985c .
+
+km-dev:PredicateObjectMap_3ddf50a6-a670-4cc7-9fce-c1b99fe0985c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3ddf50a6-a670-4cc7-9fce-c1b99fe0985c .
+
+km-dev:PredicateObjectMap_e4f7126c-936d-4f71-b75d-ebdfb7f5c994 rr:predicate scharp:type .
+
+_:node1a37abn39x10 rr:column "[\"_jsonRep\",\"MSGID\",\"messageTextFormatIdentifier\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x10 .
+
+km-dev:PredicateObjectMap_e4f7126c-936d-4f71-b75d-ebdfb7f5c994 rr:objectMap _:node1a37abn39x10 .
+
+km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 rr:predicateObjectMap km-dev:PredicateObjectMap_e4f7126c-936d-4f71-b75d-ebdfb7f5c994 .
+
+km-dev:PredicateObjectMap_e4f7126c-936d-4f71-b75d-ebdfb7f5c994 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e4f7126c-936d-4f71-b75d-ebdfb7f5c994 .
+
+km-dev:PredicateObjectMap_2543bf38-3009-437f-98c9-86ccd780d916 rr:predicate schema:action .
+
+km-dev:RefObjectMap_b45cacb1-a07a-4c73-8a05-fe9b4d7cf6db a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_82a42c5a-3429-4c9b-ab26-ba21a14e1a28 ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap km-dev:RefObjectMap_b45cacb1-a07a-4c73-8a05-fe9b4d7cf6db .
+
+km-dev:PredicateObjectMap_2543bf38-3009-437f-98c9-86ccd780d916 rr:objectMap km-dev:RefObjectMap_b45cacb1-a07a-4c73-8a05-fe9b4d7cf6db .
+
+km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 rr:predicateObjectMap km-dev:PredicateObjectMap_2543bf38-3009-437f-98c9-86ccd780d916 .
+
+km-dev:PredicateObjectMap_2543bf38-3009-437f-98c9-86ccd780d916 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2543bf38-3009-437f-98c9-86ccd780d916 .
+
+km-dev:PredicateObjectMap_5b773a2b-be83-48b4-b2cc-7d4f00bb8e9d rr:predicate schema:action .
+
+km-dev:RefObjectMap_d3e670b4-037f-4ace-8a86-20b7cb37c3d6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_ee89f9ff-9587-464b-a723-21952303d3c3 ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap km-dev:RefObjectMap_d3e670b4-037f-4ace-8a86-20b7cb37c3d6 .
+
+km-dev:PredicateObjectMap_5b773a2b-be83-48b4-b2cc-7d4f00bb8e9d rr:objectMap km-dev:RefObjectMap_d3e670b4-037f-4ace-8a86-20b7cb37c3d6 .
+
+km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 rr:predicateObjectMap km-dev:PredicateObjectMap_5b773a2b-be83-48b4-b2cc-7d4f00bb8e9d .
+
+km-dev:PredicateObjectMap_5b773a2b-be83-48b4-b2cc-7d4f00bb8e9d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5b773a2b-be83-48b4-b2cc-7d4f00bb8e9d .
+
+km-dev:PredicateObjectMap_b22aa760-e27f-4598-9e11-69201f57e264 rr:predicate schema:hasPart .
+
+km-dev:RefObjectMap_b7400b16-bec8-459f-bfba-ee573397c209 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9d197a8c-1220-4213-a978-bea747bf3270 ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap km-dev:RefObjectMap_b7400b16-bec8-459f-bfba-ee573397c209 .
+
+km-dev:PredicateObjectMap_b22aa760-e27f-4598-9e11-69201f57e264 rr:objectMap km-dev:RefObjectMap_b7400b16-bec8-459f-bfba-ee573397c209 .
+
+km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 rr:predicateObjectMap km-dev:PredicateObjectMap_b22aa760-e27f-4598-9e11-69201f57e264 .
+
+km-dev:PredicateObjectMap_b22aa760-e27f-4598-9e11-69201f57e264 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b22aa760-e27f-4598-9e11-69201f57e264 .
+
+km-dev:PredicateObjectMap_d4a22562-481a-4238-bda3-dbf4df87c34f rr:predicate schema:recordedAt .
+
+km-dev:RefObjectMap_e0b4a373-5303-457f-99b8-09d233a11d3f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_35684b62-947d-49d1-9807-f5c429f79e1a ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap km-dev:RefObjectMap_e0b4a373-5303-457f-99b8-09d233a11d3f .
+
+km-dev:PredicateObjectMap_d4a22562-481a-4238-bda3-dbf4df87c34f rr:objectMap km-dev:RefObjectMap_e0b4a373-5303-457f-99b8-09d233a11d3f .
+
+km-dev:TriplesMap_37ec77d6-633c-4bf2-829d-9847fcc0c4d0 rr:predicateObjectMap km-dev:PredicateObjectMap_d4a22562-481a-4238-bda3-dbf4df87c34f .
+
+km-dev:PredicateObjectMap_d4a22562-481a-4238-bda3-dbf4df87c34f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d4a22562-481a-4238-bda3-dbf4df87c34f .
+
+km-dev:TriplesMap_82a42c5a-3429-4c9b-ab26-ba21a14e1a28 a rr:TriplesMap .
+
+_:node1a37abn39x1 km-dev:hasTriplesMap km-dev:TriplesMap_82a42c5a-3429-4c9b-ab26-ba21a14e1a28 .
+
+km-dev:TriplesMap_82a42c5a-3429-4c9b-ab26-ba21a14e1a28 km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x11 rr:tableName "INFLIGHTREP1_CDR.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasLogicalTable _:node1a37abn39x11 .
+
+km-dev:TriplesMap_82a42c5a-3429-4c9b-ab26-ba21a14e1a28 rr:logicalTable _:node1a37abn39x11 ;
+	rr:subjectMap _:node1a37abn39x12 .
+
+_:node1a37abn39x1 km-dev:hasSubjectMap _:node1a37abn39x12 .
+
+_:node1a37abn39x12 km-dev:isPartOfMapping _:node1a37abn39x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/TargetEngageAction1" ;
+	rr:class scharp:TargetEngageAction ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:TargetEngageAction1" .
+
+km-dev:PredicateObjectMap_9d25f827-4d01-461d-bb25-e2249ab1a0ec rr:predicate schema:location .
+
+km-dev:RefObjectMap_5c53aa1f-4a8e-4b34-af0c-623552341801 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2118c4e7-a3b5-416b-bf3a-26684d014874 ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap km-dev:RefObjectMap_5c53aa1f-4a8e-4b34-af0c-623552341801 .
+
+km-dev:PredicateObjectMap_9d25f827-4d01-461d-bb25-e2249ab1a0ec rr:objectMap km-dev:RefObjectMap_5c53aa1f-4a8e-4b34-af0c-623552341801 .
+
+km-dev:TriplesMap_82a42c5a-3429-4c9b-ab26-ba21a14e1a28 rr:predicateObjectMap km-dev:PredicateObjectMap_9d25f827-4d01-461d-bb25-e2249ab1a0ec .
+
+km-dev:PredicateObjectMap_9d25f827-4d01-461d-bb25-e2249ab1a0ec a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9d25f827-4d01-461d-bb25-e2249ab1a0ec .
+
+km-dev:PredicateObjectMap_8f4e475a-0099-4d50-9a88-7af489057df2 rr:predicate schema:result .
+
+_:node1a37abn39x13 rr:column "[\"_jsonRep\",\"TGTREP\",\"mission_result\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x13 .
+
+km-dev:PredicateObjectMap_8f4e475a-0099-4d50-9a88-7af489057df2 rr:objectMap _:node1a37abn39x13 .
+
+km-dev:TriplesMap_82a42c5a-3429-4c9b-ab26-ba21a14e1a28 rr:predicateObjectMap km-dev:PredicateObjectMap_8f4e475a-0099-4d50-9a88-7af489057df2 .
+
+km-dev:PredicateObjectMap_8f4e475a-0099-4d50-9a88-7af489057df2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8f4e475a-0099-4d50-9a88-7af489057df2 .
+
+km-dev:PredicateObjectMap_afe3e0ef-c3a5-4344-8334-5bead9839bc1 rr:predicate schema:startTime .
+
+_:node1a37abn39x14 rr:column "[\"_jsonRep\",\"TGTREP\",\"time_iso\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x14 .
+
+km-dev:PredicateObjectMap_afe3e0ef-c3a5-4344-8334-5bead9839bc1 rr:objectMap _:node1a37abn39x14 .
+
+km-dev:TriplesMap_82a42c5a-3429-4c9b-ab26-ba21a14e1a28 rr:predicateObjectMap km-dev:PredicateObjectMap_afe3e0ef-c3a5-4344-8334-5bead9839bc1 .
+
+km-dev:PredicateObjectMap_afe3e0ef-c3a5-4344-8334-5bead9839bc1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_afe3e0ef-c3a5-4344-8334-5bead9839bc1 .
+
+km-dev:TriplesMap_ee89f9ff-9587-464b-a723-21952303d3c3 a rr:TriplesMap .
+
+_:node1a37abn39x1 km-dev:hasTriplesMap km-dev:TriplesMap_ee89f9ff-9587-464b-a723-21952303d3c3 .
+
+km-dev:TriplesMap_ee89f9ff-9587-464b-a723-21952303d3c3 km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x15 rr:tableName "INFLIGHTREP1_CDR.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasLogicalTable _:node1a37abn39x15 .
+
+km-dev:TriplesMap_ee89f9ff-9587-464b-a723-21952303d3c3 rr:logicalTable _:node1a37abn39x15 ;
+	rr:subjectMap _:node1a37abn39x16 .
+
+_:node1a37abn39x1 km-dev:hasSubjectMap _:node1a37abn39x16 .
+
+_:node1a37abn39x16 km-dev:isPartOfMapping _:node1a37abn39x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/ViewAction1" ;
+	rr:class schema:ViewAction ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:ViewAction1" .
+
+km-dev:PredicateObjectMap_f08cf237-852b-4657-bf9c-c83a6be25967 rr:predicate scharp:type .
+
+_:node1a37abn39x17 rr:column "[\"_jsonRep\",\"SIGHTREP\",\"sight_type\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x17 .
+
+km-dev:PredicateObjectMap_f08cf237-852b-4657-bf9c-c83a6be25967 rr:objectMap _:node1a37abn39x17 .
+
+km-dev:TriplesMap_ee89f9ff-9587-464b-a723-21952303d3c3 rr:predicateObjectMap km-dev:PredicateObjectMap_f08cf237-852b-4657-bf9c-c83a6be25967 .
+
+km-dev:PredicateObjectMap_f08cf237-852b-4657-bf9c-c83a6be25967 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f08cf237-852b-4657-bf9c-c83a6be25967 .
+
+km-dev:PredicateObjectMap_327430a5-2fef-4ceb-9008-53112bb3bea6 rr:predicate schema:location .
+
+km-dev:RefObjectMap_3b722934-2b97-4bae-bc60-84a688221825 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_72d0248e-49fd-46ee-8808-701ca8ade4b9 ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap km-dev:RefObjectMap_3b722934-2b97-4bae-bc60-84a688221825 .
+
+km-dev:PredicateObjectMap_327430a5-2fef-4ceb-9008-53112bb3bea6 rr:objectMap km-dev:RefObjectMap_3b722934-2b97-4bae-bc60-84a688221825 .
+
+km-dev:TriplesMap_ee89f9ff-9587-464b-a723-21952303d3c3 rr:predicateObjectMap km-dev:PredicateObjectMap_327430a5-2fef-4ceb-9008-53112bb3bea6 .
+
+km-dev:PredicateObjectMap_327430a5-2fef-4ceb-9008-53112bb3bea6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_327430a5-2fef-4ceb-9008-53112bb3bea6 .
+
+km-dev:PredicateObjectMap_3b64175d-7e31-4027-b85d-899a88fb4f0e rr:predicate schema:object .
+
+_:node1a37abn39x18 rr:column "[\"_jsonRep\",\"SIGHTREP\",\"sight_desc\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x18 .
+
+km-dev:PredicateObjectMap_3b64175d-7e31-4027-b85d-899a88fb4f0e rr:objectMap _:node1a37abn39x18 .
+
+km-dev:TriplesMap_ee89f9ff-9587-464b-a723-21952303d3c3 rr:predicateObjectMap km-dev:PredicateObjectMap_3b64175d-7e31-4027-b85d-899a88fb4f0e .
+
+km-dev:PredicateObjectMap_3b64175d-7e31-4027-b85d-899a88fb4f0e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3b64175d-7e31-4027-b85d-899a88fb4f0e .
+
+km-dev:PredicateObjectMap_7eee1bc7-323d-4799-a3b2-507e43e06509 rr:predicate schema:startTime .
+
+_:node1a37abn39x19 rr:column "[\"_jsonRep\",\"SIGHTREP\",\"sight_time_iso\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x19 .
+
+km-dev:PredicateObjectMap_7eee1bc7-323d-4799-a3b2-507e43e06509 rr:objectMap _:node1a37abn39x19 .
+
+km-dev:TriplesMap_ee89f9ff-9587-464b-a723-21952303d3c3 rr:predicateObjectMap km-dev:PredicateObjectMap_7eee1bc7-323d-4799-a3b2-507e43e06509 .
+
+km-dev:PredicateObjectMap_7eee1bc7-323d-4799-a3b2-507e43e06509 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7eee1bc7-323d-4799-a3b2-507e43e06509 .
+
+km-dev:TriplesMap_9d197a8c-1220-4213-a978-bea747bf3270 a rr:TriplesMap .
+
+_:node1a37abn39x1 km-dev:hasTriplesMap km-dev:TriplesMap_9d197a8c-1220-4213-a978-bea747bf3270 .
+
+km-dev:TriplesMap_9d197a8c-1220-4213-a978-bea747bf3270 km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x20 rr:tableName "INFLIGHTREP1_CDR.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasLogicalTable _:node1a37abn39x20 .
+
+km-dev:TriplesMap_9d197a8c-1220-4213-a978-bea747bf3270 rr:logicalTable _:node1a37abn39x20 ;
+	rr:subjectMap _:node1a37abn39x21 .
+
+_:node1a37abn39x1 km-dev:hasSubjectMap _:node1a37abn39x21 .
+
+_:node1a37abn39x21 km-dev:isPartOfMapping _:node1a37abn39x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/WeatherReport1" ;
+	rr:class scharp:WeatherReport ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:WeatherReport1" .
+
+km-dev:PredicateObjectMap_8955478d-c9ea-468a-8f89-6961165db9bc rr:predicate scharp:lowCloudBaseHeight .
+
+_:node1a37abn39x22 rr:column "[\"_jsonRep\",\"TARWI\",\"lowCloudBaseHeight\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x22 .
+
+km-dev:PredicateObjectMap_8955478d-c9ea-468a-8f89-6961165db9bc rr:objectMap _:node1a37abn39x22 .
+
+km-dev:TriplesMap_9d197a8c-1220-4213-a978-bea747bf3270 rr:predicateObjectMap km-dev:PredicateObjectMap_8955478d-c9ea-468a-8f89-6961165db9bc .
+
+km-dev:PredicateObjectMap_8955478d-c9ea-468a-8f89-6961165db9bc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8955478d-c9ea-468a-8f89-6961165db9bc .
+
+km-dev:PredicateObjectMap_726c9ce8-5d0d-44a9-a398-7b8a919dbad9 rr:predicate scharp:lowCloudCover .
+
+_:node1a37abn39x23 rr:column "[\"_jsonRep\",\"TARWI\",\"lowCloudCover\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x23 .
+
+km-dev:PredicateObjectMap_726c9ce8-5d0d-44a9-a398-7b8a919dbad9 rr:objectMap _:node1a37abn39x23 .
+
+km-dev:TriplesMap_9d197a8c-1220-4213-a978-bea747bf3270 rr:predicateObjectMap km-dev:PredicateObjectMap_726c9ce8-5d0d-44a9-a398-7b8a919dbad9 .
+
+km-dev:PredicateObjectMap_726c9ce8-5d0d-44a9-a398-7b8a919dbad9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_726c9ce8-5d0d-44a9-a398-7b8a919dbad9 .
+
+km-dev:PredicateObjectMap_7b666358-39dc-42cf-b6e0-f1b07d13928a rr:predicate scharp:surfaceVisibility .
+
+_:node1a37abn39x24 rr:column "[\"_jsonRep\",\"TARWI\",\"surfaceVisibility\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x24 .
+
+km-dev:PredicateObjectMap_7b666358-39dc-42cf-b6e0-f1b07d13928a rr:objectMap _:node1a37abn39x24 .
+
+km-dev:TriplesMap_9d197a8c-1220-4213-a978-bea747bf3270 rr:predicateObjectMap km-dev:PredicateObjectMap_7b666358-39dc-42cf-b6e0-f1b07d13928a .
+
+km-dev:PredicateObjectMap_7b666358-39dc-42cf-b6e0-f1b07d13928a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7b666358-39dc-42cf-b6e0-f1b07d13928a .
+
+km-dev:PredicateObjectMap_a55fc561-d688-4884-8abb-32077b1cc13c rr:predicate scharp:weatherCondition .
+
+_:node1a37abn39x25 rr:column "[\"_jsonRep\",\"TARWI\",\"weatherCondition\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x25 .
+
+km-dev:PredicateObjectMap_a55fc561-d688-4884-8abb-32077b1cc13c rr:objectMap _:node1a37abn39x25 .
+
+km-dev:TriplesMap_9d197a8c-1220-4213-a978-bea747bf3270 rr:predicateObjectMap km-dev:PredicateObjectMap_a55fc561-d688-4884-8abb-32077b1cc13c .
+
+km-dev:PredicateObjectMap_a55fc561-d688-4884-8abb-32077b1cc13c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a55fc561-d688-4884-8abb-32077b1cc13c .
+
+km-dev:PredicateObjectMap_bbc50806-ad66-44a5-b77e-d0fed1c861ba rr:predicate schema:comment .
+
+_:node1a37abn39x26 rr:column "[\"_jsonRep\",\"TARWI\",\"weatherRemarks\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x26 .
+
+km-dev:PredicateObjectMap_bbc50806-ad66-44a5-b77e-d0fed1c861ba rr:objectMap _:node1a37abn39x26 .
+
+km-dev:TriplesMap_9d197a8c-1220-4213-a978-bea747bf3270 rr:predicateObjectMap km-dev:PredicateObjectMap_bbc50806-ad66-44a5-b77e-d0fed1c861ba .
+
+km-dev:PredicateObjectMap_bbc50806-ad66-44a5-b77e-d0fed1c861ba a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bbc50806-ad66-44a5-b77e-d0fed1c861ba .
+
+km-dev:TriplesMap_2118c4e7-a3b5-416b-bf3a-26684d014874 a rr:TriplesMap .
+
+_:node1a37abn39x1 km-dev:hasTriplesMap km-dev:TriplesMap_2118c4e7-a3b5-416b-bf3a-26684d014874 .
+
+km-dev:TriplesMap_2118c4e7-a3b5-416b-bf3a-26684d014874 km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x27 rr:tableName "INFLIGHTREP1_CDR.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasLogicalTable _:node1a37abn39x27 .
+
+km-dev:TriplesMap_2118c4e7-a3b5-416b-bf3a-26684d014874 rr:logicalTable _:node1a37abn39x27 ;
+	rr:subjectMap _:node1a37abn39x28 .
+
+_:node1a37abn39x1 km-dev:hasSubjectMap _:node1a37abn39x28 .
+
+_:node1a37abn39x28 km-dev:isPartOfMapping _:node1a37abn39x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	rr:class schema:Place ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:Place1" .
+
+km-dev:PredicateObjectMap_237a6d12-011b-46c7-b493-b7addc3eb286 rr:predicate schema:geo .
+
+km-dev:RefObjectMap_c2495a3f-e0a0-4b2b-9c28-44ed32076c41 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_030370be-f08e-4548-8bcb-4f5b4538376f ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap km-dev:RefObjectMap_c2495a3f-e0a0-4b2b-9c28-44ed32076c41 .
+
+km-dev:PredicateObjectMap_237a6d12-011b-46c7-b493-b7addc3eb286 rr:objectMap km-dev:RefObjectMap_c2495a3f-e0a0-4b2b-9c28-44ed32076c41 .
+
+km-dev:TriplesMap_2118c4e7-a3b5-416b-bf3a-26684d014874 rr:predicateObjectMap km-dev:PredicateObjectMap_237a6d12-011b-46c7-b493-b7addc3eb286 .
+
+km-dev:PredicateObjectMap_237a6d12-011b-46c7-b493-b7addc3eb286 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_237a6d12-011b-46c7-b493-b7addc3eb286 .
+
+km-dev:TriplesMap_030370be-f08e-4548-8bcb-4f5b4538376f a rr:TriplesMap .
+
+_:node1a37abn39x1 km-dev:hasTriplesMap km-dev:TriplesMap_030370be-f08e-4548-8bcb-4f5b4538376f .
+
+km-dev:TriplesMap_030370be-f08e-4548-8bcb-4f5b4538376f km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x29 rr:tableName "INFLIGHTREP1_CDR.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasLogicalTable _:node1a37abn39x29 .
+
+km-dev:TriplesMap_030370be-f08e-4548-8bcb-4f5b4538376f rr:logicalTable _:node1a37abn39x29 ;
+	rr:subjectMap _:node1a37abn39x30 .
+
+_:node1a37abn39x1 km-dev:hasSubjectMap _:node1a37abn39x30 .
+
+_:node1a37abn39x30 km-dev:isPartOfMapping _:node1a37abn39x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates1" ;
+	rr:class schema:GeoCoordinates ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoCoordinates1" .
+
+km-dev:PredicateObjectMap_769d7c4a-ebd0-48af-b41c-6bda02fc7eef rr:predicate schema:latitude .
+
+_:node1a37abn39x31 rr:column "[\"_jsonRep\",\"TGTREP\",\"lat\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x31 .
+
+km-dev:PredicateObjectMap_769d7c4a-ebd0-48af-b41c-6bda02fc7eef rr:objectMap _:node1a37abn39x31 .
+
+km-dev:TriplesMap_030370be-f08e-4548-8bcb-4f5b4538376f rr:predicateObjectMap km-dev:PredicateObjectMap_769d7c4a-ebd0-48af-b41c-6bda02fc7eef .
+
+km-dev:PredicateObjectMap_769d7c4a-ebd0-48af-b41c-6bda02fc7eef a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_769d7c4a-ebd0-48af-b41c-6bda02fc7eef .
+
+km-dev:PredicateObjectMap_77c0520b-e7c2-4cb8-8dc8-bdfb907e51bf rr:predicate schema:longitude .
+
+_:node1a37abn39x32 rr:column "[\"_jsonRep\",\"TGTREP\",\"lon\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x32 .
+
+km-dev:PredicateObjectMap_77c0520b-e7c2-4cb8-8dc8-bdfb907e51bf rr:objectMap _:node1a37abn39x32 .
+
+km-dev:TriplesMap_030370be-f08e-4548-8bcb-4f5b4538376f rr:predicateObjectMap km-dev:PredicateObjectMap_77c0520b-e7c2-4cb8-8dc8-bdfb907e51bf .
+
+km-dev:PredicateObjectMap_77c0520b-e7c2-4cb8-8dc8-bdfb907e51bf a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_77c0520b-e7c2-4cb8-8dc8-bdfb907e51bf .
+
+km-dev:TriplesMap_574e8b27-17bc-4aba-b41f-9a910f530249 a rr:TriplesMap .
+
+_:node1a37abn39x1 km-dev:hasTriplesMap km-dev:TriplesMap_574e8b27-17bc-4aba-b41f-9a910f530249 .
+
+km-dev:TriplesMap_574e8b27-17bc-4aba-b41f-9a910f530249 km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x33 rr:tableName "INFLIGHTREP1_CDR.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasLogicalTable _:node1a37abn39x33 .
+
+km-dev:TriplesMap_574e8b27-17bc-4aba-b41f-9a910f530249 rr:logicalTable _:node1a37abn39x33 ;
+	rr:subjectMap _:node1a37abn39x34 .
+
+_:node1a37abn39x1 km-dev:hasSubjectMap _:node1a37abn39x34 .
+
+_:node1a37abn39x34 km-dev:isPartOfMapping _:node1a37abn39x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/GeoCoordinates2" ;
+	rr:class schema:GeoCoordinates ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:GeoCoordinates2" .
+
+km-dev:PredicateObjectMap_59f66db1-0f0c-44d6-9844-e2f22d4c53fc rr:predicate schema:latitude .
+
+_:node1a37abn39x35 rr:column "[\"_jsonRep\",\"SIGHTREP\",\"sight_lat\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x35 .
+
+km-dev:PredicateObjectMap_59f66db1-0f0c-44d6-9844-e2f22d4c53fc rr:objectMap _:node1a37abn39x35 .
+
+km-dev:TriplesMap_574e8b27-17bc-4aba-b41f-9a910f530249 rr:predicateObjectMap km-dev:PredicateObjectMap_59f66db1-0f0c-44d6-9844-e2f22d4c53fc .
+
+km-dev:PredicateObjectMap_59f66db1-0f0c-44d6-9844-e2f22d4c53fc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_59f66db1-0f0c-44d6-9844-e2f22d4c53fc .
+
+km-dev:PredicateObjectMap_8239d765-1bc9-45fc-8671-8690dfe22f8c rr:predicate schema:longitude .
+
+_:node1a37abn39x36 rr:column "[\"_jsonRep\",\"SIGHTREP\",\"sight_lon\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap _:node1a37abn39x36 .
+
+km-dev:PredicateObjectMap_8239d765-1bc9-45fc-8671-8690dfe22f8c rr:objectMap _:node1a37abn39x36 .
+
+km-dev:TriplesMap_574e8b27-17bc-4aba-b41f-9a910f530249 rr:predicateObjectMap km-dev:PredicateObjectMap_8239d765-1bc9-45fc-8671-8690dfe22f8c .
+
+km-dev:PredicateObjectMap_8239d765-1bc9-45fc-8671-8690dfe22f8c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8239d765-1bc9-45fc-8671-8690dfe22f8c .
+
+km-dev:TriplesMap_72d0248e-49fd-46ee-8808-701ca8ade4b9 a rr:TriplesMap .
+
+_:node1a37abn39x1 km-dev:hasTriplesMap km-dev:TriplesMap_72d0248e-49fd-46ee-8808-701ca8ade4b9 .
+
+km-dev:TriplesMap_72d0248e-49fd-46ee-8808-701ca8ade4b9 km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x37 rr:tableName "INFLIGHTREP1_CDR.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasLogicalTable _:node1a37abn39x37 .
+
+km-dev:TriplesMap_72d0248e-49fd-46ee-8808-701ca8ade4b9 rr:logicalTable _:node1a37abn39x37 ;
+	rr:subjectMap _:node1a37abn39x38 .
+
+_:node1a37abn39x1 km-dev:hasSubjectMap _:node1a37abn39x38 .
+
+_:node1a37abn39x38 km-dev:isPartOfMapping _:node1a37abn39x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place2" ;
+	rr:class schema:Place ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:Place2" .
+
+km-dev:PredicateObjectMap_ba4a8722-0a11-4d8d-ad87-452de0962579 rr:predicate schema:geo .
+
+km-dev:RefObjectMap_deb421ed-fad7-42dd-bcf4-1941d6984132 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_574e8b27-17bc-4aba-b41f-9a910f530249 ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasObjectMap km-dev:RefObjectMap_deb421ed-fad7-42dd-bcf4-1941d6984132 .
+
+km-dev:PredicateObjectMap_ba4a8722-0a11-4d8d-ad87-452de0962579 rr:objectMap km-dev:RefObjectMap_deb421ed-fad7-42dd-bcf4-1941d6984132 .
+
+km-dev:TriplesMap_72d0248e-49fd-46ee-8808-701ca8ade4b9 rr:predicateObjectMap km-dev:PredicateObjectMap_ba4a8722-0a11-4d8d-ad87-452de0962579 .
+
+km-dev:PredicateObjectMap_ba4a8722-0a11-4d8d-ad87-452de0962579 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a37abn39x1 .
+
+_:node1a37abn39x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ba4a8722-0a11-4d8d-ad87-452de0962579 .

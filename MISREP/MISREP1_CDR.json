@@ -1,0 +1,35 @@
+{
+    "_timestamp": 1444823113,
+    "_url": "temp.org/scharp/usmtf/1",
+    "_rawContent": "EXER/pat41//\nMSGID/MISREP/500TFS/1/DEC//\nMSNID/RDREC/2AW/-/3231-280//\nUNID/500TFS//\nROUTE\n/280239Z/502114N0084034E/RH\n/280250Z/503038N0104053E/RH\n/280258Z/505804N0115713E/RH\n/280302Z/511409N0115507E/RH\n/280309Z/505350N0110812E/RH\n/280310Z/505247N0105332E/RH\n/280323Z/502154N0084048E/RH\n//\nFLTDTAIL/NONE /NAME:2 AIR WING/4/AIRAND/280239Z /LATS:502154N0084048E/280323Z/-/-//\nTIMESPEC/TFRM:TASK/280239Z/280323Z//\nTGTPOS/AAA SITES/ENEMY POSITION/-/POSNID:511409N0115507E//\nSAFIRE/ZSU23-/2/LATS:505350N0110812E/280309Z/ALT:120/HEAVY//",
+    "_content_type": "text/text",
+    "_jsonRep": {
+        "threat": {
+			"missionId": "3231-280",
+            "id": "ZSU23_502114N0084034E",
+            "equipment": "ZSU23",
+            "altitude": "120",
+            "time": "280309ZDEC99",
+            "location": {
+                "lat": "502114N",
+                "lng": "0084034E"
+            },
+            "fired": "2"
+        },
+        "damageReport": {
+			"missionId": "3231-280",
+            "causedByThreat": "ZSU23_502114N0084034E",
+            "departLocation": {
+                "lat": "502114N",
+                "lng": "0084034E"
+            },
+            "returnLocation": {
+                "lat": "502114N",
+                "lng": "0084034E"
+            },
+            "unitsLost": "0",
+            "time": "280309ZDEC99",
+            "aircraftType": "F16"
+        }
+    }
+}

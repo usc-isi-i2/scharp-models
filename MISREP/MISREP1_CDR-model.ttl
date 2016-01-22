@@ -782,22 +782,22 @@ _:node1a2b3kos5x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"metaPropertyUri\",
                 \"type\": \"other\",
-                \"value\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\"
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirMission\"
             },
             {
                 \"name\": \"metaPropertyId\",
                 \"type\": \"other\",
-                \"value\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\"
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirMission1\"
             },
             {
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
                     \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
-                    \"DomainLabel\": \"mission:MissonEvent1\"
+                    \"DomainLabel\": \"mission:AirMission1\"
                 }]
             },
             {
@@ -850,11 +850,11 @@ _:node1a2b3kos5x1 a km-dev:R2RMLMapping ;
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
                     \"isPrimary\": true,
                     \"FullType\": \"http://schema.org/name\",
-                    \"DomainLabel\": \"mission:MissonEvent1\"
+                    \"DomainLabel\": \"mission:AirMission1\"
                 }]
             },
             {
@@ -1368,8 +1368,8 @@ _:node1a2b3kos5x1 a km-dev:R2RMLMapping ;
                     \"edgeId\": \"http://schema.org/subEvent\",
                     \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/DamageEvent1\",
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/DamageEvent\",
-                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
-                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\"
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\"
                 }]
             },
             {
@@ -1414,8 +1414,8 @@ _:node1a2b3kos5x1 a km-dev:R2RMLMapping ;
                 \"type\": \"other\",
                 \"value\": [{
                     \"edgeId\": \"http://schema.org/superEvent\",
-                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
-                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\",
                     \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/DamageEvent1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/DamageEvent\"
                 }]
@@ -1464,8 +1464,8 @@ _:node1a2b3kos5x1 a km-dev:R2RMLMapping ;
                     \"edgeId\": \"http://memexproxy.com/ontology/identifier\",
                     \"edgeTargetId\": \"http://memexproxy.com/ontology/Identifier1\",
                     \"edgeTargetUri\": \"http://memexproxy.com/ontology/Identifier\",
-                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/MissonEvent1\",
-                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/MissonEvent\"
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\"
                 }]
             },
             {
@@ -1787,8 +1787,8 @@ _:node1a2b3kos5x1 km-dev:hasSubjectMap _:node1a2b3kos5x16 .
 
 _:node1a2b3kos5x16 km-dev:isPartOfMapping _:node1a2b3kos5x1 ;
 	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/MissonEvent1" ;
-	rr:class mission:MissonEvent ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirMission1" ;
+	rr:class mission:AirMission ;
 	rr:template "events/mission/{[\"_jsonRep\",\"threat\",\"missionId\"]}" .
 
 km-dev:PredicateObjectMap_8bfdae77-899f-455b-8064-bd860ffb2357 rr:predicate memex:identifier .

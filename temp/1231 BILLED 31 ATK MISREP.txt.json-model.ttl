@@ -1,0 +1,312 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix dpla: <http://dp.la/about/map/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1aan631tvx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "1231 BILLED 31 ATK MISREP.txt.json" ;
+	km-dev:modelPublicationTime "1454624573376"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"PERID\"},{\"columnName\":\"fromDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"PERID\"},{\"columnName\":\"toDayTime\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"PERID\"},{\"columnName\":\"fromDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"PERID\"},{\"columnName\":\"toDayTime\"}]]" ;
+	km-dev:hasModelLabel "1231 BILLED 31 ATK MISREP.txt.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"PERID\"},
+                    {\"columnName\": \"toDayTime\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"toDayTime\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"toDayTime\\\")[3:]\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"PERID\\\"},{\\\"columnName\\\":\\\"toDayTime\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"PERID\\\"},{\\\"columnName\\\":\\\"toDayTime\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"scharp\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"PERID\"},
+                    {\"columnName\": \"toDayTime\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/NLT\",
+                    \"DomainLabel\": \"scharp:Interval1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"PERID\\\"},{\\\"columnName\\\":\\\"toDayTime\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"PERID\\\"},{\\\"columnName\\\":\\\"toDayTime\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"PERID\"},
+                    {\"columnName\": \"fromDayTime\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/NET\",
+                    \"DomainLabel\": \"scharp:Interval1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"PERID\\\"},{\\\"columnName\\\":\\\"fromDayTime\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"PERID\\\"},{\\\"columnName\\\":\\\"fromDayTime\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    }
+]""" .
+
+km-dev:TriplesMap_d4e7fb4b-0b90-4196-9490-3e16443ee5fb a rr:TriplesMap .
+
+_:node1aan631tvx1 km-dev:hasTriplesMap km-dev:TriplesMap_d4e7fb4b-0b90-4196-9490-3e16443ee5fb .
+
+km-dev:TriplesMap_d4e7fb4b-0b90-4196-9490-3e16443ee5fb km-dev:isPartOfMapping _:node1aan631tvx1 .
+
+_:node1aan631tvx2 rr:tableName "1231 BILLED 31 ATK MISREP.txt.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1aan631tvx1 .
+
+_:node1aan631tvx1 km-dev:hasLogicalTable _:node1aan631tvx2 .
+
+km-dev:TriplesMap_d4e7fb4b-0b90-4196-9490-3e16443ee5fb rr:logicalTable _:node1aan631tvx2 ;
+	rr:subjectMap _:node1aan631tvx3 .
+
+_:node1aan631tvx1 km-dev:hasSubjectMap _:node1aan631tvx3 .
+
+_:node1aan631tvx3 km-dev:isPartOfMapping _:node1aan631tvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Interval1" ;
+	rr:class scharp:Interval ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Interval1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_2be78182-c342-46d1-8a30-ab76166c8d78 rr:predicate scharp:NLT .
+
+_:node1aan631tvx4 rr:column "[\"_jsonRep\",\"ex:misrep\",\"PERID\",\"toDayTime\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aan631tvx1 .
+
+_:node1aan631tvx1 km-dev:hasObjectMap _:node1aan631tvx4 .
+
+km-dev:PredicateObjectMap_2be78182-c342-46d1-8a30-ab76166c8d78 rr:objectMap _:node1aan631tvx4 .
+
+km-dev:TriplesMap_d4e7fb4b-0b90-4196-9490-3e16443ee5fb rr:predicateObjectMap km-dev:PredicateObjectMap_2be78182-c342-46d1-8a30-ab76166c8d78 .
+
+km-dev:PredicateObjectMap_2be78182-c342-46d1-8a30-ab76166c8d78 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aan631tvx1 .
+
+_:node1aan631tvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2be78182-c342-46d1-8a30-ab76166c8d78 .
+
+km-dev:PredicateObjectMap_0788d19b-4479-4531-b320-edc4bd825689 rr:predicate scharp:NET .
+
+_:node1aan631tvx5 rr:column "[\"_jsonRep\",\"ex:misrep\",\"PERID\",\"fromDayTime\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aan631tvx1 .
+
+_:node1aan631tvx1 km-dev:hasObjectMap _:node1aan631tvx5 .
+
+km-dev:PredicateObjectMap_0788d19b-4479-4531-b320-edc4bd825689 rr:objectMap _:node1aan631tvx5 .
+
+km-dev:TriplesMap_d4e7fb4b-0b90-4196-9490-3e16443ee5fb rr:predicateObjectMap km-dev:PredicateObjectMap_0788d19b-4479-4531-b320-edc4bd825689 .
+
+km-dev:PredicateObjectMap_0788d19b-4479-4531-b320-edc4bd825689 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aan631tvx1 .
+
+_:node1aan631tvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0788d19b-4479-4531-b320-edc4bd825689 .

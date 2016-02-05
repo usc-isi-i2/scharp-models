@@ -1,0 +1,344 @@
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<http://scharp.usc.isi.edu/ontology/>  rdf:type owl:Ontology .
+
+
+#########################################################
+#
+# Classes
+#
+#########################################################
+
+scharp:AirMission rdf:type owl:Class ;
+	rdfs:label "AriMission"@en ;
+	rdfs:subClassOf scharp:Mission ;
+	rdfs:comment """The air mission."""
+	.
+
+scharp:AirMission rdf:type owl:Class ;
+	rdfs:label "AriMission"@en ;
+	rdfs:subClassOf scharp:Mission ;
+	rdfs:comment """The air mission."""
+	.
+	
+
+scharp:Target rdf:type owl:Class ;
+	rdfs:label "Target"@en ;
+	rdfs:comment """The target."""
+	.
+
+scharp:Point rdf:type owl:Class ;
+	rdfs:label "CoordinateLocation"@en ;
+	rdfs:comment """The location."""
+	.
+
+scharp:AirSortie rdf:type owl:Class ;
+	rdfs:label "AirSortie"@en ;
+	rdfs:comment """The air sortie."""
+	.
+
+scharp:SortieTarget rdf:type owl:Class ;
+	rdfs:label "SortieTarget"@en ;
+	rdfs:comment """The target."""
+	.
+
+scharp:Interval rdf:type owl:Class ;
+	rdfs:label "Interval"@en ;
+	rdfs:comment """The time on target interval."""
+	.
+
+scharp:Threat rdf:type owl:Class ;
+	rdfs:label "Threat"@en ;
+	rdfs:comment """The threat."""
+	.
+
+scharp:Damage rdf:type owl:Class ;
+	rdfs:label "Damage"@en ;
+	rdfs:comment """The Damage."""
+	.
+
+scharp:WeatherReport rdf:type owl:Class ;
+	rdfs:label "WeatherReport"@en ;
+	rdfs:comment """WeatherReport."""
+	.
+
+scharp:Sight rdf:type owl:Class ;
+	rdfs:label "Sight"@en ;
+	rdfs:comment """Sight."""
+	.
+
+scharp:Unit rdf:type owl:Class ;
+	rdfs:label "Unit"@en ;
+	rdfs:comment """Unit."""
+	.
+
+scharp:AirTrack rdf:type owl:Class ;
+	rdfs:label "AirTrack"@en ;
+	rdfs:subClassOf scharp:Track ;
+	rdfs:comment """The air track."""
+	.
+
+scharp:flightDetail rdf:type owl:Class ;
+	rdfs:label "flightDetail"@en ;
+	rdfs:comment """flightDetail."""
+	.
+
+#########################################################
+#
+# Object Properties
+#
+#########################################################
+
+
+scharp:produced rdf:type owl:ObjectProperty ; 
+	rdfs:label "produced"@en ;
+	rdfs:domain scharp:Threat ; 
+	rdfs:range scharp:Damage ;
+	rdfs:comment "Threat produced some damage." 
+	.
+
+scharp:timeOnTarget rdf:type owl:ObjectProperty ;
+	rdfs:label "TOT"@en ;
+	rdfs:domain scharp:SortieTarget ; 
+	rdfs:range scharp:Interval ;
+	rdfs:comment "The time over target." 
+	.
+
+scharp:timeFrame rdf:type owl:ObjectProperty ;
+	rdfs:label "TimeFrame"@en ;
+	rdfs:range scharp:Interval ;
+	rdfs:comment "Time frame" 
+	.
+
+scharp:detail rdf:type owl:ObjectProperty ;
+	rdfs:label "detail"@en ;
+	rdfs:domain scharp:Sortie ; 
+	rdfs:range scharp:flightDetail
+	.
+
+scharp:affected rdf:type owl:ObjectProperty ;
+	rdfs:label "affected"@en ;
+	rdfs:domain scharp:Damage ; 
+	rdfs:range scharp:AirMission ;
+	rdfs:comment "Damage affected the mission" 
+	.
+
+scharp:observedBy rdf:type owl:ObjectProperty ;
+	rdfs:label "observedBy"@en ;
+	rdfs:domain scharp:Threat ; 
+	rdfs:range scharp:AirMission ;
+	rdfs:comment "Threat observed by the mission" 
+	.	
+
+scharp:hasTGT rdf:type owl:ObjectProperty ;
+	rdfs:domain scharp:Sortie;
+	rdfs:label "hasTGT"@en ;
+	rdfs:comment "a sortie has target." 
+	.
+
+scharp:target rdf:type owl:ObjectProperty ;
+	rdfs:domain scharp:SortieTarget;
+	rdfs:label "target"@en ;
+	rdfs:comment "a sortie target is a target." 
+	.
+
+scharp:hasSortie rdf:type owl:ObjectProperty ;
+	rdfs:domain scharp:Mission;
+	rdfs:label "hasSortie"@en ;
+	rdfs:comment "a mission has sorties." 
+	.
+
+
+scharp:location rdf:type owl:ObjectProperty ;
+	rdfs:label "locatein"@en ;
+	rdfs:comment "The location information." 
+	.
+
+scharp:weather rdf:type owl:ObjectProperty ;
+	rdfs:label "weather"@en ;
+	rdfs:comment "weather report." 
+	.
+
+scharp:assign rdf:type owl:ObjectProperty ;
+	rdfs:label "assign"@en ;
+	.
+
+scharp:view rdf:type owl:ObjectProperty ;
+	rdfs:label "view"@en ;
+	rdfs:comment "The sight." 
+	.
+
+#########################################################
+#
+# Data Properties
+#
+#########################################################
+
+scharp:missionId rdf:type rdf:Property ;
+	rdfs:domain scharp:AirMission;
+	rdfs:label "MSNID"@en ;
+	rdfs:comment "mission id." 
+	.
+
+scharp:missionResult rdf:type rdf:Property ;
+	rdfs:domain scharp:AirMissionResult;
+	rdfs:label "MSNRESULT"@en ;
+	rdfs:comment "mission result." 
+	.
+
+
+scharp:targetId rdf:type rdf:Property ;
+	rdfs:domain scharp:Target;
+	rdfs:label "TGTID"@en ;
+	rdfs:comment "target id." 
+	.
+
+scharp:TargetName rdf:type rdf:Property ;
+	rdfs:domain scharp:Target;
+	rdfs:label "TGTNAME"@en ;
+	rdfs:comment "target name." 
+	.
+
+scharp:NET rdf:type rdf:Property ;
+	rdfs:label "NET"@en ;
+	rdfs:comment "The no eariler than time over target." 
+	.
+	
+scharp:NLT rdf:type rdf:Property ;
+	rdfs:label "NLT"@en ;
+	rdfs:comment "The no later than time over target." 
+	.
+
+scharp:start rdf:type rdf:Property ;
+	rdfs:label "NLT"@en ;
+	rdfs:comment "The mission start time." 
+	.
+
+scharp:stop rdf:type rdf:Property ;
+	rdfs:label "stop"@en ;
+	rdfs:comment "The mission stop time." 
+	.
+
+scharp:landing rdf:type rdf:Property ;
+	rdfs:label "landing"@en ;
+	rdfs:comment "The sortie landing time." 
+	.
+
+scharp:takeoff rdf:type rdf:Property ;
+	rdfs:label "takeoff"@en ;
+	rdfs:comment "The sortie take off time." 
+	.
+
+scharp:time rdf:type rdf:Property ;
+	rdfs:domain scharp:Point;
+	rdfs:label "time"@en ;
+	rdfs:comment "The time." 
+	.
+
+scharp:latitude rdf:type rdf:Property ;
+	rdfs:domain scharp:Point;
+	rdfs:label "LAT"@en ;
+	rdfs:comment "The latitude." 
+	.
+	
+scharp:longitude rdf:type rdf:Property ;
+	rdfs:domain scharp:Point;
+	rdfs:label "LONG"@en ;
+	rdfs:comment "The longitude." 
+	.
+
+scharp:altitute rdf:type rdf:Property ;
+	rdfs:domain scharp:Point;
+	rdfs:label "altitute"@en ;
+	rdfs:comment "The altitute." 
+	.
+	
+scharp:callsign rdf:type rdf:Property ;
+	rdfs:label "callsign"@en ;
+	rdfs:comment "call sign." 
+	.
+
+scharp:metThreat rdf:type rdf:Property ;
+	rdfs:label "MetThreat"@en ;
+	rdfs:comment "Met Threat." 
+	.
+
+scharp:threatId rdf:type rdf:Property ;
+	rdfs:label "threatID"@en ;
+	rdfs:comment "The threat id." 
+	.
+
+scharp:equipment rdf:type rdf:Property ;
+	rdfs:label "equipment"@en ;
+	rdfs:comment "The equipment." 
+	.
+
+
+scharp:unitsLost rdf:type rdf:Property ;
+	rdfs:label "unitLost"@en ;
+	rdfs:comment "The units lost." 
+	.
+
+scharp:actual rdf:type rdf:Property ;
+	rdfs:label "actual"@en ;
+	rdfs:domain scharp:Interval;
+	rdfs:comment "The actual time on target." 
+	.
+
+scharp:weatherCondition rdf:type rdf:Property ;
+	rdfs:label "weatherCondition"@en ;
+	rdfs:domain scharp:WeatherReport;
+	rdfs:comment "weather condition." 
+	.
+
+scharp:weatherRemark rdf:type rdf:Property ;
+	rdfs:label "weatherRemark"@en ;
+	rdfs:domain scharp:WeatherReport;
+	rdfs:comment "weather remark." 
+	.
+
+scharp:surfaceVisibility rdf:type rdf:Property ;
+	rdfs:label "surfaceVisibility"@en ;
+	rdfs:domain scharp:WeatherReport;
+	rdfs:comment "surface visibility." 
+	.
+
+scharp:lowCloudBaseHeight rdf:type rdf:Property ;
+	rdfs:label "lowCloudBaseHeight"@en ;
+	rdfs:domain scharp:WeatherReport
+	.
+
+scharp:lowCloudCover rdf:type rdf:Property ;
+	rdfs:label "lowCloudCover"@en ;
+	rdfs:domain scharp:WeatherReport
+	.
+
+scharp:type rdf:type rdf:Property ;
+	rdfs:label "type"@en ;
+	rdfs:comment "The type of something." 
+	.
+
+scharp:object rdf:type rdf:Property ;
+	rdfs:label "object"@en ;
+	rdfs:domain scharp:Sight;
+	rdfs:comment "The object of sight." 
+	.
+
+scharp:identity rdf:type rdf:Property ;
+	rdfs:label "identity"@en ;
+	rdfs:comment "The identity of unit." 
+	.
+
+scharp:track rdf:type rdf:Property ;
+	rdfs:label "trackNum"@en ;
+	rdfs:domain scharp:Track
+	.
+
+scharp:trackNum rdf:type rdf:Property ;
+	rdfs:label "trackNum"@en ;
+	rdfs:domain scharp:Track;
+	rdfs:comment "The track number." 
+	.

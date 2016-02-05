@@ -1,0 +1,10 @@
+
+karma/alignment-graph/*
+karma/models-autosave/*
+karma/models-graphviz/*
+karma/models-json/*
+karma/numeric-semantic-type-files/*
+karma/semantic-type-files/*
+karma/textual-semantic-type-files/*
+karma/user-uploaded-files/*
+karma/user-preferences/*

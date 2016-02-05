@@ -1,0 +1,763 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix dpla: <http://dp.la/about/map/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1aakk4r5fx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "ptt-msg4.json" ;
+	km-dev:modelPublicationTime "1454538648751"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"latitude\"}],[{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"voiceCallSign\"}],[{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"altitude\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"sortie_uri\"}],[{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"latitude\"}],[{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"voiceCallSign\"}],[{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"altitude\"}]]" ;
+	km-dev:hasModelLabel "ptt-msg4.json" ;
+	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [{
+                    \"visible\": true,
+                    \"children\": \"[{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"forceTell\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"forceTell\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"secondaryNetNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"secondaryNetNumber\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relativeAzimuthQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"relativeAzimuthQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"modeIICode\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"modeIICode\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"course\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"course\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"alternateVoiceChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"alternateVoiceChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"networkParticipationStatus\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"networkParticipationStatus\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"airPlatform\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"airPlatform\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceRelayingFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceRelayingFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"link4AInterpretable\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"link4AInterpretable\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"speed\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"speed\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"netNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"netNumber\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCommanderTrackNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCommanderTrackNumber\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"modeICode\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"modeICode\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"controlChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"controlChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"strength\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"strength\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"altitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"altitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"vCoordinate\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"vCoordinate\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"label\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"label\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"sublabel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sublabel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"controlRelayingFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"controlRelayingFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"bailout\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"bailout\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"timeQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"timeQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"link4AAddress\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"link4AAddress\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"latitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"latitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCorrelator\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCorrelator\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceCallSignInterpretable\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSignInterpretable\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relayFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"relayFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"flightLeader\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"flightLeader\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"modeIIICode\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"modeIIICode\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"emergency\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"emergency\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relativePositionQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"relativePositionQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"replyFunctionOperational\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"replyFunctionOperational\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"simulated\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"simulated\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"altitudeQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"altitudeQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceFrequencyOrChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceFrequencyOrChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"secondaryNpgActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"secondaryNpgActive\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceCallSign\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"airActivity\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"airActivity\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"c2Unit\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"c2Unit\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"betaAngle\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"betaAngle\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"xmlns\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"xmlns\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"geodeticPositionQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"geodeticPositionQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCommander\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCommander\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"longitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"longitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"uCoordinate\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"uCoordinate\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"exercise\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"exercise\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"wingmanId\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"wingmanId\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"flightLeaderTrackNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"flightLeaderTrackNumber\\\"}]}]\",
+                    \"hideable\": true,
+                    \"name\": \"J2_2_AirPpli\",
+                    \"id\": [{\"columnName\": \"J2_2_AirPpli\"}]
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [{
+                    \"visible\": true,
+                    \"children\": \"[{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"forceTell\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"forceTell\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"secondaryNetNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"secondaryNetNumber\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relativeAzimuthQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"relativeAzimuthQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"modeIICode\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"modeIICode\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"course\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"course\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"alternateVoiceChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"alternateVoiceChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"networkParticipationStatus\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"networkParticipationStatus\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"airPlatform\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"airPlatform\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceRelayingFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceRelayingFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"link4AInterpretable\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"link4AInterpretable\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"speed\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"speed\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"netNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"netNumber\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCommanderTrackNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCommanderTrackNumber\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"modeICode\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"modeICode\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"controlChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"controlChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"strength\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"strength\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"altitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"altitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"vCoordinate\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"vCoordinate\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"label\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"label\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"sublabel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sublabel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"controlRelayingFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"controlRelayingFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"bailout\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"bailout\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"timeQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"timeQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"link4AAddress\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"link4AAddress\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"latitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"latitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCorrelator\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCorrelator\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceCallSignInterpretable\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSignInterpretable\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relayFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"relayFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"flightLeader\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"flightLeader\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"modeIIICode\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"modeIIICode\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"emergency\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"emergency\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relativePositionQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"relativePositionQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"replyFunctionOperational\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"replyFunctionOperational\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"simulated\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"simulated\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"altitudeQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"altitudeQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceFrequencyOrChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceFrequencyOrChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"secondaryNpgActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"secondaryNpgActive\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceCallSign\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"airActivity\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"airActivity\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"c2Unit\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"c2Unit\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"betaAngle\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"betaAngle\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"xmlns\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"xmlns\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"geodeticPositionQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"geodeticPositionQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCommander\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCommander\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"longitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"longitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"uCoordinate\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"uCoordinate\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"exercise\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"exercise\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"wingmanId\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"wingmanId\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"flightLeaderTrackNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"flightLeaderTrackNumber\\\"}]}]\",
+                    \"hideable\": true,
+                    \"name\": \"J2_2_AirPpli\",
+                    \"id\": [{\"columnName\": \"J2_2_AirPpli\"}]
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"voiceCallSign\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"sortie_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"sortie/\\\"+getValue(\\\"voiceCallSign\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sortie_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [{
+                    \"visible\": true,
+                    \"children\": \"[{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"forceTell\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"forceTell\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"secondaryNetNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"secondaryNetNumber\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relativeAzimuthQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"relativeAzimuthQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"modeIICode\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"modeIICode\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"course\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"course\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"alternateVoiceChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"alternateVoiceChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"networkParticipationStatus\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"networkParticipationStatus\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"airPlatform\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"airPlatform\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceRelayingFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceRelayingFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"link4AInterpretable\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"link4AInterpretable\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"speed\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"speed\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"netNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"netNumber\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCommanderTrackNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCommanderTrackNumber\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"modeICode\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"modeICode\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"controlChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"controlChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"strength\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"strength\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"sortie_uri\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sortie_uri\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceCallSign\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"altitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"altitude\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"latitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"latitude\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"longitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"longitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"vCoordinate\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"vCoordinate\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"label\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"label\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"sublabel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sublabel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"controlRelayingFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"controlRelayingFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"bailout\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"bailout\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"timeQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"timeQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"link4AAddress\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"link4AAddress\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCorrelator\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCorrelator\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceCallSignInterpretable\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSignInterpretable\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relayFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"relayFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"flightLeader\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"flightLeader\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"modeIIICode\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"modeIIICode\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"emergency\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"emergency\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relativePositionQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"relativePositionQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"replyFunctionOperational\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"replyFunctionOperational\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"simulated\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"simulated\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"altitudeQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"altitudeQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceFrequencyOrChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceFrequencyOrChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"secondaryNpgActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"secondaryNpgActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"airActivity\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"airActivity\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"c2Unit\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"c2Unit\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"betaAngle\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"betaAngle\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"xmlns\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"xmlns\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"geodeticPositionQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"geodeticPositionQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCommander\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCommander\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"uCoordinate\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"uCoordinate\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"exercise\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"exercise\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"wingmanId\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"wingmanId\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"flightLeaderTrackNumber\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"flightLeaderTrackNumber\\\"}]}]\",
+                    \"hideable\": true,
+                    \"name\": \"J2_2_AirPpli\",
+                    \"id\": [{\"columnName\": \"J2_2_AirPpli\"}]
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"scharp\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"sortie_uri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirSortie\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirSortie\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:AirSortie1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sortie_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sortie_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"voiceCallSign\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirSortie\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/callsign\",
+                    \"DomainLabel\": \"scharp:AirSortie1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"altitude\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/altitute\",
+                    \"DomainLabel\": \"scharp:Point1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"altitude\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"altitude\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"latitude\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
+                    \"DomainLabel\": \"scharp:Point1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"latitude\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"latitude\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"longitude\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/longitude\",
+                    \"DomainLabel\": \"scharp:Point1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"longitude\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"longitude\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP6:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirSortie\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_e3478a4a-dc8c-4d20-8efb-81db19643062 a rr:TriplesMap .
+
+_:node1aakk4r5fx1 km-dev:hasTriplesMap km-dev:TriplesMap_e3478a4a-dc8c-4d20-8efb-81db19643062 .
+
+km-dev:TriplesMap_e3478a4a-dc8c-4d20-8efb-81db19643062 km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx2 rr:tableName "ptt-msg4.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasLogicalTable _:node1aakk4r5fx2 .
+
+km-dev:TriplesMap_e3478a4a-dc8c-4d20-8efb-81db19643062 rr:logicalTable _:node1aakk4r5fx2 ;
+	rr:subjectMap _:node1aakk4r5fx3 .
+
+_:node1aakk4r5fx1 km-dev:hasSubjectMap _:node1aakk4r5fx3 .
+
+_:node1aakk4r5fx3 km-dev:isPartOfMapping _:node1aakk4r5fx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirSortie1" ;
+	rr:class scharp:AirSortie ;
+	rr:template "sortie/{[\"J2_2_AirPpli\",\"voiceCallSign\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_759bc87e-c3bb-4a47-bf20-a9180b669632 rr:predicate scharp:location .
+
+km-dev:RefObjectMap_96392036-c7ad-47ef-95de-7e42c001428a a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_cdd82a17-7be9-4130-83b4-fc6ed844cd08 ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasObjectMap km-dev:RefObjectMap_96392036-c7ad-47ef-95de-7e42c001428a .
+
+km-dev:PredicateObjectMap_759bc87e-c3bb-4a47-bf20-a9180b669632 rr:objectMap km-dev:RefObjectMap_96392036-c7ad-47ef-95de-7e42c001428a .
+
+km-dev:TriplesMap_e3478a4a-dc8c-4d20-8efb-81db19643062 rr:predicateObjectMap km-dev:PredicateObjectMap_759bc87e-c3bb-4a47-bf20-a9180b669632 .
+
+km-dev:PredicateObjectMap_759bc87e-c3bb-4a47-bf20-a9180b669632 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_759bc87e-c3bb-4a47-bf20-a9180b669632 .
+
+km-dev:PredicateObjectMap_554c5737-b21e-4b26-bacb-ae67b6795279 rr:predicate scharp:callsign .
+
+_:node1aakk4r5fx4 rr:column "[\"J2_2_AirPpli\",\"voiceCallSign\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasObjectMap _:node1aakk4r5fx4 .
+
+km-dev:PredicateObjectMap_554c5737-b21e-4b26-bacb-ae67b6795279 rr:objectMap _:node1aakk4r5fx4 .
+
+km-dev:TriplesMap_e3478a4a-dc8c-4d20-8efb-81db19643062 rr:predicateObjectMap km-dev:PredicateObjectMap_554c5737-b21e-4b26-bacb-ae67b6795279 .
+
+km-dev:PredicateObjectMap_554c5737-b21e-4b26-bacb-ae67b6795279 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_554c5737-b21e-4b26-bacb-ae67b6795279 .
+
+km-dev:TriplesMap_cdd82a17-7be9-4130-83b4-fc6ed844cd08 a rr:TriplesMap .
+
+_:node1aakk4r5fx1 km-dev:hasTriplesMap km-dev:TriplesMap_cdd82a17-7be9-4130-83b4-fc6ed844cd08 .
+
+km-dev:TriplesMap_cdd82a17-7be9-4130-83b4-fc6ed844cd08 km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx5 rr:tableName "ptt-msg4.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasLogicalTable _:node1aakk4r5fx5 .
+
+km-dev:TriplesMap_cdd82a17-7be9-4130-83b4-fc6ed844cd08 rr:logicalTable _:node1aakk4r5fx5 ;
+	rr:subjectMap _:node1aakk4r5fx6 .
+
+_:node1aakk4r5fx1 km-dev:hasSubjectMap _:node1aakk4r5fx6 .
+
+_:node1aakk4r5fx6 km-dev:isPartOfMapping _:node1aakk4r5fx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
+	rr:class scharp:Point ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Point1" .
+
+km-dev:PredicateObjectMap_66ff9cb0-d51b-49e4-88e0-33860fd96b6d rr:predicate scharp:altitute .
+
+_:node1aakk4r5fx7 rr:column "[\"J2_2_AirPpli\",\"altitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasObjectMap _:node1aakk4r5fx7 .
+
+km-dev:PredicateObjectMap_66ff9cb0-d51b-49e4-88e0-33860fd96b6d rr:objectMap _:node1aakk4r5fx7 .
+
+km-dev:TriplesMap_cdd82a17-7be9-4130-83b4-fc6ed844cd08 rr:predicateObjectMap km-dev:PredicateObjectMap_66ff9cb0-d51b-49e4-88e0-33860fd96b6d .
+
+km-dev:PredicateObjectMap_66ff9cb0-d51b-49e4-88e0-33860fd96b6d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_66ff9cb0-d51b-49e4-88e0-33860fd96b6d .
+
+km-dev:PredicateObjectMap_fc230ddd-27a6-4766-a9d7-187bdd263af1 rr:predicate scharp:latitude .
+
+_:node1aakk4r5fx8 rr:column "[\"J2_2_AirPpli\",\"latitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasObjectMap _:node1aakk4r5fx8 .
+
+km-dev:PredicateObjectMap_fc230ddd-27a6-4766-a9d7-187bdd263af1 rr:objectMap _:node1aakk4r5fx8 .
+
+km-dev:TriplesMap_cdd82a17-7be9-4130-83b4-fc6ed844cd08 rr:predicateObjectMap km-dev:PredicateObjectMap_fc230ddd-27a6-4766-a9d7-187bdd263af1 .
+
+km-dev:PredicateObjectMap_fc230ddd-27a6-4766-a9d7-187bdd263af1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fc230ddd-27a6-4766-a9d7-187bdd263af1 .
+
+km-dev:PredicateObjectMap_d98f657c-3120-449c-8236-1dd68e572e48 rr:predicate scharp:longitude .
+
+_:node1aakk4r5fx9 rr:column "[\"J2_2_AirPpli\",\"longitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasObjectMap _:node1aakk4r5fx9 .
+
+km-dev:PredicateObjectMap_d98f657c-3120-449c-8236-1dd68e572e48 rr:objectMap _:node1aakk4r5fx9 .
+
+km-dev:TriplesMap_cdd82a17-7be9-4130-83b4-fc6ed844cd08 rr:predicateObjectMap km-dev:PredicateObjectMap_d98f657c-3120-449c-8236-1dd68e572e48 .
+
+km-dev:PredicateObjectMap_d98f657c-3120-449c-8236-1dd68e572e48 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aakk4r5fx1 .
+
+_:node1aakk4r5fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d98f657c-3120-449c-8236-1dd68e572e48 .

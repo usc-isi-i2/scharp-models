@@ -1,53 +1,48 @@
 {"@context": {
-    "weatherCondition": {"@id": "http://scharp.usc.isi.edu/ontology/weatherCondition"},
-    "result": {"@id": "http://schema.org/result"},
-    "surfaceVisibility": {"@id": "http://scharp.usc.isi.edu/ontology/surfaceVisibility"},
-    "location": {"@id": "http://schema.org/location"},
-    "recordedIn": {"@id": "http://schema.org/recordedIn"},
-    "freeText": {"@id": "http://scharp.usc.isi.edu/ontology/freeText"},
-    "object": {"@id": "http://schema.org/object"},
-    "type": {"@id": "http://scharp.usc.isi.edu/ontology/type"},
-    "missionNumber": {"@id": "http://scharp.usc.isi.edu/ontology/missionNumber"},
-    "startTime": {"@id": "http://schema.org/startTime"},
-    "ViewAction": {
-        "@type": "@id",
-        "@id": "http://schema.org/ViewAction"
-    },
-    "MissonEvent": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/MissonEvent"
-    },
-    "TargetEngageAction": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/TargetEngageAction"
-    },
-    "lowCloudBaseHeight": {"@id": "http://scharp.usc.isi.edu/ontology/lowCloudBaseHeight"},
-    "callSign": {"@id": "http://scharp.usc.isi.edu/ontology/callSign"},
-    "WeatherReport": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/WeatherReport"
-    },
-    "GeoCoordinates": {
-        "@type": "@id",
-        "@id": "http://schema.org/GeoCoordinates"
-    },
-    "action": {"@id": "http://schema.org/action"},
-    "longitude": {"@id": "http://schema.org/longitude"},
-    "lowCloudCover": {"@id": "http://scharp.usc.isi.edu/ontology/lowCloudCover"},
-    "Place": {
-        "@type": "@id",
-        "@id": "http://schema.org/Place"
-    },
-    "geo": {"@id": "http://schema.org/geo"},
-    "StatusReport": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/StatusReport"
-    },
+    "trackNum": {"@id": "http://scharp.usc.isi.edu/ontology/trackNum"},
+    "location": {"@id": "http://scharp.usc.isi.edu/ontology/location"},
     "a": "@type",
-    "hasPart": {"@id": "http://schema.org/hasPart"},
-    "requestNumber": {"@id": "http://scharp.usc.isi.edu/ontology/requestNumber"},
+    "trackQuality": {"@id": "http://scharp.usc.isi.edu/ontology/trackQuality"},
+    "track": {"@id": "http://scharp.usc.isi.edu/ontology/track"},
+    "AirTrack": {
+        "@type": "@id",
+        "@id": "http://scharp.usc.isi.edu/ontology/AirTrack"
+    },
+    "callsign": {"@id": "http://scharp.usc.isi.edu/ontology/callsign"},
     "uri": "@id",
-    "recordedAt": {"@id": "http://schema.org/recordedAt"},
-    "latitude": {"@id": "http://schema.org/latitude"},
-    "comment": {"@id": "http://schema.org/comment"}
+    "identity": {"@id": "http://scharp.usc.isi.edu/ontology/identity"},
+    "AirSortie": {
+        "@type": "@id",
+        "@id": "http://scharp.usc.isi.edu/ontology/AirSortie"
+    },
+    "altitute": {"@id": "http://scharp.usc.isi.edu/ontology/altitute"},
+    "longitude": {"@id": "http://scharp.usc.isi.edu/ontology/longitude"},
+    "latitude": {"@id": "http://scharp.usc.isi.edu/ontology/latitude"},
+    "Point": {
+        "@type": "@id",
+        "@id": "http://scharp.usc.isi.edu/ontology/Point"
+    },
+    "stop": {"@id": "http://scharp.usc.isi.edu/ontology/stop"},
+    "takeoff": {"@id": "http://scharp.usc.isi.edu/ontology/takeoff"},
+    "flightDetail": {
+        "@type": "@id",
+        "@id": "http://scharp.usc.isi.edu/ontology/flightDetail"
+    },
+    "detail": {"@id": "http://scharp.usc.isi.edu/ontology/detail"},
+    "Interval": {
+        "@type": "@id",
+        "@id": "http://scharp.usc.isi.edu/ontology/Interval"
+    },
+    "AirMission": {
+        "@type": "@id",
+        "@id": "http://scharp.usc.isi.edu/ontology/AirMission"
+    },
+    "type": {"@id": "http://scharp.usc.isi.edu/ontology/type"},
+    "timeFrame": {"@id": "http://scharp.usc.isi.edu/ontology/timeFrame"},
+    "missionId": {"@id": "http://scharp.usc.isi.edu/ontology/missionId"},
+    "hasSortie": {"@id": "http://scharp.usc.isi.edu/ontology/hasSortie"},
+    "landing": {"@id": "http://scharp.usc.isi.edu/ontology/landing"},
+    "start": {"@id": "http://scharp.usc.isi.edu/ontology/start"},
 }}
+
+   

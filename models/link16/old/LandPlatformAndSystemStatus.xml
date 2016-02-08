@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<J13_5_LandPlatformAndSystemStatus xmlns="com.raytheon.messages.link16.platformandsystemstatus">
+    <aTDL1Status>NO_STATEMENT</aTDL1Status>
+    <aquisitionRadarStatus>NO_STATEMENT</aquisitionRadarStatus>
+    <coldInventory>0</coldInventory>
+    <communicationsImpairment>NO_STATEMENT</communicationsImpairment>
+    <controlPositions>0</controlPositions>
+    <exercise>true</exercise>
+    <hotInventory>0</hotInventory>
+    <hour>0</hour>
+    <hour2>0</hour2>
+    <iJMSStatus>NO_STATEMENT</iJMSStatus>
+    <iffSifInterrogatorStatus>NO_STATEMENT</iffSifInterrogatorStatus>
+    <illumnatingRadarStatus>false</illumnatingRadarStatus>
+    <label>13</label>
+    <link11BStatus>NO_STATEMENT</link11BStatus>
+    <link11Status>NO_STATEMENT</link11Status>
+    <link14Status>NO_STATEMENT</link14Status>
+    <link16Status>NO_STATEMENT</link16Status>
+    <minute>0</minute>
+    <minute2>0</minute2>
+    <modeIVInterigatorStatus>false</modeIVInterigatorStatus>
+    <natoLink1Status>NO_STATEMENT</natoLink1Status>
+    <operationalCapability>FULLY_OPERATIONAL</operationalCapability>
+    <operationalImpairment>NO_STATEMENT</operationalImpairment>
+    <perimeterEngagementStatus>false</perimeterEngagementStatus>
+    <primarySurveillanceRadarStatus>NO_STATEMENT</primarySurveillanceRadarStatus>
+    <samModeState>NO_STATEMENT</samModeState>
+    <secondarySurveillanceRadarStatus>NO_STATEMENT</secondarySurveillanceRadarStatus>
+    <siteType>CRC</siteType>
+    <sublabel>5</sublabel>
+    <tertiarySurveillanceRadarStatus>NO_STATEMENT</tertiarySurveillanceRadarStatus>
+    <timeFunction>NO_STATEMENT</timeFunction>
+    <timeFunction2>NO_STATEMENT</timeFunction2>
+    <trackNumber>00017</trackNumber>
+</J13_5_LandPlatformAndSystemStatus>

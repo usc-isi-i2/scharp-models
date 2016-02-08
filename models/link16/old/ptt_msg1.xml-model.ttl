@@ -1,0 +1,652 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix dpla: <http://dp.la/about/map/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1aakkphtlx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "ptt_msg1.xml" ;
+	km-dev:modelPublicationTime "1454539327413"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"J2_5_LandPointPpli\"},{\"columnName\":\"voiceCallSign\"}],[{\"columnName\":\"J2_5_LandPointPpli\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"J2_5_LandPointPpli\"},{\"columnName\":\"latitude\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"J2_5_LandPointPpli\"},{\"columnName\":\"voiceCallSign\"}],[{\"columnName\":\"J2_5_LandPointPpli\"},{\"columnName\":\"unit_uri\"}],[{\"columnName\":\"J2_5_LandPointPpli\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"J2_5_LandPointPpli\"},{\"columnName\":\"latitude\"}]]" ;
+	km-dev:hasModelLabel "ptt_msg1.xml" ;
+	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [{
+                    \"visible\": true,
+                    \"children\": \"[{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceCallSign\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"strength\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"strength\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"landPlatform\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"landPlatform\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"latitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"latitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"controlChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"controlChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"emergency\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"emergency\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"exercise\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"exercise\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"c2Unit\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"c2Unit\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"speed\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"speed\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"sublabel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"sublabel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"xmlns\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"xmlns\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"landActivity\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"landActivity\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceRelayingFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceRelayingFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCorrelator\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"missionCorrelator\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"controlRelayingFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"controlRelayingFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"course\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"course\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"vCoordinate\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"vCoordinate\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"longitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"longitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"elevation\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"elevation\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"alternateVoiceChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"alternateVoiceChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"simulated\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"simulated\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"betaAngle\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"betaAngle\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"elevationQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"elevationQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"label\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"label\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relativePositionQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"relativePositionQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"geodeticPositionQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"geodeticPositionQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"forceTell\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"forceTell\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceFrequencyOrChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceFrequencyOrChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"replyFunctionOperational\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"replyFunctionOperational\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"timeQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"timeQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"positionInContinuation\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"positionInContinuation\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relayFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"relayFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceCallSignInterpretable\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSignInterpretable\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"networkParticipationStatus\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"networkParticipationStatus\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relativeAzimuthQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"relativeAzimuthQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"uCoordinate\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"uCoordinate\\\"}]}]\",
+                    \"hideable\": true,
+                    \"name\": \"J2_5_LandPointPpli\",
+                    \"id\": [{\"columnName\": \"J2_5_LandPointPpli\"}]
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_5_LandPointPpli\"},
+                    {\"columnName\": \"voiceCallSign\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"unit_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"unit/\\\"+getValue(\\\"voiceCallSign\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [{
+                    \"visible\": true,
+                    \"children\": \"[{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"unit_uri\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"unit_uri\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceCallSign\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"strength\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"strength\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"landPlatform\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"landPlatform\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"latitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"latitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"controlChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"controlChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"emergency\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"emergency\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"exercise\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"exercise\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"c2Unit\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"c2Unit\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"speed\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"speed\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"sublabel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"sublabel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"xmlns\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"xmlns\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"landActivity\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"landActivity\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceRelayingFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceRelayingFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"missionCorrelator\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"missionCorrelator\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"controlRelayingFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"controlRelayingFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"course\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"course\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"vCoordinate\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"vCoordinate\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":true,\\\"name\\\":\\\"longitude\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"longitude\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"elevation\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"elevation\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"alternateVoiceChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"alternateVoiceChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"simulated\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"simulated\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"betaAngle\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"betaAngle\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"elevationQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"elevationQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"label\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"label\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relativePositionQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"relativePositionQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"geodeticPositionQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"geodeticPositionQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"forceTell\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"forceTell\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceFrequencyOrChannel\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceFrequencyOrChannel\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"replyFunctionOperational\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"replyFunctionOperational\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"timeQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"timeQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"positionInContinuation\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"positionInContinuation\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relayFunctionActive\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"relayFunctionActive\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"voiceCallSignInterpretable\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSignInterpretable\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"networkParticipationStatus\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"networkParticipationStatus\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"relativeAzimuthQuality\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"relativeAzimuthQuality\\\"}]},{\\\"visible\\\":false,\\\"hideable\\\":true,\\\"name\\\":\\\"uCoordinate\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"uCoordinate\\\"}]}]\",
+                    \"hideable\": true,
+                    \"name\": \"J2_5_LandPointPpli\",
+                    \"id\": [{\"columnName\": \"J2_5_LandPointPpli\"}]
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"scharp\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_5_LandPointPpli\"},
+                    {\"columnName\": \"latitude\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
+                    \"DomainLabel\": \"scharp:Point1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"latitude\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"latitude\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_5_LandPointPpli\"},
+                    {\"columnName\": \"longitude\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/longitude\",
+                    \"DomainLabel\": \"scharp:Point1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"longitude\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"longitude\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_5_LandPointPpli\"},
+                    {\"columnName\": \"voiceCallSign\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Unit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Unit1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/callsign\",
+                    \"DomainLabel\": \"scharp:Unit1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"J2_5_LandPointPpli\"},
+                    {\"columnName\": \"unit_uri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Unit\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Unit1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Unit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Unit1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:Unit1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"J2_5_LandPointPpli\\\"},{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP7:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Unit1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Unit\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_f2ab4d02-cfde-4208-aab1-f8ea48f0940a a rr:TriplesMap .
+
+_:node1aakkphtlx1 km-dev:hasTriplesMap km-dev:TriplesMap_f2ab4d02-cfde-4208-aab1-f8ea48f0940a .
+
+km-dev:TriplesMap_f2ab4d02-cfde-4208-aab1-f8ea48f0940a km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx2 rr:tableName "ptt_msg1.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx1 km-dev:hasLogicalTable _:node1aakkphtlx2 .
+
+km-dev:TriplesMap_f2ab4d02-cfde-4208-aab1-f8ea48f0940a rr:logicalTable _:node1aakkphtlx2 ;
+	rr:subjectMap _:node1aakkphtlx3 .
+
+_:node1aakkphtlx1 km-dev:hasSubjectMap _:node1aakkphtlx3 .
+
+_:node1aakkphtlx3 km-dev:isPartOfMapping _:node1aakkphtlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Unit1" ;
+	rr:class scharp:Unit ;
+	rr:template "unit/{[\"J2_5_LandPointPpli\",\"voiceCallSign\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_e21959f0-3907-43ed-b5ca-bca586b5c62e rr:predicate scharp:location .
+
+km-dev:RefObjectMap_0040e8d8-2ff7-407e-89a1-58dddb69b264 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_ba12a7e5-32d2-470e-9123-0a1bbd8c137b ;
+	km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx1 km-dev:hasObjectMap km-dev:RefObjectMap_0040e8d8-2ff7-407e-89a1-58dddb69b264 .
+
+km-dev:PredicateObjectMap_e21959f0-3907-43ed-b5ca-bca586b5c62e rr:objectMap km-dev:RefObjectMap_0040e8d8-2ff7-407e-89a1-58dddb69b264 .
+
+km-dev:TriplesMap_f2ab4d02-cfde-4208-aab1-f8ea48f0940a rr:predicateObjectMap km-dev:PredicateObjectMap_e21959f0-3907-43ed-b5ca-bca586b5c62e .
+
+km-dev:PredicateObjectMap_e21959f0-3907-43ed-b5ca-bca586b5c62e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e21959f0-3907-43ed-b5ca-bca586b5c62e .
+
+km-dev:PredicateObjectMap_41fcdd17-7cca-4a9f-9b4b-0ac07bb5dc08 rr:predicate scharp:callsign .
+
+_:node1aakkphtlx4 rr:column "[\"J2_5_LandPointPpli\",\"voiceCallSign\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx1 km-dev:hasObjectMap _:node1aakkphtlx4 .
+
+km-dev:PredicateObjectMap_41fcdd17-7cca-4a9f-9b4b-0ac07bb5dc08 rr:objectMap _:node1aakkphtlx4 .
+
+km-dev:TriplesMap_f2ab4d02-cfde-4208-aab1-f8ea48f0940a rr:predicateObjectMap km-dev:PredicateObjectMap_41fcdd17-7cca-4a9f-9b4b-0ac07bb5dc08 .
+
+km-dev:PredicateObjectMap_41fcdd17-7cca-4a9f-9b4b-0ac07bb5dc08 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_41fcdd17-7cca-4a9f-9b4b-0ac07bb5dc08 .
+
+km-dev:TriplesMap_ba12a7e5-32d2-470e-9123-0a1bbd8c137b a rr:TriplesMap .
+
+_:node1aakkphtlx1 km-dev:hasTriplesMap km-dev:TriplesMap_ba12a7e5-32d2-470e-9123-0a1bbd8c137b .
+
+km-dev:TriplesMap_ba12a7e5-32d2-470e-9123-0a1bbd8c137b km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx5 rr:tableName "ptt_msg1.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx1 km-dev:hasLogicalTable _:node1aakkphtlx5 .
+
+km-dev:TriplesMap_ba12a7e5-32d2-470e-9123-0a1bbd8c137b rr:logicalTable _:node1aakkphtlx5 ;
+	rr:subjectMap _:node1aakkphtlx6 .
+
+_:node1aakkphtlx1 km-dev:hasSubjectMap _:node1aakkphtlx6 .
+
+_:node1aakkphtlx6 km-dev:isPartOfMapping _:node1aakkphtlx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
+	rr:class scharp:Point ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Point1" .
+
+km-dev:PredicateObjectMap_6b5d99bf-f722-4638-9c5b-954219ea9062 rr:predicate scharp:longitude .
+
+_:node1aakkphtlx7 rr:column "[\"J2_5_LandPointPpli\",\"longitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx1 km-dev:hasObjectMap _:node1aakkphtlx7 .
+
+km-dev:PredicateObjectMap_6b5d99bf-f722-4638-9c5b-954219ea9062 rr:objectMap _:node1aakkphtlx7 .
+
+km-dev:TriplesMap_ba12a7e5-32d2-470e-9123-0a1bbd8c137b rr:predicateObjectMap km-dev:PredicateObjectMap_6b5d99bf-f722-4638-9c5b-954219ea9062 .
+
+km-dev:PredicateObjectMap_6b5d99bf-f722-4638-9c5b-954219ea9062 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6b5d99bf-f722-4638-9c5b-954219ea9062 .
+
+km-dev:PredicateObjectMap_ad5fea76-ab00-40e1-a2e8-3b13fff598dc rr:predicate scharp:latitude .
+
+_:node1aakkphtlx8 rr:column "[\"J2_5_LandPointPpli\",\"latitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx1 km-dev:hasObjectMap _:node1aakkphtlx8 .
+
+km-dev:PredicateObjectMap_ad5fea76-ab00-40e1-a2e8-3b13fff598dc rr:objectMap _:node1aakkphtlx8 .
+
+km-dev:TriplesMap_ba12a7e5-32d2-470e-9123-0a1bbd8c137b rr:predicateObjectMap km-dev:PredicateObjectMap_ad5fea76-ab00-40e1-a2e8-3b13fff598dc .
+
+km-dev:PredicateObjectMap_ad5fea76-ab00-40e1-a2e8-3b13fff598dc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aakkphtlx1 .
+
+_:node1aakkphtlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ad5fea76-ab00-40e1-a2e8-3b13fff598dc .

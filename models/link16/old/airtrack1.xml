@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<J3_2_AirTrack xmlns="com.raytheon.messages.link16.surveillance">
+    <airActivity>NO_STATEMENT</airActivity>
+    <airPlatform>NO_STATEMENT</airPlatform>
+    <airSpecificType>NO_STATEMENT</airSpecificType>
+    <airSpecificTypeReported>false</airSpecificTypeReported>
+    <altitude>18450.0</altitude>
+    <altitudeSource>AUTOMATIC_AIRCRAFT_REPORT</altitudeSource>
+    <callSign>         </callSign>
+    <course>336.0</course>
+    <diveAngle>0.0</diveAngle>
+    <emergency>false</emergency>
+    <exercise>false</exercise>
+    <forceTell>false</forceTell>
+    <hour>0</hour>
+    <hundredths>0</hundredths>
+    <identity>HOSTILE</identity>
+    <identityAmplifyingDescriptor>UNDEFINED</identityAmplifyingDescriptor>
+    <identityConfidence>0</identityConfidence>
+    <identityDifference>false</identityDifference>
+    <iffDataFromPpli>NO_STATEMENT</iffDataFromPpli>
+    <label>3</label>
+    <latitude>32.4435162005579</latitude>
+    <longitude>-115.64669401488018</longitude>
+    <minute>0</minute>
+    <modeICode>0</modeICode>
+    <modeIICode>0</modeIICode>
+    <modeIIICode>0</modeIIICode>
+    <modeIVIndicator>NOT_INTERROGATED_OR_NO_STATEMENT</modeIVIndicator>
+    <seconds>0</seconds>
+    <simulated>true</simulated>
+    <sourceFromPpli>true</sourceFromPpli>
+    <specialInterest>false</specialInterest>
+    <specialProcessing>false</specialProcessing>
+    <speed>340.0</speed>
+    <strength>UNITS_4</strength>
+    <sublabel>2</sublabel>
+    <trackNumber>1H003</trackNumber>
+    <trackQuality>686.0</trackQuality>
+    <varianceXX>0</varianceXX>
+    <varianceXY>0</varianceXY>
+    <varianceXZ>0</varianceXZ>
+    <varianceYY>0</varianceYY>
+    <varianceYZ>0</varianceYZ>
+    <varianceZZ>0</varianceZZ>
+</J3_2_AirTrack>

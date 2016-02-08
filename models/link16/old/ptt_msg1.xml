@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<J2_5_LandPointPpli xmlns="com.raytheon.messages.link16.ppli">
+    <alternateVoiceChannel>false</alternateVoiceChannel>
+    <betaAngle>0</betaAngle>
+    <c2Unit>true</c2Unit>
+    <controlChannel>127</controlChannel>
+    <controlRelayingFunctionActive>false</controlRelayingFunctionActive>
+    <course>0.0</course>
+    <elevation>1375.0</elevation>
+    <elevationQuality>1130.0</elevationQuality>
+    <emergency>false</emergency>
+    <exercise>false</exercise>
+    <forceTell>false</forceTell>
+    <geodeticPositionQuality>18080.0</geodeticPositionQuality>
+    <label>2</label>
+    <landActivity>NO_STATEMENT</landActivity>
+    <landPlatform>COMMAND_CONTROL_COMMAND_AND_CONTROL_CENTER</landPlatform>
+    <latitude>33.7166628162057</latitude>
+    <longitude>-112.41695075237163</longitude>
+    <missionCorrelator>0</missionCorrelator>
+    <networkParticipationStatus>ACTIVE_NON_SPECIFIC</networkParticipationStatus>
+    <positionInContinuation>false</positionInContinuation>
+    <relativeAzimuthQuality>65.0</relativeAzimuthQuality>
+    <relativePositionQuality>18081.0</relativePositionQuality>
+    <relayFunctionActive>false</relayFunctionActive>
+    <replyFunctionOperational>false</replyFunctionOperational>
+    <simulated>true</simulated>
+    <speed>0.0</speed>
+    <strength>UNIT_1</strength>
+    <sublabel>5</sublabel>
+    <timeQuality>18081.0</timeQuality>
+    <uCoordinate>0</uCoordinate>
+    <vCoordinate>0</vCoordinate>
+    <voiceCallSign>712 </voiceCallSign>
+    <voiceCallSignInterpretable>true</voiceCallSignInterpretable>
+    <voiceFrequencyOrChannel>0</voiceFrequencyOrChannel>
+    <voiceRelayingFunctionActive>false</voiceRelayingFunctionActive>
+</J2_5_LandPointPpli>

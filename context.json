@@ -43,6 +43,11 @@
     "hasSortie": {"@id": "http://scharp.usc.isi.edu/ontology/hasSortie"},
     "landing": {"@id": "http://scharp.usc.isi.edu/ontology/landing"},
     "start": {"@id": "http://scharp.usc.isi.edu/ontology/start"},
+    "TargetName": {"@id": "http://scharp.usc.isi.edu/ontology/TargetName"},
+    "Target": {
+        "@type": "@id",
+        "@id": "http://scharp.usc.isi.edu/ontology/Target"
+    }
 }}
 
    

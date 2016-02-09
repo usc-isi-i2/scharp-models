@@ -12,6 +12,11 @@
 #
 #########################################################
 
+scharp:Message rdf:type owl:Class ;
+	rdfs:label "Message"@en ;
+	rdfs:comment """The Message."""
+	.
+
 scharp:AirMission rdf:type owl:Class ;
 	rdfs:label "AriMission"@en ;
 	rdfs:subClassOf scharp:Mission ;
@@ -96,6 +101,11 @@ scharp:flightDetail rdf:type owl:Class ;
 # Object Properties
 #
 #########################################################
+scharp:mention rdf:type owl:ObjectProperty ; 
+	rdfs:label "mention"@en ;
+	rdfs:domain scharp:Message ;
+	rdfs:comment "The object that the message mentioned." 
+	.
 
 
 scharp:produced rdf:type owl:ObjectProperty ; 
@@ -352,4 +362,9 @@ scharp:trackQuality rdf:type rdf:Property ;
 	rdfs:label "trackQuality"@en ;
 	rdfs:domain scharp:Track;
 	rdfs:comment "The track quality." 
+	.
+
+scharp:timeStamp rdf:type rdf:Property ;
+	rdfs:label "timeStamp"@en ;
+	rdfs:comment "The message time stamp." 
 	.

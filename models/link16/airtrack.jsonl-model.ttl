@@ -30,12 +30,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1ab15ephcx1 a km-dev:R2RMLMapping ;
+_:node1ab43ieu0x1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "airtrack.jsonl" ;
-	km-dev:modelPublicationTime "1454959453740"^^xsd:long ;
+	km-dev:modelPublicationTime "1455058140096"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"latitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"trackQuality\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"callSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"identity\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"altitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"trackNumber\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"latitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"sortie_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"trackQuality\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"track_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"callSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"identity\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"altitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"trackNumber\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"latitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"trackQuality\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"callSign\"}],[{\"columnName\":\"_jsonRep\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"identity\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"altitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"trackNumber\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"latitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"sortie_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"trackQuality\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"track_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"callSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"identity\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"altitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J3_2_AirTrack\"},{\"columnName\":\"trackNumber\"}]]" ;
 	km-dev:hasModelLabel "airtrack.jsonl" ;
 	km-dev:hasBaseURI "http://isi.usc.edu/scharp/" ;
 	km-dev:hasWorksheetHistory """[
@@ -543,6 +543,122 @@ _:node1ab15ephcx1 a km-dev:R2RMLMapping ;
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
                 \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_content_type\",
+                        \"id\": [{\"columnName\": \"_content_type\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airActivity\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airActivity\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airPlatform\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airPlatform\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airSpecificType\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airSpecificType\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airSpecificTypeReported\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airSpecificTypeReported\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"sortie_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sortie_uri\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"callSign\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"callSign\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"identity\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"identity\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"altitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"altitudeSource\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitudeSource\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"course\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"course\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"diveAngle\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"diveAngle\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"emergency\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"emergency\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"exercise\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"exercise\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"forceTell\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"forceTell\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hour\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hour\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hundredths\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hundredths\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"identityAmplifyingDescriptor\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"identityAmplifyingDescriptor\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"identityConfidence\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"identityConfidence\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"identityDifference\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"identityDifference\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"iffDataFromPpli\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"iffDataFromPpli\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"label\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"label\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"latitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"latitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"longitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"longitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"minute\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"minute\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIVIndicator\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIVIndicator\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"seconds\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"seconds\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"simulated\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"simulated\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"sourceFromPpli\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sourceFromPpli\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"specialInterest\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"specialInterest\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"specialProcessing\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"specialProcessing\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"speed\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"speed\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"strength\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"strength\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"sublabel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sublabel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"track_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"track_uri\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"trackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"trackNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"trackQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"trackQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"varianceXX\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"varianceXX\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"varianceXY\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"varianceXY\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"varianceXZ\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"varianceXZ\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"varianceYY\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"varianceYY\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"varianceYZ\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"varianceYZ\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"varianceZZ\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"varianceZZ\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J3_2_AirTrack\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"J3_2_AirTrack\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J3_2_AirTrack\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"_jsonRep\",
+                        \"id\": [{\"columnName\": \"_jsonRep\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_rawContent\",
+                        \"id\": [{\"columnName\": \"_rawContent\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"_timestamp\",
+                        \"id\": [{\"columnName\": \"_timestamp\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_url\",
+                        \"id\": [{\"columnName\": \"_url\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"_jsonRep\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"message_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"tracknum = eval(getValue(\\\"_jsonRep\\\"))[0][\\\"J3_2_AirTrack\\\"][0][\\\"trackNumber\\\"]\\n\\nreturn \\\"message/\\\"+uri_from_fields([tracknum,getValue(\\\"_timestamp\\\")])\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"message_uri\\\"}]}]\"
             }
         ],
         \"tags\": [\"Transformation\"]
@@ -1091,6 +1207,127 @@ _:node1ab15ephcx1 a km-dev:R2RMLMapping ;
         \"tags\": [\"SemanticType\"]
     },
     {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"message_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Message\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Message1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:Message1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"message_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"message_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"_timestamp\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/timeStamp\",
+                    \"DomainLabel\": \"scharp:Message1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
         \"commandName\": \"ChangeInternalNodeLinksCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
@@ -1185,229 +1422,334 @@ _:node1ab15ephcx1 a km-dev:R2RMLMapping ;
             }
         ],
         \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP37:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirTrack1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/mention\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/AirTrack\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
     }
 ]""" .
 
-km-dev:TriplesMap_e51bad0f-325a-4204-b1b3-0218a533ac83 a rr:TriplesMap .
+km-dev:TriplesMap_b6ad606f-8c7e-4660-8cad-b58448960181 a rr:TriplesMap .
 
-_:node1ab15ephcx1 km-dev:hasTriplesMap km-dev:TriplesMap_e51bad0f-325a-4204-b1b3-0218a533ac83 .
+_:node1ab43ieu0x1 km-dev:hasTriplesMap km-dev:TriplesMap_b6ad606f-8c7e-4660-8cad-b58448960181 .
 
-km-dev:TriplesMap_e51bad0f-325a-4204-b1b3-0218a533ac83 km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:TriplesMap_b6ad606f-8c7e-4660-8cad-b58448960181 km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx2 rr:tableName "airtrack.jsonl" ;
+_:node1ab43ieu0x2 rr:tableName "airtrack.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasLogicalTable _:node1ab15ephcx2 .
+_:node1ab43ieu0x1 km-dev:hasLogicalTable _:node1ab43ieu0x2 .
 
-km-dev:TriplesMap_e51bad0f-325a-4204-b1b3-0218a533ac83 rr:logicalTable _:node1ab15ephcx2 ;
-	rr:subjectMap _:node1ab15ephcx3 .
+km-dev:TriplesMap_b6ad606f-8c7e-4660-8cad-b58448960181 rr:logicalTable _:node1ab43ieu0x2 ;
+	rr:subjectMap _:node1ab43ieu0x3 .
 
-_:node1ab15ephcx1 km-dev:hasSubjectMap _:node1ab15ephcx3 .
+_:node1ab43ieu0x1 km-dev:hasSubjectMap _:node1ab43ieu0x3 .
 
-_:node1ab15ephcx3 km-dev:isPartOfMapping _:node1ab15ephcx1 ;
+_:node1ab43ieu0x3 km-dev:isPartOfMapping _:node1ab43ieu0x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirSortie1" ;
 	rr:class scharp:AirSortie ;
 	rr:template "sortie/{[\"_jsonRep\",\"J3_2_AirTrack\",\"callSign\"]}" .
 
-km-dev:PredicateObjectMap_5e094bdd-77eb-4f0e-8cb5-1b1d9d54bd76 rr:predicate scharp:location .
+km-dev:PredicateObjectMap_96d3178e-55b3-40e7-8ba9-a7cdc749662a rr:predicate scharp:location .
 
-km-dev:RefObjectMap_0154fc7e-78e9-489b-a579-3e66d900696d a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_9e176941-e9c5-414a-a20e-92ddcc710ee3 ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:RefObjectMap_df8da237-b06a-43f3-9b7d-790069fde04c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_cb931b8d-05e6-4ad3-b9b1-312a7323146d ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasObjectMap km-dev:RefObjectMap_0154fc7e-78e9-489b-a579-3e66d900696d .
+_:node1ab43ieu0x1 km-dev:hasObjectMap km-dev:RefObjectMap_df8da237-b06a-43f3-9b7d-790069fde04c .
 
-km-dev:PredicateObjectMap_5e094bdd-77eb-4f0e-8cb5-1b1d9d54bd76 rr:objectMap km-dev:RefObjectMap_0154fc7e-78e9-489b-a579-3e66d900696d .
+km-dev:PredicateObjectMap_96d3178e-55b3-40e7-8ba9-a7cdc749662a rr:objectMap km-dev:RefObjectMap_df8da237-b06a-43f3-9b7d-790069fde04c .
 
-km-dev:TriplesMap_e51bad0f-325a-4204-b1b3-0218a533ac83 rr:predicateObjectMap km-dev:PredicateObjectMap_5e094bdd-77eb-4f0e-8cb5-1b1d9d54bd76 .
+km-dev:TriplesMap_b6ad606f-8c7e-4660-8cad-b58448960181 rr:predicateObjectMap km-dev:PredicateObjectMap_96d3178e-55b3-40e7-8ba9-a7cdc749662a .
 
-km-dev:PredicateObjectMap_5e094bdd-77eb-4f0e-8cb5-1b1d9d54bd76 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:PredicateObjectMap_96d3178e-55b3-40e7-8ba9-a7cdc749662a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5e094bdd-77eb-4f0e-8cb5-1b1d9d54bd76 .
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_96d3178e-55b3-40e7-8ba9-a7cdc749662a .
 
-km-dev:PredicateObjectMap_446677b7-900e-42bd-b6c4-1e69143d86f3 rr:predicate scharp:callsign .
+km-dev:PredicateObjectMap_82cfc872-958f-40ad-bfaa-958644e649fb rr:predicate scharp:callsign .
 
-_:node1ab15ephcx4 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"callSign\"]" ;
+_:node1ab43ieu0x4 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"callSign\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasObjectMap _:node1ab15ephcx4 .
+_:node1ab43ieu0x1 km-dev:hasObjectMap _:node1ab43ieu0x4 .
 
-km-dev:PredicateObjectMap_446677b7-900e-42bd-b6c4-1e69143d86f3 rr:objectMap _:node1ab15ephcx4 .
+km-dev:PredicateObjectMap_82cfc872-958f-40ad-bfaa-958644e649fb rr:objectMap _:node1ab43ieu0x4 .
 
-km-dev:TriplesMap_e51bad0f-325a-4204-b1b3-0218a533ac83 rr:predicateObjectMap km-dev:PredicateObjectMap_446677b7-900e-42bd-b6c4-1e69143d86f3 .
+km-dev:TriplesMap_b6ad606f-8c7e-4660-8cad-b58448960181 rr:predicateObjectMap km-dev:PredicateObjectMap_82cfc872-958f-40ad-bfaa-958644e649fb .
 
-km-dev:PredicateObjectMap_446677b7-900e-42bd-b6c4-1e69143d86f3 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:PredicateObjectMap_82cfc872-958f-40ad-bfaa-958644e649fb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_446677b7-900e-42bd-b6c4-1e69143d86f3 .
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_82cfc872-958f-40ad-bfaa-958644e649fb .
 
-km-dev:PredicateObjectMap_5e22fe91-0150-45fc-9ca1-71083467b72f rr:predicate scharp:identity .
+km-dev:PredicateObjectMap_315435ff-4663-49d0-817e-9de5b3bd898a rr:predicate scharp:identity .
 
-_:node1ab15ephcx5 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"identity\"]" ;
+_:node1ab43ieu0x5 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"identity\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasObjectMap _:node1ab15ephcx5 .
+_:node1ab43ieu0x1 km-dev:hasObjectMap _:node1ab43ieu0x5 .
 
-km-dev:PredicateObjectMap_5e22fe91-0150-45fc-9ca1-71083467b72f rr:objectMap _:node1ab15ephcx5 .
+km-dev:PredicateObjectMap_315435ff-4663-49d0-817e-9de5b3bd898a rr:objectMap _:node1ab43ieu0x5 .
 
-km-dev:TriplesMap_e51bad0f-325a-4204-b1b3-0218a533ac83 rr:predicateObjectMap km-dev:PredicateObjectMap_5e22fe91-0150-45fc-9ca1-71083467b72f .
+km-dev:TriplesMap_b6ad606f-8c7e-4660-8cad-b58448960181 rr:predicateObjectMap km-dev:PredicateObjectMap_315435ff-4663-49d0-817e-9de5b3bd898a .
 
-km-dev:PredicateObjectMap_5e22fe91-0150-45fc-9ca1-71083467b72f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:PredicateObjectMap_315435ff-4663-49d0-817e-9de5b3bd898a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5e22fe91-0150-45fc-9ca1-71083467b72f .
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_315435ff-4663-49d0-817e-9de5b3bd898a .
 
-km-dev:TriplesMap_9e176941-e9c5-414a-a20e-92ddcc710ee3 a rr:TriplesMap .
+km-dev:TriplesMap_cb931b8d-05e6-4ad3-b9b1-312a7323146d a rr:TriplesMap .
 
-_:node1ab15ephcx1 km-dev:hasTriplesMap km-dev:TriplesMap_9e176941-e9c5-414a-a20e-92ddcc710ee3 .
+_:node1ab43ieu0x1 km-dev:hasTriplesMap km-dev:TriplesMap_cb931b8d-05e6-4ad3-b9b1-312a7323146d .
 
-km-dev:TriplesMap_9e176941-e9c5-414a-a20e-92ddcc710ee3 km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:TriplesMap_cb931b8d-05e6-4ad3-b9b1-312a7323146d km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx6 rr:tableName "airtrack.jsonl" ;
+_:node1ab43ieu0x6 rr:tableName "airtrack.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasLogicalTable _:node1ab15ephcx6 .
+_:node1ab43ieu0x1 km-dev:hasLogicalTable _:node1ab43ieu0x6 .
 
-km-dev:TriplesMap_9e176941-e9c5-414a-a20e-92ddcc710ee3 rr:logicalTable _:node1ab15ephcx6 ;
-	rr:subjectMap _:node1ab15ephcx7 .
+km-dev:TriplesMap_cb931b8d-05e6-4ad3-b9b1-312a7323146d rr:logicalTable _:node1ab43ieu0x6 ;
+	rr:subjectMap _:node1ab43ieu0x7 .
 
-_:node1ab15ephcx1 km-dev:hasSubjectMap _:node1ab15ephcx7 .
+_:node1ab43ieu0x1 km-dev:hasSubjectMap _:node1ab43ieu0x7 .
 
-_:node1ab15ephcx7 km-dev:isPartOfMapping _:node1ab15ephcx1 ;
+_:node1ab43ieu0x7 km-dev:isPartOfMapping _:node1ab43ieu0x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
 	rr:class scharp:Point ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Point1" .
 
-km-dev:PredicateObjectMap_4f25fdac-b5af-4681-8241-ced70c3ed97e rr:predicate scharp:latitude .
+km-dev:PredicateObjectMap_2cc32657-5dd9-4020-95e7-05931ce8c280 rr:predicate scharp:latitude .
 
-_:node1ab15ephcx8 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"latitude\"]" ;
+_:node1ab43ieu0x8 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"latitude\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasObjectMap _:node1ab15ephcx8 .
+_:node1ab43ieu0x1 km-dev:hasObjectMap _:node1ab43ieu0x8 .
 
-km-dev:PredicateObjectMap_4f25fdac-b5af-4681-8241-ced70c3ed97e rr:objectMap _:node1ab15ephcx8 .
+km-dev:PredicateObjectMap_2cc32657-5dd9-4020-95e7-05931ce8c280 rr:objectMap _:node1ab43ieu0x8 .
 
-km-dev:TriplesMap_9e176941-e9c5-414a-a20e-92ddcc710ee3 rr:predicateObjectMap km-dev:PredicateObjectMap_4f25fdac-b5af-4681-8241-ced70c3ed97e .
+km-dev:TriplesMap_cb931b8d-05e6-4ad3-b9b1-312a7323146d rr:predicateObjectMap km-dev:PredicateObjectMap_2cc32657-5dd9-4020-95e7-05931ce8c280 .
 
-km-dev:PredicateObjectMap_4f25fdac-b5af-4681-8241-ced70c3ed97e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:PredicateObjectMap_2cc32657-5dd9-4020-95e7-05931ce8c280 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4f25fdac-b5af-4681-8241-ced70c3ed97e .
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2cc32657-5dd9-4020-95e7-05931ce8c280 .
 
-km-dev:PredicateObjectMap_d731d424-4601-4ce6-9e71-9513969091c6 rr:predicate scharp:longitude .
+km-dev:PredicateObjectMap_0e959524-1868-4826-97e3-fb1c066303aa rr:predicate scharp:longitude .
 
-_:node1ab15ephcx9 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"longitude\"]" ;
+_:node1ab43ieu0x9 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"longitude\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasObjectMap _:node1ab15ephcx9 .
+_:node1ab43ieu0x1 km-dev:hasObjectMap _:node1ab43ieu0x9 .
 
-km-dev:PredicateObjectMap_d731d424-4601-4ce6-9e71-9513969091c6 rr:objectMap _:node1ab15ephcx9 .
+km-dev:PredicateObjectMap_0e959524-1868-4826-97e3-fb1c066303aa rr:objectMap _:node1ab43ieu0x9 .
 
-km-dev:TriplesMap_9e176941-e9c5-414a-a20e-92ddcc710ee3 rr:predicateObjectMap km-dev:PredicateObjectMap_d731d424-4601-4ce6-9e71-9513969091c6 .
+km-dev:TriplesMap_cb931b8d-05e6-4ad3-b9b1-312a7323146d rr:predicateObjectMap km-dev:PredicateObjectMap_0e959524-1868-4826-97e3-fb1c066303aa .
 
-km-dev:PredicateObjectMap_d731d424-4601-4ce6-9e71-9513969091c6 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:PredicateObjectMap_0e959524-1868-4826-97e3-fb1c066303aa a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d731d424-4601-4ce6-9e71-9513969091c6 .
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0e959524-1868-4826-97e3-fb1c066303aa .
 
-km-dev:PredicateObjectMap_496ac77d-817a-4849-a042-11d98bf4f483 rr:predicate scharp:altitute .
+km-dev:PredicateObjectMap_7c5ee026-c81e-4108-a5a4-c01c7f61d9ae rr:predicate scharp:altitute .
 
-_:node1ab15ephcx10 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"altitude\"]" ;
+_:node1ab43ieu0x10 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"altitude\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasObjectMap _:node1ab15ephcx10 .
+_:node1ab43ieu0x1 km-dev:hasObjectMap _:node1ab43ieu0x10 .
 
-km-dev:PredicateObjectMap_496ac77d-817a-4849-a042-11d98bf4f483 rr:objectMap _:node1ab15ephcx10 .
+km-dev:PredicateObjectMap_7c5ee026-c81e-4108-a5a4-c01c7f61d9ae rr:objectMap _:node1ab43ieu0x10 .
 
-km-dev:TriplesMap_9e176941-e9c5-414a-a20e-92ddcc710ee3 rr:predicateObjectMap km-dev:PredicateObjectMap_496ac77d-817a-4849-a042-11d98bf4f483 .
+km-dev:TriplesMap_cb931b8d-05e6-4ad3-b9b1-312a7323146d rr:predicateObjectMap km-dev:PredicateObjectMap_7c5ee026-c81e-4108-a5a4-c01c7f61d9ae .
 
-km-dev:PredicateObjectMap_496ac77d-817a-4849-a042-11d98bf4f483 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:PredicateObjectMap_7c5ee026-c81e-4108-a5a4-c01c7f61d9ae a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_496ac77d-817a-4849-a042-11d98bf4f483 .
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7c5ee026-c81e-4108-a5a4-c01c7f61d9ae .
 
-km-dev:TriplesMap_30f53407-d82f-4dc4-80b9-09ca50e573c7 a rr:TriplesMap .
+km-dev:TriplesMap_8e9d55ea-3113-475e-83a3-15445714347b a rr:TriplesMap .
 
-_:node1ab15ephcx1 km-dev:hasTriplesMap km-dev:TriplesMap_30f53407-d82f-4dc4-80b9-09ca50e573c7 .
+_:node1ab43ieu0x1 km-dev:hasTriplesMap km-dev:TriplesMap_8e9d55ea-3113-475e-83a3-15445714347b .
 
-km-dev:TriplesMap_30f53407-d82f-4dc4-80b9-09ca50e573c7 km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:TriplesMap_8e9d55ea-3113-475e-83a3-15445714347b km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx11 rr:tableName "airtrack.jsonl" ;
+_:node1ab43ieu0x11 rr:tableName "airtrack.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasLogicalTable _:node1ab15ephcx11 .
+_:node1ab43ieu0x1 km-dev:hasLogicalTable _:node1ab43ieu0x11 .
 
-km-dev:TriplesMap_30f53407-d82f-4dc4-80b9-09ca50e573c7 rr:logicalTable _:node1ab15ephcx11 ;
-	rr:subjectMap _:node1ab15ephcx12 .
+km-dev:TriplesMap_8e9d55ea-3113-475e-83a3-15445714347b rr:logicalTable _:node1ab43ieu0x11 ;
+	rr:subjectMap _:node1ab43ieu0x12 .
 
-_:node1ab15ephcx1 km-dev:hasSubjectMap _:node1ab15ephcx12 .
+_:node1ab43ieu0x1 km-dev:hasSubjectMap _:node1ab43ieu0x12 .
 
-_:node1ab15ephcx12 km-dev:isPartOfMapping _:node1ab15ephcx1 ;
+_:node1ab43ieu0x12 km-dev:isPartOfMapping _:node1ab43ieu0x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirTrack1" ;
 	rr:class scharp:AirTrack ;
-	rr:template "track/{[\"_jsonRep\",\"J3_2_AirTrack\",\"trackNumber\"]}" ;
+	rr:template "track/{[\"_jsonRep\",\"J3_2_AirTrack\",\"trackNumber\"]}" .
+
+km-dev:PredicateObjectMap_9632543b-517f-4aa7-9201-6d9cef50bb05 rr:predicate scharp:track .
+
+km-dev:RefObjectMap_74dd0dcc-627a-4786-9983-d5ef4f46ebd6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_b6ad606f-8c7e-4660-8cad-b58448960181 ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
+
+_:node1ab43ieu0x1 km-dev:hasObjectMap km-dev:RefObjectMap_74dd0dcc-627a-4786-9983-d5ef4f46ebd6 .
+
+km-dev:PredicateObjectMap_9632543b-517f-4aa7-9201-6d9cef50bb05 rr:objectMap km-dev:RefObjectMap_74dd0dcc-627a-4786-9983-d5ef4f46ebd6 .
+
+km-dev:TriplesMap_8e9d55ea-3113-475e-83a3-15445714347b rr:predicateObjectMap km-dev:PredicateObjectMap_9632543b-517f-4aa7-9201-6d9cef50bb05 .
+
+km-dev:PredicateObjectMap_9632543b-517f-4aa7-9201-6d9cef50bb05 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
+
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9632543b-517f-4aa7-9201-6d9cef50bb05 .
+
+km-dev:PredicateObjectMap_e54d59eb-4a5e-42c0-afff-5d862baef81b rr:predicate scharp:trackQuality .
+
+_:node1ab43ieu0x13 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"trackQuality\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
+
+_:node1ab43ieu0x1 km-dev:hasObjectMap _:node1ab43ieu0x13 .
+
+km-dev:PredicateObjectMap_e54d59eb-4a5e-42c0-afff-5d862baef81b rr:objectMap _:node1ab43ieu0x13 .
+
+km-dev:TriplesMap_8e9d55ea-3113-475e-83a3-15445714347b rr:predicateObjectMap km-dev:PredicateObjectMap_e54d59eb-4a5e-42c0-afff-5d862baef81b .
+
+km-dev:PredicateObjectMap_e54d59eb-4a5e-42c0-afff-5d862baef81b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
+
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e54d59eb-4a5e-42c0-afff-5d862baef81b .
+
+km-dev:PredicateObjectMap_5e087251-5634-4950-82b6-f79d97210c00 rr:predicate scharp:trackNum .
+
+_:node1ab43ieu0x14 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"trackNumber\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
+
+_:node1ab43ieu0x1 km-dev:hasObjectMap _:node1ab43ieu0x14 .
+
+km-dev:PredicateObjectMap_5e087251-5634-4950-82b6-f79d97210c00 rr:objectMap _:node1ab43ieu0x14 .
+
+km-dev:TriplesMap_8e9d55ea-3113-475e-83a3-15445714347b rr:predicateObjectMap km-dev:PredicateObjectMap_5e087251-5634-4950-82b6-f79d97210c00 .
+
+km-dev:PredicateObjectMap_5e087251-5634-4950-82b6-f79d97210c00 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
+
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5e087251-5634-4950-82b6-f79d97210c00 .
+
+km-dev:TriplesMap_77d42b20-99f6-4971-bbf3-3c5f0f948b3a a rr:TriplesMap .
+
+_:node1ab43ieu0x1 km-dev:hasTriplesMap km-dev:TriplesMap_77d42b20-99f6-4971-bbf3-3c5f0f948b3a .
+
+km-dev:TriplesMap_77d42b20-99f6-4971-bbf3-3c5f0f948b3a km-dev:isPartOfMapping _:node1ab43ieu0x1 .
+
+_:node1ab43ieu0x15 rr:tableName "airtrack.jsonl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
+
+_:node1ab43ieu0x1 km-dev:hasLogicalTable _:node1ab43ieu0x15 .
+
+km-dev:TriplesMap_77d42b20-99f6-4971-bbf3-3c5f0f948b3a rr:logicalTable _:node1ab43ieu0x15 ;
+	rr:subjectMap _:node1ab43ieu0x16 .
+
+_:node1ab43ieu0x1 km-dev:hasSubjectMap _:node1ab43ieu0x16 .
+
+_:node1ab43ieu0x16 km-dev:isPartOfMapping _:node1ab43ieu0x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Message1" ;
+	rr:class scharp:Message ;
+	rr:template "{message_uri}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_1adf2f18-9556-4496-a0b1-cd91db910e5e rr:predicate scharp:track .
+km-dev:PredicateObjectMap_d78e4196-b883-4014-88a5-5467d375518d rr:predicate scharp:mention .
 
-km-dev:RefObjectMap_5d35410e-e4ce-45b7-a81d-a97090c31d25 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_e51bad0f-325a-4204-b1b3-0218a533ac83 ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:RefObjectMap_cf9855d8-fb26-4fae-8d67-95f05ef77fef a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_8e9d55ea-3113-475e-83a3-15445714347b ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasObjectMap km-dev:RefObjectMap_5d35410e-e4ce-45b7-a81d-a97090c31d25 .
+_:node1ab43ieu0x1 km-dev:hasObjectMap km-dev:RefObjectMap_cf9855d8-fb26-4fae-8d67-95f05ef77fef .
 
-km-dev:PredicateObjectMap_1adf2f18-9556-4496-a0b1-cd91db910e5e rr:objectMap km-dev:RefObjectMap_5d35410e-e4ce-45b7-a81d-a97090c31d25 .
+km-dev:PredicateObjectMap_d78e4196-b883-4014-88a5-5467d375518d rr:objectMap km-dev:RefObjectMap_cf9855d8-fb26-4fae-8d67-95f05ef77fef .
 
-km-dev:TriplesMap_30f53407-d82f-4dc4-80b9-09ca50e573c7 rr:predicateObjectMap km-dev:PredicateObjectMap_1adf2f18-9556-4496-a0b1-cd91db910e5e .
+km-dev:TriplesMap_77d42b20-99f6-4971-bbf3-3c5f0f948b3a rr:predicateObjectMap km-dev:PredicateObjectMap_d78e4196-b883-4014-88a5-5467d375518d .
 
-km-dev:PredicateObjectMap_1adf2f18-9556-4496-a0b1-cd91db910e5e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:PredicateObjectMap_d78e4196-b883-4014-88a5-5467d375518d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1adf2f18-9556-4496-a0b1-cd91db910e5e .
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d78e4196-b883-4014-88a5-5467d375518d .
 
-km-dev:PredicateObjectMap_8a86e530-191c-4faa-b91b-88d689d943e5 rr:predicate scharp:trackQuality .
+km-dev:PredicateObjectMap_f1951408-ab97-41aa-98b6-f25cf44f1c4f rr:predicate scharp:timeStamp .
 
-_:node1ab15ephcx13 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"trackQuality\"]" ;
+_:node1ab43ieu0x17 rr:column "_timestamp" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasObjectMap _:node1ab15ephcx13 .
+_:node1ab43ieu0x1 km-dev:hasObjectMap _:node1ab43ieu0x17 .
 
-km-dev:PredicateObjectMap_8a86e530-191c-4faa-b91b-88d689d943e5 rr:objectMap _:node1ab15ephcx13 .
+km-dev:PredicateObjectMap_f1951408-ab97-41aa-98b6-f25cf44f1c4f rr:objectMap _:node1ab43ieu0x17 .
 
-km-dev:TriplesMap_30f53407-d82f-4dc4-80b9-09ca50e573c7 rr:predicateObjectMap km-dev:PredicateObjectMap_8a86e530-191c-4faa-b91b-88d689d943e5 .
+km-dev:TriplesMap_77d42b20-99f6-4971-bbf3-3c5f0f948b3a rr:predicateObjectMap km-dev:PredicateObjectMap_f1951408-ab97-41aa-98b6-f25cf44f1c4f .
 
-km-dev:PredicateObjectMap_8a86e530-191c-4faa-b91b-88d689d943e5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
+km-dev:PredicateObjectMap_f1951408-ab97-41aa-98b6-f25cf44f1c4f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab43ieu0x1 .
 
-_:node1ab15ephcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8a86e530-191c-4faa-b91b-88d689d943e5 .
-
-km-dev:PredicateObjectMap_6aeb7de7-6f77-470e-b6b8-d98af6fde9e2 rr:predicate scharp:trackNum .
-
-_:node1ab15ephcx14 rr:column "[\"_jsonRep\",\"J3_2_AirTrack\",\"trackNumber\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
-
-_:node1ab15ephcx1 km-dev:hasObjectMap _:node1ab15ephcx14 .
-
-km-dev:PredicateObjectMap_6aeb7de7-6f77-470e-b6b8-d98af6fde9e2 rr:objectMap _:node1ab15ephcx14 .
-
-km-dev:TriplesMap_30f53407-d82f-4dc4-80b9-09ca50e573c7 rr:predicateObjectMap km-dev:PredicateObjectMap_6aeb7de7-6f77-470e-b6b8-d98af6fde9e2 .
-
-km-dev:PredicateObjectMap_6aeb7de7-6f77-470e-b6b8-d98af6fde9e2 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ab15ephcx1 .
-
-_:node1ab15ephcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6aeb7de7-6f77-470e-b6b8-d98af6fde9e2 .
+_:node1ab43ieu0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f1951408-ab97-41aa-98b6-f25cf44f1c4f .

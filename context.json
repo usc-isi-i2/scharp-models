@@ -47,7 +47,8 @@
     "Target": {
         "@type": "@id",
         "@id": "http://scharp.usc.isi.edu/ontology/Target"
-    }
+    },
+    "targetId": {"@id": "http://scharp.usc.isi.edu/ontology/targetId"},
 }}
 
    

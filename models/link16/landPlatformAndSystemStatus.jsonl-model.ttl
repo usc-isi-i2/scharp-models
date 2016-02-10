@@ -1,0 +1,850 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix dpla: <http://dp.la/about/map/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1ab46aigox1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "landPlatformAndSystemStatus.jsonl" ;
+	km-dev:modelPublicationTime "1455061027352"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J13_5_LandPlatformAndSystemStatus\"},{\"columnName\":\"trackNumber\"}],[{\"columnName\":\"_timestamp\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J13_5_LandPlatformAndSystemStatus\"},{\"columnName\":\"trackNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J13_5_LandPlatformAndSystemStatus\"},{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J13_5_LandPlatformAndSystemStatus\"},{\"columnName\":\"track_uri\"}],[{\"columnName\":\"_timestamp\"}]]" ;
+	km-dev:hasModelLabel "landPlatformAndSystemStatus.jsonl" ;
+	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_content_type\",
+                        \"id\": [{\"columnName\": \"_content_type\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"aTDL1Status\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"aTDL1Status\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"aquisitionRadarStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"aquisitionRadarStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"coldInventory\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"coldInventory\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"communicationsImpairment\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"communicationsImpairment\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlPositions\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlPositions\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"exercise\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"exercise\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hotInventory\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hotInventory\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hour\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hour\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hour2\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hour2\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"iJMSStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"iJMSStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"iffSifInterrogatorStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"iffSifInterrogatorStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"illumnatingRadarStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"illumnatingRadarStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"label\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"label\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link11BStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link11BStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link11Status\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link11Status\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link14Status\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link14Status\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link16Status\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link16Status\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"minute\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"minute\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"minute2\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"minute2\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIVInterigatorStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIVInterigatorStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"natoLink1Status\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"natoLink1Status\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"operationalCapability\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"operationalCapability\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"operationalImpairment\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"operationalImpairment\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"perimeterEngagementStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"perimeterEngagementStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"primarySurveillanceRadarStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"primarySurveillanceRadarStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"samModeState\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"samModeState\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondarySurveillanceRadarStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondarySurveillanceRadarStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"siteType\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"siteType\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"sublabel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sublabel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"tertiarySurveillanceRadarStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"tertiarySurveillanceRadarStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"timeFunction\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"timeFunction\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"timeFunction2\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"timeFunction2\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"trackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"trackNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]}]\\\",\\\"hideable\\\":true,\\\"name\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"}]}]\",
+                        \"hideable\": true,
+                        \"name\": \"_jsonRep\",
+                        \"id\": [{\"columnName\": \"_jsonRep\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_rawContent\",
+                        \"id\": [{\"columnName\": \"_rawContent\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"_timestamp\",
+                        \"id\": [{\"columnName\": \"_timestamp\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_url\",
+                        \"id\": [{\"columnName\": \"_url\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J13_5_LandPlatformAndSystemStatus\"},
+                    {\"columnName\": \"trackNumber\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"track_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"track/\\\"+getValue(\\\"trackNumber\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"},{\\\"columnName\\\":\\\"trackNumber\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"},{\\\"columnName\\\":\\\"track_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J13_5_LandPlatformAndSystemStatus\"},
+                    {\"columnName\": \"trackNumber\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"message_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"message/\\\"+uri_from_fields([getValue(\\\"trackNumber\\\"),getValue(\\\"_timestamp\\\")])\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"},{\\\"columnName\\\":\\\"trackNumber\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"},{\\\"columnName\\\":\\\"message_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_content_type\",
+                        \"id\": [{\"columnName\": \"_content_type\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"aTDL1Status\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"aTDL1Status\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"aquisitionRadarStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"aquisitionRadarStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"coldInventory\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"coldInventory\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"communicationsImpairment\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"communicationsImpairment\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlPositions\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlPositions\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"exercise\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"exercise\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hotInventory\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hotInventory\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hour\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hour\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"hour2\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"hour2\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"iJMSStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"iJMSStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"iffSifInterrogatorStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"iffSifInterrogatorStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"illumnatingRadarStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"illumnatingRadarStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"label\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"label\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link11BStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link11BStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link11Status\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link11Status\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link14Status\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link14Status\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link16Status\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link16Status\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"minute\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"minute\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"minute2\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"minute2\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIVInterigatorStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIVInterigatorStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"natoLink1Status\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"natoLink1Status\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"operationalCapability\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"operationalCapability\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"operationalImpairment\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"operationalImpairment\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"perimeterEngagementStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"perimeterEngagementStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"primarySurveillanceRadarStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"primarySurveillanceRadarStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"samModeState\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"samModeState\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondarySurveillanceRadarStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondarySurveillanceRadarStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"siteType\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"siteType\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"sublabel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sublabel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"tertiarySurveillanceRadarStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"tertiarySurveillanceRadarStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"timeFunction\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"timeFunction\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"timeFunction2\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"timeFunction2\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"trackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"trackNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"track_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"track_uri\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"message_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"message_uri\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J13_5_LandPlatformAndSystemStatus\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"_jsonRep\",
+                        \"id\": [{\"columnName\": \"_jsonRep\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_rawContent\",
+                        \"id\": [{\"columnName\": \"_rawContent\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"_timestamp\",
+                        \"id\": [{\"columnName\": \"_timestamp\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_url\",
+                        \"id\": [{\"columnName\": \"_url\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"scharp\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J13_5_LandPlatformAndSystemStatus\"},
+                    {\"columnName\": \"track_uri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Track\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Track1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Track\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Track1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:Track1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"},{\\\"columnName\\\":\\\"track_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"},{\\\"columnName\\\":\\\"track_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J13_5_LandPlatformAndSystemStatus\"},
+                    {\"columnName\": \"trackNumber\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Track\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Track1\",
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/trackNum\",
+                    \"DomainLabel\": \"scharp:Track1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"},{\\\"columnName\\\":\\\"trackNumber\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"},{\\\"columnName\\\":\\\"trackNumber\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J13_5_LandPlatformAndSystemStatus\"},
+                    {\"columnName\": \"message_uri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Message\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Message1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:Message1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"},{\\\"columnName\\\":\\\"message_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J13_5_LandPlatformAndSystemStatus\\\"},{\\\"columnName\\\":\\\"message_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"_timestamp\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/timeStamp\",
+                    \"DomainLabel\": \"scharp:Message1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Track1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Track\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Track1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Track\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Track1\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Track1\"
+                }]
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP41:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP41:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Track1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/mention\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Track\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_4b23ceb6-2a66-4b52-85a1-42079ded7c8e a rr:TriplesMap .
+
+_:node1ab46aigox1 km-dev:hasTriplesMap km-dev:TriplesMap_4b23ceb6-2a66-4b52-85a1-42079ded7c8e .
+
+km-dev:TriplesMap_4b23ceb6-2a66-4b52-85a1-42079ded7c8e km-dev:isPartOfMapping _:node1ab46aigox1 .
+
+_:node1ab46aigox2 rr:tableName "landPlatformAndSystemStatus.jsonl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ab46aigox1 .
+
+_:node1ab46aigox1 km-dev:hasLogicalTable _:node1ab46aigox2 .
+
+km-dev:TriplesMap_4b23ceb6-2a66-4b52-85a1-42079ded7c8e rr:logicalTable _:node1ab46aigox2 ;
+	rr:subjectMap _:node1ab46aigox3 .
+
+_:node1ab46aigox1 km-dev:hasSubjectMap _:node1ab46aigox3 .
+
+_:node1ab46aigox3 km-dev:isPartOfMapping _:node1ab46aigox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Message1" ;
+	rr:class scharp:Message ;
+	rr:template "{[\"_jsonRep\",\"J13_5_LandPlatformAndSystemStatus\",\"message_uri\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_4739820f-f809-4647-ac30-f84afc74c439 rr:predicate scharp:mention .
+
+km-dev:RefObjectMap_4995d1f8-3d73-4524-b080-dbec5b0ed8e9 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0b28dbbd-3f3e-4417-9f76-9210385dbffa ;
+	km-dev:isPartOfMapping _:node1ab46aigox1 .
+
+_:node1ab46aigox1 km-dev:hasObjectMap km-dev:RefObjectMap_4995d1f8-3d73-4524-b080-dbec5b0ed8e9 .
+
+km-dev:PredicateObjectMap_4739820f-f809-4647-ac30-f84afc74c439 rr:objectMap km-dev:RefObjectMap_4995d1f8-3d73-4524-b080-dbec5b0ed8e9 .
+
+km-dev:TriplesMap_4b23ceb6-2a66-4b52-85a1-42079ded7c8e rr:predicateObjectMap km-dev:PredicateObjectMap_4739820f-f809-4647-ac30-f84afc74c439 .
+
+km-dev:PredicateObjectMap_4739820f-f809-4647-ac30-f84afc74c439 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab46aigox1 .
+
+_:node1ab46aigox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4739820f-f809-4647-ac30-f84afc74c439 .
+
+km-dev:PredicateObjectMap_c2ef4b99-6980-4837-939f-16639f7dd0af rr:predicate scharp:timeStamp .
+
+_:node1ab46aigox4 rr:column "_timestamp" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab46aigox1 .
+
+_:node1ab46aigox1 km-dev:hasObjectMap _:node1ab46aigox4 .
+
+km-dev:PredicateObjectMap_c2ef4b99-6980-4837-939f-16639f7dd0af rr:objectMap _:node1ab46aigox4 .
+
+km-dev:TriplesMap_4b23ceb6-2a66-4b52-85a1-42079ded7c8e rr:predicateObjectMap km-dev:PredicateObjectMap_c2ef4b99-6980-4837-939f-16639f7dd0af .
+
+km-dev:PredicateObjectMap_c2ef4b99-6980-4837-939f-16639f7dd0af a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab46aigox1 .
+
+_:node1ab46aigox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c2ef4b99-6980-4837-939f-16639f7dd0af .
+
+km-dev:TriplesMap_0b28dbbd-3f3e-4417-9f76-9210385dbffa a rr:TriplesMap .
+
+_:node1ab46aigox1 km-dev:hasTriplesMap km-dev:TriplesMap_0b28dbbd-3f3e-4417-9f76-9210385dbffa .
+
+km-dev:TriplesMap_0b28dbbd-3f3e-4417-9f76-9210385dbffa km-dev:isPartOfMapping _:node1ab46aigox1 .
+
+_:node1ab46aigox5 rr:tableName "landPlatformAndSystemStatus.jsonl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ab46aigox1 .
+
+_:node1ab46aigox1 km-dev:hasLogicalTable _:node1ab46aigox5 .
+
+km-dev:TriplesMap_0b28dbbd-3f3e-4417-9f76-9210385dbffa rr:logicalTable _:node1ab46aigox5 ;
+	rr:subjectMap _:node1ab46aigox6 .
+
+_:node1ab46aigox1 km-dev:hasSubjectMap _:node1ab46aigox6 .
+
+_:node1ab46aigox6 km-dev:isPartOfMapping _:node1ab46aigox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Track1" ;
+	rr:class scharp:Track ;
+	rr:template "track/{[\"_jsonRep\",\"J13_5_LandPlatformAndSystemStatus\",\"trackNumber\"]}" .
+
+km-dev:PredicateObjectMap_6b09bc44-17e7-4226-a3d2-da32bb3d3a09 rr:predicate scharp:trackNum .
+
+_:node1ab46aigox7 rr:column "[\"_jsonRep\",\"J13_5_LandPlatformAndSystemStatus\",\"trackNumber\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab46aigox1 .
+
+_:node1ab46aigox1 km-dev:hasObjectMap _:node1ab46aigox7 .
+
+km-dev:PredicateObjectMap_6b09bc44-17e7-4226-a3d2-da32bb3d3a09 rr:objectMap _:node1ab46aigox7 .
+
+km-dev:TriplesMap_0b28dbbd-3f3e-4417-9f76-9210385dbffa rr:predicateObjectMap km-dev:PredicateObjectMap_6b09bc44-17e7-4226-a3d2-da32bb3d3a09 .
+
+km-dev:PredicateObjectMap_6b09bc44-17e7-4226-a3d2-da32bb3d3a09 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab46aigox1 .
+
+_:node1ab46aigox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6b09bc44-17e7-4226-a3d2-da32bb3d3a09 .

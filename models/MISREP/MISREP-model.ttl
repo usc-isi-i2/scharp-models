@@ -1,0 +1,1702 @@
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix dpla: <http://dp.la/about/map/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1ab9bus3qx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "misrep.jsonl" ;
+	km-dev:modelPublicationTime "1455234707578"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOff\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"aircraftTypeAndModel\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"takeoffDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"MSNID\"},{\"columnName\":\"missionNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOn\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"specificAircraftCallSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"landingDayTime\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"MSNID\"},{\"columnName\":\"mission_uri\"}],[{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"landingDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOff\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"aircraftTypeAndModel\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"MSNID\"},{\"columnName\":\"missionNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"takeoffDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOn\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"specificAircraftCallSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"mission_num2\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"sortie_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"message_uri2\"}]]" ;
+	km-dev:hasModelLabel "misrep.jsonl" ;
+	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"MSNID\"},
+                    {\"columnName\": \"missionNumber\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"mission_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"mission/\\\"+getValue(\\\"missionNumber\\\")\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"MSNID\\\"},{\\\"columnName\\\":\\\"missionNumber\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"MSNID\\\"},{\\\"columnName\\\":\\\"mission_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"FLTDTAIL\"},
+                    {\"columnName\": \"specificAircraftCallSign\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"sortie_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"sortie/\\\"+getValue(\\\"specificAircraftCallSign\\\")\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"specificAircraftCallSign\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"sortie_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": true,
+                    \"prefix\": \"scharp\",
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"_jsonRep\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"message_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return 0\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"message_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"FLTDTAIL\"},
+                    {\"columnName\": \"aircraftTypeAndModel\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"mission_num2\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return getValueFromNestedColumnByIndex(\\\"Missions\\\", \\\"MSNID/missionNumber\\\", getRowIndex())\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"MSNID\\\"},{\\\"columnName\\\":\\\"missionNumber\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"mission_num2\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"FLTDTAIL\"},
+                    {\"columnName\": \"mission_num2\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"message_uri2\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"msnid = getValue(\\\"mission_num2\\\")\\nsortieid = getValue(\\\"specificAircraftCallSign\\\")\\n\\nreturn \\\"message/\\\"+uri_from_fields([msnid,sortieid,getValue(\\\"_timestamp\\\")])\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"specificAircraftCallSign\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"mission_num2\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"message_uri2\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"MissionTimeFrames\"},
+                    {\"columnName\": \"TIMESPEC\"},
+                    {\"columnName\": \"dayTimeOff\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [
+                    {
+                        \"isPrimary\": true,
+                        \"FullType\": \"http://scharp.usc.isi.edu/ontology/landing\",
+                        \"DomainLabel\": \"scharp:Interval1 (add)\",
+                        \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                        \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\"
+                    },
+                    {
+                        \"isPrimary\": false,
+                        \"FullType\": \"http://scharp.usc.isi.edu/ontology/stop\",
+                        \"DomainLabel\": \"scharp:Interval1 (add)\",
+                        \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                        \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\"
+                    }
+                ],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"MissionTimeFrames\\\"},{\\\"columnName\\\":\\\"TIMESPEC\\\"},{\\\"columnName\\\":\\\"dayTimeOff\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"MissionTimeFrames\\\"},{\\\"columnName\\\":\\\"TIMESPEC\\\"},{\\\"columnName\\\":\\\"dayTimeOff\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"MissionTimeFrames\"},
+                    {\"columnName\": \"TIMESPEC\"},
+                    {\"columnName\": \"dayTimeOn\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/start\",
+                    \"DomainLabel\": \"scharp:Interval1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"MissionTimeFrames\\\"},{\\\"columnName\\\":\\\"TIMESPEC\\\"},{\\\"columnName\\\":\\\"dayTimeOn\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"MissionTimeFrames\\\"},{\\\"columnName\\\":\\\"TIMESPEC\\\"},{\\\"columnName\\\":\\\"dayTimeOn\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"MSNID\"},
+                    {\"columnName\": \"missionNumber\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/missionId\",
+                    \"DomainLabel\": \"scharp:AirMission1 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"MSNID\\\"},{\\\"columnName\\\":\\\"missionNumber\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"MSNID\\\"},{\\\"columnName\\\":\\\"missionNumber\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"MSNID\"},
+                    {\"columnName\": \"mission_uri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirMission\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:AirMission1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"MSNID\\\"},{\\\"columnName\\\":\\\"mission_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"MSNID\\\"},{\\\"columnName\\\":\\\"mission_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"FLTDTAIL\"},
+                    {\"columnName\": \"landingDayTime\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/landing\",
+                    \"DomainLabel\": \"scharp:Interval2 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval2\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"landingDayTime\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"landingDayTime\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"FLTDTAIL\"},
+                    {\"columnName\": \"takeoffDayTime\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/takeoff\",
+                    \"DomainLabel\": \"scharp:Interval2\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval2\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"takeoffDayTime\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"takeoffDayTime\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"FLTDTAIL\"},
+                    {\"columnName\": \"aircraftTypeAndModel\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/type\",
+                    \"DomainLabel\": \"scharp:flightDetail1 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/flightDetail1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/flightDetail\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"aircraftTypeAndModel\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"aircraftTypeAndModel\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"FLTDTAIL\"},
+                    {\"columnName\": \"sortie_uri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirSortie\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:AirSortie1 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirSortie\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"sortie_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"sortie_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"FLTDTAIL\"},
+                    {\"columnName\": \"specificAircraftCallSign\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/callsign\",
+                    \"DomainLabel\": \"scharp:AirSortie1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirSortie\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"specificAircraftCallSign\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"specificAircraftCallSign\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"_timestamp\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/timeStamp\",
+                    \"DomainLabel\": \"scharp:Message1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ex:misrep\"},
+                    {\"columnName\": \"Missions\"},
+                    {\"columnName\": \"FLTDTAIL\"},
+                    {\"columnName\": \"message_uri2\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Message\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:Message1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"message_uri2\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"Missions\\\"},{\\\"columnName\\\":\\\"FLTDTAIL\\\"},{\\\"columnName\\\":\\\"message_uri2\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP6:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/timeFrame\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP6:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/timeFrame\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Interval2\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/flightDetail1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/flightDetail\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP6:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/flightDetail\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/detail\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/flightDetail1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirSortie\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP6:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/AirSortie\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/hasSortie\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP36:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/mention\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_2dc47c2e-3f96-464a-bd2d-98948ba5a425 a rr:TriplesMap .
+
+_:node1ab9bus3qx1 km-dev:hasTriplesMap km-dev:TriplesMap_2dc47c2e-3f96-464a-bd2d-98948ba5a425 .
+
+km-dev:TriplesMap_2dc47c2e-3f96-464a-bd2d-98948ba5a425 km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx2 rr:tableName "misrep.jsonl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasLogicalTable _:node1ab9bus3qx2 .
+
+km-dev:TriplesMap_2dc47c2e-3f96-464a-bd2d-98948ba5a425 rr:logicalTable _:node1ab9bus3qx2 ;
+	rr:subjectMap _:node1ab9bus3qx3 .
+
+_:node1ab9bus3qx1 km-dev:hasSubjectMap _:node1ab9bus3qx3 .
+
+_:node1ab9bus3qx3 km-dev:isPartOfMapping _:node1ab9bus3qx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirMission1" ;
+	rr:class scharp:AirMission ;
+	rr:template "mission/{[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"MSNID\",\"missionNumber\"]}" .
+
+km-dev:PredicateObjectMap_1d97a5c9-1be2-4f14-b505-cb86b1cd6721 rr:predicate scharp:hasSortie .
+
+km-dev:RefObjectMap_8d1fe93a-83c9-459b-983a-987e620a309e a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_3fe7aad2-e186-4dc8-afe0-ad96fa7519b0 ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap km-dev:RefObjectMap_8d1fe93a-83c9-459b-983a-987e620a309e .
+
+km-dev:PredicateObjectMap_1d97a5c9-1be2-4f14-b505-cb86b1cd6721 rr:objectMap km-dev:RefObjectMap_8d1fe93a-83c9-459b-983a-987e620a309e .
+
+km-dev:TriplesMap_2dc47c2e-3f96-464a-bd2d-98948ba5a425 rr:predicateObjectMap km-dev:PredicateObjectMap_1d97a5c9-1be2-4f14-b505-cb86b1cd6721 .
+
+km-dev:PredicateObjectMap_1d97a5c9-1be2-4f14-b505-cb86b1cd6721 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1d97a5c9-1be2-4f14-b505-cb86b1cd6721 .
+
+km-dev:PredicateObjectMap_71074eab-162a-4140-8c0d-1b6d1864c1d9 rr:predicate scharp:timeFrame .
+
+km-dev:RefObjectMap_da237b82-a8ce-4106-a203-0e670545b8df a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_13ca37d0-e2d5-43ec-8932-45df17ef800b ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap km-dev:RefObjectMap_da237b82-a8ce-4106-a203-0e670545b8df .
+
+km-dev:PredicateObjectMap_71074eab-162a-4140-8c0d-1b6d1864c1d9 rr:objectMap km-dev:RefObjectMap_da237b82-a8ce-4106-a203-0e670545b8df .
+
+km-dev:TriplesMap_2dc47c2e-3f96-464a-bd2d-98948ba5a425 rr:predicateObjectMap km-dev:PredicateObjectMap_71074eab-162a-4140-8c0d-1b6d1864c1d9 .
+
+km-dev:PredicateObjectMap_71074eab-162a-4140-8c0d-1b6d1864c1d9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_71074eab-162a-4140-8c0d-1b6d1864c1d9 .
+
+km-dev:PredicateObjectMap_8f313925-42fe-463d-bea5-eb036f75fd6d rr:predicate scharp:missionId .
+
+_:node1ab9bus3qx4 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"MSNID\",\"missionNumber\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap _:node1ab9bus3qx4 .
+
+km-dev:PredicateObjectMap_8f313925-42fe-463d-bea5-eb036f75fd6d rr:objectMap _:node1ab9bus3qx4 .
+
+km-dev:TriplesMap_2dc47c2e-3f96-464a-bd2d-98948ba5a425 rr:predicateObjectMap km-dev:PredicateObjectMap_8f313925-42fe-463d-bea5-eb036f75fd6d .
+
+km-dev:PredicateObjectMap_8f313925-42fe-463d-bea5-eb036f75fd6d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8f313925-42fe-463d-bea5-eb036f75fd6d .
+
+km-dev:TriplesMap_3fe7aad2-e186-4dc8-afe0-ad96fa7519b0 a rr:TriplesMap .
+
+_:node1ab9bus3qx1 km-dev:hasTriplesMap km-dev:TriplesMap_3fe7aad2-e186-4dc8-afe0-ad96fa7519b0 .
+
+km-dev:TriplesMap_3fe7aad2-e186-4dc8-afe0-ad96fa7519b0 km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx5 rr:tableName "misrep.jsonl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasLogicalTable _:node1ab9bus3qx5 .
+
+km-dev:TriplesMap_3fe7aad2-e186-4dc8-afe0-ad96fa7519b0 rr:logicalTable _:node1ab9bus3qx5 ;
+	rr:subjectMap _:node1ab9bus3qx6 .
+
+_:node1ab9bus3qx1 km-dev:hasSubjectMap _:node1ab9bus3qx6 .
+
+_:node1ab9bus3qx6 km-dev:isPartOfMapping _:node1ab9bus3qx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirSortie1" ;
+	rr:class scharp:AirSortie ;
+	rr:template "sortie/{[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"specificAircraftCallSign\"]}" .
+
+km-dev:PredicateObjectMap_e12c429d-ea9c-423d-b91e-5c80cf15a976 rr:predicate scharp:detail .
+
+km-dev:RefObjectMap_c66e5ab7-c0b4-4309-9e5b-9a2b529e3d80 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_32769d86-57f5-4d21-a0c8-f212f313ff59 ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap km-dev:RefObjectMap_c66e5ab7-c0b4-4309-9e5b-9a2b529e3d80 .
+
+km-dev:PredicateObjectMap_e12c429d-ea9c-423d-b91e-5c80cf15a976 rr:objectMap km-dev:RefObjectMap_c66e5ab7-c0b4-4309-9e5b-9a2b529e3d80 .
+
+km-dev:TriplesMap_3fe7aad2-e186-4dc8-afe0-ad96fa7519b0 rr:predicateObjectMap km-dev:PredicateObjectMap_e12c429d-ea9c-423d-b91e-5c80cf15a976 .
+
+km-dev:PredicateObjectMap_e12c429d-ea9c-423d-b91e-5c80cf15a976 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e12c429d-ea9c-423d-b91e-5c80cf15a976 .
+
+km-dev:PredicateObjectMap_4c13c1e5-3f92-4311-b694-391e2dc25eb8 rr:predicate scharp:callsign .
+
+_:node1ab9bus3qx7 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"specificAircraftCallSign\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap _:node1ab9bus3qx7 .
+
+km-dev:PredicateObjectMap_4c13c1e5-3f92-4311-b694-391e2dc25eb8 rr:objectMap _:node1ab9bus3qx7 .
+
+km-dev:TriplesMap_3fe7aad2-e186-4dc8-afe0-ad96fa7519b0 rr:predicateObjectMap km-dev:PredicateObjectMap_4c13c1e5-3f92-4311-b694-391e2dc25eb8 .
+
+km-dev:PredicateObjectMap_4c13c1e5-3f92-4311-b694-391e2dc25eb8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4c13c1e5-3f92-4311-b694-391e2dc25eb8 .
+
+km-dev:TriplesMap_13ca37d0-e2d5-43ec-8932-45df17ef800b a rr:TriplesMap .
+
+_:node1ab9bus3qx1 km-dev:hasTriplesMap km-dev:TriplesMap_13ca37d0-e2d5-43ec-8932-45df17ef800b .
+
+km-dev:TriplesMap_13ca37d0-e2d5-43ec-8932-45df17ef800b km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx8 rr:tableName "misrep.jsonl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasLogicalTable _:node1ab9bus3qx8 .
+
+km-dev:TriplesMap_13ca37d0-e2d5-43ec-8932-45df17ef800b rr:logicalTable _:node1ab9bus3qx8 ;
+	rr:subjectMap _:node1ab9bus3qx9 .
+
+_:node1ab9bus3qx1 km-dev:hasSubjectMap _:node1ab9bus3qx9 .
+
+_:node1ab9bus3qx9 km-dev:isPartOfMapping _:node1ab9bus3qx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Interval1" ;
+	rr:class scharp:Interval ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Interval1" .
+
+km-dev:PredicateObjectMap_c083bc2a-81b9-47d0-9b12-99da28bda2af rr:predicate scharp:stop .
+
+_:node1ab9bus3qx10 rr:column "[\"_jsonRep\",\"ex:misrep\",\"MissionTimeFrames\",\"TIMESPEC\",\"dayTimeOff\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap _:node1ab9bus3qx10 .
+
+km-dev:PredicateObjectMap_c083bc2a-81b9-47d0-9b12-99da28bda2af rr:objectMap _:node1ab9bus3qx10 .
+
+km-dev:TriplesMap_13ca37d0-e2d5-43ec-8932-45df17ef800b rr:predicateObjectMap km-dev:PredicateObjectMap_c083bc2a-81b9-47d0-9b12-99da28bda2af .
+
+km-dev:PredicateObjectMap_c083bc2a-81b9-47d0-9b12-99da28bda2af a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c083bc2a-81b9-47d0-9b12-99da28bda2af .
+
+km-dev:PredicateObjectMap_9f94fd68-e52c-4f94-935b-c56a0e4f5dc6 rr:predicate scharp:start .
+
+_:node1ab9bus3qx11 rr:column "[\"_jsonRep\",\"ex:misrep\",\"MissionTimeFrames\",\"TIMESPEC\",\"dayTimeOn\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap _:node1ab9bus3qx11 .
+
+km-dev:PredicateObjectMap_9f94fd68-e52c-4f94-935b-c56a0e4f5dc6 rr:objectMap _:node1ab9bus3qx11 .
+
+km-dev:TriplesMap_13ca37d0-e2d5-43ec-8932-45df17ef800b rr:predicateObjectMap km-dev:PredicateObjectMap_9f94fd68-e52c-4f94-935b-c56a0e4f5dc6 .
+
+km-dev:PredicateObjectMap_9f94fd68-e52c-4f94-935b-c56a0e4f5dc6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9f94fd68-e52c-4f94-935b-c56a0e4f5dc6 .
+
+km-dev:TriplesMap_32769d86-57f5-4d21-a0c8-f212f313ff59 a rr:TriplesMap .
+
+_:node1ab9bus3qx1 km-dev:hasTriplesMap km-dev:TriplesMap_32769d86-57f5-4d21-a0c8-f212f313ff59 .
+
+km-dev:TriplesMap_32769d86-57f5-4d21-a0c8-f212f313ff59 km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx12 rr:tableName "misrep.jsonl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasLogicalTable _:node1ab9bus3qx12 .
+
+km-dev:TriplesMap_32769d86-57f5-4d21-a0c8-f212f313ff59 rr:logicalTable _:node1ab9bus3qx12 ;
+	rr:subjectMap _:node1ab9bus3qx13 .
+
+_:node1ab9bus3qx1 km-dev:hasSubjectMap _:node1ab9bus3qx13 .
+
+_:node1ab9bus3qx13 km-dev:isPartOfMapping _:node1ab9bus3qx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/flightDetail1" ;
+	rr:class scharp:flightDetail ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:flightDetail1" .
+
+km-dev:PredicateObjectMap_1d35666f-b1df-4a8d-8969-eeaff5dd5dbe rr:predicate scharp:timeFrame .
+
+km-dev:RefObjectMap_a24fe29c-2f72-41ef-9f23-d8e8a4c04cee a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9f26bcb0-a7ac-46e5-a91a-eba5555dd924 ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap km-dev:RefObjectMap_a24fe29c-2f72-41ef-9f23-d8e8a4c04cee .
+
+km-dev:PredicateObjectMap_1d35666f-b1df-4a8d-8969-eeaff5dd5dbe rr:objectMap km-dev:RefObjectMap_a24fe29c-2f72-41ef-9f23-d8e8a4c04cee .
+
+km-dev:TriplesMap_32769d86-57f5-4d21-a0c8-f212f313ff59 rr:predicateObjectMap km-dev:PredicateObjectMap_1d35666f-b1df-4a8d-8969-eeaff5dd5dbe .
+
+km-dev:PredicateObjectMap_1d35666f-b1df-4a8d-8969-eeaff5dd5dbe a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1d35666f-b1df-4a8d-8969-eeaff5dd5dbe .
+
+km-dev:PredicateObjectMap_3351e965-be42-47d0-8eb1-42a6ce389d18 rr:predicate scharp:type .
+
+_:node1ab9bus3qx14 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"aircraftTypeAndModel\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap _:node1ab9bus3qx14 .
+
+km-dev:PredicateObjectMap_3351e965-be42-47d0-8eb1-42a6ce389d18 rr:objectMap _:node1ab9bus3qx14 .
+
+km-dev:TriplesMap_32769d86-57f5-4d21-a0c8-f212f313ff59 rr:predicateObjectMap km-dev:PredicateObjectMap_3351e965-be42-47d0-8eb1-42a6ce389d18 .
+
+km-dev:PredicateObjectMap_3351e965-be42-47d0-8eb1-42a6ce389d18 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3351e965-be42-47d0-8eb1-42a6ce389d18 .
+
+km-dev:TriplesMap_d2b4f7a8-23db-4853-bc3f-48a9ebb3f40e a rr:TriplesMap .
+
+_:node1ab9bus3qx1 km-dev:hasTriplesMap km-dev:TriplesMap_d2b4f7a8-23db-4853-bc3f-48a9ebb3f40e .
+
+km-dev:TriplesMap_d2b4f7a8-23db-4853-bc3f-48a9ebb3f40e km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx15 rr:tableName "misrep.jsonl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasLogicalTable _:node1ab9bus3qx15 .
+
+km-dev:TriplesMap_d2b4f7a8-23db-4853-bc3f-48a9ebb3f40e rr:logicalTable _:node1ab9bus3qx15 ;
+	rr:subjectMap _:node1ab9bus3qx16 .
+
+_:node1ab9bus3qx1 km-dev:hasSubjectMap _:node1ab9bus3qx16 .
+
+_:node1ab9bus3qx16 km-dev:isPartOfMapping _:node1ab9bus3qx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Message1" ;
+	rr:class scharp:Message ;
+	rr:template "{[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"message_uri2\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_2463e9dd-53fd-4ca4-8410-2bfaff2be644 rr:predicate scharp:mention .
+
+km-dev:RefObjectMap_d8dc3205-91ff-46bf-980c-63c75f585918 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_2dc47c2e-3f96-464a-bd2d-98948ba5a425 ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap km-dev:RefObjectMap_d8dc3205-91ff-46bf-980c-63c75f585918 .
+
+km-dev:PredicateObjectMap_2463e9dd-53fd-4ca4-8410-2bfaff2be644 rr:objectMap km-dev:RefObjectMap_d8dc3205-91ff-46bf-980c-63c75f585918 .
+
+km-dev:TriplesMap_d2b4f7a8-23db-4853-bc3f-48a9ebb3f40e rr:predicateObjectMap km-dev:PredicateObjectMap_2463e9dd-53fd-4ca4-8410-2bfaff2be644 .
+
+km-dev:PredicateObjectMap_2463e9dd-53fd-4ca4-8410-2bfaff2be644 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2463e9dd-53fd-4ca4-8410-2bfaff2be644 .
+
+km-dev:PredicateObjectMap_b2df66d0-484b-4b03-898f-985300d49901 rr:predicate scharp:timeStamp .
+
+_:node1ab9bus3qx17 rr:column "_timestamp" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap _:node1ab9bus3qx17 .
+
+km-dev:PredicateObjectMap_b2df66d0-484b-4b03-898f-985300d49901 rr:objectMap _:node1ab9bus3qx17 .
+
+km-dev:TriplesMap_d2b4f7a8-23db-4853-bc3f-48a9ebb3f40e rr:predicateObjectMap km-dev:PredicateObjectMap_b2df66d0-484b-4b03-898f-985300d49901 .
+
+km-dev:PredicateObjectMap_b2df66d0-484b-4b03-898f-985300d49901 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b2df66d0-484b-4b03-898f-985300d49901 .
+
+km-dev:TriplesMap_9f26bcb0-a7ac-46e5-a91a-eba5555dd924 a rr:TriplesMap .
+
+_:node1ab9bus3qx1 km-dev:hasTriplesMap km-dev:TriplesMap_9f26bcb0-a7ac-46e5-a91a-eba5555dd924 .
+
+km-dev:TriplesMap_9f26bcb0-a7ac-46e5-a91a-eba5555dd924 km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx18 rr:tableName "misrep.jsonl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasLogicalTable _:node1ab9bus3qx18 .
+
+km-dev:TriplesMap_9f26bcb0-a7ac-46e5-a91a-eba5555dd924 rr:logicalTable _:node1ab9bus3qx18 ;
+	rr:subjectMap _:node1ab9bus3qx19 .
+
+_:node1ab9bus3qx1 km-dev:hasSubjectMap _:node1ab9bus3qx19 .
+
+_:node1ab9bus3qx19 km-dev:isPartOfMapping _:node1ab9bus3qx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Interval2" ;
+	rr:class scharp:Interval ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Interval2" .
+
+km-dev:PredicateObjectMap_ef8dd088-6810-4623-b04a-c50e3df06207 rr:predicate scharp:takeoff .
+
+_:node1ab9bus3qx20 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"takeoffDayTime\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap _:node1ab9bus3qx20 .
+
+km-dev:PredicateObjectMap_ef8dd088-6810-4623-b04a-c50e3df06207 rr:objectMap _:node1ab9bus3qx20 .
+
+km-dev:TriplesMap_9f26bcb0-a7ac-46e5-a91a-eba5555dd924 rr:predicateObjectMap km-dev:PredicateObjectMap_ef8dd088-6810-4623-b04a-c50e3df06207 .
+
+km-dev:PredicateObjectMap_ef8dd088-6810-4623-b04a-c50e3df06207 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ef8dd088-6810-4623-b04a-c50e3df06207 .
+
+km-dev:PredicateObjectMap_02309236-3dbf-40c5-bfb1-aaf1b709a1e2 rr:predicate scharp:landing .
+
+_:node1ab9bus3qx21 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"landingDayTime\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasObjectMap _:node1ab9bus3qx21 .
+
+km-dev:PredicateObjectMap_02309236-3dbf-40c5-bfb1-aaf1b709a1e2 rr:objectMap _:node1ab9bus3qx21 .
+
+km-dev:TriplesMap_9f26bcb0-a7ac-46e5-a91a-eba5555dd924 rr:predicateObjectMap km-dev:PredicateObjectMap_02309236-3dbf-40c5-bfb1-aaf1b709a1e2 .
+
+km-dev:PredicateObjectMap_02309236-3dbf-40c5-bfb1-aaf1b709a1e2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ab9bus3qx1 .
+
+_:node1ab9bus3qx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_02309236-3dbf-40c5-bfb1-aaf1b709a1e2 .

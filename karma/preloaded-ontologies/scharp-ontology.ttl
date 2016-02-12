@@ -204,7 +204,7 @@ scharp:missionId rdf:type rdf:Property ;
 	.
 
 scharp:missionResult rdf:type rdf:Property ;
-	rdfs:domain scharp:AirMissionResult;
+	rdfs:domain scharp:Mission;
 	rdfs:label "MSNRESULT"@en ;
 	rdfs:comment "mission result." 
 	.

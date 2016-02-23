@@ -30,12 +30,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1abbphgb6x1 a km-dev:R2RMLMapping ;
+_:node1ac7qraffx1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "misrep.jsonl" ;
-	km-dev:modelPublicationTime "1455316058470"^^xsd:long ;
+	km-dev:modelPublicationTime "1456256952815"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"MSNID\"},{\"columnName\":\"missionNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"specificAircraftCallSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"takeoffDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOff\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOn\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"landingDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"RESULT\"},{\"columnName\":\"missionResults\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"aircraftTypeAndModel\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetIdentifier\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetLocation\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"positionDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetOrInstallationName\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"MSNID\"},{\"columnName\":\"mission_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"target_uri\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"MSNID\"},{\"columnName\":\"missionNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"specificAircraftCallSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"latitude_tgt\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"sortie_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"longitude_tgt\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"takeoffDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOff\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOn\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"landingDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"RESULT\"},{\"columnName\":\"missionResults\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"aircraftTypeAndModel\"}],[{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetIdentifier\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetLocation\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"positionDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetOrInstallationName\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"message_uri2\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"mission_num2\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"takeoffDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOff\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOn\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"landingDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"aircraftTypeAndModel\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"MSNID\"},{\"columnName\":\"missionNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"specificAircraftCallSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetIdentifier\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetLocation\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"positionDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetOrInstallationName\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"RESULT\"},{\"columnName\":\"missionResults\"}],[{\"columnName\":\"_timestamp\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"takeoffDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOff\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"target_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"MissionTimeFrames\"},{\"columnName\":\"TIMESPEC\"},{\"columnName\":\"dayTimeOn\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"landingDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"aircraftTypeAndModel\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"MSNID\"},{\"columnName\":\"missionNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"specificAircraftCallSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"latitude_tgt\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"longitude_tgt\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetIdentifier\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetLocation\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"positionDayTime\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"sortie_uri\"}],[{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"TGTPOS\"},{\"columnName\":\"targetOrInstallationName\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"EnemySurfaceTargets\"},{\"columnName\":\"RESULT\"},{\"columnName\":\"missionResults\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"MSNID\"},{\"columnName\":\"mission_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"mission_num2\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ex:misrep\"},{\"columnName\":\"Missions\"},{\"columnName\":\"FLTDTAIL\"},{\"columnName\":\"message_uri2\"}]]" ;
 	km-dev:hasModelLabel "misrep.jsonl" ;
 	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
 	km-dev:hasWorksheetHistory """[
@@ -490,7 +490,7 @@ _:node1abbphgb6x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"transformationCode\",
                 \"type\": \"other\",
-                \"value\": \"mid = re.search('[NS]',getValue(\\\"targetLocation\\\")).start()\\nsecond = float(getValue(\\\"targetLocation\\\")[:mid+1][:-1][-2:])\\nminute = float(getValue(\\\"targetLocation\\\")[:mid+1][:-1][-4:-2])\\ndegree = float(getValue(\\\"targetLocation\\\")[:mid+1][:-1][:-4])\\nif getValue(\\\"targetLocation\\\")[:mid+1][-1] == \\\"N\\\":\\n    return str(degree+minute/60+second/3600)\\nelse:\\n    return str(-degree-minute/60-second/3600)\"
+                \"value\": \"mid = splitLocation(getValue(\\\"targetLocation\\\"))\\ns = getValue(\\\"targetLocation\\\")[:mid]\\nl = getValue(\\\"targetLocation\\\")[mid]\\nreturn getLatitude(s,l)\"
             },
             {
                 \"name\": \"errorDefaultValue\",
@@ -548,7 +548,7 @@ _:node1abbphgb6x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"transformationCode\",
                 \"type\": \"other\",
-                \"value\": \"mid = re.search('[NS]',getValue(\\\"targetLocation\\\")).start()\\nsecond = float(getValue(\\\"targetLocation\\\")[mid+1:][:-1][-2:])\\nminute = float(getValue(\\\"targetLocation\\\")[mid+1:][:-1][-4:-2])\\ndegree = float(getValue(\\\"targetLocation\\\")[mid+1:][:-1][:-4])\\nif getValue(\\\"targetLocation\\\")[mid+1:][-1] == \\\"N\\\":\\n    return str(degree+minute/60+second/3600)\\nelse:\\n    return str(-degree-minute/60-second/3600)\"
+                \"value\": \"mid = splitLocation(getValue(\\\"targetLocation\\\"))\\ns = getValue(\\\"targetLocation\\\")[mid+1:-1]\\nl = getValue(\\\"targetLocation\\\")[-1]\\nreturn getLongitude(s,l)\"
             },
             {
                 \"name\": \"errorDefaultValue\",
@@ -627,76 +627,6 @@ _:node1abbphgb6x1 a km-dev:R2RMLMapping ;
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
                 \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"},{\\\"columnName\\\":\\\"EnemySurfaceTargets\\\"},{\\\"columnName\\\":\\\"TGTPOS\\\"},{\\\"columnName\\\":\\\"target_uri\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"Transformation\"]
-    },
-    {
-        \"commandName\": \"OrganizeColumnsCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"orderedColumns\",
-                \"type\": \"orderedColumns\",
-                \"value\": [
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_content_type\",
-                        \"id\": [{\"columnName\": \"_content_type\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"exerciseNickname\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"EXER\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"exerciseNickname\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"EXER\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"EXER\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"activityLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"activityLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"enemyActivityType\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"enemyActivityType\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionResults\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionResults\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ordnance_weaponType_airToSurface\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ordnance_weaponType_airToSurface\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"photoConfirmation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"photoConfirmation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"quantityOfOrdnanceExpended\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"quantityOfOrdnanceExpended\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"quantityOrPercentageDestroyedOrDamaged\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"quantityOrPercentageDestroyedOrDamaged\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"weaponImpactPoint\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"weaponImpactPoint\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"countryOfTheWorld\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"countryOfTheWorld\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"positionDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"positionDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetAreaDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetAreaDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetCourseOrDirectionOfMovement\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetCourseOrDirectionOfMovement\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetIdentifier\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetIdentifier\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"target_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"target_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"longitude_tgt\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"longitude_tgt\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"latitude_tgt\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"latitude_tgt\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetOrInstallationName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetOrInstallationName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetSpeed\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetSpeed\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"EnemySurfaceTargets\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"EnemySurfaceTargets\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"messageSerialNumber\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MSGID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"messageSerialNumber\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"messageTextFormatIdentifier\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MSGID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"messageTextFormatIdentifier\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"originator\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MSGID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"originator\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"MSGID\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"MSGID\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"dayTimeOff\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MissionTimeFrames\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TIMESPEC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"dayTimeOff\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"dayTimeOn\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MissionTimeFrames\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TIMESPEC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"dayTimeOn\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionDesignator\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MissionTimeFrames\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TIMESPEC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionDesignator\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"TIMESPEC\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MissionTimeFrames\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"TIMESPEC\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"MissionTimeFrames\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"MissionTimeFrames\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"aircraftTypeAndModel\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"aircraftTypeAndModel\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"mission_num2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"mission_num2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"message_uri2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"message_uri2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"controllingAgencyLocationCode\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"controllingAgencyLocationCode\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"countOfAircraftAlloted\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"countOfAircraftAlloted\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"departureLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"departureLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"landingDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"landingDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"recoveryBaseLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"recoveryBaseLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"specificAircraftCallSign\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"specificAircraftCallSign\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"sortie_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"sortie_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"takeoffDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"takeoffDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"unitSupported\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"unitSupported\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionNumber\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionNumber\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"mission_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"mission_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionType\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionType\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"requesting_taskingAuthority\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"requesting_taskingAuthority\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"serialNumber\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"serialNumber\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"unitIdentifier\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"UNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"unitIdentifier\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"UNID\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"UNID\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Missions\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Missions\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"asOfDayTime\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"PERID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"asOfDayTime\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"fromDayTime\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"PERID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"fromDayTime\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"toDayTime\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"PERID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"toDayTime\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"PERID\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"PERID\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns:ex\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns:ex\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"ex:misrep\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"}]}]\",
-                        \"hideable\": false,
-                        \"name\": \"_jsonRep\",
-                        \"id\": [{\"columnName\": \"_jsonRep\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"message_uri\",
-                        \"id\": [{\"columnName\": \"message_uri\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_rawContent\",
-                        \"id\": [{\"columnName\": \"_rawContent\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"_timestamp\",
-                        \"id\": [{\"columnName\": \"_timestamp\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_url\",
-                        \"id\": [{\"columnName\": \"_url\"}]
-                    }
-                ]
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
             }
         ],
         \"tags\": [\"Transformation\"]
@@ -801,6 +731,76 @@ _:node1abbphgb6x1 a km-dev:R2RMLMapping ;
                     \"hasPrefix\": false,
                     \"hasServiceProperties\": false
                 }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_content_type\",
+                        \"id\": [{\"columnName\": \"_content_type\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"exerciseNickname\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"EXER\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"exerciseNickname\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"EXER\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"EXER\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"activityLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"activityLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"enemyActivityType\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"enemyActivityType\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionResults\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionResults\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ordnance_weaponType_airToSurface\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ordnance_weaponType_airToSurface\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"photoConfirmation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"photoConfirmation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"quantityOfOrdnanceExpended\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"quantityOfOrdnanceExpended\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"quantityOrPercentageDestroyedOrDamaged\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"quantityOrPercentageDestroyedOrDamaged\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"weaponImpactPoint\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"weaponImpactPoint\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"RESULT\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"countryOfTheWorld\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"countryOfTheWorld\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"positionDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"positionDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetAreaDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetAreaDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetCourseOrDirectionOfMovement\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetCourseOrDirectionOfMovement\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetDescription\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetIdentifier\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetIdentifier\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"target_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"target_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"longitude_tgt\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"longitude_tgt\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"latitude_tgt\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"latitude_tgt\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetOrInstallationName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetOrInstallationName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetSpeed\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"targetSpeed\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"EnemySurfaceTargets\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"TGTPOS\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"EnemySurfaceTargets\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"EnemySurfaceTargets\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"messageSerialNumber\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MSGID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"messageSerialNumber\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"messageTextFormatIdentifier\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MSGID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"messageTextFormatIdentifier\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"originator\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MSGID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"originator\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"MSGID\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"MSGID\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"dayTimeOff\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MissionTimeFrames\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TIMESPEC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"dayTimeOff\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"dayTimeOn\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MissionTimeFrames\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TIMESPEC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"dayTimeOn\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionDesignator\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MissionTimeFrames\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"TIMESPEC\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionDesignator\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"TIMESPEC\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MissionTimeFrames\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"TIMESPEC\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"MissionTimeFrames\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"MissionTimeFrames\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"aircraftTypeAndModel\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"aircraftTypeAndModel\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"mission_num2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"mission_num2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"message_uri2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"message_uri2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"controllingAgencyLocationCode\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"controllingAgencyLocationCode\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"countOfAircraftAlloted\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"countOfAircraftAlloted\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"departureLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"departureLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"landingDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"landingDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"recoveryBaseLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"recoveryBaseLocation\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"specificAircraftCallSign\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"specificAircraftCallSign\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"sortie_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"sortie_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"takeoffDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"takeoffDayTime\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"unitSupported\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"unitSupported\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"FLTDTAIL\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionNumber\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionNumber\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"mission_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"mission_uri\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionType\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"missionType\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"requesting_taskingAuthority\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"requesting_taskingAuthority\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"serialNumber\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"serialNumber\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"MSNID\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":false,\\\\\\\\\\\\\\\"children\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"unitIdentifier\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"UNID\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"unitIdentifier\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"}]}]\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"UNID\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"Missions\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"UNID\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Missions\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Missions\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"children\\\\\\\":\\\\\\\"[{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"asOfDayTime\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"PERID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"asOfDayTime\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"fromDayTime\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"PERID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"fromDayTime\\\\\\\\\\\\\\\"}]},{\\\\\\\\\\\\\\\"visible\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"hideable\\\\\\\\\\\\\\\":true,\\\\\\\\\\\\\\\"name\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"toDayTime\\\\\\\\\\\\\\\",\\\\\\\\\\\\\\\"id\\\\\\\\\\\\\\\":[{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"_jsonRep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"ex:misrep\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"PERID\\\\\\\\\\\\\\\"},{\\\\\\\\\\\\\\\"columnName\\\\\\\\\\\\\\\":\\\\\\\\\\\\\\\"toDayTime\\\\\\\\\\\\\\\"}]}]\\\\\\\",\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"PERID\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"PERID\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns:ex\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"ex:misrep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns:ex\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"ex:misrep\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ex:misrep\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"_jsonRep\",
+                        \"id\": [{\"columnName\": \"_jsonRep\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"message_uri\",
+                        \"id\": [{\"columnName\": \"message_uri\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_rawContent\",
+                        \"id\": [{\"columnName\": \"_rawContent\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"_timestamp\",
+                        \"id\": [{\"columnName\": \"_timestamp\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_url\",
+                        \"id\": [{\"columnName\": \"_url\"}]
+                    }
+                ]
             },
             {
                 \"name\": \"inputColumns\",
@@ -2276,548 +2276,548 @@ _:node1abbphgb6x1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_12f70e8d-3527-4a31-b7ba-2caec5a43d7e a rr:TriplesMap .
+km-dev:TriplesMap_fb05327a-3b0d-47d7-9f42-c93b816bc8da a rr:TriplesMap .
 
-_:node1abbphgb6x1 km-dev:hasTriplesMap km-dev:TriplesMap_12f70e8d-3527-4a31-b7ba-2caec5a43d7e .
+_:node1ac7qraffx1 km-dev:hasTriplesMap km-dev:TriplesMap_fb05327a-3b0d-47d7-9f42-c93b816bc8da .
 
-km-dev:TriplesMap_12f70e8d-3527-4a31-b7ba-2caec5a43d7e km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:TriplesMap_fb05327a-3b0d-47d7-9f42-c93b816bc8da km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x2 rr:tableName "misrep.jsonl" ;
+_:node1ac7qraffx2 rr:tableName "misrep.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasLogicalTable _:node1abbphgb6x2 .
+_:node1ac7qraffx1 km-dev:hasLogicalTable _:node1ac7qraffx2 .
 
-km-dev:TriplesMap_12f70e8d-3527-4a31-b7ba-2caec5a43d7e rr:logicalTable _:node1abbphgb6x2 ;
-	rr:subjectMap _:node1abbphgb6x3 .
+km-dev:TriplesMap_fb05327a-3b0d-47d7-9f42-c93b816bc8da rr:logicalTable _:node1ac7qraffx2 ;
+	rr:subjectMap _:node1ac7qraffx3 .
 
-_:node1abbphgb6x1 km-dev:hasSubjectMap _:node1abbphgb6x3 .
+_:node1ac7qraffx1 km-dev:hasSubjectMap _:node1ac7qraffx3 .
 
-_:node1abbphgb6x3 km-dev:isPartOfMapping _:node1abbphgb6x1 ;
+_:node1ac7qraffx3 km-dev:isPartOfMapping _:node1ac7qraffx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirMission1" ;
 	rr:class scharp:AirMission ;
 	rr:template "mission/{[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"MSNID\",\"missionNumber\"]}" .
 
-km-dev:PredicateObjectMap_d1723ba0-c86d-4ff3-91e4-55aac2b1d473 rr:predicate scharp:hasSortie .
+km-dev:PredicateObjectMap_13439871-8d25-4894-a5e4-f31882342ad0 rr:predicate scharp:hasSortie .
 
-km-dev:RefObjectMap_f6e8edf0-6eac-43e9-9dc0-ce5dcb15e684 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_2a57bc44-cf1a-4785-b346-9b060380163b ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:RefObjectMap_9c720e57-a65a-4d68-8563-fb39c6320146 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_7236fb87-af8d-4e80-9875-6402ef56e3ac ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap km-dev:RefObjectMap_f6e8edf0-6eac-43e9-9dc0-ce5dcb15e684 .
+_:node1ac7qraffx1 km-dev:hasObjectMap km-dev:RefObjectMap_9c720e57-a65a-4d68-8563-fb39c6320146 .
 
-km-dev:PredicateObjectMap_d1723ba0-c86d-4ff3-91e4-55aac2b1d473 rr:objectMap km-dev:RefObjectMap_f6e8edf0-6eac-43e9-9dc0-ce5dcb15e684 .
+km-dev:PredicateObjectMap_13439871-8d25-4894-a5e4-f31882342ad0 rr:objectMap km-dev:RefObjectMap_9c720e57-a65a-4d68-8563-fb39c6320146 .
 
-km-dev:TriplesMap_12f70e8d-3527-4a31-b7ba-2caec5a43d7e rr:predicateObjectMap km-dev:PredicateObjectMap_d1723ba0-c86d-4ff3-91e4-55aac2b1d473 .
+km-dev:TriplesMap_fb05327a-3b0d-47d7-9f42-c93b816bc8da rr:predicateObjectMap km-dev:PredicateObjectMap_13439871-8d25-4894-a5e4-f31882342ad0 .
 
-km-dev:PredicateObjectMap_d1723ba0-c86d-4ff3-91e4-55aac2b1d473 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_13439871-8d25-4894-a5e4-f31882342ad0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d1723ba0-c86d-4ff3-91e4-55aac2b1d473 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_13439871-8d25-4894-a5e4-f31882342ad0 .
 
-km-dev:PredicateObjectMap_578b742d-07d6-469d-bc11-e6540bb65031 rr:predicate scharp:timeFrame .
+km-dev:PredicateObjectMap_6f6f8655-e7b1-4909-87cb-a101f1c4a60a rr:predicate scharp:timeFrame .
 
-km-dev:RefObjectMap_7c57deaf-b806-44f4-900d-18884c603347 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_05c61a48-164c-4e44-88e0-3c4fb515be69 ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:RefObjectMap_ab506afe-57d8-4a65-929f-47ca42455a4f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_721d4d80-954d-40a6-8e79-06904a7cf630 ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap km-dev:RefObjectMap_7c57deaf-b806-44f4-900d-18884c603347 .
+_:node1ac7qraffx1 km-dev:hasObjectMap km-dev:RefObjectMap_ab506afe-57d8-4a65-929f-47ca42455a4f .
 
-km-dev:PredicateObjectMap_578b742d-07d6-469d-bc11-e6540bb65031 rr:objectMap km-dev:RefObjectMap_7c57deaf-b806-44f4-900d-18884c603347 .
+km-dev:PredicateObjectMap_6f6f8655-e7b1-4909-87cb-a101f1c4a60a rr:objectMap km-dev:RefObjectMap_ab506afe-57d8-4a65-929f-47ca42455a4f .
 
-km-dev:TriplesMap_12f70e8d-3527-4a31-b7ba-2caec5a43d7e rr:predicateObjectMap km-dev:PredicateObjectMap_578b742d-07d6-469d-bc11-e6540bb65031 .
+km-dev:TriplesMap_fb05327a-3b0d-47d7-9f42-c93b816bc8da rr:predicateObjectMap km-dev:PredicateObjectMap_6f6f8655-e7b1-4909-87cb-a101f1c4a60a .
 
-km-dev:PredicateObjectMap_578b742d-07d6-469d-bc11-e6540bb65031 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_6f6f8655-e7b1-4909-87cb-a101f1c4a60a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_578b742d-07d6-469d-bc11-e6540bb65031 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6f6f8655-e7b1-4909-87cb-a101f1c4a60a .
 
-km-dev:PredicateObjectMap_272475e7-2322-4972-8448-d0eba23981b7 rr:predicate scharp:hasTGT .
+km-dev:PredicateObjectMap_c2719081-c649-4fab-99fe-b7a178afa893 rr:predicate scharp:hasTGT .
 
-km-dev:RefObjectMap_36ee7420-2346-425f-936c-64e727428ef9 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_7dd46907-43aa-43d4-84d4-ef5e59e6ed4f ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:RefObjectMap_42b41e91-7ba0-47d9-953d-a680e5c4b951 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_b9e925a8-db93-42d3-8413-5cee199ae985 ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap km-dev:RefObjectMap_36ee7420-2346-425f-936c-64e727428ef9 .
+_:node1ac7qraffx1 km-dev:hasObjectMap km-dev:RefObjectMap_42b41e91-7ba0-47d9-953d-a680e5c4b951 .
 
-km-dev:PredicateObjectMap_272475e7-2322-4972-8448-d0eba23981b7 rr:objectMap km-dev:RefObjectMap_36ee7420-2346-425f-936c-64e727428ef9 .
+km-dev:PredicateObjectMap_c2719081-c649-4fab-99fe-b7a178afa893 rr:objectMap km-dev:RefObjectMap_42b41e91-7ba0-47d9-953d-a680e5c4b951 .
 
-km-dev:TriplesMap_12f70e8d-3527-4a31-b7ba-2caec5a43d7e rr:predicateObjectMap km-dev:PredicateObjectMap_272475e7-2322-4972-8448-d0eba23981b7 .
+km-dev:TriplesMap_fb05327a-3b0d-47d7-9f42-c93b816bc8da rr:predicateObjectMap km-dev:PredicateObjectMap_c2719081-c649-4fab-99fe-b7a178afa893 .
 
-km-dev:PredicateObjectMap_272475e7-2322-4972-8448-d0eba23981b7 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_c2719081-c649-4fab-99fe-b7a178afa893 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_272475e7-2322-4972-8448-d0eba23981b7 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c2719081-c649-4fab-99fe-b7a178afa893 .
 
-km-dev:PredicateObjectMap_8eb2ff34-27b8-4183-9748-cc5ac4fac69b rr:predicate scharp:missionId .
+km-dev:PredicateObjectMap_0cfebd7b-c91d-4f10-bdcd-08e32e15075e rr:predicate scharp:missionId .
 
-_:node1abbphgb6x4 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"MSNID\",\"missionNumber\"]" ;
+_:node1ac7qraffx4 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"MSNID\",\"missionNumber\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x4 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx4 .
 
-km-dev:PredicateObjectMap_8eb2ff34-27b8-4183-9748-cc5ac4fac69b rr:objectMap _:node1abbphgb6x4 .
+km-dev:PredicateObjectMap_0cfebd7b-c91d-4f10-bdcd-08e32e15075e rr:objectMap _:node1ac7qraffx4 .
 
-km-dev:TriplesMap_12f70e8d-3527-4a31-b7ba-2caec5a43d7e rr:predicateObjectMap km-dev:PredicateObjectMap_8eb2ff34-27b8-4183-9748-cc5ac4fac69b .
+km-dev:TriplesMap_fb05327a-3b0d-47d7-9f42-c93b816bc8da rr:predicateObjectMap km-dev:PredicateObjectMap_0cfebd7b-c91d-4f10-bdcd-08e32e15075e .
 
-km-dev:PredicateObjectMap_8eb2ff34-27b8-4183-9748-cc5ac4fac69b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_0cfebd7b-c91d-4f10-bdcd-08e32e15075e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8eb2ff34-27b8-4183-9748-cc5ac4fac69b .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0cfebd7b-c91d-4f10-bdcd-08e32e15075e .
 
-km-dev:TriplesMap_2a57bc44-cf1a-4785-b346-9b060380163b a rr:TriplesMap .
+km-dev:TriplesMap_7236fb87-af8d-4e80-9875-6402ef56e3ac a rr:TriplesMap .
 
-_:node1abbphgb6x1 km-dev:hasTriplesMap km-dev:TriplesMap_2a57bc44-cf1a-4785-b346-9b060380163b .
+_:node1ac7qraffx1 km-dev:hasTriplesMap km-dev:TriplesMap_7236fb87-af8d-4e80-9875-6402ef56e3ac .
 
-km-dev:TriplesMap_2a57bc44-cf1a-4785-b346-9b060380163b km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:TriplesMap_7236fb87-af8d-4e80-9875-6402ef56e3ac km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x5 rr:tableName "misrep.jsonl" ;
+_:node1ac7qraffx5 rr:tableName "misrep.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasLogicalTable _:node1abbphgb6x5 .
+_:node1ac7qraffx1 km-dev:hasLogicalTable _:node1ac7qraffx5 .
 
-km-dev:TriplesMap_2a57bc44-cf1a-4785-b346-9b060380163b rr:logicalTable _:node1abbphgb6x5 ;
-	rr:subjectMap _:node1abbphgb6x6 .
+km-dev:TriplesMap_7236fb87-af8d-4e80-9875-6402ef56e3ac rr:logicalTable _:node1ac7qraffx5 ;
+	rr:subjectMap _:node1ac7qraffx6 .
 
-_:node1abbphgb6x1 km-dev:hasSubjectMap _:node1abbphgb6x6 .
+_:node1ac7qraffx1 km-dev:hasSubjectMap _:node1ac7qraffx6 .
 
-_:node1abbphgb6x6 km-dev:isPartOfMapping _:node1abbphgb6x1 ;
+_:node1ac7qraffx6 km-dev:isPartOfMapping _:node1ac7qraffx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirSortie1" ;
 	rr:class scharp:AirSortie ;
 	rr:template "sortie/{[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"specificAircraftCallSign\"]}" .
 
-km-dev:PredicateObjectMap_9914d41d-b70e-4646-89fc-c593f647bc25 rr:predicate scharp:detail .
+km-dev:PredicateObjectMap_5412603f-334e-4713-a4eb-a854d121e253 rr:predicate scharp:detail .
 
-km-dev:RefObjectMap_55ae657a-755c-40bc-bd51-e2986a589754 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_7669c9a6-1b26-469a-9be3-7a4302ff22fe ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:RefObjectMap_79343b0c-9458-42a1-9e7b-3f57e07dfd41 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_51766890-2437-4975-9b02-b291b638b294 ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap km-dev:RefObjectMap_55ae657a-755c-40bc-bd51-e2986a589754 .
+_:node1ac7qraffx1 km-dev:hasObjectMap km-dev:RefObjectMap_79343b0c-9458-42a1-9e7b-3f57e07dfd41 .
 
-km-dev:PredicateObjectMap_9914d41d-b70e-4646-89fc-c593f647bc25 rr:objectMap km-dev:RefObjectMap_55ae657a-755c-40bc-bd51-e2986a589754 .
+km-dev:PredicateObjectMap_5412603f-334e-4713-a4eb-a854d121e253 rr:objectMap km-dev:RefObjectMap_79343b0c-9458-42a1-9e7b-3f57e07dfd41 .
 
-km-dev:TriplesMap_2a57bc44-cf1a-4785-b346-9b060380163b rr:predicateObjectMap km-dev:PredicateObjectMap_9914d41d-b70e-4646-89fc-c593f647bc25 .
+km-dev:TriplesMap_7236fb87-af8d-4e80-9875-6402ef56e3ac rr:predicateObjectMap km-dev:PredicateObjectMap_5412603f-334e-4713-a4eb-a854d121e253 .
 
-km-dev:PredicateObjectMap_9914d41d-b70e-4646-89fc-c593f647bc25 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_5412603f-334e-4713-a4eb-a854d121e253 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9914d41d-b70e-4646-89fc-c593f647bc25 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5412603f-334e-4713-a4eb-a854d121e253 .
 
-km-dev:PredicateObjectMap_47aee3ee-5c9e-4f76-969e-511186bbcbf9 rr:predicate scharp:callsign .
+km-dev:PredicateObjectMap_692f0286-42e6-458a-b4e4-05bbe1ff2e42 rr:predicate scharp:callsign .
 
-_:node1abbphgb6x7 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"specificAircraftCallSign\"]" ;
+_:node1ac7qraffx7 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"specificAircraftCallSign\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x7 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx7 .
 
-km-dev:PredicateObjectMap_47aee3ee-5c9e-4f76-969e-511186bbcbf9 rr:objectMap _:node1abbphgb6x7 .
+km-dev:PredicateObjectMap_692f0286-42e6-458a-b4e4-05bbe1ff2e42 rr:objectMap _:node1ac7qraffx7 .
 
-km-dev:TriplesMap_2a57bc44-cf1a-4785-b346-9b060380163b rr:predicateObjectMap km-dev:PredicateObjectMap_47aee3ee-5c9e-4f76-969e-511186bbcbf9 .
+km-dev:TriplesMap_7236fb87-af8d-4e80-9875-6402ef56e3ac rr:predicateObjectMap km-dev:PredicateObjectMap_692f0286-42e6-458a-b4e4-05bbe1ff2e42 .
 
-km-dev:PredicateObjectMap_47aee3ee-5c9e-4f76-969e-511186bbcbf9 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_692f0286-42e6-458a-b4e4-05bbe1ff2e42 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_47aee3ee-5c9e-4f76-969e-511186bbcbf9 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_692f0286-42e6-458a-b4e4-05bbe1ff2e42 .
 
-km-dev:TriplesMap_05c61a48-164c-4e44-88e0-3c4fb515be69 a rr:TriplesMap .
+km-dev:TriplesMap_721d4d80-954d-40a6-8e79-06904a7cf630 a rr:TriplesMap .
 
-_:node1abbphgb6x1 km-dev:hasTriplesMap km-dev:TriplesMap_05c61a48-164c-4e44-88e0-3c4fb515be69 .
+_:node1ac7qraffx1 km-dev:hasTriplesMap km-dev:TriplesMap_721d4d80-954d-40a6-8e79-06904a7cf630 .
 
-km-dev:TriplesMap_05c61a48-164c-4e44-88e0-3c4fb515be69 km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:TriplesMap_721d4d80-954d-40a6-8e79-06904a7cf630 km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x8 rr:tableName "misrep.jsonl" ;
+_:node1ac7qraffx8 rr:tableName "misrep.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasLogicalTable _:node1abbphgb6x8 .
+_:node1ac7qraffx1 km-dev:hasLogicalTable _:node1ac7qraffx8 .
 
-km-dev:TriplesMap_05c61a48-164c-4e44-88e0-3c4fb515be69 rr:logicalTable _:node1abbphgb6x8 ;
-	rr:subjectMap _:node1abbphgb6x9 .
+km-dev:TriplesMap_721d4d80-954d-40a6-8e79-06904a7cf630 rr:logicalTable _:node1ac7qraffx8 ;
+	rr:subjectMap _:node1ac7qraffx9 .
 
-_:node1abbphgb6x1 km-dev:hasSubjectMap _:node1abbphgb6x9 .
+_:node1ac7qraffx1 km-dev:hasSubjectMap _:node1ac7qraffx9 .
 
-_:node1abbphgb6x9 km-dev:isPartOfMapping _:node1abbphgb6x1 ;
+_:node1ac7qraffx9 km-dev:isPartOfMapping _:node1ac7qraffx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Interval1" ;
 	rr:class scharp:Interval ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Interval1" .
 
-km-dev:PredicateObjectMap_1095a14e-c0e6-4ca0-ab03-74ba9b0fc0d7 rr:predicate scharp:stop .
+km-dev:PredicateObjectMap_904b67c9-a046-4bee-9bd5-a629ee331efc rr:predicate scharp:stop .
 
-_:node1abbphgb6x10 rr:column "[\"_jsonRep\",\"ex:misrep\",\"MissionTimeFrames\",\"TIMESPEC\",\"dayTimeOff\"]" ;
+_:node1ac7qraffx10 rr:column "[\"_jsonRep\",\"ex:misrep\",\"MissionTimeFrames\",\"TIMESPEC\",\"dayTimeOff\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x10 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx10 .
 
-km-dev:PredicateObjectMap_1095a14e-c0e6-4ca0-ab03-74ba9b0fc0d7 rr:objectMap _:node1abbphgb6x10 .
+km-dev:PredicateObjectMap_904b67c9-a046-4bee-9bd5-a629ee331efc rr:objectMap _:node1ac7qraffx10 .
 
-km-dev:TriplesMap_05c61a48-164c-4e44-88e0-3c4fb515be69 rr:predicateObjectMap km-dev:PredicateObjectMap_1095a14e-c0e6-4ca0-ab03-74ba9b0fc0d7 .
+km-dev:TriplesMap_721d4d80-954d-40a6-8e79-06904a7cf630 rr:predicateObjectMap km-dev:PredicateObjectMap_904b67c9-a046-4bee-9bd5-a629ee331efc .
 
-km-dev:PredicateObjectMap_1095a14e-c0e6-4ca0-ab03-74ba9b0fc0d7 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_904b67c9-a046-4bee-9bd5-a629ee331efc a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1095a14e-c0e6-4ca0-ab03-74ba9b0fc0d7 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_904b67c9-a046-4bee-9bd5-a629ee331efc .
 
-km-dev:PredicateObjectMap_113ffdf0-0adc-411c-8cdf-f3c229993a96 rr:predicate scharp:start .
+km-dev:PredicateObjectMap_68230860-ab86-4fe4-97eb-6872b597f629 rr:predicate scharp:start .
 
-_:node1abbphgb6x11 rr:column "[\"_jsonRep\",\"ex:misrep\",\"MissionTimeFrames\",\"TIMESPEC\",\"dayTimeOn\"]" ;
+_:node1ac7qraffx11 rr:column "[\"_jsonRep\",\"ex:misrep\",\"MissionTimeFrames\",\"TIMESPEC\",\"dayTimeOn\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x11 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx11 .
 
-km-dev:PredicateObjectMap_113ffdf0-0adc-411c-8cdf-f3c229993a96 rr:objectMap _:node1abbphgb6x11 .
+km-dev:PredicateObjectMap_68230860-ab86-4fe4-97eb-6872b597f629 rr:objectMap _:node1ac7qraffx11 .
 
-km-dev:TriplesMap_05c61a48-164c-4e44-88e0-3c4fb515be69 rr:predicateObjectMap km-dev:PredicateObjectMap_113ffdf0-0adc-411c-8cdf-f3c229993a96 .
+km-dev:TriplesMap_721d4d80-954d-40a6-8e79-06904a7cf630 rr:predicateObjectMap km-dev:PredicateObjectMap_68230860-ab86-4fe4-97eb-6872b597f629 .
 
-km-dev:PredicateObjectMap_113ffdf0-0adc-411c-8cdf-f3c229993a96 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_68230860-ab86-4fe4-97eb-6872b597f629 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_113ffdf0-0adc-411c-8cdf-f3c229993a96 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_68230860-ab86-4fe4-97eb-6872b597f629 .
 
-km-dev:TriplesMap_7dd46907-43aa-43d4-84d4-ef5e59e6ed4f a rr:TriplesMap .
+km-dev:TriplesMap_b9e925a8-db93-42d3-8413-5cee199ae985 a rr:TriplesMap .
 
-_:node1abbphgb6x1 km-dev:hasTriplesMap km-dev:TriplesMap_7dd46907-43aa-43d4-84d4-ef5e59e6ed4f .
+_:node1ac7qraffx1 km-dev:hasTriplesMap km-dev:TriplesMap_b9e925a8-db93-42d3-8413-5cee199ae985 .
 
-km-dev:TriplesMap_7dd46907-43aa-43d4-84d4-ef5e59e6ed4f km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:TriplesMap_b9e925a8-db93-42d3-8413-5cee199ae985 km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x12 rr:tableName "misrep.jsonl" ;
+_:node1ac7qraffx12 rr:tableName "misrep.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasLogicalTable _:node1abbphgb6x12 .
+_:node1ac7qraffx1 km-dev:hasLogicalTable _:node1ac7qraffx12 .
 
-km-dev:TriplesMap_7dd46907-43aa-43d4-84d4-ef5e59e6ed4f rr:logicalTable _:node1abbphgb6x12 ;
-	rr:subjectMap _:node1abbphgb6x13 .
+km-dev:TriplesMap_b9e925a8-db93-42d3-8413-5cee199ae985 rr:logicalTable _:node1ac7qraffx12 ;
+	rr:subjectMap _:node1ac7qraffx13 .
 
-_:node1abbphgb6x1 km-dev:hasSubjectMap _:node1abbphgb6x13 .
+_:node1ac7qraffx1 km-dev:hasSubjectMap _:node1ac7qraffx13 .
 
-_:node1abbphgb6x13 km-dev:isPartOfMapping _:node1abbphgb6x1 ;
+_:node1ac7qraffx13 km-dev:isPartOfMapping _:node1ac7qraffx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Target1" ;
 	rr:class scharp:Target ;
 	rr:template "{[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"target_uri\"]}" .
 
-km-dev:PredicateObjectMap_db799507-7e03-4198-9326-089b5d8c4318 rr:predicate scharp:location .
+km-dev:PredicateObjectMap_3a18613a-dccc-4aa8-90e0-e30f0a19e85d rr:predicate scharp:location .
 
-km-dev:RefObjectMap_f1b31f25-eb04-4aa0-9ef6-662211d68da0 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_9df8a702-6ed5-42ee-aa60-2bb7a2292711 ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:RefObjectMap_a1ad4890-1b97-4e7c-bfef-de2faa422fca a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_1895b150-1da0-4e5e-8f3a-05437a9b11a6 ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap km-dev:RefObjectMap_f1b31f25-eb04-4aa0-9ef6-662211d68da0 .
+_:node1ac7qraffx1 km-dev:hasObjectMap km-dev:RefObjectMap_a1ad4890-1b97-4e7c-bfef-de2faa422fca .
 
-km-dev:PredicateObjectMap_db799507-7e03-4198-9326-089b5d8c4318 rr:objectMap km-dev:RefObjectMap_f1b31f25-eb04-4aa0-9ef6-662211d68da0 .
+km-dev:PredicateObjectMap_3a18613a-dccc-4aa8-90e0-e30f0a19e85d rr:objectMap km-dev:RefObjectMap_a1ad4890-1b97-4e7c-bfef-de2faa422fca .
 
-km-dev:TriplesMap_7dd46907-43aa-43d4-84d4-ef5e59e6ed4f rr:predicateObjectMap km-dev:PredicateObjectMap_db799507-7e03-4198-9326-089b5d8c4318 .
+km-dev:TriplesMap_b9e925a8-db93-42d3-8413-5cee199ae985 rr:predicateObjectMap km-dev:PredicateObjectMap_3a18613a-dccc-4aa8-90e0-e30f0a19e85d .
 
-km-dev:PredicateObjectMap_db799507-7e03-4198-9326-089b5d8c4318 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_3a18613a-dccc-4aa8-90e0-e30f0a19e85d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_db799507-7e03-4198-9326-089b5d8c4318 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3a18613a-dccc-4aa8-90e0-e30f0a19e85d .
 
-km-dev:PredicateObjectMap_c6d3bce8-9146-4172-9cb9-dac931d90472 rr:predicate scharp:missionResult .
+km-dev:PredicateObjectMap_2dae9181-5fdd-4d3e-a93d-5f9a888d5be4 rr:predicate scharp:targetId .
 
-_:node1abbphgb6x14 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"RESULT\",\"missionResults\"]" ;
+_:node1ac7qraffx14 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"targetIdentifier\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x14 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx14 .
 
-km-dev:PredicateObjectMap_c6d3bce8-9146-4172-9cb9-dac931d90472 rr:objectMap _:node1abbphgb6x14 .
+km-dev:PredicateObjectMap_2dae9181-5fdd-4d3e-a93d-5f9a888d5be4 rr:objectMap _:node1ac7qraffx14 .
 
-km-dev:TriplesMap_7dd46907-43aa-43d4-84d4-ef5e59e6ed4f rr:predicateObjectMap km-dev:PredicateObjectMap_c6d3bce8-9146-4172-9cb9-dac931d90472 .
+km-dev:TriplesMap_b9e925a8-db93-42d3-8413-5cee199ae985 rr:predicateObjectMap km-dev:PredicateObjectMap_2dae9181-5fdd-4d3e-a93d-5f9a888d5be4 .
 
-km-dev:PredicateObjectMap_c6d3bce8-9146-4172-9cb9-dac931d90472 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_2dae9181-5fdd-4d3e-a93d-5f9a888d5be4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c6d3bce8-9146-4172-9cb9-dac931d90472 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2dae9181-5fdd-4d3e-a93d-5f9a888d5be4 .
 
-km-dev:PredicateObjectMap_74024f87-440d-4a34-ab3f-acea36584393 rr:predicate scharp:targetId .
+km-dev:PredicateObjectMap_3e41707f-8e6f-4081-aaed-db1d0f98b33f rr:predicate scharp:missionResult .
 
-_:node1abbphgb6x15 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"targetIdentifier\"]" ;
+_:node1ac7qraffx15 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"RESULT\",\"missionResults\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x15 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx15 .
 
-km-dev:PredicateObjectMap_74024f87-440d-4a34-ab3f-acea36584393 rr:objectMap _:node1abbphgb6x15 .
+km-dev:PredicateObjectMap_3e41707f-8e6f-4081-aaed-db1d0f98b33f rr:objectMap _:node1ac7qraffx15 .
 
-km-dev:TriplesMap_7dd46907-43aa-43d4-84d4-ef5e59e6ed4f rr:predicateObjectMap km-dev:PredicateObjectMap_74024f87-440d-4a34-ab3f-acea36584393 .
+km-dev:TriplesMap_b9e925a8-db93-42d3-8413-5cee199ae985 rr:predicateObjectMap km-dev:PredicateObjectMap_3e41707f-8e6f-4081-aaed-db1d0f98b33f .
 
-km-dev:PredicateObjectMap_74024f87-440d-4a34-ab3f-acea36584393 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_3e41707f-8e6f-4081-aaed-db1d0f98b33f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_74024f87-440d-4a34-ab3f-acea36584393 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3e41707f-8e6f-4081-aaed-db1d0f98b33f .
 
-km-dev:PredicateObjectMap_a4f1bceb-93ed-4ce9-92f8-8ac3e8c5c415 rr:predicate scharp:TargetName .
+km-dev:PredicateObjectMap_93bae9ba-3253-4d34-863b-506c8d2f8040 rr:predicate scharp:TargetName .
 
-_:node1abbphgb6x16 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"targetOrInstallationName\"]" ;
+_:node1ac7qraffx16 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"targetOrInstallationName\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x16 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx16 .
 
-km-dev:PredicateObjectMap_a4f1bceb-93ed-4ce9-92f8-8ac3e8c5c415 rr:objectMap _:node1abbphgb6x16 .
+km-dev:PredicateObjectMap_93bae9ba-3253-4d34-863b-506c8d2f8040 rr:objectMap _:node1ac7qraffx16 .
 
-km-dev:TriplesMap_7dd46907-43aa-43d4-84d4-ef5e59e6ed4f rr:predicateObjectMap km-dev:PredicateObjectMap_a4f1bceb-93ed-4ce9-92f8-8ac3e8c5c415 .
+km-dev:TriplesMap_b9e925a8-db93-42d3-8413-5cee199ae985 rr:predicateObjectMap km-dev:PredicateObjectMap_93bae9ba-3253-4d34-863b-506c8d2f8040 .
 
-km-dev:PredicateObjectMap_a4f1bceb-93ed-4ce9-92f8-8ac3e8c5c415 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_93bae9ba-3253-4d34-863b-506c8d2f8040 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a4f1bceb-93ed-4ce9-92f8-8ac3e8c5c415 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_93bae9ba-3253-4d34-863b-506c8d2f8040 .
 
-km-dev:TriplesMap_7669c9a6-1b26-469a-9be3-7a4302ff22fe a rr:TriplesMap .
+km-dev:TriplesMap_51766890-2437-4975-9b02-b291b638b294 a rr:TriplesMap .
 
-_:node1abbphgb6x1 km-dev:hasTriplesMap km-dev:TriplesMap_7669c9a6-1b26-469a-9be3-7a4302ff22fe .
+_:node1ac7qraffx1 km-dev:hasTriplesMap km-dev:TriplesMap_51766890-2437-4975-9b02-b291b638b294 .
 
-km-dev:TriplesMap_7669c9a6-1b26-469a-9be3-7a4302ff22fe km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:TriplesMap_51766890-2437-4975-9b02-b291b638b294 km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x17 rr:tableName "misrep.jsonl" ;
+_:node1ac7qraffx17 rr:tableName "misrep.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasLogicalTable _:node1abbphgb6x17 .
+_:node1ac7qraffx1 km-dev:hasLogicalTable _:node1ac7qraffx17 .
 
-km-dev:TriplesMap_7669c9a6-1b26-469a-9be3-7a4302ff22fe rr:logicalTable _:node1abbphgb6x17 ;
-	rr:subjectMap _:node1abbphgb6x18 .
+km-dev:TriplesMap_51766890-2437-4975-9b02-b291b638b294 rr:logicalTable _:node1ac7qraffx17 ;
+	rr:subjectMap _:node1ac7qraffx18 .
 
-_:node1abbphgb6x1 km-dev:hasSubjectMap _:node1abbphgb6x18 .
+_:node1ac7qraffx1 km-dev:hasSubjectMap _:node1ac7qraffx18 .
 
-_:node1abbphgb6x18 km-dev:isPartOfMapping _:node1abbphgb6x1 ;
+_:node1ac7qraffx18 km-dev:isPartOfMapping _:node1ac7qraffx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/flightDetail1" ;
 	rr:class scharp:flightDetail ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:flightDetail1" .
 
-km-dev:PredicateObjectMap_85f113da-6053-41d6-9395-72dd948c169e rr:predicate scharp:timeFrame .
+km-dev:PredicateObjectMap_7eb25517-d34e-45b8-836b-4a15767d20e7 rr:predicate scharp:timeFrame .
 
-km-dev:RefObjectMap_9954cdb8-9121-4a21-80a7-1971a6c19a60 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_05aba11f-6329-4b5d-90e8-481fcb27f23c ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:RefObjectMap_e7cbeddf-eac7-47bb-82d8-50a8ee4a9d13 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_d2dcda98-f180-4fb3-a746-a4c763e6c9da ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap km-dev:RefObjectMap_9954cdb8-9121-4a21-80a7-1971a6c19a60 .
+_:node1ac7qraffx1 km-dev:hasObjectMap km-dev:RefObjectMap_e7cbeddf-eac7-47bb-82d8-50a8ee4a9d13 .
 
-km-dev:PredicateObjectMap_85f113da-6053-41d6-9395-72dd948c169e rr:objectMap km-dev:RefObjectMap_9954cdb8-9121-4a21-80a7-1971a6c19a60 .
+km-dev:PredicateObjectMap_7eb25517-d34e-45b8-836b-4a15767d20e7 rr:objectMap km-dev:RefObjectMap_e7cbeddf-eac7-47bb-82d8-50a8ee4a9d13 .
 
-km-dev:TriplesMap_7669c9a6-1b26-469a-9be3-7a4302ff22fe rr:predicateObjectMap km-dev:PredicateObjectMap_85f113da-6053-41d6-9395-72dd948c169e .
+km-dev:TriplesMap_51766890-2437-4975-9b02-b291b638b294 rr:predicateObjectMap km-dev:PredicateObjectMap_7eb25517-d34e-45b8-836b-4a15767d20e7 .
 
-km-dev:PredicateObjectMap_85f113da-6053-41d6-9395-72dd948c169e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_7eb25517-d34e-45b8-836b-4a15767d20e7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_85f113da-6053-41d6-9395-72dd948c169e .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7eb25517-d34e-45b8-836b-4a15767d20e7 .
 
-km-dev:PredicateObjectMap_857000f8-aede-4083-9312-484020170b52 rr:predicate scharp:type .
+km-dev:PredicateObjectMap_17411bd4-921a-4b43-a050-e64cd10d0431 rr:predicate scharp:type .
 
-_:node1abbphgb6x19 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"aircraftTypeAndModel\"]" ;
+_:node1ac7qraffx19 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"aircraftTypeAndModel\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x19 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx19 .
 
-km-dev:PredicateObjectMap_857000f8-aede-4083-9312-484020170b52 rr:objectMap _:node1abbphgb6x19 .
+km-dev:PredicateObjectMap_17411bd4-921a-4b43-a050-e64cd10d0431 rr:objectMap _:node1ac7qraffx19 .
 
-km-dev:TriplesMap_7669c9a6-1b26-469a-9be3-7a4302ff22fe rr:predicateObjectMap km-dev:PredicateObjectMap_857000f8-aede-4083-9312-484020170b52 .
+km-dev:TriplesMap_51766890-2437-4975-9b02-b291b638b294 rr:predicateObjectMap km-dev:PredicateObjectMap_17411bd4-921a-4b43-a050-e64cd10d0431 .
 
-km-dev:PredicateObjectMap_857000f8-aede-4083-9312-484020170b52 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_17411bd4-921a-4b43-a050-e64cd10d0431 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_857000f8-aede-4083-9312-484020170b52 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_17411bd4-921a-4b43-a050-e64cd10d0431 .
 
-km-dev:TriplesMap_85107173-e9d5-48d6-bd6a-4f7c8bef7966 a rr:TriplesMap .
+km-dev:TriplesMap_3f6b082a-2c25-4c09-ae74-672eb8b44b68 a rr:TriplesMap .
 
-_:node1abbphgb6x1 km-dev:hasTriplesMap km-dev:TriplesMap_85107173-e9d5-48d6-bd6a-4f7c8bef7966 .
+_:node1ac7qraffx1 km-dev:hasTriplesMap km-dev:TriplesMap_3f6b082a-2c25-4c09-ae74-672eb8b44b68 .
 
-km-dev:TriplesMap_85107173-e9d5-48d6-bd6a-4f7c8bef7966 km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:TriplesMap_3f6b082a-2c25-4c09-ae74-672eb8b44b68 km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x20 rr:tableName "misrep.jsonl" ;
+_:node1ac7qraffx20 rr:tableName "misrep.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasLogicalTable _:node1abbphgb6x20 .
+_:node1ac7qraffx1 km-dev:hasLogicalTable _:node1ac7qraffx20 .
 
-km-dev:TriplesMap_85107173-e9d5-48d6-bd6a-4f7c8bef7966 rr:logicalTable _:node1abbphgb6x20 ;
-	rr:subjectMap _:node1abbphgb6x21 .
+km-dev:TriplesMap_3f6b082a-2c25-4c09-ae74-672eb8b44b68 rr:logicalTable _:node1ac7qraffx20 ;
+	rr:subjectMap _:node1ac7qraffx21 .
 
-_:node1abbphgb6x1 km-dev:hasSubjectMap _:node1abbphgb6x21 .
+_:node1ac7qraffx1 km-dev:hasSubjectMap _:node1ac7qraffx21 .
 
-_:node1abbphgb6x21 km-dev:isPartOfMapping _:node1abbphgb6x1 ;
+_:node1ac7qraffx21 km-dev:isPartOfMapping _:node1ac7qraffx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Message1" ;
 	rr:class scharp:Message ;
 	rr:template "{[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"message_uri2\"]}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_cd950ee4-2f0c-4a35-9efd-f568ea195700 rr:predicate scharp:mention .
+km-dev:PredicateObjectMap_50b2ddc7-575f-4b62-9156-a88530edc98d rr:predicate scharp:mention .
 
-km-dev:RefObjectMap_39dcf3c2-deed-48a9-ac02-2dbf903a3b2b a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_12f70e8d-3527-4a31-b7ba-2caec5a43d7e ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:RefObjectMap_c67b37d8-4936-4e52-a10a-89dba299cfa6 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_fb05327a-3b0d-47d7-9f42-c93b816bc8da ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap km-dev:RefObjectMap_39dcf3c2-deed-48a9-ac02-2dbf903a3b2b .
+_:node1ac7qraffx1 km-dev:hasObjectMap km-dev:RefObjectMap_c67b37d8-4936-4e52-a10a-89dba299cfa6 .
 
-km-dev:PredicateObjectMap_cd950ee4-2f0c-4a35-9efd-f568ea195700 rr:objectMap km-dev:RefObjectMap_39dcf3c2-deed-48a9-ac02-2dbf903a3b2b .
+km-dev:PredicateObjectMap_50b2ddc7-575f-4b62-9156-a88530edc98d rr:objectMap km-dev:RefObjectMap_c67b37d8-4936-4e52-a10a-89dba299cfa6 .
 
-km-dev:TriplesMap_85107173-e9d5-48d6-bd6a-4f7c8bef7966 rr:predicateObjectMap km-dev:PredicateObjectMap_cd950ee4-2f0c-4a35-9efd-f568ea195700 .
+km-dev:TriplesMap_3f6b082a-2c25-4c09-ae74-672eb8b44b68 rr:predicateObjectMap km-dev:PredicateObjectMap_50b2ddc7-575f-4b62-9156-a88530edc98d .
 
-km-dev:PredicateObjectMap_cd950ee4-2f0c-4a35-9efd-f568ea195700 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_50b2ddc7-575f-4b62-9156-a88530edc98d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cd950ee4-2f0c-4a35-9efd-f568ea195700 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_50b2ddc7-575f-4b62-9156-a88530edc98d .
 
-km-dev:PredicateObjectMap_5e22c052-a44f-4d36-833b-47175e7fd14d rr:predicate scharp:timeStamp .
+km-dev:PredicateObjectMap_2f77d90a-814c-44cb-8046-97dfaa19bb61 rr:predicate scharp:timeStamp .
 
-_:node1abbphgb6x22 rr:column "_timestamp" ;
+_:node1ac7qraffx22 rr:column "_timestamp" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x22 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx22 .
 
-km-dev:PredicateObjectMap_5e22c052-a44f-4d36-833b-47175e7fd14d rr:objectMap _:node1abbphgb6x22 .
+km-dev:PredicateObjectMap_2f77d90a-814c-44cb-8046-97dfaa19bb61 rr:objectMap _:node1ac7qraffx22 .
 
-km-dev:TriplesMap_85107173-e9d5-48d6-bd6a-4f7c8bef7966 rr:predicateObjectMap km-dev:PredicateObjectMap_5e22c052-a44f-4d36-833b-47175e7fd14d .
+km-dev:TriplesMap_3f6b082a-2c25-4c09-ae74-672eb8b44b68 rr:predicateObjectMap km-dev:PredicateObjectMap_2f77d90a-814c-44cb-8046-97dfaa19bb61 .
 
-km-dev:PredicateObjectMap_5e22c052-a44f-4d36-833b-47175e7fd14d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_2f77d90a-814c-44cb-8046-97dfaa19bb61 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5e22c052-a44f-4d36-833b-47175e7fd14d .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2f77d90a-814c-44cb-8046-97dfaa19bb61 .
 
-km-dev:TriplesMap_9df8a702-6ed5-42ee-aa60-2bb7a2292711 a rr:TriplesMap .
+km-dev:TriplesMap_1895b150-1da0-4e5e-8f3a-05437a9b11a6 a rr:TriplesMap .
 
-_:node1abbphgb6x1 km-dev:hasTriplesMap km-dev:TriplesMap_9df8a702-6ed5-42ee-aa60-2bb7a2292711 .
+_:node1ac7qraffx1 km-dev:hasTriplesMap km-dev:TriplesMap_1895b150-1da0-4e5e-8f3a-05437a9b11a6 .
 
-km-dev:TriplesMap_9df8a702-6ed5-42ee-aa60-2bb7a2292711 km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:TriplesMap_1895b150-1da0-4e5e-8f3a-05437a9b11a6 km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x23 rr:tableName "misrep.jsonl" ;
+_:node1ac7qraffx23 rr:tableName "misrep.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasLogicalTable _:node1abbphgb6x23 .
+_:node1ac7qraffx1 km-dev:hasLogicalTable _:node1ac7qraffx23 .
 
-km-dev:TriplesMap_9df8a702-6ed5-42ee-aa60-2bb7a2292711 rr:logicalTable _:node1abbphgb6x23 ;
-	rr:subjectMap _:node1abbphgb6x24 .
+km-dev:TriplesMap_1895b150-1da0-4e5e-8f3a-05437a9b11a6 rr:logicalTable _:node1ac7qraffx23 ;
+	rr:subjectMap _:node1ac7qraffx24 .
 
-_:node1abbphgb6x1 km-dev:hasSubjectMap _:node1abbphgb6x24 .
+_:node1ac7qraffx1 km-dev:hasSubjectMap _:node1ac7qraffx24 .
 
-_:node1abbphgb6x24 km-dev:isPartOfMapping _:node1abbphgb6x1 ;
+_:node1ac7qraffx24 km-dev:isPartOfMapping _:node1ac7qraffx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
 	rr:class scharp:Point ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Point1" .
 
-km-dev:PredicateObjectMap_124e8530-8a1e-4cad-8376-8471d480527d rr:predicate scharp:latitude .
+km-dev:PredicateObjectMap_b3819d29-4d16-4cfa-862e-d4465c4aa746 rr:predicate scharp:latitude .
 
-_:node1abbphgb6x25 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"latitude_tgt\"]" ;
+_:node1ac7qraffx25 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"latitude_tgt\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x25 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx25 .
 
-km-dev:PredicateObjectMap_124e8530-8a1e-4cad-8376-8471d480527d rr:objectMap _:node1abbphgb6x25 .
+km-dev:PredicateObjectMap_b3819d29-4d16-4cfa-862e-d4465c4aa746 rr:objectMap _:node1ac7qraffx25 .
 
-km-dev:TriplesMap_9df8a702-6ed5-42ee-aa60-2bb7a2292711 rr:predicateObjectMap km-dev:PredicateObjectMap_124e8530-8a1e-4cad-8376-8471d480527d .
+km-dev:TriplesMap_1895b150-1da0-4e5e-8f3a-05437a9b11a6 rr:predicateObjectMap km-dev:PredicateObjectMap_b3819d29-4d16-4cfa-862e-d4465c4aa746 .
 
-km-dev:PredicateObjectMap_124e8530-8a1e-4cad-8376-8471d480527d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_b3819d29-4d16-4cfa-862e-d4465c4aa746 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_124e8530-8a1e-4cad-8376-8471d480527d .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b3819d29-4d16-4cfa-862e-d4465c4aa746 .
 
-km-dev:PredicateObjectMap_9e5fb74a-ddc7-4964-bd3b-a654ceb8916c rr:predicate scharp:longitude .
+km-dev:PredicateObjectMap_c5e5aac6-94a5-4170-a0f0-b274a00080d3 rr:predicate scharp:longitude .
 
-_:node1abbphgb6x26 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"longitude_tgt\"]" ;
+_:node1ac7qraffx26 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"longitude_tgt\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x26 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx26 .
 
-km-dev:PredicateObjectMap_9e5fb74a-ddc7-4964-bd3b-a654ceb8916c rr:objectMap _:node1abbphgb6x26 .
+km-dev:PredicateObjectMap_c5e5aac6-94a5-4170-a0f0-b274a00080d3 rr:objectMap _:node1ac7qraffx26 .
 
-km-dev:TriplesMap_9df8a702-6ed5-42ee-aa60-2bb7a2292711 rr:predicateObjectMap km-dev:PredicateObjectMap_9e5fb74a-ddc7-4964-bd3b-a654ceb8916c .
+km-dev:TriplesMap_1895b150-1da0-4e5e-8f3a-05437a9b11a6 rr:predicateObjectMap km-dev:PredicateObjectMap_c5e5aac6-94a5-4170-a0f0-b274a00080d3 .
 
-km-dev:PredicateObjectMap_9e5fb74a-ddc7-4964-bd3b-a654ceb8916c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_c5e5aac6-94a5-4170-a0f0-b274a00080d3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9e5fb74a-ddc7-4964-bd3b-a654ceb8916c .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c5e5aac6-94a5-4170-a0f0-b274a00080d3 .
 
-km-dev:PredicateObjectMap_1515eaac-8fcd-459b-83a9-9af9b7945b94 rr:predicate scharp:time .
+km-dev:PredicateObjectMap_b8cff4ea-d439-421f-a654-0822b7044a2e rr:predicate scharp:time .
 
-_:node1abbphgb6x27 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"positionDayTime\"]" ;
+_:node1ac7qraffx27 rr:column "[\"_jsonRep\",\"ex:misrep\",\"EnemySurfaceTargets\",\"TGTPOS\",\"positionDayTime\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x27 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx27 .
 
-km-dev:PredicateObjectMap_1515eaac-8fcd-459b-83a9-9af9b7945b94 rr:objectMap _:node1abbphgb6x27 .
+km-dev:PredicateObjectMap_b8cff4ea-d439-421f-a654-0822b7044a2e rr:objectMap _:node1ac7qraffx27 .
 
-km-dev:TriplesMap_9df8a702-6ed5-42ee-aa60-2bb7a2292711 rr:predicateObjectMap km-dev:PredicateObjectMap_1515eaac-8fcd-459b-83a9-9af9b7945b94 .
+km-dev:TriplesMap_1895b150-1da0-4e5e-8f3a-05437a9b11a6 rr:predicateObjectMap km-dev:PredicateObjectMap_b8cff4ea-d439-421f-a654-0822b7044a2e .
 
-km-dev:PredicateObjectMap_1515eaac-8fcd-459b-83a9-9af9b7945b94 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_b8cff4ea-d439-421f-a654-0822b7044a2e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1515eaac-8fcd-459b-83a9-9af9b7945b94 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b8cff4ea-d439-421f-a654-0822b7044a2e .
 
-km-dev:TriplesMap_05aba11f-6329-4b5d-90e8-481fcb27f23c a rr:TriplesMap .
+km-dev:TriplesMap_d2dcda98-f180-4fb3-a746-a4c763e6c9da a rr:TriplesMap .
 
-_:node1abbphgb6x1 km-dev:hasTriplesMap km-dev:TriplesMap_05aba11f-6329-4b5d-90e8-481fcb27f23c .
+_:node1ac7qraffx1 km-dev:hasTriplesMap km-dev:TriplesMap_d2dcda98-f180-4fb3-a746-a4c763e6c9da .
 
-km-dev:TriplesMap_05aba11f-6329-4b5d-90e8-481fcb27f23c km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:TriplesMap_d2dcda98-f180-4fb3-a746-a4c763e6c9da km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x28 rr:tableName "misrep.jsonl" ;
+_:node1ac7qraffx28 rr:tableName "misrep.jsonl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasLogicalTable _:node1abbphgb6x28 .
+_:node1ac7qraffx1 km-dev:hasLogicalTable _:node1ac7qraffx28 .
 
-km-dev:TriplesMap_05aba11f-6329-4b5d-90e8-481fcb27f23c rr:logicalTable _:node1abbphgb6x28 ;
-	rr:subjectMap _:node1abbphgb6x29 .
+km-dev:TriplesMap_d2dcda98-f180-4fb3-a746-a4c763e6c9da rr:logicalTable _:node1ac7qraffx28 ;
+	rr:subjectMap _:node1ac7qraffx29 .
 
-_:node1abbphgb6x1 km-dev:hasSubjectMap _:node1abbphgb6x29 .
+_:node1ac7qraffx1 km-dev:hasSubjectMap _:node1ac7qraffx29 .
 
-_:node1abbphgb6x29 km-dev:isPartOfMapping _:node1abbphgb6x1 ;
+_:node1ac7qraffx29 km-dev:isPartOfMapping _:node1ac7qraffx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Interval2" ;
 	rr:class scharp:Interval ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Interval2" .
 
-km-dev:PredicateObjectMap_be0c2821-90d7-4d39-a846-442e2b19f58c rr:predicate scharp:takeoff .
+km-dev:PredicateObjectMap_abb613c8-a8a6-4826-a5ab-35d14df0f9e8 rr:predicate scharp:takeoff .
 
-_:node1abbphgb6x30 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"takeoffDayTime\"]" ;
+_:node1ac7qraffx30 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"takeoffDayTime\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x30 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx30 .
 
-km-dev:PredicateObjectMap_be0c2821-90d7-4d39-a846-442e2b19f58c rr:objectMap _:node1abbphgb6x30 .
+km-dev:PredicateObjectMap_abb613c8-a8a6-4826-a5ab-35d14df0f9e8 rr:objectMap _:node1ac7qraffx30 .
 
-km-dev:TriplesMap_05aba11f-6329-4b5d-90e8-481fcb27f23c rr:predicateObjectMap km-dev:PredicateObjectMap_be0c2821-90d7-4d39-a846-442e2b19f58c .
+km-dev:TriplesMap_d2dcda98-f180-4fb3-a746-a4c763e6c9da rr:predicateObjectMap km-dev:PredicateObjectMap_abb613c8-a8a6-4826-a5ab-35d14df0f9e8 .
 
-km-dev:PredicateObjectMap_be0c2821-90d7-4d39-a846-442e2b19f58c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_abb613c8-a8a6-4826-a5ab-35d14df0f9e8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_be0c2821-90d7-4d39-a846-442e2b19f58c .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_abb613c8-a8a6-4826-a5ab-35d14df0f9e8 .
 
-km-dev:PredicateObjectMap_0c92235e-b72a-45f7-ab38-beed7e5f01e2 rr:predicate scharp:landing .
+km-dev:PredicateObjectMap_c96da991-7ef3-4bf7-a56a-280eea1fbf1a rr:predicate scharp:landing .
 
-_:node1abbphgb6x31 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"landingDayTime\"]" ;
+_:node1ac7qraffx31 rr:column "[\"_jsonRep\",\"ex:misrep\",\"Missions\",\"FLTDTAIL\",\"landingDayTime\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasObjectMap _:node1abbphgb6x31 .
+_:node1ac7qraffx1 km-dev:hasObjectMap _:node1ac7qraffx31 .
 
-km-dev:PredicateObjectMap_0c92235e-b72a-45f7-ab38-beed7e5f01e2 rr:objectMap _:node1abbphgb6x31 .
+km-dev:PredicateObjectMap_c96da991-7ef3-4bf7-a56a-280eea1fbf1a rr:objectMap _:node1ac7qraffx31 .
 
-km-dev:TriplesMap_05aba11f-6329-4b5d-90e8-481fcb27f23c rr:predicateObjectMap km-dev:PredicateObjectMap_0c92235e-b72a-45f7-ab38-beed7e5f01e2 .
+km-dev:TriplesMap_d2dcda98-f180-4fb3-a746-a4c763e6c9da rr:predicateObjectMap km-dev:PredicateObjectMap_c96da991-7ef3-4bf7-a56a-280eea1fbf1a .
 
-km-dev:PredicateObjectMap_0c92235e-b72a-45f7-ab38-beed7e5f01e2 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abbphgb6x1 .
+km-dev:PredicateObjectMap_c96da991-7ef3-4bf7-a56a-280eea1fbf1a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ac7qraffx1 .
 
-_:node1abbphgb6x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0c92235e-b72a-45f7-ab38-beed7e5f01e2 .
+_:node1ac7qraffx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c96da991-7ef3-4bf7-a56a-280eea1fbf1a .

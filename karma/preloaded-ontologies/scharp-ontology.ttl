@@ -22,12 +22,6 @@ scharp:AirMission rdf:type owl:Class ;
 	rdfs:subClassOf scharp:Mission ;
 	rdfs:comment """The air mission."""
 	.
-
-scharp:AirMission rdf:type owl:Class ;
-	rdfs:label "AriMission"@en ;
-	rdfs:subClassOf scharp:Mission ;
-	rdfs:comment """The air mission."""
-	.
 	
 
 scharp:Target rdf:type owl:Class ;
@@ -80,20 +74,61 @@ scharp:Unit rdf:type owl:Class ;
 	rdfs:comment """Unit."""
 	.
 
+scharp:AirUnit rdf:type owl:Class;
+	rdfs:label "AirUnit"@en ;
+	rdfs:subClassOf scharp:Unit ;
+	rdfs:comment """The air unit"""
+	.
+
 scharp:Track rdf:type owl:Class ;
 	rdfs:label "Track"@en ;
 	rdfs:comment """The track."""
 	.
 
-scharp:AirTrack rdf:type owl:Class ;
-	rdfs:label "AirTrack"@en ;
-	rdfs:subClassOf scharp:Track ;
-	rdfs:comment """The air track."""
-	.
 
 scharp:flightDetail rdf:type owl:Class ;
 	rdfs:label "flightDetail"@en ;
 	rdfs:comment """flightDetail."""
+	.
+
+scharp:Label rdf:type owl:Class ;
+	rdfs:label "label"@en ;
+	rdfs:comment """Lable of an unit""" ;
+	.
+
+scharp:missionCommander rdf:type owl:Class ;
+	rdfs:label "MissionCommander" ;
+	rdfs:comment """Mission commander""";
+	.
+
+scharp:flightLeader rdf:type owl:Class ;
+	rdfs:label "FlightLeader" ;
+	rdfs:comment "Flight Leader" ;
+	.
+
+scharp:Elevation rdf:type owl:Class ;
+	rdfs:label "Elevation" ;
+	rdfs:comment """elevation""" ;
+	.
+
+scharp:operationSituation rdf:type owl:Class ;
+	rdfs:label "operationSituation" ;
+	rdfs:comment """operationSituation""" ;
+	.
+
+scharp:missileSituation rdf:type owl:Class ;
+	rdfs:label "missle" ;
+	rdfs:comment """Situation of missles""" ;
+	.
+
+scharp:FireControlSystems rdf:type owl:Class ;
+	rdfs:label "FireControlSystems" ;
+	rdfs:comment """FireControlSystems""" ;
+	.
+
+scharp:Status rdf:type owl:Class ;
+	rdfs:label "Status" ;
+	rdfs:comment """Status""" ;
 	.
 
 #########################################################
@@ -186,9 +221,9 @@ scharp:view rdf:type owl:ObjectProperty ;
 	rdfs:comment "The sight." 
 	.
 
-scharp:track rdf:type rdf:Property ;
-	rdfs:label "trackNum"@en ;
-	rdfs:domain scharp:Track
+scharp:trackedBy rdf:type rdf:ObjectProperty ;
+	rdfs:label "trackedBy"@en ;
+	rdfs:domain scharp:Unit
 	.
 
 #########################################################
@@ -270,10 +305,16 @@ scharp:longitude rdf:type rdf:Property ;
 	rdfs:comment "The longitude." 
 	.
 
-scharp:altitute rdf:type rdf:Property ;
+scharp:altitude rdf:type rdf:Property ;
 	rdfs:domain scharp:Point;
 	rdfs:label "altitute"@en ;
 	rdfs:comment "The altitute." 
+	.
+
+scharp:altitudeSource rdf:type rdf:Property ;
+	rdfs:domain scharp:Point;
+	rdfs:label "altitudeSource"@en ;
+	rdfs:comment "The source that proveides the altitute." 
 	.
 	
 scharp:callsign rdf:type rdf:Property ;
@@ -358,13 +399,149 @@ scharp:trackNum rdf:type rdf:Property ;
 	rdfs:comment "The track number." 
 	.
 
-scharp:trackQuality rdf:type rdf:Property ;
-	rdfs:label "trackQuality"@en ;
-	rdfs:domain scharp:Track;
-	rdfs:comment "The track quality." 
+scharp:Quality rdf:type rdf:Property ;
+	rdfs:label "Quality"@en ;
+	rdfs:comment "The quality." 
 	.
 
 scharp:timeStamp rdf:type rdf:Property ;
 	rdfs:label "timeStamp"@en ;
 	rdfs:comment "The message time stamp." 
 	.
+
+scharp:speed rdf:type rdf:Property ;
+	rdfs:label "speed"@en ;
+	rdfs:comment "the air unit's speed." 
+	.
+
+scharp:strength rdf:type rdf:Property ;
+	rdfs:label "strength"@en ;
+	rdfs:comment "the air unit's strength." 
+	.
+
+scharp:course rdf:type rdf:Property ;
+	rdfs:label "course"@en ;
+	rdfs:comment "the air unit's course." 
+	.
+
+scharp:value rdf:type rdf:Property ;
+	rdfs:label "value"@en 
+	.
+
+
+scharp:airActivity rdf:type rdf:Property ;
+	rdfs:label "airActivity"@en 
+	.
+
+scharp:controlChannel rdf:type rdf:Property ;
+	rdfs:label "controlChannel"@en 
+	.
+
+scharp:siteType rdf:type rdf:Property ;
+	rdfs:label "siteType"@en 
+	.
+
+scharp:operationalCapability rdf:type rdf:Property ;
+	rdfs:label "operationalCapability"@en 
+	.
+
+scharp:operationalImpairment rdf:type rdf:Property ;
+	rdfs:label "operationalImpairment"@en 
+	.
+
+scharp:missileInventory1 rdf:type rdf:Property ;
+	rdfs:label "missileInventory1"@en 
+	.
+
+scharp:missileInventory2 rdf:type rdf:Property ;
+	rdfs:label "missileInventory2"@en 
+	.
+
+scharp:missileInventory3 rdf:type rdf:Property ;
+	rdfs:label "missileInventory3"@en 
+	.
+
+scharp:missileInventory4 rdf:type rdf:Property ;
+	rdfs:label "missileInventory4"@en 
+	.
+
+scharp:missileInventory5 rdf:type rdf:Property ;
+	rdfs:label "missileInventory5"@en 
+	.
+
+scharp:missileInventory6 rdf:type rdf:Property ;
+	rdfs:label "missileInventory6"@en 
+	.
+
+scharp:missileInventory7 rdf:type rdf:Property ;
+	rdfs:label "missileInventory7"@en 
+	.
+
+scharp:missileInventory8 rdf:type rdf:Property ;
+	rdfs:label "missileInventory8"@en 
+	.
+
+scharp:missileInventory9 rdf:type rdf:Property ;
+	rdfs:label "missileInventory9"@en 
+	.
+
+scharp:missileInventory10 rdf:type rdf:Property ;
+	rdfs:label "missileInventory10"@en 
+	.
+
+scharp:missileInventory11 rdf:type rdf:Property ;
+	rdfs:label "missileInventory11"@en 
+	.
+
+scharp:missileInventory12 rdf:type rdf:Property ;
+	rdfs:label "missileInventory12"@en 
+	.
+
+scharp:missileType1 rdf:type rdf:Property ;
+	rdfs:label "missileType1"@en 
+	.
+
+scharp:missileType2 rdf:type rdf:Property ;
+	rdfs:label "missileType2"@en 
+	.
+
+scharp:missileType3 rdf:type rdf:Property ;
+	rdfs:label "missileType3"@en 
+	.
+
+scharp:missileType4 rdf:type rdf:Property ;
+	rdfs:label "missileType4"@en 
+	.
+
+scharp:missileType5 rdf:type rdf:Property ;
+	rdfs:label "missileType5"@en 
+	.
+
+scharp:missileType6 rdf:type rdf:Property ;
+	rdfs:label "missileType6"@en 
+	.
+
+scharp:missileType7 rdf:type rdf:Property ;
+	rdfs:label "missileType7"@en 
+	.
+
+scharp:missileType8 rdf:type rdf:Property ;
+	rdfs:label "missileType8"@en 
+	.
+
+scharp:missileType9 rdf:type rdf:Property ;
+	rdfs:label "missileType9"@en 
+	.
+
+scharp:missileType10 rdf:type rdf:Property ;
+	rdfs:label "missileType10"@en 
+	.
+
+scharp:missileType11 rdf:type rdf:Property ;
+	rdfs:label "missileType11"@en 
+	.
+
+scharp:missileType12 rdf:type rdf:Property ;
+	rdfs:label "missileType12"@en 
+	.
+

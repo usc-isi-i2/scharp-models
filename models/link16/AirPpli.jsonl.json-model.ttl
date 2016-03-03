@@ -30,12 +30,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
+_:node1act7tjh5x1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "AirPpli.jsonl.json" ;
-	km-dev:modelPublicationTime "1455731168560"^^xsd:long ;
+	km-dev:modelPublicationTime "1456975302182"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"voiceCallSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"altitude\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"latitude\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"voiceCallSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"sortie_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"altitude\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"latitude\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"sublabel\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"latitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"controlChannel\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"speed\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"voiceCallSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"course\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"strength\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"altitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"airActivity\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"missionCommanderTrackNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"flightLeader\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"flightLeaderTrackNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"label\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"missionCommander\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"longitude\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"sublabel\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"latitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"controlChannel\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"speed\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"voiceCallSign\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"course\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"strength\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"altitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"airActivity\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"missionCommanderTrackNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"flightLeader\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"flightLeaderTrackNumber\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"label\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"missionCommander\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"longitude\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"J2_2_AirPpli\"},{\"columnName\":\"unit_uri\"}]]" ;
 	km-dev:hasModelLabel "AirPpli.jsonl.json" ;
 	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
 	km-dev:hasWorksheetHistory """[
@@ -116,134 +116,6 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
         \"tags\": [\"Transformation\"]
     },
     {
-        \"commandName\": \"OrganizeColumnsCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"orderedColumns\",
-                \"type\": \"orderedColumns\",
-                \"value\": [
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_content_type\",
-                        \"id\": [{\"columnName\": \"_content_type\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_rawContent\",
-                        \"id\": [{\"columnName\": \"_rawContent\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"forceTell\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"forceTell\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"course\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"course\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airPlatform\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airPlatform\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"speed\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"speed\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"netNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"netNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"strength\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"strength\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"altitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"vCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"vCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"label\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"label\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"sublabel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sublabel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"bailout\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"bailout\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"timeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"timeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AAddress\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AAddress\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"latitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"latitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeader\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeader\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"emergency\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"emergency\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"simulated\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"simulated\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airActivity\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airActivity\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"c2Unit\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"c2Unit\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"betaAngle\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"betaAngle\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommander\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommander\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"longitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"longitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"uCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"uCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"exercise\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"exercise\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"wingmanId\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"wingmanId\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\"}]}]\\\",\\\"hideable\\\":true,\\\"name\\\":\\\"J2_2_AirPpli\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"}]}]\",
-                        \"hideable\": true,
-                        \"name\": \"_jsonRep\",
-                        \"id\": [{\"columnName\": \"_jsonRep\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_timestamp\",
-                        \"id\": [{\"columnName\": \"_timestamp\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_url\",
-                        \"id\": [{\"columnName\": \"_url\"}]
-                    }
-                ]
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            }
-        ],
-        \"tags\": [\"Transformation\"]
-    },
-    {
-        \"commandName\": \"OrganizeColumnsCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"orderedColumns\",
-                \"type\": \"orderedColumns\",
-                \"value\": [
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_content_type\",
-                        \"id\": [{\"columnName\": \"_content_type\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_rawContent\",
-                        \"id\": [{\"columnName\": \"_rawContent\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"forceTell\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"forceTell\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"course\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"course\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airPlatform\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airPlatform\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"speed\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"speed\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"netNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"netNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"strength\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"strength\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"altitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"vCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"vCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"label\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"label\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"sublabel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sublabel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"bailout\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"bailout\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"timeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"timeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AAddress\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AAddress\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"latitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"latitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeader\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeader\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"emergency\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"emergency\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"simulated\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"simulated\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airActivity\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airActivity\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"c2Unit\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"c2Unit\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"betaAngle\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"betaAngle\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommander\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommander\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"longitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"longitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"uCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"uCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"exercise\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"exercise\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"wingmanId\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"wingmanId\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\"}]}]\\\",\\\"hideable\\\":true,\\\"name\\\":\\\"J2_2_AirPpli\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"}]}]\",
-                        \"hideable\": true,
-                        \"name\": \"_jsonRep\",
-                        \"id\": [{\"columnName\": \"_jsonRep\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_timestamp\",
-                        \"id\": [{\"columnName\": \"_timestamp\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_url\",
-                        \"id\": [{\"columnName\": \"_url\"}]
-                    }
-                ]
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            }
-        ],
-        \"tags\": [\"Transformation\"]
-    },
-    {
         \"commandName\": \"SubmitPythonTransformationCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
@@ -269,12 +141,12 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"newColumnName\",
                 \"type\": \"other\",
-                \"value\": \"sortie_uri\"
+                \"value\": \"unit_uri\"
             },
             {
                 \"name\": \"transformationCode\",
                 \"type\": \"other\",
-                \"value\": \"return \\\"sortie/\\\"+getValue(\\\"voiceCallSign\\\")\"
+                \"value\": \"return \\\"unit/\\\"+getValue(\\\"voiceCallSign\\\")\"
             },
             {
                 \"name\": \"errorDefaultValue\",
@@ -294,135 +166,7 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sortie_uri\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"Transformation\"]
-    },
-    {
-        \"commandName\": \"OrganizeColumnsCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"orderedColumns\",
-                \"type\": \"orderedColumns\",
-                \"value\": [
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_content_type\",
-                        \"id\": [{\"columnName\": \"_content_type\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_rawContent\",
-                        \"id\": [{\"columnName\": \"_rawContent\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"forceTell\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"forceTell\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"course\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"course\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airPlatform\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airPlatform\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"speed\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"speed\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"netNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"netNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"sortie_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sortie_uri\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"strength\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"strength\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"altitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"vCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"vCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"label\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"label\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"sublabel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sublabel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"bailout\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"bailout\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"timeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"timeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AAddress\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AAddress\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"latitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"latitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeader\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeader\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"emergency\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"emergency\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"simulated\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"simulated\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airActivity\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airActivity\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"c2Unit\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"c2Unit\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"betaAngle\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"betaAngle\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommander\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommander\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"longitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"longitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"uCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"uCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"exercise\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"exercise\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"wingmanId\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"wingmanId\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"J2_2_AirPpli\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"}]}]\",
-                        \"hideable\": false,
-                        \"name\": \"_jsonRep\",
-                        \"id\": [{\"columnName\": \"_jsonRep\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_timestamp\",
-                        \"id\": [{\"columnName\": \"_timestamp\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_url\",
-                        \"id\": [{\"columnName\": \"_url\"}]
-                    }
-                ]
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            }
-        ],
-        \"tags\": [\"Transformation\"]
-    },
-    {
-        \"commandName\": \"OrganizeColumnsCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"orderedColumns\",
-                \"type\": \"orderedColumns\",
-                \"value\": [
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_content_type\",
-                        \"id\": [{\"columnName\": \"_content_type\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_rawContent\",
-                        \"id\": [{\"columnName\": \"_rawContent\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"forceTell\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"forceTell\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"course\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"course\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airPlatform\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airPlatform\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"speed\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"speed\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"netNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"netNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"sortie_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sortie_uri\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"strength\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"strength\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"altitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"vCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"vCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"label\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"label\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"sublabel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sublabel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"bailout\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"bailout\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"timeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"timeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AAddress\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AAddress\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"latitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"latitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeader\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeader\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"emergency\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"emergency\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"simulated\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"simulated\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airActivity\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airActivity\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"c2Unit\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"c2Unit\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"betaAngle\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"betaAngle\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommander\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommander\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"longitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"longitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"uCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"uCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"exercise\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"exercise\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"wingmanId\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"wingmanId\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"J2_2_AirPpli\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"}]}]\",
-                        \"hideable\": false,
-                        \"name\": \"_jsonRep\",
-                        \"id\": [{\"columnName\": \"_jsonRep\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": true,
-                        \"name\": \"_timestamp\",
-                        \"id\": [{\"columnName\": \"_timestamp\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_url\",
-                        \"id\": [{\"columnName\": \"_url\"}]
-                    }
-                ]
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
             }
         ],
         \"tags\": [\"Transformation\"]
@@ -473,76 +217,12 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"inputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"voiceCallSign\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
                 \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"message_uri\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"Transformation\"]
-    },
-    {
-        \"commandName\": \"OrganizeColumnsCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"orderedColumns\",
-                \"type\": \"orderedColumns\",
-                \"value\": [
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_content_type\",
-                        \"id\": [{\"columnName\": \"_content_type\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_rawContent\",
-                        \"id\": [{\"columnName\": \"_rawContent\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"forceTell\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"forceTell\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"course\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"course\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airPlatform\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airPlatform\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"speed\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"speed\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"netNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"netNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"sortie_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sortie_uri\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"strength\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"strength\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"altitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"vCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"vCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"label\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"label\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"sublabel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sublabel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"bailout\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"bailout\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"timeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"timeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AAddress\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AAddress\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"latitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"latitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeader\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeader\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"emergency\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"emergency\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"simulated\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"simulated\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airActivity\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airActivity\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"c2Unit\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"c2Unit\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"betaAngle\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"betaAngle\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommander\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommander\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"longitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"longitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"uCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"uCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"exercise\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"exercise\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"wingmanId\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"wingmanId\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"message_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"message_uri\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"J2_2_AirPpli\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"}]}]\",
-                        \"hideable\": false,
-                        \"name\": \"_jsonRep\",
-                        \"id\": [{\"columnName\": \"_jsonRep\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": true,
-                        \"name\": \"_timestamp\",
-                        \"id\": [{\"columnName\": \"_timestamp\"}]
-                    },
-                    {
-                        \"visible\": false,
-                        \"hideable\": true,
-                        \"name\": \"_url\",
-                        \"id\": [{\"columnName\": \"_url\"}]
-                    }
-                ]
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
             }
         ],
         \"tags\": [\"Transformation\"]
@@ -604,6 +284,70 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
         \"tags\": [\"Transformation\"]
     },
     {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_content_type\",
+                        \"id\": [{\"columnName\": \"_content_type\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_rawContent\",
+                        \"id\": [{\"columnName\": \"_rawContent\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"forceTell\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"forceTell\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNetNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativeAzimuthQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"course\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"course\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"alternateVoiceChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"networkParticipationStatus\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"airPlatform\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airPlatform\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"speed\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"speed\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"netNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"netNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommanderTrackNumber\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"controlChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"strength\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"strength\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"altitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"vCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"vCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"label\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"label\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"sublabel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"sublabel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"controlRelayingFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"bailout\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"bailout\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"timeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"timeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"link4AAddress\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"link4AAddress\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"latitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"latitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCorrelator\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSignInterpretable\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relayFunctionActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeader\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeader\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"modeIIICode\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"modeIIICode\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"emergency\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"emergency\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"relativePositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"replyFunctionOperational\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"simulated\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"simulated\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"altitudeQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceFrequencyOrChannel\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"secondaryNpgActive\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"voiceCallSign\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"message_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"message_uri\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"unit_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"unit_uri\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"airActivity\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airActivity\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"c2Unit\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"c2Unit\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"betaAngle\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"betaAngle\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"xmlns\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"xmlns\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"geodeticPositionQuality\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"missionCommander\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"missionCommander\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"longitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"longitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"uCoordinate\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"uCoordinate\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"exercise\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"exercise\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"wingmanId\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"wingmanId\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"_jsonRep\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"J2_2_AirPpli\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"flightLeaderTrackNumber\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"J2_2_AirPpli\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"_jsonRep\",
+                        \"id\": [{\"columnName\": \"_jsonRep\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"_timestamp\",
+                        \"id\": [{\"columnName\": \"_timestamp\"}]
+                    },
+                    {
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"_url\",
+                        \"id\": [{\"columnName\": \"_url\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
         \"commandName\": \"SetMetaPropertyCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
@@ -613,7 +357,7 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
                 \"value\": [
                     {\"columnName\": \"_jsonRep\"},
                     {\"columnName\": \"J2_2_AirPpli\"},
-                    {\"columnName\": \"sortie_uri\"}
+                    {\"columnName\": \"unit_uri\"}
                 ]
             },
             {
@@ -665,12 +409,12 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"inputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sortie_uri\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sortie_uri\\\"}]}]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
             }
         ],
         \"tags\": [\"SemanticType\"]
@@ -702,11 +446,10 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
                 \"name\": \"SemanticTypesArray\",
                 \"type\": \"other\",
                 \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirSortie\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\",
-                    \"isPrimary\": true,
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/callsign\",
-                    \"DomainLabel\": \"scharp:AirSortie1\"
+                    \"DomainLabel\": \"scharp:AirUnit1\"
                 }]
             },
             {
@@ -876,7 +619,7 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
                     \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/altitute\",
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/altitude\",
                     \"DomainLabel\": \"scharp:Point1\"
                 }]
             },
@@ -1029,6 +772,694 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
         \"tags\": [\"SemanticType\"]
     },
     {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"course\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/course\",
+                    \"DomainLabel\": \"scharp:AirUnit1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"course\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"course\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"unit_uri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"speed\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/speed\",
+                    \"DomainLabel\": \"scharp:AirUnit1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"speed\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"speed\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"controlChannel\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/controlChannel\",
+                    \"DomainLabel\": \"scharp:AirUnit1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"controlChannel\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"controlChannel\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"strength\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/strength\",
+                    \"DomainLabel\": \"scharp:AirUnit1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"strength\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"strength\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"label\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Label\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Label1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/value\",
+                    \"DomainLabel\": \"scharp:Label1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"label\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"label\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"sublabel\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Label\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Label1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/subLabel\",
+                    \"DomainLabel\": \"scharp:Label1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sublabel\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"sublabel\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"airActivity\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/airActivity\",
+                    \"DomainLabel\": \"scharp:AirUnit1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"airActivity\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"airActivity\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"missionCommander\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/missionCommander\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/missionCommander1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/value\",
+                    \"DomainLabel\": \"scharp:missionCommander1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCommander\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCommander\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"missionCommanderTrackNumber\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Track\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Track1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/trackNum\",
+                    \"DomainLabel\": \"scharp:Track1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCommanderTrackNumber\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"missionCommanderTrackNumber\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"flightLeader\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/flightLeader\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/flightLeader1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/value\",
+                    \"DomainLabel\": \"scharp:flightLeader1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"flightLeader\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"flightLeader\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"J2_2_AirPpli\"},
+                    {\"columnName\": \"flightLeaderTrackNumber\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Track\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Track2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/trackNum\",
+                    \"DomainLabel\": \"scharp:Track2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"flightLeaderTrackNumber\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"J2_2_AirPpli\\\"},{\\\"columnName\\\":\\\"flightLeaderTrackNumber\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
         \"commandName\": \"ChangeInternalNodeLinksCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
@@ -1123,195 +1554,830 @@ _:node1abo5dl9fx1 a km-dev:R2RMLMapping ;
             }
         ],
         \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP15:WS5AL\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                        \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                        \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\"
+                    },
+                    {
+                        \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirSortie1\",
+                        \"edgeId\": \"http://scharp.usc.isi.edu/ontology/mention\",
+                        \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [
+                    {
+                        \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                        \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                        \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                        \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                        \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
+                    },
+                    {
+                        \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                        \"edgeId\": \"http://scharp.usc.isi.edu/ontology/mention\",
+                        \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
+                        \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                        \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP15:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Track1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/trackedBy\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Track\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/missionCommander1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/missionCommander\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP15:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Track2\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/trackedBy\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Track\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/flightLeader1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/flightLeader\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP2:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/flightLeader1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/leader\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/flightLeader\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP2:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/missionCommander1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/commander\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/missionCommander\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
     }
 ]""" .
 
-km-dev:TriplesMap_3c4eb444-fbcc-4edf-a4cd-9151a39031cc a rr:TriplesMap .
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 a rr:TriplesMap .
 
-_:node1abo5dl9fx1 km-dev:hasTriplesMap km-dev:TriplesMap_3c4eb444-fbcc-4edf-a4cd-9151a39031cc .
+_:node1act7tjh5x1 km-dev:hasTriplesMap km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 .
 
-km-dev:TriplesMap_3c4eb444-fbcc-4edf-a4cd-9151a39031cc km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx2 rr:tableName "AirPpli.jsonl.json" ;
+_:node1act7tjh5x2 rr:tableName "AirPpli.jsonl.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasLogicalTable _:node1abo5dl9fx2 .
+_:node1act7tjh5x1 km-dev:hasLogicalTable _:node1act7tjh5x2 .
 
-km-dev:TriplesMap_3c4eb444-fbcc-4edf-a4cd-9151a39031cc rr:logicalTable _:node1abo5dl9fx2 ;
-	rr:subjectMap _:node1abo5dl9fx3 .
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 rr:logicalTable _:node1act7tjh5x2 ;
+	rr:subjectMap _:node1act7tjh5x3 .
 
-_:node1abo5dl9fx1 km-dev:hasSubjectMap _:node1abo5dl9fx3 .
+_:node1act7tjh5x1 km-dev:hasSubjectMap _:node1act7tjh5x3 .
 
-_:node1abo5dl9fx3 km-dev:isPartOfMapping _:node1abo5dl9fx1 ;
+_:node1act7tjh5x3 km-dev:isPartOfMapping _:node1act7tjh5x1 ;
 	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirSortie1" ;
-	rr:class scharp:AirSortie ;
-	rr:template "sortie/{[\"_jsonRep\",\"J2_2_AirPpli\",\"voiceCallSign\"]}" .
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirUnit1" ;
+	rr:class scharp:AirUnit ;
+	rr:template "unit/{[\"_jsonRep\",\"J2_2_AirPpli\",\"voiceCallSign\"]}" .
 
-km-dev:PredicateObjectMap_91d0cde9-8798-44e6-a802-120a57480e56 rr:predicate scharp:location .
+km-dev:PredicateObjectMap_1b66a3f4-a540-44c7-b97b-1c1f7d0b0a78 rr:predicate scharp:speed .
 
-km-dev:RefObjectMap_e4fa08c5-d052-45fe-b310-fe243fbce21c a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_836f8d61-f03a-4da4-b07e-77363d7c4821 ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
-
-_:node1abo5dl9fx1 km-dev:hasObjectMap km-dev:RefObjectMap_e4fa08c5-d052-45fe-b310-fe243fbce21c .
-
-km-dev:PredicateObjectMap_91d0cde9-8798-44e6-a802-120a57480e56 rr:objectMap km-dev:RefObjectMap_e4fa08c5-d052-45fe-b310-fe243fbce21c .
-
-km-dev:TriplesMap_3c4eb444-fbcc-4edf-a4cd-9151a39031cc rr:predicateObjectMap km-dev:PredicateObjectMap_91d0cde9-8798-44e6-a802-120a57480e56 .
-
-km-dev:PredicateObjectMap_91d0cde9-8798-44e6-a802-120a57480e56 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
-
-_:node1abo5dl9fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_91d0cde9-8798-44e6-a802-120a57480e56 .
-
-km-dev:PredicateObjectMap_befdbd70-d2ae-4c29-a3af-2118534dc8f7 rr:predicate scharp:callsign .
-
-_:node1abo5dl9fx4 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"voiceCallSign\"]" ;
+_:node1act7tjh5x4 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"speed\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasObjectMap _:node1abo5dl9fx4 .
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x4 .
 
-km-dev:PredicateObjectMap_befdbd70-d2ae-4c29-a3af-2118534dc8f7 rr:objectMap _:node1abo5dl9fx4 .
+km-dev:PredicateObjectMap_1b66a3f4-a540-44c7-b97b-1c1f7d0b0a78 rr:objectMap _:node1act7tjh5x4 .
 
-km-dev:TriplesMap_3c4eb444-fbcc-4edf-a4cd-9151a39031cc rr:predicateObjectMap km-dev:PredicateObjectMap_befdbd70-d2ae-4c29-a3af-2118534dc8f7 .
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 rr:predicateObjectMap km-dev:PredicateObjectMap_1b66a3f4-a540-44c7-b97b-1c1f7d0b0a78 .
 
-km-dev:PredicateObjectMap_befdbd70-d2ae-4c29-a3af-2118534dc8f7 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+km-dev:PredicateObjectMap_1b66a3f4-a540-44c7-b97b-1c1f7d0b0a78 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_befdbd70-d2ae-4c29-a3af-2118534dc8f7 .
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1b66a3f4-a540-44c7-b97b-1c1f7d0b0a78 .
 
-km-dev:TriplesMap_836f8d61-f03a-4da4-b07e-77363d7c4821 a rr:TriplesMap .
+km-dev:PredicateObjectMap_a5b6b2a3-7682-4d81-a4b0-c7d267673897 rr:predicate scharp:course .
 
-_:node1abo5dl9fx1 km-dev:hasTriplesMap km-dev:TriplesMap_836f8d61-f03a-4da4-b07e-77363d7c4821 .
+_:node1act7tjh5x5 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"course\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-km-dev:TriplesMap_836f8d61-f03a-4da4-b07e-77363d7c4821 km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x5 .
 
-_:node1abo5dl9fx5 rr:tableName "AirPpli.jsonl.json" ;
+km-dev:PredicateObjectMap_a5b6b2a3-7682-4d81-a4b0-c7d267673897 rr:objectMap _:node1act7tjh5x5 .
+
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 rr:predicateObjectMap km-dev:PredicateObjectMap_a5b6b2a3-7682-4d81-a4b0-c7d267673897 .
+
+km-dev:PredicateObjectMap_a5b6b2a3-7682-4d81-a4b0-c7d267673897 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a5b6b2a3-7682-4d81-a4b0-c7d267673897 .
+
+km-dev:PredicateObjectMap_165aca89-13bd-4e85-b573-f60a1d831103 rr:predicate scharp:strength .
+
+_:node1act7tjh5x6 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"strength\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x6 .
+
+km-dev:PredicateObjectMap_165aca89-13bd-4e85-b573-f60a1d831103 rr:objectMap _:node1act7tjh5x6 .
+
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 rr:predicateObjectMap km-dev:PredicateObjectMap_165aca89-13bd-4e85-b573-f60a1d831103 .
+
+km-dev:PredicateObjectMap_165aca89-13bd-4e85-b573-f60a1d831103 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_165aca89-13bd-4e85-b573-f60a1d831103 .
+
+km-dev:PredicateObjectMap_58a510cd-567f-49b1-89f7-98ad8401ccde rr:predicate scharp:controlChannel .
+
+_:node1act7tjh5x7 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"controlChannel\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x7 .
+
+km-dev:PredicateObjectMap_58a510cd-567f-49b1-89f7-98ad8401ccde rr:objectMap _:node1act7tjh5x7 .
+
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 rr:predicateObjectMap km-dev:PredicateObjectMap_58a510cd-567f-49b1-89f7-98ad8401ccde .
+
+km-dev:PredicateObjectMap_58a510cd-567f-49b1-89f7-98ad8401ccde a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_58a510cd-567f-49b1-89f7-98ad8401ccde .
+
+km-dev:PredicateObjectMap_6b942d51-08a7-45bd-b5e9-98ad0385a44c rr:predicate scharp:airActivity .
+
+_:node1act7tjh5x8 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"airActivity\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x8 .
+
+km-dev:PredicateObjectMap_6b942d51-08a7-45bd-b5e9-98ad0385a44c rr:objectMap _:node1act7tjh5x8 .
+
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 rr:predicateObjectMap km-dev:PredicateObjectMap_6b942d51-08a7-45bd-b5e9-98ad0385a44c .
+
+km-dev:PredicateObjectMap_6b942d51-08a7-45bd-b5e9-98ad0385a44c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6b942d51-08a7-45bd-b5e9-98ad0385a44c .
+
+km-dev:PredicateObjectMap_3dcf0343-3855-4dff-991f-c0a0c1a19df4 rr:predicate scharp:callsign .
+
+_:node1act7tjh5x9 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"voiceCallSign\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x9 .
+
+km-dev:PredicateObjectMap_3dcf0343-3855-4dff-991f-c0a0c1a19df4 rr:objectMap _:node1act7tjh5x9 .
+
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 rr:predicateObjectMap km-dev:PredicateObjectMap_3dcf0343-3855-4dff-991f-c0a0c1a19df4 .
+
+km-dev:PredicateObjectMap_3dcf0343-3855-4dff-991f-c0a0c1a19df4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3dcf0343-3855-4dff-991f-c0a0c1a19df4 .
+
+km-dev:PredicateObjectMap_8d1c5e23-6e46-4277-998f-d478371b9e52 rr:predicate scharp:location .
+
+km-dev:RefObjectMap_f7073f7c-2ab3-4a77-a8c7-e4134a2d501f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4aa7f8e8-3a3f-48d9-b17e-3d10e88a4847 ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap km-dev:RefObjectMap_f7073f7c-2ab3-4a77-a8c7-e4134a2d501f .
+
+km-dev:PredicateObjectMap_8d1c5e23-6e46-4277-998f-d478371b9e52 rr:objectMap km-dev:RefObjectMap_f7073f7c-2ab3-4a77-a8c7-e4134a2d501f .
+
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 rr:predicateObjectMap km-dev:PredicateObjectMap_8d1c5e23-6e46-4277-998f-d478371b9e52 .
+
+km-dev:PredicateObjectMap_8d1c5e23-6e46-4277-998f-d478371b9e52 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8d1c5e23-6e46-4277-998f-d478371b9e52 .
+
+km-dev:PredicateObjectMap_83f27e23-c823-4e08-a22a-4f8ba9025de3 rr:predicate scharp:leader .
+
+km-dev:RefObjectMap_4474a0f5-4958-4924-b594-a85329ac15dc a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_7cc9acf9-19ab-4c6b-b642-a420dd1daf76 ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap km-dev:RefObjectMap_4474a0f5-4958-4924-b594-a85329ac15dc .
+
+km-dev:PredicateObjectMap_83f27e23-c823-4e08-a22a-4f8ba9025de3 rr:objectMap km-dev:RefObjectMap_4474a0f5-4958-4924-b594-a85329ac15dc .
+
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 rr:predicateObjectMap km-dev:PredicateObjectMap_83f27e23-c823-4e08-a22a-4f8ba9025de3 .
+
+km-dev:PredicateObjectMap_83f27e23-c823-4e08-a22a-4f8ba9025de3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_83f27e23-c823-4e08-a22a-4f8ba9025de3 .
+
+km-dev:PredicateObjectMap_d1059a6c-5542-4c28-b2ad-31f4754ff696 rr:predicate scharp:commander .
+
+km-dev:RefObjectMap_78695add-f68e-4937-8316-e7ceb8e5d040 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_d76c0909-0da3-4c1b-92ee-9bbf7e176227 ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap km-dev:RefObjectMap_78695add-f68e-4937-8316-e7ceb8e5d040 .
+
+km-dev:PredicateObjectMap_d1059a6c-5542-4c28-b2ad-31f4754ff696 rr:objectMap km-dev:RefObjectMap_78695add-f68e-4937-8316-e7ceb8e5d040 .
+
+km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 rr:predicateObjectMap km-dev:PredicateObjectMap_d1059a6c-5542-4c28-b2ad-31f4754ff696 .
+
+km-dev:PredicateObjectMap_d1059a6c-5542-4c28-b2ad-31f4754ff696 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d1059a6c-5542-4c28-b2ad-31f4754ff696 .
+
+km-dev:TriplesMap_d76c0909-0da3-4c1b-92ee-9bbf7e176227 a rr:TriplesMap .
+
+_:node1act7tjh5x1 km-dev:hasTriplesMap km-dev:TriplesMap_d76c0909-0da3-4c1b-92ee-9bbf7e176227 .
+
+km-dev:TriplesMap_d76c0909-0da3-4c1b-92ee-9bbf7e176227 km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x10 rr:tableName "AirPpli.jsonl.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasLogicalTable _:node1abo5dl9fx5 .
+_:node1act7tjh5x1 km-dev:hasLogicalTable _:node1act7tjh5x10 .
 
-km-dev:TriplesMap_836f8d61-f03a-4da4-b07e-77363d7c4821 rr:logicalTable _:node1abo5dl9fx5 ;
-	rr:subjectMap _:node1abo5dl9fx6 .
+km-dev:TriplesMap_d76c0909-0da3-4c1b-92ee-9bbf7e176227 rr:logicalTable _:node1act7tjh5x10 ;
+	rr:subjectMap _:node1act7tjh5x11 .
 
-_:node1abo5dl9fx1 km-dev:hasSubjectMap _:node1abo5dl9fx6 .
+_:node1act7tjh5x1 km-dev:hasSubjectMap _:node1act7tjh5x11 .
 
-_:node1abo5dl9fx6 km-dev:isPartOfMapping _:node1abo5dl9fx1 ;
+_:node1act7tjh5x11 km-dev:isPartOfMapping _:node1act7tjh5x1 ;
 	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
-	rr:class scharp:Point ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/missionCommander1" ;
+	rr:class scharp:missionCommander ;
 	rr:termType rr:BlankNode ;
-	km-dev:namePrefix "scharp:Point1" .
+	km-dev:namePrefix "scharp:missionCommander1" .
 
-km-dev:PredicateObjectMap_bbcc1701-5c64-4c02-bc63-8fa5c31759df rr:predicate scharp:altitute .
+km-dev:PredicateObjectMap_804a0f49-6322-4f5d-853a-ae06737664ca rr:predicate scharp:value .
 
-_:node1abo5dl9fx7 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"altitude\"]" ;
+_:node1act7tjh5x12 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"missionCommander\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasObjectMap _:node1abo5dl9fx7 .
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x12 .
 
-km-dev:PredicateObjectMap_bbcc1701-5c64-4c02-bc63-8fa5c31759df rr:objectMap _:node1abo5dl9fx7 .
+km-dev:PredicateObjectMap_804a0f49-6322-4f5d-853a-ae06737664ca rr:objectMap _:node1act7tjh5x12 .
 
-km-dev:TriplesMap_836f8d61-f03a-4da4-b07e-77363d7c4821 rr:predicateObjectMap km-dev:PredicateObjectMap_bbcc1701-5c64-4c02-bc63-8fa5c31759df .
+km-dev:TriplesMap_d76c0909-0da3-4c1b-92ee-9bbf7e176227 rr:predicateObjectMap km-dev:PredicateObjectMap_804a0f49-6322-4f5d-853a-ae06737664ca .
 
-km-dev:PredicateObjectMap_bbcc1701-5c64-4c02-bc63-8fa5c31759df a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+km-dev:PredicateObjectMap_804a0f49-6322-4f5d-853a-ae06737664ca a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bbcc1701-5c64-4c02-bc63-8fa5c31759df .
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_804a0f49-6322-4f5d-853a-ae06737664ca .
 
-km-dev:PredicateObjectMap_56073c58-1a94-4226-80fa-41f44a72c48f rr:predicate scharp:longitude .
+km-dev:PredicateObjectMap_b651e190-91ed-4282-ad01-c3d7c4cd69d3 rr:predicate scharp:trackedBy .
 
-_:node1abo5dl9fx8 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"longitude\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+km-dev:RefObjectMap_04204583-cd9f-4b06-8736-5e70fc1bfda1 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e5281db7-4ef9-4b30-b1cb-6eda610d21d6 ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasObjectMap _:node1abo5dl9fx8 .
+_:node1act7tjh5x1 km-dev:hasObjectMap km-dev:RefObjectMap_04204583-cd9f-4b06-8736-5e70fc1bfda1 .
 
-km-dev:PredicateObjectMap_56073c58-1a94-4226-80fa-41f44a72c48f rr:objectMap _:node1abo5dl9fx8 .
+km-dev:PredicateObjectMap_b651e190-91ed-4282-ad01-c3d7c4cd69d3 rr:objectMap km-dev:RefObjectMap_04204583-cd9f-4b06-8736-5e70fc1bfda1 .
 
-km-dev:TriplesMap_836f8d61-f03a-4da4-b07e-77363d7c4821 rr:predicateObjectMap km-dev:PredicateObjectMap_56073c58-1a94-4226-80fa-41f44a72c48f .
+km-dev:TriplesMap_d76c0909-0da3-4c1b-92ee-9bbf7e176227 rr:predicateObjectMap km-dev:PredicateObjectMap_b651e190-91ed-4282-ad01-c3d7c4cd69d3 .
 
-km-dev:PredicateObjectMap_56073c58-1a94-4226-80fa-41f44a72c48f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+km-dev:PredicateObjectMap_b651e190-91ed-4282-ad01-c3d7c4cd69d3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_56073c58-1a94-4226-80fa-41f44a72c48f .
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b651e190-91ed-4282-ad01-c3d7c4cd69d3 .
 
-km-dev:PredicateObjectMap_40ff8eac-32a5-41c8-b23a-69160af10714 rr:predicate scharp:latitude .
+km-dev:TriplesMap_e5281db7-4ef9-4b30-b1cb-6eda610d21d6 a rr:TriplesMap .
 
-_:node1abo5dl9fx9 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"latitude\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+_:node1act7tjh5x1 km-dev:hasTriplesMap km-dev:TriplesMap_e5281db7-4ef9-4b30-b1cb-6eda610d21d6 .
 
-_:node1abo5dl9fx1 km-dev:hasObjectMap _:node1abo5dl9fx9 .
+km-dev:TriplesMap_e5281db7-4ef9-4b30-b1cb-6eda610d21d6 km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-km-dev:PredicateObjectMap_40ff8eac-32a5-41c8-b23a-69160af10714 rr:objectMap _:node1abo5dl9fx9 .
-
-km-dev:TriplesMap_836f8d61-f03a-4da4-b07e-77363d7c4821 rr:predicateObjectMap km-dev:PredicateObjectMap_40ff8eac-32a5-41c8-b23a-69160af10714 .
-
-km-dev:PredicateObjectMap_40ff8eac-32a5-41c8-b23a-69160af10714 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
-
-_:node1abo5dl9fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_40ff8eac-32a5-41c8-b23a-69160af10714 .
-
-km-dev:TriplesMap_85e50c0f-1993-4c54-9fe5-fc9310f4b6f9 a rr:TriplesMap .
-
-_:node1abo5dl9fx1 km-dev:hasTriplesMap km-dev:TriplesMap_85e50c0f-1993-4c54-9fe5-fc9310f4b6f9 .
-
-km-dev:TriplesMap_85e50c0f-1993-4c54-9fe5-fc9310f4b6f9 km-dev:isPartOfMapping _:node1abo5dl9fx1 .
-
-_:node1abo5dl9fx10 rr:tableName "AirPpli.jsonl.json" ;
+_:node1act7tjh5x13 rr:tableName "AirPpli.jsonl.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasLogicalTable _:node1abo5dl9fx10 .
+_:node1act7tjh5x1 km-dev:hasLogicalTable _:node1act7tjh5x13 .
 
-km-dev:TriplesMap_85e50c0f-1993-4c54-9fe5-fc9310f4b6f9 rr:logicalTable _:node1abo5dl9fx10 ;
-	rr:subjectMap _:node1abo5dl9fx11 .
+km-dev:TriplesMap_e5281db7-4ef9-4b30-b1cb-6eda610d21d6 rr:logicalTable _:node1act7tjh5x13 ;
+	rr:subjectMap _:node1act7tjh5x14 .
 
-_:node1abo5dl9fx1 km-dev:hasSubjectMap _:node1abo5dl9fx11 .
+_:node1act7tjh5x1 km-dev:hasSubjectMap _:node1act7tjh5x14 .
 
-_:node1abo5dl9fx11 km-dev:isPartOfMapping _:node1abo5dl9fx1 ;
+_:node1act7tjh5x14 km-dev:isPartOfMapping _:node1act7tjh5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Track1" ;
+	rr:class scharp:Track ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Track1" .
+
+km-dev:PredicateObjectMap_aeb69d4a-7d4a-4af3-8a7d-ebb4b9c42945 rr:predicate scharp:trackNum .
+
+_:node1act7tjh5x15 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"missionCommanderTrackNumber\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x15 .
+
+km-dev:PredicateObjectMap_aeb69d4a-7d4a-4af3-8a7d-ebb4b9c42945 rr:objectMap _:node1act7tjh5x15 .
+
+km-dev:TriplesMap_e5281db7-4ef9-4b30-b1cb-6eda610d21d6 rr:predicateObjectMap km-dev:PredicateObjectMap_aeb69d4a-7d4a-4af3-8a7d-ebb4b9c42945 .
+
+km-dev:PredicateObjectMap_aeb69d4a-7d4a-4af3-8a7d-ebb4b9c42945 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_aeb69d4a-7d4a-4af3-8a7d-ebb4b9c42945 .
+
+km-dev:TriplesMap_816c2e60-2164-49c3-9c4c-6ee737f74ba2 a rr:TriplesMap .
+
+_:node1act7tjh5x1 km-dev:hasTriplesMap km-dev:TriplesMap_816c2e60-2164-49c3-9c4c-6ee737f74ba2 .
+
+km-dev:TriplesMap_816c2e60-2164-49c3-9c4c-6ee737f74ba2 km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x16 rr:tableName "AirPpli.jsonl.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasLogicalTable _:node1act7tjh5x16 .
+
+km-dev:TriplesMap_816c2e60-2164-49c3-9c4c-6ee737f74ba2 rr:logicalTable _:node1act7tjh5x16 ;
+	rr:subjectMap _:node1act7tjh5x17 .
+
+_:node1act7tjh5x1 km-dev:hasSubjectMap _:node1act7tjh5x17 .
+
+_:node1act7tjh5x17 km-dev:isPartOfMapping _:node1act7tjh5x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Message1" ;
 	rr:class scharp:Message ;
 	rr:template "{[\"_jsonRep\",\"J2_2_AirPpli\",\"message_uri\"]}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_32985141-a7a5-4d2f-9188-00078ad7371f rr:predicate scharp:mention .
+km-dev:PredicateObjectMap_7a54d75f-29a8-4de2-84ee-daa4635c1a01 rr:predicate scharp:mention .
 
-km-dev:RefObjectMap_36857a52-383d-4338-91dd-6c888ca9bbc4 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_3c4eb444-fbcc-4edf-a4cd-9151a39031cc ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+km-dev:RefObjectMap_5e34f432-e128-46b1-87c9-585fa9ab2086 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_74722761-317c-4b0b-a6a8-3ed221a28260 ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasObjectMap km-dev:RefObjectMap_36857a52-383d-4338-91dd-6c888ca9bbc4 .
+_:node1act7tjh5x1 km-dev:hasObjectMap km-dev:RefObjectMap_5e34f432-e128-46b1-87c9-585fa9ab2086 .
 
-km-dev:PredicateObjectMap_32985141-a7a5-4d2f-9188-00078ad7371f rr:objectMap km-dev:RefObjectMap_36857a52-383d-4338-91dd-6c888ca9bbc4 .
+km-dev:PredicateObjectMap_7a54d75f-29a8-4de2-84ee-daa4635c1a01 rr:objectMap km-dev:RefObjectMap_5e34f432-e128-46b1-87c9-585fa9ab2086 .
 
-km-dev:TriplesMap_85e50c0f-1993-4c54-9fe5-fc9310f4b6f9 rr:predicateObjectMap km-dev:PredicateObjectMap_32985141-a7a5-4d2f-9188-00078ad7371f .
+km-dev:TriplesMap_816c2e60-2164-49c3-9c4c-6ee737f74ba2 rr:predicateObjectMap km-dev:PredicateObjectMap_7a54d75f-29a8-4de2-84ee-daa4635c1a01 .
 
-km-dev:PredicateObjectMap_32985141-a7a5-4d2f-9188-00078ad7371f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+km-dev:PredicateObjectMap_7a54d75f-29a8-4de2-84ee-daa4635c1a01 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_32985141-a7a5-4d2f-9188-00078ad7371f .
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7a54d75f-29a8-4de2-84ee-daa4635c1a01 .
 
-km-dev:PredicateObjectMap_6c174ce3-21f0-422b-8356-a1333b6011ef rr:predicate scharp:timeStamp .
+km-dev:PredicateObjectMap_2c27cb33-c3e8-4d6d-86f1-4e066fa1e50e rr:predicate scharp:timeStamp .
 
-_:node1abo5dl9fx12 rr:column "_timestamp" ;
+_:node1act7tjh5x18 rr:column "_timestamp" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasObjectMap _:node1abo5dl9fx12 .
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x18 .
 
-km-dev:PredicateObjectMap_6c174ce3-21f0-422b-8356-a1333b6011ef rr:objectMap _:node1abo5dl9fx12 .
+km-dev:PredicateObjectMap_2c27cb33-c3e8-4d6d-86f1-4e066fa1e50e rr:objectMap _:node1act7tjh5x18 .
 
-km-dev:TriplesMap_85e50c0f-1993-4c54-9fe5-fc9310f4b6f9 rr:predicateObjectMap km-dev:PredicateObjectMap_6c174ce3-21f0-422b-8356-a1333b6011ef .
+km-dev:TriplesMap_816c2e60-2164-49c3-9c4c-6ee737f74ba2 rr:predicateObjectMap km-dev:PredicateObjectMap_2c27cb33-c3e8-4d6d-86f1-4e066fa1e50e .
 
-km-dev:PredicateObjectMap_6c174ce3-21f0-422b-8356-a1333b6011ef a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1abo5dl9fx1 .
+km-dev:PredicateObjectMap_2c27cb33-c3e8-4d6d-86f1-4e066fa1e50e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
 
-_:node1abo5dl9fx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6c174ce3-21f0-422b-8356-a1333b6011ef .
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2c27cb33-c3e8-4d6d-86f1-4e066fa1e50e .
+
+km-dev:TriplesMap_4aa7f8e8-3a3f-48d9-b17e-3d10e88a4847 a rr:TriplesMap .
+
+_:node1act7tjh5x1 km-dev:hasTriplesMap km-dev:TriplesMap_4aa7f8e8-3a3f-48d9-b17e-3d10e88a4847 .
+
+km-dev:TriplesMap_4aa7f8e8-3a3f-48d9-b17e-3d10e88a4847 km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x19 rr:tableName "AirPpli.jsonl.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasLogicalTable _:node1act7tjh5x19 .
+
+km-dev:TriplesMap_4aa7f8e8-3a3f-48d9-b17e-3d10e88a4847 rr:logicalTable _:node1act7tjh5x19 ;
+	rr:subjectMap _:node1act7tjh5x20 .
+
+_:node1act7tjh5x1 km-dev:hasSubjectMap _:node1act7tjh5x20 .
+
+_:node1act7tjh5x20 km-dev:isPartOfMapping _:node1act7tjh5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
+	rr:class scharp:Point ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Point1" .
+
+km-dev:PredicateObjectMap_c70a20dd-0b0c-473a-82d3-c7a41639d00c rr:predicate scharp:altitude .
+
+_:node1act7tjh5x21 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"altitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x21 .
+
+km-dev:PredicateObjectMap_c70a20dd-0b0c-473a-82d3-c7a41639d00c rr:objectMap _:node1act7tjh5x21 .
+
+km-dev:TriplesMap_4aa7f8e8-3a3f-48d9-b17e-3d10e88a4847 rr:predicateObjectMap km-dev:PredicateObjectMap_c70a20dd-0b0c-473a-82d3-c7a41639d00c .
+
+km-dev:PredicateObjectMap_c70a20dd-0b0c-473a-82d3-c7a41639d00c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c70a20dd-0b0c-473a-82d3-c7a41639d00c .
+
+km-dev:PredicateObjectMap_10b541bc-15c1-41e2-b429-709af90f787e rr:predicate scharp:latitude .
+
+_:node1act7tjh5x22 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"latitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x22 .
+
+km-dev:PredicateObjectMap_10b541bc-15c1-41e2-b429-709af90f787e rr:objectMap _:node1act7tjh5x22 .
+
+km-dev:TriplesMap_4aa7f8e8-3a3f-48d9-b17e-3d10e88a4847 rr:predicateObjectMap km-dev:PredicateObjectMap_10b541bc-15c1-41e2-b429-709af90f787e .
+
+km-dev:PredicateObjectMap_10b541bc-15c1-41e2-b429-709af90f787e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_10b541bc-15c1-41e2-b429-709af90f787e .
+
+km-dev:PredicateObjectMap_9307380b-cf6d-4256-a2ee-a5fb220aeddd rr:predicate scharp:longitude .
+
+_:node1act7tjh5x23 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"longitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x23 .
+
+km-dev:PredicateObjectMap_9307380b-cf6d-4256-a2ee-a5fb220aeddd rr:objectMap _:node1act7tjh5x23 .
+
+km-dev:TriplesMap_4aa7f8e8-3a3f-48d9-b17e-3d10e88a4847 rr:predicateObjectMap km-dev:PredicateObjectMap_9307380b-cf6d-4256-a2ee-a5fb220aeddd .
+
+km-dev:PredicateObjectMap_9307380b-cf6d-4256-a2ee-a5fb220aeddd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9307380b-cf6d-4256-a2ee-a5fb220aeddd .
+
+km-dev:TriplesMap_7cc9acf9-19ab-4c6b-b642-a420dd1daf76 a rr:TriplesMap .
+
+_:node1act7tjh5x1 km-dev:hasTriplesMap km-dev:TriplesMap_7cc9acf9-19ab-4c6b-b642-a420dd1daf76 .
+
+km-dev:TriplesMap_7cc9acf9-19ab-4c6b-b642-a420dd1daf76 km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x24 rr:tableName "AirPpli.jsonl.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasLogicalTable _:node1act7tjh5x24 .
+
+km-dev:TriplesMap_7cc9acf9-19ab-4c6b-b642-a420dd1daf76 rr:logicalTable _:node1act7tjh5x24 ;
+	rr:subjectMap _:node1act7tjh5x25 .
+
+_:node1act7tjh5x1 km-dev:hasSubjectMap _:node1act7tjh5x25 .
+
+_:node1act7tjh5x25 km-dev:isPartOfMapping _:node1act7tjh5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/flightLeader1" ;
+	rr:class scharp:flightLeader ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:flightLeader1" .
+
+km-dev:PredicateObjectMap_787aaa57-77cb-4b51-858c-c24804c0676a rr:predicate scharp:value .
+
+_:node1act7tjh5x26 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"flightLeader\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x26 .
+
+km-dev:PredicateObjectMap_787aaa57-77cb-4b51-858c-c24804c0676a rr:objectMap _:node1act7tjh5x26 .
+
+km-dev:TriplesMap_7cc9acf9-19ab-4c6b-b642-a420dd1daf76 rr:predicateObjectMap km-dev:PredicateObjectMap_787aaa57-77cb-4b51-858c-c24804c0676a .
+
+km-dev:PredicateObjectMap_787aaa57-77cb-4b51-858c-c24804c0676a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_787aaa57-77cb-4b51-858c-c24804c0676a .
+
+km-dev:PredicateObjectMap_d512190c-b89b-4035-9354-38bf11c8fa66 rr:predicate scharp:trackedBy .
+
+km-dev:RefObjectMap_4638026f-5419-43af-8af7-2e0aca04206b a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_e8752a2a-3f4c-4399-95b6-233993e60d58 ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap km-dev:RefObjectMap_4638026f-5419-43af-8af7-2e0aca04206b .
+
+km-dev:PredicateObjectMap_d512190c-b89b-4035-9354-38bf11c8fa66 rr:objectMap km-dev:RefObjectMap_4638026f-5419-43af-8af7-2e0aca04206b .
+
+km-dev:TriplesMap_7cc9acf9-19ab-4c6b-b642-a420dd1daf76 rr:predicateObjectMap km-dev:PredicateObjectMap_d512190c-b89b-4035-9354-38bf11c8fa66 .
+
+km-dev:PredicateObjectMap_d512190c-b89b-4035-9354-38bf11c8fa66 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d512190c-b89b-4035-9354-38bf11c8fa66 .
+
+km-dev:TriplesMap_e8752a2a-3f4c-4399-95b6-233993e60d58 a rr:TriplesMap .
+
+_:node1act7tjh5x1 km-dev:hasTriplesMap km-dev:TriplesMap_e8752a2a-3f4c-4399-95b6-233993e60d58 .
+
+km-dev:TriplesMap_e8752a2a-3f4c-4399-95b6-233993e60d58 km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x27 rr:tableName "AirPpli.jsonl.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasLogicalTable _:node1act7tjh5x27 .
+
+km-dev:TriplesMap_e8752a2a-3f4c-4399-95b6-233993e60d58 rr:logicalTable _:node1act7tjh5x27 ;
+	rr:subjectMap _:node1act7tjh5x28 .
+
+_:node1act7tjh5x1 km-dev:hasSubjectMap _:node1act7tjh5x28 .
+
+_:node1act7tjh5x28 km-dev:isPartOfMapping _:node1act7tjh5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Track2" ;
+	rr:class scharp:Track ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Track2" .
+
+km-dev:PredicateObjectMap_061a9312-902e-4ad0-80cb-59ae08ff5893 rr:predicate scharp:trackNum .
+
+_:node1act7tjh5x29 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"flightLeaderTrackNumber\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x29 .
+
+km-dev:PredicateObjectMap_061a9312-902e-4ad0-80cb-59ae08ff5893 rr:objectMap _:node1act7tjh5x29 .
+
+km-dev:TriplesMap_e8752a2a-3f4c-4399-95b6-233993e60d58 rr:predicateObjectMap km-dev:PredicateObjectMap_061a9312-902e-4ad0-80cb-59ae08ff5893 .
+
+km-dev:PredicateObjectMap_061a9312-902e-4ad0-80cb-59ae08ff5893 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_061a9312-902e-4ad0-80cb-59ae08ff5893 .
+
+km-dev:TriplesMap_c7ada33e-1f9b-48cb-b66d-b2d48c59c3e4 a rr:TriplesMap .
+
+_:node1act7tjh5x1 km-dev:hasTriplesMap km-dev:TriplesMap_c7ada33e-1f9b-48cb-b66d-b2d48c59c3e4 .
+
+km-dev:TriplesMap_c7ada33e-1f9b-48cb-b66d-b2d48c59c3e4 km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x30 rr:tableName "AirPpli.jsonl.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasLogicalTable _:node1act7tjh5x30 .
+
+km-dev:TriplesMap_c7ada33e-1f9b-48cb-b66d-b2d48c59c3e4 rr:logicalTable _:node1act7tjh5x30 ;
+	rr:subjectMap _:node1act7tjh5x31 .
+
+_:node1act7tjh5x1 km-dev:hasSubjectMap _:node1act7tjh5x31 .
+
+_:node1act7tjh5x31 km-dev:isPartOfMapping _:node1act7tjh5x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Label1" ;
+	rr:class scharp:Label ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Label1" .
+
+km-dev:PredicateObjectMap_38cb1aa3-1a70-49e7-b42a-166fa5f75ad1 rr:predicate scharp:value .
+
+_:node1act7tjh5x32 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"label\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x32 .
+
+km-dev:PredicateObjectMap_38cb1aa3-1a70-49e7-b42a-166fa5f75ad1 rr:objectMap _:node1act7tjh5x32 .
+
+km-dev:TriplesMap_c7ada33e-1f9b-48cb-b66d-b2d48c59c3e4 rr:predicateObjectMap km-dev:PredicateObjectMap_38cb1aa3-1a70-49e7-b42a-166fa5f75ad1 .
+
+km-dev:PredicateObjectMap_38cb1aa3-1a70-49e7-b42a-166fa5f75ad1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_38cb1aa3-1a70-49e7-b42a-166fa5f75ad1 .
+
+km-dev:PredicateObjectMap_c39950f4-cf31-4599-9b19-c4dcd4edfc77 rr:predicate scharp:subLabel .
+
+_:node1act7tjh5x33 rr:column "[\"_jsonRep\",\"J2_2_AirPpli\",\"sublabel\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasObjectMap _:node1act7tjh5x33 .
+
+km-dev:PredicateObjectMap_c39950f4-cf31-4599-9b19-c4dcd4edfc77 rr:objectMap _:node1act7tjh5x33 .
+
+km-dev:TriplesMap_c7ada33e-1f9b-48cb-b66d-b2d48c59c3e4 rr:predicateObjectMap km-dev:PredicateObjectMap_c39950f4-cf31-4599-9b19-c4dcd4edfc77 .
+
+km-dev:PredicateObjectMap_c39950f4-cf31-4599-9b19-c4dcd4edfc77 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1act7tjh5x1 .
+
+_:node1act7tjh5x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c39950f4-cf31-4599-9b19-c4dcd4edfc77 .

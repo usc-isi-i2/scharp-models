@@ -131,6 +131,11 @@ scharp:Status rdf:type owl:Class ;
 	rdfs:comment """Status""" ;
 	.
 
+scharp:Identity rdf:type owl:Class ;
+	rdfs:label "Identity"@en ;
+	rdfs:comment "The Identity of unit." 
+	.
+
 #########################################################
 #
 # Object Properties
@@ -221,9 +226,30 @@ scharp:view rdf:type owl:ObjectProperty ;
 	rdfs:comment "The sight." 
 	.
 
-scharp:trackedBy rdf:type rdf:ObjectProperty ;
+scharp:trackedBy rdf:type owl:ObjectProperty ;
+	rdfs:domain scharp:Unit;
 	rdfs:label "trackedBy"@en ;
-	rdfs:domain scharp:Unit
+	rdfs:comment "a unit track." 
+	.
+
+scharp:leader rdf:type owl:ObjectProperty ;
+	rdfs:label "leader"@en 
+	.
+
+scharp:commander rdf:type owl:ObjectProperty ;
+	rdfs:label "commander"@en 
+	.
+
+scharp:elevation rdf:type owl:ObjectProperty ;
+	rdfs:label "elevation"@en 
+	.
+
+scharp:missle rdf:type owl:ObjectProperty ;
+	rdfs:label "missle"@en 
+	.
+
+scharp:firecontrol rdf:type owl:ObjectProperty ;
+	rdfs:label "firecontrol"@en 
 	.
 
 #########################################################
@@ -388,9 +414,14 @@ scharp:object rdf:type rdf:Property ;
 	rdfs:comment "The object of sight." 
 	.
 
-scharp:identity rdf:type rdf:Property ;
-	rdfs:label "identity"@en ;
-	rdfs:comment "The identity of unit." 
+scharp:identityConfidence rdf:type rdf:Property ;
+	rdfs:label "identityConfidence"@en ;
+	rdfs:comment "The confidence of identity." 
+	.
+
+scharp:identityDifference rdf:type rdf:Property ;
+	rdfs:label "identityDifference"@en ;
+	rdfs:comment "The difference of identity." 
 	.
 
 scharp:trackNum rdf:type rdf:Property ;
@@ -545,3 +576,14 @@ scharp:missileType12 rdf:type rdf:Property ;
 	rdfs:label "missileType12"@en 
 	.
 
+scharp:hasLabel rdf:type rdf:Property ;
+	rdfs:label "hasLabel"@en 
+	.
+
+scharp:hasidentity rdf:type rdf:Property ;
+	rdfs:label "hasidentity"@en 
+	.
+
+scharp:subLabel rdf:type rdf:Property ;
+	rdfs:label "subLabel"@en 
+	.

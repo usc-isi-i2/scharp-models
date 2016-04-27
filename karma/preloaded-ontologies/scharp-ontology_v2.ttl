@@ -137,6 +137,36 @@ scharp:Identity rdf:type owl:Class ;
 	rdfs:comment "The Identity of unit." 
 	.
 
+scharp:Unit_Contract rdf:type owl:Class ;
+	rdfs:label "Unit Contract"@en ;
+	rdfs:comment "A contract between a tasking authority (e.g., Air and Space Operations Center [AOC]) and a tasked organization (e.g., Air Unit)." 
+	.
+
+scharp:Turn rdf:type owl:Class ;
+	rdfs:label "Turn"@en ;
+	rdfs:comment "Information of Sortie Groups." 
+	.
+
+scharp:Go rdf:type owl:Class ;
+	rdfs:label "Go"@en ;
+	rdfs:comment "A Go is a collection of sorties that happens within the context of a turn pattern." 
+	.
+
+scharp:Airspace rdf:type owl:Class ;
+	rdfs:label "Air space"@en ;
+	rdfs:comment "Air Space." 
+	.
+
+scharp:Take_off_Win rdf:type owl:Class ;
+	rdfs:label "Take_off_Win"@en ;
+	rdfs:comment "Take_off_Win." 
+	.
+
+scharp:SCL rdf:type owl:Class ;
+	rdfs:label "SCL"@en ;
+	rdfs:comment "Standard Conventional Load." 
+	.
+
 #########################################################
 #
 # Object Properties
@@ -243,6 +273,38 @@ scharp:elevation rdf:type owl:ObjectProperty ;
 	rdfs:label "elevation"@en 
 	.
 
+scharp:valid_duration rdf:type owl:ObjectProperty ;
+	rdfs:domain scharp:Unit_Contract ;
+	rdfs:range scharp:Interval ;
+	rdfs:label "Valid Duration"@en 
+	.
+
+scharp:take_off_win rdf:type owl:ObjectProperty ;
+	rdfs:domain scharp:Go ;
+	rdfs:label "Take off Window"@en 
+	.
+
+scharp:contract rdf:type owl:ObjectProperty ;
+	rdfs:label "Contract"@en ;
+	rdfs:domain scharp:Unit_Contract ;
+	rdfs:range scharp:Unit ; 
+	.
+
+scharp:turn rdf:type owl:ObjectProperty ;
+	rdfs:domain scharp:Unit_Contract ;
+	rdfs:range scharp:Turn ; 
+	.
+
+scharp:go rdf:type owl:ObjectProperty ;
+	rdfs:domain scharp:Turn ;
+	rdfs:range scharp:Go ; 
+	.
+
+scharp:hasvertice rdf:type owl:ObjectProperty ;
+	rdfs:label "vertice"@en ;
+	rdfs:domain scharp:Airspace ;
+	rdfs:range scharp:Point ; 
+	.
 
 #########################################################
 #
@@ -290,13 +352,19 @@ scharp:NLT rdf:type rdf:Property ;
 scharp:start_time rdf:type rdf:Property ;
 	rdfs:label "NLT"@en ;
 	rdfs:domain scharp:Interval ;
-	rdfs:comment "The mission start time." 
+	rdfs:comment "The start time." 
+	.
+
+scharp:end_time rdf:type rdf:Property ;
+	rdfs:label "End"@en ;
+	rdfs:domain scharp:Interval ;
+	rdfs:comment "The end time." 
 	.
 
 scharp:stop_time rdf:type rdf:Property ;
 	rdfs:label "stop"@en ;
 	rdfs:domain scharp:Interval ;
-	rdfs:comment "The mission stop time." 
+	rdfs:comment "The stop time." 
 	.
 
 scharp:landing rdf:type rdf:Property ;
@@ -391,7 +459,6 @@ scharp:surfaceVisibility rdf:type rdf:Property ;
 
 scharp:lowCloudBaseHeight rdf:type rdf:Property ;
 	rdfs:label "lowCloudBaseHeight"@en ;
-	rdfs:domain scharp:WeatherReport;
 	rdfs:domain scharp:WeatherReport
 	.
 
@@ -493,11 +560,166 @@ scharp:subLabel rdf:type rdf:Property ;
 	rdfs:label "subLabel"@en 
 	.
 
-scharp:type rdf:type rdf:Property ;
-	rdfs:label "type"@en ;
-	rdfs:comment "The type of something." 
+scharp:aircraft rdf:type rdf:Property ;
+	rdfs:label "Air Craft"@en ;
+	rdfs:domain scharp:Unit_Contract ;
+	rdfs:comment "The type of AirCraft." 
 	.
 
-scharp:value rdf:type rdf:Property ;
-	rdfs:label "value"@en 
+scharp:recurrence rdf:type rdf:Property ;
+	rdfs:label "Recurrence"@en ;
+	rdfs:domain scharp:Unit_Contract ;
+	rdfs:comment "Contract Recurrence Period." 
+	.
+
+scharp:exp_sorties rdf:type rdf:Property ;
+	rdfs:label "Expected Sortie"@en ;
+	rdfs:domain scharp:Turn ;
+	rdfs:comment "Expected Sortie Generation Capability." 
+	.
+
+scharp:turn_time rdf:type rdf:Property ;
+	rdfs:label "Turn Time"@en ;
+	rdfs:domain scharp:Turn ;
+	rdfs:comment "refueling, rearming, and maintenance time." 
+	.
+
+scharp:sortie_num rdf:type rdf:Property ;
+	rdfs:label "Sortie Number"@en ;
+	rdfs:domain scharp:Go ;
+	rdfs:comment "Number of Sorties." 
+	.
+
+scharp:locatein rdf:type rdf:Property ;
+	rdfs:label "locatein"@en ;
+	rdfs:domain scharp:Unit;
+	rdfs:comment "The location information." 
+	.
+
+scharp:take_off_start rdf:type rdf:Property ;
+	rdfs:label "t/o_start"@en ;
+	rdfs:domain scharp:Take_off_Win;
+	rdfs:comment "take off start time." 
+	.
+
+scharp:take_off_duration rdf:type rdf:Property ;
+	rdfs:label "t/o_duration"@en ;
+	rdfs:domain scharp:Take_off_Win;
+	rdfs:comment "take off duration." 
+	.
+
+scharp:duration rdf:type rdf:Property ;
+	rdfs:label "duration"@en ;
+	rdfs:domain scharp:Go
+	.
+
+scharp:airspaceId rdf:type rdf:Property ;
+	rdfs:label "airspaceId"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The ID of an air space." 
+	.
+
+scharp:shape rdf:type rdf:Property ;
+	rdfs:label "shape"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The shape of an air space." 
+	.
+
+scharp:usage rdf:type rdf:Property ;
+	rdfs:label "usage"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The usage of an air space." 
+	.
+
+scharp:flightLevel rdf:type rdf:Property ;
+	rdfs:label "flightLevel"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The flight level of an air space." 
+	.
+
+scharp:type rdf:type rdf:Property ;
+	rdfs:label "type"@en ;
+	rdfs:comment "The type." 
+	.
+
+scharp:width rdf:type rdf:Property ;
+	rdfs:label "width"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The width level of an air space." 
+	.
+
+scharp:alignm rdf:type rdf:Property ;
+	rdfs:label "alignm"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The alignm level of an air space." 
+	.
+
+scharp:countryCode rdf:type rdf:Property ;
+	rdfs:label "Country Code"@en ;
+	rdfs:domain scharp:Target;
+	rdfs:comment "The country code of a target." 
+	.
+
+scharp:Priority rdf:type rdf:Property ;
+	rdfs:label "Priority"@en ;
+	rdfs:domain scharp:Target;
+	rdfs:comment "The priority of a target." 
+	.
+
+scharp:Functionable rdf:type rdf:Property ;
+	rdfs:label "FUNC"@en ;
+	rdfs:domain scharp:Target;
+	rdfs:comment "The current assessment of how the target is capable of functioning." 
+	.
+
+scharp:Damage rdf:type rdf:Property ;
+	rdfs:label "PHY"@en ;
+	rdfs:domain scharp:Target;
+	rdfs:comment "This is the current assessment of how much damage the target has sustained already." 
+	.
+
+scharp:taskId rdf:type rdf:Property ;
+	rdfs:label "TASK"@en ;
+	rdfs:domain scharp:Target;
+	rdfs:comment "TACTICAL TASK." 
+	.
+
+scharp:configurationName rdf:type rdf:Property ;
+	rdfs:label "ConfigurationName"@en ;
+	rdfs:domain scharp:SCL
+	.
+
+scharp:aircraftType rdf:type rdf:Property ;
+	rdfs:label "AircraftType"@en ;
+	rdfs:domain scharp:SCL
+	.
+
+scharp:componentName rdf:type rdf:Property ;
+	rdfs:label "ComponentName"@en ;
+	rdfs:domain scharp:SCL
+	.
+
+scharp:quantity rdf:type rdf:Property ;
+	rdfs:label "Quantity"@en ;
+	rdfs:domain scharp:SCL
+	.
+
+scharp:index rdf:type rdf:Property ;
+	rdfs:label "Index"@en ;
+	rdfs:domain scharp:SCL
+	.
+
+scharp:team rdf:type rdf:Property ;
+	rdfs:label "Team"@en ;
+	rdfs:domain scharp:SCL
+	.
+
+scharp:source rdf:type rdf:Property ;
+	rdfs:label "Source"@en ;
+	rdfs:domain scharp:SCL
+	.
+
+scharp:scenarioName rdf:type rdf:Property ;
+	rdfs:label "ScenarioName"@en ;
+	rdfs:domain scharp:SCL
 	.

@@ -1,0 +1,1864 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix dpla: <http://dp.la/about/map/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1ahc8enkox1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "unit_contracts.jl" ;
+	km-dev:modelPublicationTime "1461774147224"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Start\"}],[{\"columnName\":\"Unit\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window start\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Turn time\"}],[{\"columnName\":\"End\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Sorties\"}],[{\"columnName\":\"A/C\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Duration\"}],[{\"columnName\":\"Recurrence\"}],[{\"columnName\":\"Location\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Exp Sorties\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window duration\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"unit_contract_uri\"}],[{\"columnName\":\"End\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Sorties\"}],[{\"columnName\":\"A/C\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Duration\"}],[{\"columnName\":\"Recurrence\"}],[{\"columnName\":\"Location\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Exp Sorties\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window duration\"}],[{\"columnName\":\"Start\"}],[{\"columnName\":\"Unit\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window start\"}],[{\"columnName\":\"unit_uri\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Turn time\"}]]" ;
+	km-dev:hasModelLabel "unit_contracts.jl" ;
+	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Unit\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"unit_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"unit/\\\"+getValue(\\\"Unit\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Unit\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"unit_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"unit_contract_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"unit/\\\"+getValue(\\\"Unit\\\")+\\\"/contract\\\"\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Unit\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit_contract_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"scharp\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"unit_contract_uri\",
+                        \"id\": [{\"columnName\": \"unit_contract_uri\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"End\",
+                        \"id\": [{\"columnName\": \"End\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Recurrence\",
+                        \"id\": [{\"columnName\": \"Recurrence\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"A/C\",
+                        \"id\": [{\"columnName\": \"A/C\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Start\",
+                        \"id\": [{\"columnName\": \"Start\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"unit_uri\",
+                        \"id\": [{\"columnName\": \"unit_uri\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Unit\",
+                        \"id\": [{\"columnName\": \"Unit\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Location\",
+                        \"id\": [{\"columnName\": \"Location\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"Exp Sorties\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Exp Sorties\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Duration\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Duration\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Sorties\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Sorties\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"T/O window duration\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"T/O window duration\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"T/O window start\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"T/O window start\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"Go\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"Turn time\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Turn time\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"Turn\",
+                        \"id\": [{\"columnName\": \"Turn\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"unit_contract_uri\",
+                        \"id\": [{\"columnName\": \"unit_contract_uri\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"unit_uri\",
+                        \"id\": [{\"columnName\": \"unit_uri\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Unit\",
+                        \"id\": [{\"columnName\": \"Unit\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Location\",
+                        \"id\": [{\"columnName\": \"Location\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Recurrence\",
+                        \"id\": [{\"columnName\": \"Recurrence\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"A/C\",
+                        \"id\": [{\"columnName\": \"A/C\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Start\",
+                        \"id\": [{\"columnName\": \"Start\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"End\",
+                        \"id\": [{\"columnName\": \"End\"}]
+                    },
+                    {
+                        \"visible\": true,
+                        \"children\": \"[{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"Exp Sorties\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Exp Sorties\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Duration\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Duration\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Sorties\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Sorties\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"T/O window duration\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"T/O window duration\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"T/O window start\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"T/O window start\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"Go\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"Turn time\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Turn time\\\"}]}]\",
+                        \"hideable\": false,
+                        \"name\": \"Turn\",
+                        \"id\": [{\"columnName\": \"Turn\"}]
+                    }
+                ]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"A/C\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/aircraft\",
+                    \"DomainLabel\": \"scharp:Unit_Contract1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"A/C\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"A/C\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"End\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/end_time\",
+                    \"DomainLabel\": \"scharp:Interval1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"End\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"End\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Start\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/start_time\",
+                    \"DomainLabel\": \"scharp:Interval1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Start\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Start\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Location\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Unit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Unit1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/locatein\",
+                    \"DomainLabel\": \"scharp:Unit1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Location\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Location\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Recurrence\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/recurrence\",
+                    \"DomainLabel\": \"scharp:Unit_Contract1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Recurrence\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Recurrence\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Turn\"},
+                    {\"columnName\": \"Exp Sorties\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Turn\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Turn1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/exp_sorties\",
+                    \"DomainLabel\": \"scharp:Turn1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Exp Sorties\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Exp Sorties\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Turn\"},
+                    {\"columnName\": \"Turn time\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Turn\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Turn1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/turn_time\",
+                    \"DomainLabel\": \"scharp:Turn1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Turn time\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Turn time\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Unit\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Unit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Unit1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/callsign\",
+                    \"DomainLabel\": \"scharp:Unit1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Unit\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Unit\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Turn\"},
+                    {\"columnName\": \"Go\"},
+                    {\"columnName\": \"Duration\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Go\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Go1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/duration\",
+                    \"DomainLabel\": \"scharp:Go1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"},{\\\"columnName\\\":\\\"Duration\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"},{\\\"columnName\\\":\\\"Duration\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Turn\"},
+                    {\"columnName\": \"Go\"},
+                    {\"columnName\": \"Sorties\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Go\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Go1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/sortie_num\",
+                    \"DomainLabel\": \"scharp:Go1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"},{\\\"columnName\\\":\\\"Sorties\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"},{\\\"columnName\\\":\\\"Sorties\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Turn\"},
+                    {\"columnName\": \"Go\"},
+                    {\"columnName\": \"T/O window duration\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Take_off_Win\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Take_off_Win1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/take_off_duration\",
+                    \"DomainLabel\": \"Take_off_Win1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"},{\\\"columnName\\\":\\\"T/O window duration\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"},{\\\"columnName\\\":\\\"T/O window duration\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Turn\"},
+                    {\"columnName\": \"Go\"},
+                    {\"columnName\": \"T/O window start\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Take_off_Win\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Take_off_Win1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/take_off_start\",
+                    \"DomainLabel\": \"scharp:Take_off_Win1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"},{\\\"columnName\\\":\\\"T/O window start\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"},{\\\"columnName\\\":\\\"T/O window start\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"unit_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Unit\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Unit1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Unit\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Unit1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:Unit1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"unit_contract_uri\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:Unit_Contract1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit_contract_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit_contract_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP8:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Unit1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/contract\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Unit\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP8:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/valid_duration\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP8:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Turn1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/turn\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Turn\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Unit_Contract\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP8:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Take_off_Win1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/take_off_win\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Take_off_Win\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Go1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Go\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP8:WS5AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Go1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/go\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Go\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Turn1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Turn\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 a rr:TriplesMap .
+
+_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 .
+
+km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox2 rr:tableName "unit_contracts.jl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox2 .
+
+km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 rr:logicalTable _:node1ahc8enkox2 ;
+	rr:subjectMap _:node1ahc8enkox3 .
+
+_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox3 .
+
+_:node1ahc8enkox3 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Go1" ;
+	rr:class scharp:Go ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Go1" .
+
+km-dev:PredicateObjectMap_2ad72107-d499-4ac7-8779-bda10768225b rr:predicate scharp:take_off_win .
+
+km-dev:RefObjectMap_2ae9470d-875a-4642-a2df-bb159e01f111 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap km-dev:RefObjectMap_2ae9470d-875a-4642-a2df-bb159e01f111 .
+
+km-dev:PredicateObjectMap_2ad72107-d499-4ac7-8779-bda10768225b rr:objectMap km-dev:RefObjectMap_2ae9470d-875a-4642-a2df-bb159e01f111 .
+
+km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 rr:predicateObjectMap km-dev:PredicateObjectMap_2ad72107-d499-4ac7-8779-bda10768225b .
+
+km-dev:PredicateObjectMap_2ad72107-d499-4ac7-8779-bda10768225b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2ad72107-d499-4ac7-8779-bda10768225b .
+
+km-dev:PredicateObjectMap_ea4bb196-38c9-400f-89f6-81b2eb0d260e rr:predicate scharp:sortie_num .
+
+_:node1ahc8enkox4 rr:column "[\"Turn\",\"Go\",\"Sorties\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox4 .
+
+km-dev:PredicateObjectMap_ea4bb196-38c9-400f-89f6-81b2eb0d260e rr:objectMap _:node1ahc8enkox4 .
+
+km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 rr:predicateObjectMap km-dev:PredicateObjectMap_ea4bb196-38c9-400f-89f6-81b2eb0d260e .
+
+km-dev:PredicateObjectMap_ea4bb196-38c9-400f-89f6-81b2eb0d260e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ea4bb196-38c9-400f-89f6-81b2eb0d260e .
+
+km-dev:PredicateObjectMap_cd6d13b5-ad91-4ee4-a682-f5e37623f287 rr:predicate scharp:duration .
+
+_:node1ahc8enkox5 rr:column "[\"Turn\",\"Go\",\"Duration\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox5 .
+
+km-dev:PredicateObjectMap_cd6d13b5-ad91-4ee4-a682-f5e37623f287 rr:objectMap _:node1ahc8enkox5 .
+
+km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 rr:predicateObjectMap km-dev:PredicateObjectMap_cd6d13b5-ad91-4ee4-a682-f5e37623f287 .
+
+km-dev:PredicateObjectMap_cd6d13b5-ad91-4ee4-a682-f5e37623f287 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cd6d13b5-ad91-4ee4-a682-f5e37623f287 .
+
+km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b a rr:TriplesMap .
+
+_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b .
+
+km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox6 rr:tableName "unit_contracts.jl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox6 .
+
+km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b rr:logicalTable _:node1ahc8enkox6 ;
+	rr:subjectMap _:node1ahc8enkox7 .
+
+_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox7 .
+
+_:node1ahc8enkox7 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Take_off_Win1" ;
+	rr:class scharp:Take_off_Win ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Take_off_Win1" .
+
+km-dev:PredicateObjectMap_527c26b4-f550-43ce-991d-01da3abec61f rr:predicate scharp:take_off_duration .
+
+_:node1ahc8enkox8 rr:column "[\"Turn\",\"Go\",\"T/O window duration\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox8 .
+
+km-dev:PredicateObjectMap_527c26b4-f550-43ce-991d-01da3abec61f rr:objectMap _:node1ahc8enkox8 .
+
+km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b rr:predicateObjectMap km-dev:PredicateObjectMap_527c26b4-f550-43ce-991d-01da3abec61f .
+
+km-dev:PredicateObjectMap_527c26b4-f550-43ce-991d-01da3abec61f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_527c26b4-f550-43ce-991d-01da3abec61f .
+
+km-dev:PredicateObjectMap_662af69b-07bb-4d75-81d9-811b8ad5f98b rr:predicate scharp:take_off_start .
+
+_:node1ahc8enkox9 rr:column "[\"Turn\",\"Go\",\"T/O window start\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox9 .
+
+km-dev:PredicateObjectMap_662af69b-07bb-4d75-81d9-811b8ad5f98b rr:objectMap _:node1ahc8enkox9 .
+
+km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b rr:predicateObjectMap km-dev:PredicateObjectMap_662af69b-07bb-4d75-81d9-811b8ad5f98b .
+
+km-dev:PredicateObjectMap_662af69b-07bb-4d75-81d9-811b8ad5f98b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_662af69b-07bb-4d75-81d9-811b8ad5f98b .
+
+km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee a rr:TriplesMap .
+
+_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee .
+
+km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox10 rr:tableName "unit_contracts.jl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox10 .
+
+km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee rr:logicalTable _:node1ahc8enkox10 ;
+	rr:subjectMap _:node1ahc8enkox11 .
+
+_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox11 .
+
+_:node1ahc8enkox11 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Turn1" ;
+	rr:class scharp:Turn ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Turn1" .
+
+km-dev:PredicateObjectMap_f2c0ffc2-a5d9-445c-ab68-48ce8ee5750b rr:predicate scharp:go .
+
+km-dev:RefObjectMap_4f01d2ec-7a59-4578-9d77-78ed3329f9c7 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap km-dev:RefObjectMap_4f01d2ec-7a59-4578-9d77-78ed3329f9c7 .
+
+km-dev:PredicateObjectMap_f2c0ffc2-a5d9-445c-ab68-48ce8ee5750b rr:objectMap km-dev:RefObjectMap_4f01d2ec-7a59-4578-9d77-78ed3329f9c7 .
+
+km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee rr:predicateObjectMap km-dev:PredicateObjectMap_f2c0ffc2-a5d9-445c-ab68-48ce8ee5750b .
+
+km-dev:PredicateObjectMap_f2c0ffc2-a5d9-445c-ab68-48ce8ee5750b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f2c0ffc2-a5d9-445c-ab68-48ce8ee5750b .
+
+km-dev:PredicateObjectMap_e0833597-ae4f-4f86-895c-b72cd4fe249e rr:predicate scharp:exp_sorties .
+
+_:node1ahc8enkox12 rr:column "[\"Turn\",\"Exp Sorties\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox12 .
+
+km-dev:PredicateObjectMap_e0833597-ae4f-4f86-895c-b72cd4fe249e rr:objectMap _:node1ahc8enkox12 .
+
+km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee rr:predicateObjectMap km-dev:PredicateObjectMap_e0833597-ae4f-4f86-895c-b72cd4fe249e .
+
+km-dev:PredicateObjectMap_e0833597-ae4f-4f86-895c-b72cd4fe249e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e0833597-ae4f-4f86-895c-b72cd4fe249e .
+
+km-dev:PredicateObjectMap_b795c9d3-7d84-491b-ae18-8e73da771a7e rr:predicate scharp:turn_time .
+
+_:node1ahc8enkox13 rr:column "[\"Turn\",\"Turn time\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox13 .
+
+km-dev:PredicateObjectMap_b795c9d3-7d84-491b-ae18-8e73da771a7e rr:objectMap _:node1ahc8enkox13 .
+
+km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee rr:predicateObjectMap km-dev:PredicateObjectMap_b795c9d3-7d84-491b-ae18-8e73da771a7e .
+
+km-dev:PredicateObjectMap_b795c9d3-7d84-491b-ae18-8e73da771a7e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b795c9d3-7d84-491b-ae18-8e73da771a7e .
+
+km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d a rr:TriplesMap .
+
+_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d .
+
+km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox14 rr:tableName "unit_contracts.jl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox14 .
+
+km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:logicalTable _:node1ahc8enkox14 ;
+	rr:subjectMap _:node1ahc8enkox15 .
+
+_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox15 .
+
+_:node1ahc8enkox15 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Unit_Contract1" ;
+	rr:class scharp:Unit_Contract ;
+	rr:template "unit/{Unit}/contract" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_1146fd09-c40f-415c-a527-67432965e00a rr:predicate scharp:valid_duration .
+
+km-dev:RefObjectMap_e5ec7a81-512d-428c-9af8-759911b46d02 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap km-dev:RefObjectMap_e5ec7a81-512d-428c-9af8-759911b46d02 .
+
+km-dev:PredicateObjectMap_1146fd09-c40f-415c-a527-67432965e00a rr:objectMap km-dev:RefObjectMap_e5ec7a81-512d-428c-9af8-759911b46d02 .
+
+km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:predicateObjectMap km-dev:PredicateObjectMap_1146fd09-c40f-415c-a527-67432965e00a .
+
+km-dev:PredicateObjectMap_1146fd09-c40f-415c-a527-67432965e00a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1146fd09-c40f-415c-a527-67432965e00a .
+
+km-dev:PredicateObjectMap_ecf5e8c8-8a09-4cca-bef8-ad7847a932b3 rr:predicate scharp:turn .
+
+km-dev:RefObjectMap_14cb5f5c-aa0f-4a33-bca7-28a4125c8bce a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap km-dev:RefObjectMap_14cb5f5c-aa0f-4a33-bca7-28a4125c8bce .
+
+km-dev:PredicateObjectMap_ecf5e8c8-8a09-4cca-bef8-ad7847a932b3 rr:objectMap km-dev:RefObjectMap_14cb5f5c-aa0f-4a33-bca7-28a4125c8bce .
+
+km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:predicateObjectMap km-dev:PredicateObjectMap_ecf5e8c8-8a09-4cca-bef8-ad7847a932b3 .
+
+km-dev:PredicateObjectMap_ecf5e8c8-8a09-4cca-bef8-ad7847a932b3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ecf5e8c8-8a09-4cca-bef8-ad7847a932b3 .
+
+km-dev:PredicateObjectMap_8b06b28f-c0ef-4e5b-8af7-da7d545360bb rr:predicate scharp:contract .
+
+km-dev:RefObjectMap_98a29fa8-0d7e-426a-9c68-8ca3013b797d a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap km-dev:RefObjectMap_98a29fa8-0d7e-426a-9c68-8ca3013b797d .
+
+km-dev:PredicateObjectMap_8b06b28f-c0ef-4e5b-8af7-da7d545360bb rr:objectMap km-dev:RefObjectMap_98a29fa8-0d7e-426a-9c68-8ca3013b797d .
+
+km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:predicateObjectMap km-dev:PredicateObjectMap_8b06b28f-c0ef-4e5b-8af7-da7d545360bb .
+
+km-dev:PredicateObjectMap_8b06b28f-c0ef-4e5b-8af7-da7d545360bb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8b06b28f-c0ef-4e5b-8af7-da7d545360bb .
+
+km-dev:PredicateObjectMap_9c565aca-bcc4-4766-9ecf-940a20adda7c rr:predicate scharp:aircraft .
+
+_:node1ahc8enkox16 rr:column "A/C" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox16 .
+
+km-dev:PredicateObjectMap_9c565aca-bcc4-4766-9ecf-940a20adda7c rr:objectMap _:node1ahc8enkox16 .
+
+km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:predicateObjectMap km-dev:PredicateObjectMap_9c565aca-bcc4-4766-9ecf-940a20adda7c .
+
+km-dev:PredicateObjectMap_9c565aca-bcc4-4766-9ecf-940a20adda7c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9c565aca-bcc4-4766-9ecf-940a20adda7c .
+
+km-dev:PredicateObjectMap_2dd8d4f9-0911-4b17-b629-6ecffd813fc1 rr:predicate scharp:recurrence .
+
+_:node1ahc8enkox17 rr:column "Recurrence" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox17 .
+
+km-dev:PredicateObjectMap_2dd8d4f9-0911-4b17-b629-6ecffd813fc1 rr:objectMap _:node1ahc8enkox17 .
+
+km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:predicateObjectMap km-dev:PredicateObjectMap_2dd8d4f9-0911-4b17-b629-6ecffd813fc1 .
+
+km-dev:PredicateObjectMap_2dd8d4f9-0911-4b17-b629-6ecffd813fc1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2dd8d4f9-0911-4b17-b629-6ecffd813fc1 .
+
+km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 a rr:TriplesMap .
+
+_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 .
+
+km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox18 rr:tableName "unit_contracts.jl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox18 .
+
+km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 rr:logicalTable _:node1ahc8enkox18 ;
+	rr:subjectMap _:node1ahc8enkox19 .
+
+_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox19 .
+
+_:node1ahc8enkox19 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Interval1" ;
+	rr:class scharp:Interval ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Interval1" .
+
+km-dev:PredicateObjectMap_5bb21e65-da5b-4f47-bd14-e7ef9d35eb9f rr:predicate scharp:end_time .
+
+_:node1ahc8enkox20 rr:column "End" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox20 .
+
+km-dev:PredicateObjectMap_5bb21e65-da5b-4f47-bd14-e7ef9d35eb9f rr:objectMap _:node1ahc8enkox20 .
+
+km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 rr:predicateObjectMap km-dev:PredicateObjectMap_5bb21e65-da5b-4f47-bd14-e7ef9d35eb9f .
+
+km-dev:PredicateObjectMap_5bb21e65-da5b-4f47-bd14-e7ef9d35eb9f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5bb21e65-da5b-4f47-bd14-e7ef9d35eb9f .
+
+km-dev:PredicateObjectMap_99e57ca0-b25e-4234-be22-df8bcaadfe79 rr:predicate scharp:start_time .
+
+_:node1ahc8enkox21 rr:column "Start" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox21 .
+
+km-dev:PredicateObjectMap_99e57ca0-b25e-4234-be22-df8bcaadfe79 rr:objectMap _:node1ahc8enkox21 .
+
+km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 rr:predicateObjectMap km-dev:PredicateObjectMap_99e57ca0-b25e-4234-be22-df8bcaadfe79 .
+
+km-dev:PredicateObjectMap_99e57ca0-b25e-4234-be22-df8bcaadfe79 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_99e57ca0-b25e-4234-be22-df8bcaadfe79 .
+
+km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af a rr:TriplesMap .
+
+_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af .
+
+km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox22 rr:tableName "unit_contracts.jl" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox22 .
+
+km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af rr:logicalTable _:node1ahc8enkox22 ;
+	rr:subjectMap _:node1ahc8enkox23 .
+
+_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox23 .
+
+_:node1ahc8enkox23 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Unit1" ;
+	rr:class scharp:Unit ;
+	rr:template "unit/{Unit}" .
+
+km-dev:PredicateObjectMap_62b6c483-6cf2-470b-9630-d48e2ca34758 rr:predicate scharp:locatein .
+
+_:node1ahc8enkox24 rr:column "Location" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox24 .
+
+km-dev:PredicateObjectMap_62b6c483-6cf2-470b-9630-d48e2ca34758 rr:objectMap _:node1ahc8enkox24 .
+
+km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af rr:predicateObjectMap km-dev:PredicateObjectMap_62b6c483-6cf2-470b-9630-d48e2ca34758 .
+
+km-dev:PredicateObjectMap_62b6c483-6cf2-470b-9630-d48e2ca34758 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_62b6c483-6cf2-470b-9630-d48e2ca34758 .
+
+km-dev:PredicateObjectMap_d117ecd5-2ec5-475f-8844-0200adeb9470 rr:predicate scharp:callsign .
+
+_:node1ahc8enkox25 rr:column "Unit" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox25 .
+
+km-dev:PredicateObjectMap_d117ecd5-2ec5-475f-8844-0200adeb9470 rr:objectMap _:node1ahc8enkox25 .
+
+km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af rr:predicateObjectMap km-dev:PredicateObjectMap_d117ecd5-2ec5-475f-8844-0200adeb9470 .
+
+km-dev:PredicateObjectMap_d117ecd5-2ec5-475f-8844-0200adeb9470 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+
+_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d117ecd5-2ec5-475f-8844-0200adeb9470 .

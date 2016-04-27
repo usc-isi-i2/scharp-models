@@ -1,0 +1,336 @@
+[
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "31.74889N",
+            "longitude": "114.84594W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "31.74674N",
+            "longitude": "116.66338W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "41.95806N",
+            "longitude": "120.05389W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "41.95806N",
+            "longitude": "124.13222W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "34.98472N",
+            "longitude": "114.62833W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "33.31111N",
+            "longitude": "114.66472W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "38.91778N",
+            "longitude": "120.0175W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "34.25944N",
+            "longitude": "114.11861W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "N/A",
+    "shape": "Line",
+    "usage": "BNDRY",
+    "width": "N/A",
+    "flightLevel": "400.0",
+    "airspaceId": "CALIFON",
+    "type": "PROC",
+    "uri": "http://scharp.usc.isi.edu/airspace/CALIFON",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+},
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "31.60988N",
+            "longitude": "113.21318W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "32.60929N",
+            "longitude": "112.88216W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "Left",
+    "shape": "Orbit",
+    "usage": "AAR",
+    "width": "25 nm",
+    "flightLevel": "350.0",
+    "airspaceId": "Chevron",
+    "type": "ROZ",
+    "uri": "http://scharp.usc.isi.edu/airspace/Chevron",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+},
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "26.36774N",
+            "longitude": "121.52676W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "29.47419N",
+            "longitude": "118.77678W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "29.72882N",
+            "longitude": "125.52441W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "32.93712N",
+            "longitude": "123.30915W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "N/A",
+    "shape": "Polygon",
+    "usage": "CCZONE",
+    "width": "N/A",
+    "flightLevel": "400.0",
+    "airspaceId": "CVOA",
+    "type": "ADOA",
+    "uri": "http://scharp.usc.isi.edu/airspace/CVOA",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+},
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "31.821N",
+            "longitude": "112.26104W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "33.07633N",
+            "longitude": "111.83369W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "Left",
+    "shape": "Orbit",
+    "usage": "AEW",
+    "width": "10.799 nm",
+    "flightLevel": "350.0",
+    "airspaceId": "Eagle",
+    "type": "ROZ",
+    "uri": "http://scharp.usc.isi.edu/airspace/Eagle",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+},
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "30.93423N",
+            "longitude": "116.05648W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "30.93423N",
+            "longitude": "114.8908W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "Left",
+    "shape": "Orbit",
+    "usage": "AAR",
+    "width": "25 nm",
+    "flightLevel": "350.0",
+    "airspaceId": "Exxon",
+    "type": "ROZ",
+    "uri": "http://scharp.usc.isi.edu/airspace/Exxon",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+},
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "32.06138N",
+            "longitude": "121.79622W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "32.99621N",
+            "longitude": "122.57079W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "Left",
+    "shape": "Orbit",
+    "usage": "AEW",
+    "width": "10.799 nm",
+    "flightLevel": "350.0",
+    "airspaceId": "Hawk",
+    "type": "ROZ",
+    "uri": "http://scharp.usc.isi.edu/airspace/Hawk",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+},
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "34.14002N",
+            "longitude": "116.83098W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "33.12567N",
+            "longitude": "115.8927W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "32.26346N",
+            "longitude": "113.9147W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "33.37926N",
+            "longitude": "113.35681W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "35.12902N",
+            "longitude": "116.39988W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "N/A",
+    "shape": "Polygon",
+    "usage": "BNDRY",
+    "width": "N/A",
+    "flightLevel": "400.0",
+    "airspaceId": "Mineral Fields",
+    "type": "PROC",
+    "uri": "http://scharp.usc.isi.edu/airspace/MineralFields",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+},
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "35.39421N",
+            "longitude": "113.5224W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "34.55796N",
+            "longitude": "113.01558W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "Left",
+    "shape": "Orbit",
+    "usage": "AAR",
+    "width": "25 nm",
+    "flightLevel": "350.0",
+    "airspaceId": "Petrol",
+    "type": "ROZ",
+    "uri": "http://scharp.usc.isi.edu/airspace/Petrol",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+},
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "32.79866N",
+            "longitude": "114.0194W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "31.93276N",
+            "longitude": "114.67444W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "33.57324N",
+            "longitude": "113.74019W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "34.94226N",
+            "longitude": "113.90231W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "N/A",
+    "shape": "Line",
+    "usage": "BNDRY",
+    "width": "N/A",
+    "flightLevel": "400.0",
+    "airspaceId": "Phase Line Bronze",
+    "type": "PROC",
+    "uri": "http://scharp.usc.isi.edu/airspace/PhaseLineBronze",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+},
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "33.42913N",
+            "longitude": "114.41569W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "34.50994N",
+            "longitude": "114.59583W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "32.27627N",
+            "longitude": "114.71291W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "N/A",
+    "shape": "Liine",
+    "usage": "BNDRY",
+    "width": "N/A",
+    "flightLevel": "400.0",
+    "airspaceId": "Phase Line Green",
+    "type": "PROC",
+    "uri": "http://scharp.usc.isi.edu/airspace/PhaseLineGreen",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+},
+{
+    "hasvertice": [
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "31.24911N",
+            "longitude": "119.97548W"
+        },
+        {
+            "a": "http://scharp.usc.isi.edu/ontology/Point",
+            "latitude": "32.00988N",
+            "longitude": "120.83768W"
+        }
+    ],
+    "a": "http://scharp.usc.isi.edu/ontology/Airspace",
+    "alignm": "Left",
+    "shape": "Orbit",
+    "usage": "AAR",
+    "width": "25 nm",
+    "flightLevel": "350.0",
+    "airspaceId": "Shell",
+    "type": "ROZ",
+    "uri": "http://scharp.usc.isi.edu/airspace/Shell",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS5-airspace_jl-context.json"
+}
+]

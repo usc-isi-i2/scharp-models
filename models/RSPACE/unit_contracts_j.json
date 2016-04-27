@@ -1,0 +1,464 @@
+[
+{
+    "recurrence": "24.0",
+    "a": "http://scharp.usc.isi.edu/ontology/Unit_Contract",
+    "contract": {
+        "a": "http://scharp.usc.isi.edu/ontology/Unit",
+        "locatein": "Davis-Monthan",
+        "callsign": "333 FS",
+        "uri": "http://scharp.usc.isi.edu/unit/333FS"
+    },
+    "aircraft": "F-15E",
+    "turn": {
+        "a": "http://scharp.usc.isi.edu/ontology/Turn",
+        "turn_time": "60.0",
+        "go": [
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "2200.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "6.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.03125",
+                    "take_off_start": "1700.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "8.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "300.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "4.0"
+            }
+        ],
+        "exp_sorties": "18.0"
+    },
+    "uri": "http://scharp.usc.isi.edu/unit/333FS/contract",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS509-unit_contracts_jl-context.json",
+    "valid_duration": {
+        "a": "http://scharp.usc.isi.edu/ontology/Interval",
+        "start_time": "2016FEB011400",
+        "end_time": "2016FEB261400"
+    }
+},
+{
+    "recurrence": "24.0",
+    "a": "http://scharp.usc.isi.edu/ontology/Unit_Contract",
+    "contract": {
+        "a": "http://scharp.usc.isi.edu/ontology/Unit",
+        "locatein": "Davis-Monthan",
+        "callsign": "310 FS",
+        "uri": "http://scharp.usc.isi.edu/unit/310FS"
+    },
+    "aircraft": "F-16C",
+    "turn": {
+        "a": "http://scharp.usc.isi.edu/ontology/Turn",
+        "turn_time": "60.0",
+        "go": [
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "300.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "4.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.03125",
+                    "take_off_start": "1700.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "8.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "2200.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "6.0"
+            }
+        ],
+        "exp_sorties": "18.0"
+    },
+    "uri": "http://scharp.usc.isi.edu/unit/310FS/contract",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS509-unit_contracts_jl-context.json",
+    "valid_duration": {
+        "a": "http://scharp.usc.isi.edu/ontology/Interval",
+        "start_time": "2016FEB011400",
+        "end_time": "2016FEB261400"
+    }
+},
+{
+    "recurrence": "24.0",
+    "a": "http://scharp.usc.isi.edu/ontology/Unit_Contract",
+    "contract": {
+        "a": "http://scharp.usc.isi.edu/ontology/Unit",
+        "locatein": "Luke",
+        "callsign": "VMFA-121",
+        "uri": "http://scharp.usc.isi.edu/unit/VMFA-121"
+    },
+    "aircraft": "F/A-18D",
+    "turn": {
+        "a": "http://scharp.usc.isi.edu/ontology/Turn",
+        "turn_time": "60.0",
+        "go": [
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "2200.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "6.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "300.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "4.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.03125",
+                    "take_off_start": "1700.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "8.0"
+            }
+        ],
+        "exp_sorties": "18.0"
+    },
+    "uri": "http://scharp.usc.isi.edu/unit/VMFA-121/contract",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS509-unit_contracts_jl-context.json",
+    "valid_duration": {
+        "a": "http://scharp.usc.isi.edu/ontology/Interval",
+        "start_time": "2016FEB011400",
+        "end_time": "2016FEB261400"
+    }
+},
+{
+    "recurrence": "24.0",
+    "a": "http://scharp.usc.isi.edu/ontology/Unit_Contract",
+    "contract": {
+        "a": "http://scharp.usc.isi.edu/ontology/Unit",
+        "locatein": "Luke",
+        "callsign": "VMAQ-2",
+        "uri": "http://scharp.usc.isi.edu/unit/VMAQ-2"
+    },
+    "aircraft": "EA-6B",
+    "turn": {
+        "a": "http://scharp.usc.isi.edu/ontology/Turn",
+        "turn_time": "60.0",
+        "go": [
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "2200.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "2.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "300.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "2.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.03125",
+                    "take_off_start": "1700.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "4.0"
+            }
+        ],
+        "exp_sorties": "18.0"
+    },
+    "uri": "http://scharp.usc.isi.edu/unit/VMAQ-2/contract",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS509-unit_contracts_jl-context.json",
+    "valid_duration": {
+        "a": "http://scharp.usc.isi.edu/ontology/Interval",
+        "start_time": "2016FEB011400",
+        "end_time": "2016FEB261400"
+    }
+},
+{
+    "recurrence": "24.0",
+    "a": "http://scharp.usc.isi.edu/ontology/Unit_Contract",
+    "contract": {
+        "a": "http://scharp.usc.isi.edu/ontology/Unit",
+        "locatein": "Luke",
+        "callsign": "VMGR-352",
+        "uri": "http://scharp.usc.isi.edu/unit/VMGR-352"
+    },
+    "aircraft": "KC-130J",
+    "turn": {
+        "a": "http://scharp.usc.isi.edu/ontology/Turn",
+        "turn_time": "720.0",
+        "go": {
+            "take_off_win": {
+                "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                "take_off_duration": "1.0",
+                "take_off_start": "1410.0"
+            },
+            "duration": "240.0",
+            "a": "http://scharp.usc.isi.edu/ontology/Go",
+            "sortie_num": "8.0"
+        },
+        "exp_sorties": "8.0"
+    },
+    "uri": "http://scharp.usc.isi.edu/unit/VMGR-352/contract",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS509-unit_contracts_jl-context.json",
+    "valid_duration": {
+        "a": "http://scharp.usc.isi.edu/ontology/Interval",
+        "start_time": "2016FEB011400",
+        "end_time": "2016FEB261400"
+    }
+},
+{
+    "recurrence": "24.0",
+    "a": "http://scharp.usc.isi.edu/ontology/Unit_Contract",
+    "contract": {
+        "a": "http://scharp.usc.isi.edu/ontology/Unit",
+        "locatein": "Eisenhower",
+        "callsign": "VFA-2",
+        "uri": "http://scharp.usc.isi.edu/unit/VFA-2"
+    },
+    "aircraft": "F/A-18F",
+    "turn": {
+        "a": "http://scharp.usc.isi.edu/ontology/Turn",
+        "turn_time": "60.0",
+        "go": [
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "200.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "4.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.03125",
+                    "take_off_start": "1600.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "8.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "2100.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "6.0"
+            }
+        ],
+        "exp_sorties": "18.0"
+    },
+    "uri": "http://scharp.usc.isi.edu/unit/VFA-2/contract",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS509-unit_contracts_jl-context.json",
+    "valid_duration": {
+        "a": "http://scharp.usc.isi.edu/ontology/Interval",
+        "start_time": "2016FEB011400",
+        "end_time": "2016FEB261400"
+    }
+},
+{
+    "recurrence": "24.0",
+    "a": "http://scharp.usc.isi.edu/ontology/Unit_Contract",
+    "contract": {
+        "a": "http://scharp.usc.isi.edu/ontology/Unit",
+        "locatein": "Eisenhower",
+        "callsign": "VAQ-132",
+        "uri": "http://scharp.usc.isi.edu/unit/VAQ-132"
+    },
+    "aircraft": "EA-18G",
+    "turn": {
+        "a": "http://scharp.usc.isi.edu/ontology/Turn",
+        "turn_time": "60.0",
+        "go": [
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.03125",
+                    "take_off_start": "1600.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "4.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "200.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "2.0"
+            },
+            {
+                "take_off_win": {
+                    "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                    "take_off_duration": "0.020833333333333332",
+                    "take_off_start": "2100.0"
+                },
+                "duration": "240.0",
+                "a": "http://scharp.usc.isi.edu/ontology/Go",
+                "sortie_num": "2.0"
+            }
+        ],
+        "exp_sorties": "8.0"
+    },
+    "uri": "http://scharp.usc.isi.edu/unit/VAQ-132/contract",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS509-unit_contracts_jl-context.json",
+    "valid_duration": {
+        "a": "http://scharp.usc.isi.edu/ontology/Interval",
+        "start_time": "2016FEB011400",
+        "end_time": "2016FEB261400"
+    }
+},
+{
+    "recurrence": "24.0",
+    "a": "http://scharp.usc.isi.edu/ontology/Unit_Contract",
+    "contract": {
+        "a": "http://scharp.usc.isi.edu/ontology/Unit",
+        "locatein": "Eisenhower",
+        "callsign": "VAW-112",
+        "uri": "http://scharp.usc.isi.edu/unit/VAW-112"
+    },
+    "aircraft": "E-2D",
+    "turn": {
+        "a": "http://scharp.usc.isi.edu/ontology/Turn",
+        "turn_time": "360.0",
+        "go": {
+            "take_off_win": {
+                "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                "take_off_duration": "1.0",
+                "take_off_start": "1410.0"
+            },
+            "duration": "600.0",
+            "a": "http://scharp.usc.isi.edu/ontology/Go",
+            "sortie_num": "2.0"
+        },
+        "exp_sorties": "2.0"
+    },
+    "uri": "http://scharp.usc.isi.edu/unit/VAW-112/contract",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS509-unit_contracts_jl-context.json",
+    "valid_duration": {
+        "a": "http://scharp.usc.isi.edu/ontology/Interval",
+        "start_time": "2016FEB011400",
+        "end_time": "2016FEB261400"
+    }
+},
+{
+    "recurrence": "24.0",
+    "a": "http://scharp.usc.isi.edu/ontology/Unit_Contract",
+    "contract": {
+        "a": "http://scharp.usc.isi.edu/ontology/Unit",
+        "locatein": "Ft Huachuca",
+        "callsign": "9 ARS",
+        "uri": "http://scharp.usc.isi.edu/unit/9ARS"
+    },
+    "aircraft": "KC-10A",
+    "turn": {
+        "a": "http://scharp.usc.isi.edu/ontology/Turn",
+        "turn_time": "480.0",
+        "go": {
+            "take_off_win": {
+                "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                "take_off_duration": "1.0",
+                "take_off_start": "1410.0"
+            },
+            "duration": "720.0",
+            "a": "http://scharp.usc.isi.edu/ontology/Go",
+            "sortie_num": "8.0"
+        },
+        "exp_sorties": "8.0"
+    },
+    "uri": "http://scharp.usc.isi.edu/unit/9ARS/contract",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS509-unit_contracts_jl-context.json",
+    "valid_duration": {
+        "a": "http://scharp.usc.isi.edu/ontology/Interval",
+        "start_time": "2016FEB011400",
+        "end_time": "2016FEB261400"
+    }
+},
+{
+    "recurrence": "24.0",
+    "a": "http://scharp.usc.isi.edu/ontology/Unit_Contract",
+    "contract": {
+        "a": "http://scharp.usc.isi.edu/ontology/Unit",
+        "locatein": "Ft Huachuca",
+        "callsign": "963 AACS",
+        "uri": "http://scharp.usc.isi.edu/unit/963AACS"
+    },
+    "aircraft": "E-3C",
+    "turn": {
+        "a": "http://scharp.usc.isi.edu/ontology/Turn",
+        "turn_time": "720.0",
+        "go": {
+            "take_off_win": {
+                "a": "http://scharp.usc.isi.edu/ontology/Take_off_Win",
+                "take_off_duration": "1.0",
+                "take_off_start": "1410.0"
+            },
+            "duration": "720.0",
+            "a": "http://scharp.usc.isi.edu/ontology/Go",
+            "sortie_num": "2.0"
+        },
+        "exp_sorties": "2.0"
+    },
+    "uri": "http://scharp.usc.isi.edu/unit/963AACS/contract",
+    "@context": "http://localhost:8080/publish/JSON/WSP4WS509-unit_contracts_jl-context.json",
+    "valid_duration": {
+        "a": "http://scharp.usc.isi.edu/ontology/Interval",
+        "start_time": "2016FEB011400",
+        "end_time": "2016FEB261400"
+    }
+}
+]

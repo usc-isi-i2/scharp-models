@@ -648,7 +648,7 @@ scharp:width rdf:type rdf:Property ;
 	rdfs:comment "The width level of an air space." 
 	.
 
-scharp:alignm rdf:type rdf:Property ;
+scharp:alignmt rdf:type rdf:Property ;
 	rdfs:label "alignm"@en ;
 	rdfs:domain scharp:Airspace;
 	rdfs:comment "The alignm level of an air space." 
@@ -682,6 +682,18 @@ scharp:taskId rdf:type rdf:Property ;
 	rdfs:label "TASK"@en ;
 	rdfs:domain scharp:Target;
 	rdfs:comment "TACTICAL TASK." 
+	.
+
+scharp:targetPriority rdf:type rdf:Property ;
+	rdfs:label "TASK"@en ;
+	rdfs:domain scharp:Target;
+	rdfs:comment "Target priority." 
+	.
+
+scharp:numOfJDPIs rdf:type rdf:Property ;
+	rdfs:label "numOfJDPIs"@en ;
+	rdfs:domain scharp:Target;
+	rdfs:comment "# JDPIs." 
 	.
 
 scharp:configurationName rdf:type rdf:Property ;

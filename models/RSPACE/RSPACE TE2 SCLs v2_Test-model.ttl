@@ -30,24 +30,19 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1ahc9tcb2x1 a km-dev:R2RMLMapping ;
-	km-dev:sourceName "RSPACE TE2 SCLs v2_Test" ;
-	km-dev:modelPublicationTime "1461775675746"^^xsd:long ;
+_:node1ahf95ktrx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "GroupBy: RSPACE TE2 SCLs v2_Test" ;
+	km-dev:modelPublicationTime "1461875561403"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"AircraftType\"}],[{\"columnName\":\"ConfigurationName\"}],[{\"columnName\":\"ComponentName\"}],[{\"columnName\":\"Index\"}],[{\"columnName\":\"Quantity\"}],[{\"columnName\":\"Source\"}],[{\"columnName\":\"Team\"}],[{\"columnName\":\"ScenarioName\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"AircraftType\"}],[{\"columnName\":\"ConfigurationName\"}],[{\"columnName\":\"ComponentName\"}],[{\"columnName\":\"Index\"}],[{\"columnName\":\"Quantity\"}],[{\"columnName\":\"Source\"}],[{\"columnName\":\"Team\"}],[{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"scl_uri\"}]]" ;
-	km-dev:hasModelLabel "RSPACE TE2 SCLs v2_Test" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Values\"},{\"columnName\":\"ComponentName\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"Index\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"Quantity\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"Source\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"Team\"}],[{\"columnName\":\"ConfigurationName\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"AircraftType\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Values\"},{\"columnName\":\"ComponentName\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"Index\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"Quantity\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"Source\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"Team\"}],[{\"columnName\":\"scl_uri\"}],[{\"columnName\":\"ConfigurationName\"}],[{\"columnName\":\"Values\"},{\"columnName\":\"AircraftType\"}]]" ;
+	km-dev:hasModelLabel "GroupBy: RSPACE TE2 SCLs v2_Test" ;
 	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
 	km-dev:hasWorksheetHistory """[
     {
-        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"Index\"}]
-            },
             {
                 \"name\": \"worksheetId\",
                 \"type\": \"worksheetId\",
@@ -59,34 +54,25 @@ _:node1ahc9tcb2x1 a km-dev:R2RMLMapping ;
                 \"value\": \"DEFAULT_TEST\"
             },
             {
-                \"name\": \"newColumnName\",
+                \"name\": \"properties\",
                 \"type\": \"other\",
-                \"value\": \"scl_uri\"
-            },
-            {
-                \"name\": \"transformationCode\",
-                \"type\": \"other\",
-                \"value\": \"return \\\"SCL/\\\"+getValue(\\\"Index\\\")\"
-            },
-            {
-                \"name\": \"errorDefaultValue\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"isJSONOutput\",
-                \"type\": \"other\",
-                \"value\": \"false\"
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"scharp\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
             },
             {
                 \"name\": \"inputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Index\\\"}]}]\"
+                \"value\": \"[]\"
             },
             {
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"scl_uri\\\"}]}]\"
+                \"value\": \"[]\"
             }
         ],
         \"tags\": [\"Transformation\"]
@@ -130,9 +116,14 @@ _:node1ahc9tcb2x1 a km-dev:R2RMLMapping ;
         \"tags\": [\"Transformation\"]
     },
     {
-        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"commandName\": \"SubmitPythonTransformationCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"ConfigurationName\"}]
+            },
             {
                 \"name\": \"worksheetId\",
                 \"type\": \"worksheetId\",
@@ -144,25 +135,34 @@ _:node1ahc9tcb2x1 a km-dev:R2RMLMapping ;
                 \"value\": \"DEFAULT_TEST\"
             },
             {
-                \"name\": \"properties\",
+                \"name\": \"newColumnName\",
                 \"type\": \"other\",
-                \"value\": {
-                    \"graphLabel\": \"\",
-                    \"hasBaseURI\": false,
-                    \"prefix\": \"scharp\",
-                    \"hasPrefix\": true,
-                    \"hasServiceProperties\": false
-                }
+                \"value\": \"scl_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"SCL/\\\"+getValue(\\\"ConfigurationName\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
             },
             {
                 \"name\": \"inputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ConfigurationName\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"scl_uri\\\"}]}]\"
             }
         ],
         \"tags\": [\"Transformation\"]
@@ -216,377 +216,6 @@ _:node1ahc9tcb2x1 a km-dev:R2RMLMapping ;
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
                 \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ConfigurationName\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"AircraftType\"}]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCL\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCL1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/aircraftType\",
-                    \"DomainLabel\": \"scharp:SCL1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AircraftType\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AircraftType\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"ComponentName\"}]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCL\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCL1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/componentName\",
-                    \"DomainLabel\": \"scharp:SCL1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ComponentName\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ComponentName\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"Quantity\"}]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCL\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCL1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/quantity\",
-                    \"DomainLabel\": \"scharp:SCL1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Quantity\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Quantity\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"Index\"}]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCL\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCL1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/index\",
-                    \"DomainLabel\": \"scharp:SCL1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Index\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Index\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"Team\"}]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCL\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCL1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/team\",
-                    \"DomainLabel\": \"scharp:SCL1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Team\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Team\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"Source\"}]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCL\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCL1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/source\",
-                    \"DomainLabel\": \"scharp:SCL1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Source\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Source\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"ScenarioName\"}]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCL\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCL1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/scenarioName\",
-                    \"DomainLabel\": \"scharp:SCL1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ScenarioName\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"ScenarioName\\\"}]}]\"
             }
         ],
         \"tags\": [\"SemanticType\"]
@@ -658,165 +287,646 @@ _:node1ahc9tcb2x1 a km-dev:R2RMLMapping ;
             }
         ],
         \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Values\"},
+                    {\"columnName\": \"AircraftType\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCLDetail\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCLDetail1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/aircraftType\",
+                    \"DomainLabel\": \"scharp:SCLDetail1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"AircraftType\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"AircraftType\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Values\"},
+                    {\"columnName\": \"ComponentName\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCLDetail\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCLDetail1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/componentName\",
+                    \"DomainLabel\": \"scharp:SCLDetail1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"ComponentName\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"ComponentName\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Values\"},
+                    {\"columnName\": \"Index\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCLDetail\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCLDetail1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/index\",
+                    \"DomainLabel\": \"scharp:SCLDetail1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"Index\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"Index\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Values\"},
+                    {\"columnName\": \"Quantity\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCLDetail\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCLDetail1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/quantity\",
+                    \"DomainLabel\": \"scharp:SCLDetail1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"Quantity\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"Quantity\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Values\"},
+                    {\"columnName\": \"ScenarioName\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCLDetail\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCLDetail1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/scenarioName\",
+                    \"DomainLabel\": \"scharp:SCLDetail1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"ScenarioName\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"ScenarioName\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Values\"},
+                    {\"columnName\": \"Source\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCLDetail\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCLDetail1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/source\",
+                    \"DomainLabel\": \"scharp:SCLDetail1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"Source\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"Source\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Values\"},
+                    {\"columnName\": \"Team\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SCLDetail\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SCLDetail1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/team\",
+                    \"DomainLabel\": \"scharp:SCLDetail1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"Team\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Values\\\"},{\\\"columnName\\\":\\\"Team\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP24:WS3883AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/SCLDetail1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/detail\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/SCLDetail\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/SCL1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/SCL\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
     }
 ]""" .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 a rr:TriplesMap .
+km-dev:TriplesMap_5606ef15-4caa-4aad-bc7f-aa554ad160cd a rr:TriplesMap .
 
-_:node1ahc9tcb2x1 km-dev:hasTriplesMap km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 .
+_:node1ahf95ktrx1 km-dev:hasTriplesMap km-dev:TriplesMap_5606ef15-4caa-4aad-bc7f-aa554ad160cd .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+km-dev:TriplesMap_5606ef15-4caa-4aad-bc7f-aa554ad160cd km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x2 rr:tableName "RSPACE TE2 SCLs v2_Test" ;
+_:node1ahf95ktrx2 rr:tableName "GroupBy: RSPACE TE2 SCLs v2_Test" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasLogicalTable _:node1ahc9tcb2x2 .
+_:node1ahf95ktrx1 km-dev:hasLogicalTable _:node1ahf95ktrx2 .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 rr:logicalTable _:node1ahc9tcb2x2 ;
-	rr:subjectMap _:node1ahc9tcb2x3 .
+km-dev:TriplesMap_5606ef15-4caa-4aad-bc7f-aa554ad160cd rr:logicalTable _:node1ahf95ktrx2 ;
+	rr:subjectMap _:node1ahf95ktrx3 .
 
-_:node1ahc9tcb2x1 km-dev:hasSubjectMap _:node1ahc9tcb2x3 .
+_:node1ahf95ktrx1 km-dev:hasSubjectMap _:node1ahf95ktrx3 .
 
-_:node1ahc9tcb2x3 km-dev:isPartOfMapping _:node1ahc9tcb2x1 ;
+_:node1ahf95ktrx3 km-dev:isPartOfMapping _:node1ahf95ktrx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/SCL1" ;
 	rr:class scharp:SCL ;
-	rr:template "SCL/{Index}" ;
+	rr:template "SCL/{ConfigurationName}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_b613424e-ea33-4d54-a8ca-34fbd7e75adb rr:predicate scharp:aircraftType .
+km-dev:PredicateObjectMap_46de7080-134d-4907-9e92-27d281ee100c rr:predicate scharp:detail .
 
-_:node1ahc9tcb2x4 rr:column "AircraftType" ;
+km-dev:RefObjectMap_1c46f094-475e-43f0-8997-3dd7f4aacdfc a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
+
+_:node1ahf95ktrx1 km-dev:hasObjectMap km-dev:RefObjectMap_1c46f094-475e-43f0-8997-3dd7f4aacdfc .
+
+km-dev:PredicateObjectMap_46de7080-134d-4907-9e92-27d281ee100c rr:objectMap km-dev:RefObjectMap_1c46f094-475e-43f0-8997-3dd7f4aacdfc .
+
+km-dev:TriplesMap_5606ef15-4caa-4aad-bc7f-aa554ad160cd rr:predicateObjectMap km-dev:PredicateObjectMap_46de7080-134d-4907-9e92-27d281ee100c .
+
+km-dev:PredicateObjectMap_46de7080-134d-4907-9e92-27d281ee100c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
+
+_:node1ahf95ktrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_46de7080-134d-4907-9e92-27d281ee100c .
+
+km-dev:PredicateObjectMap_f99a95cd-d8d1-426f-82e0-250b50283591 rr:predicate scharp:configurationName .
+
+_:node1ahf95ktrx4 rr:column "ConfigurationName" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasObjectMap _:node1ahc9tcb2x4 .
+_:node1ahf95ktrx1 km-dev:hasObjectMap _:node1ahf95ktrx4 .
 
-km-dev:PredicateObjectMap_b613424e-ea33-4d54-a8ca-34fbd7e75adb rr:objectMap _:node1ahc9tcb2x4 .
+km-dev:PredicateObjectMap_f99a95cd-d8d1-426f-82e0-250b50283591 rr:objectMap _:node1ahf95ktrx4 .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 rr:predicateObjectMap km-dev:PredicateObjectMap_b613424e-ea33-4d54-a8ca-34fbd7e75adb .
+km-dev:TriplesMap_5606ef15-4caa-4aad-bc7f-aa554ad160cd rr:predicateObjectMap km-dev:PredicateObjectMap_f99a95cd-d8d1-426f-82e0-250b50283591 .
 
-km-dev:PredicateObjectMap_b613424e-ea33-4d54-a8ca-34fbd7e75adb a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+km-dev:PredicateObjectMap_f99a95cd-d8d1-426f-82e0-250b50283591 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b613424e-ea33-4d54-a8ca-34fbd7e75adb .
+_:node1ahf95ktrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f99a95cd-d8d1-426f-82e0-250b50283591 .
 
-km-dev:PredicateObjectMap_c98f8d2d-1693-42cd-bc35-b2787f7c6236 rr:predicate scharp:configurationName .
+km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 a rr:TriplesMap .
 
-_:node1ahc9tcb2x5 rr:column "ConfigurationName" ;
+_:node1ahf95ktrx1 km-dev:hasTriplesMap km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 .
+
+km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 km-dev:isPartOfMapping _:node1ahf95ktrx1 .
+
+_:node1ahf95ktrx5 rr:tableName "GroupBy: RSPACE TE2 SCLs v2_Test" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
+
+_:node1ahf95ktrx1 km-dev:hasLogicalTable _:node1ahf95ktrx5 .
+
+km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 rr:logicalTable _:node1ahf95ktrx5 ;
+	rr:subjectMap _:node1ahf95ktrx6 .
+
+_:node1ahf95ktrx1 km-dev:hasSubjectMap _:node1ahf95ktrx6 .
+
+_:node1ahf95ktrx6 km-dev:isPartOfMapping _:node1ahf95ktrx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/SCLDetail1" ;
+	rr:class scharp:SCLDetail ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:SCLDetail1" .
+
+km-dev:PredicateObjectMap_eb32cd67-44ba-4723-a803-587b180093fd rr:predicate scharp:componentName .
+
+_:node1ahf95ktrx7 rr:column "[\"Values\",\"ComponentName\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasObjectMap _:node1ahc9tcb2x5 .
+_:node1ahf95ktrx1 km-dev:hasObjectMap _:node1ahf95ktrx7 .
 
-km-dev:PredicateObjectMap_c98f8d2d-1693-42cd-bc35-b2787f7c6236 rr:objectMap _:node1ahc9tcb2x5 .
+km-dev:PredicateObjectMap_eb32cd67-44ba-4723-a803-587b180093fd rr:objectMap _:node1ahf95ktrx7 .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 rr:predicateObjectMap km-dev:PredicateObjectMap_c98f8d2d-1693-42cd-bc35-b2787f7c6236 .
+km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 rr:predicateObjectMap km-dev:PredicateObjectMap_eb32cd67-44ba-4723-a803-587b180093fd .
 
-km-dev:PredicateObjectMap_c98f8d2d-1693-42cd-bc35-b2787f7c6236 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+km-dev:PredicateObjectMap_eb32cd67-44ba-4723-a803-587b180093fd a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c98f8d2d-1693-42cd-bc35-b2787f7c6236 .
+_:node1ahf95ktrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eb32cd67-44ba-4723-a803-587b180093fd .
 
-km-dev:PredicateObjectMap_a9c1c55a-178c-49d7-88f6-8f078d657bab rr:predicate scharp:componentName .
+km-dev:PredicateObjectMap_300d459f-822d-4ebc-b0fb-1c471623b1e9 rr:predicate scharp:index .
 
-_:node1ahc9tcb2x6 rr:column "ComponentName" ;
+_:node1ahf95ktrx8 rr:column "[\"Values\",\"Index\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasObjectMap _:node1ahc9tcb2x6 .
+_:node1ahf95ktrx1 km-dev:hasObjectMap _:node1ahf95ktrx8 .
 
-km-dev:PredicateObjectMap_a9c1c55a-178c-49d7-88f6-8f078d657bab rr:objectMap _:node1ahc9tcb2x6 .
+km-dev:PredicateObjectMap_300d459f-822d-4ebc-b0fb-1c471623b1e9 rr:objectMap _:node1ahf95ktrx8 .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 rr:predicateObjectMap km-dev:PredicateObjectMap_a9c1c55a-178c-49d7-88f6-8f078d657bab .
+km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 rr:predicateObjectMap km-dev:PredicateObjectMap_300d459f-822d-4ebc-b0fb-1c471623b1e9 .
 
-km-dev:PredicateObjectMap_a9c1c55a-178c-49d7-88f6-8f078d657bab a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+km-dev:PredicateObjectMap_300d459f-822d-4ebc-b0fb-1c471623b1e9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a9c1c55a-178c-49d7-88f6-8f078d657bab .
+_:node1ahf95ktrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_300d459f-822d-4ebc-b0fb-1c471623b1e9 .
 
-km-dev:PredicateObjectMap_28724782-3764-401e-b6ea-0f26a7228c7a rr:predicate scharp:index .
+km-dev:PredicateObjectMap_a3f55828-8635-44a5-81d6-6175a06a5a5d rr:predicate scharp:quantity .
 
-_:node1ahc9tcb2x7 rr:column "Index" ;
+_:node1ahf95ktrx9 rr:column "[\"Values\",\"Quantity\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasObjectMap _:node1ahc9tcb2x7 .
+_:node1ahf95ktrx1 km-dev:hasObjectMap _:node1ahf95ktrx9 .
 
-km-dev:PredicateObjectMap_28724782-3764-401e-b6ea-0f26a7228c7a rr:objectMap _:node1ahc9tcb2x7 .
+km-dev:PredicateObjectMap_a3f55828-8635-44a5-81d6-6175a06a5a5d rr:objectMap _:node1ahf95ktrx9 .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 rr:predicateObjectMap km-dev:PredicateObjectMap_28724782-3764-401e-b6ea-0f26a7228c7a .
+km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 rr:predicateObjectMap km-dev:PredicateObjectMap_a3f55828-8635-44a5-81d6-6175a06a5a5d .
 
-km-dev:PredicateObjectMap_28724782-3764-401e-b6ea-0f26a7228c7a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+km-dev:PredicateObjectMap_a3f55828-8635-44a5-81d6-6175a06a5a5d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_28724782-3764-401e-b6ea-0f26a7228c7a .
+_:node1ahf95ktrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a3f55828-8635-44a5-81d6-6175a06a5a5d .
 
-km-dev:PredicateObjectMap_d5824a4b-a2a7-4093-bb60-f5cbba5dba84 rr:predicate scharp:quantity .
+km-dev:PredicateObjectMap_3a591394-9cef-40d4-b4fb-d320504a03e1 rr:predicate scharp:scenarioName .
 
-_:node1ahc9tcb2x8 rr:column "Quantity" ;
+_:node1ahf95ktrx10 rr:column "[\"Values\",\"ScenarioName\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasObjectMap _:node1ahc9tcb2x8 .
+_:node1ahf95ktrx1 km-dev:hasObjectMap _:node1ahf95ktrx10 .
 
-km-dev:PredicateObjectMap_d5824a4b-a2a7-4093-bb60-f5cbba5dba84 rr:objectMap _:node1ahc9tcb2x8 .
+km-dev:PredicateObjectMap_3a591394-9cef-40d4-b4fb-d320504a03e1 rr:objectMap _:node1ahf95ktrx10 .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 rr:predicateObjectMap km-dev:PredicateObjectMap_d5824a4b-a2a7-4093-bb60-f5cbba5dba84 .
+km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 rr:predicateObjectMap km-dev:PredicateObjectMap_3a591394-9cef-40d4-b4fb-d320504a03e1 .
 
-km-dev:PredicateObjectMap_d5824a4b-a2a7-4093-bb60-f5cbba5dba84 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+km-dev:PredicateObjectMap_3a591394-9cef-40d4-b4fb-d320504a03e1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d5824a4b-a2a7-4093-bb60-f5cbba5dba84 .
+_:node1ahf95ktrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3a591394-9cef-40d4-b4fb-d320504a03e1 .
 
-km-dev:PredicateObjectMap_9b002bff-45d4-429e-8819-4c5722f3c878 rr:predicate scharp:source .
+km-dev:PredicateObjectMap_a6aa98a2-f791-4793-8f79-96634fe7117b rr:predicate scharp:source .
 
-_:node1ahc9tcb2x9 rr:column "Source" ;
+_:node1ahf95ktrx11 rr:column "[\"Values\",\"Source\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasObjectMap _:node1ahc9tcb2x9 .
+_:node1ahf95ktrx1 km-dev:hasObjectMap _:node1ahf95ktrx11 .
 
-km-dev:PredicateObjectMap_9b002bff-45d4-429e-8819-4c5722f3c878 rr:objectMap _:node1ahc9tcb2x9 .
+km-dev:PredicateObjectMap_a6aa98a2-f791-4793-8f79-96634fe7117b rr:objectMap _:node1ahf95ktrx11 .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 rr:predicateObjectMap km-dev:PredicateObjectMap_9b002bff-45d4-429e-8819-4c5722f3c878 .
+km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 rr:predicateObjectMap km-dev:PredicateObjectMap_a6aa98a2-f791-4793-8f79-96634fe7117b .
 
-km-dev:PredicateObjectMap_9b002bff-45d4-429e-8819-4c5722f3c878 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+km-dev:PredicateObjectMap_a6aa98a2-f791-4793-8f79-96634fe7117b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9b002bff-45d4-429e-8819-4c5722f3c878 .
+_:node1ahf95ktrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a6aa98a2-f791-4793-8f79-96634fe7117b .
 
-km-dev:PredicateObjectMap_e1a75b1d-869a-420d-a632-4575d36c8a4e rr:predicate scharp:team .
+km-dev:PredicateObjectMap_5bbb7cd5-9a99-436e-95c5-c517a8bd7002 rr:predicate scharp:team .
 
-_:node1ahc9tcb2x10 rr:column "Team" ;
+_:node1ahf95ktrx12 rr:column "[\"Values\",\"Team\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasObjectMap _:node1ahc9tcb2x10 .
+_:node1ahf95ktrx1 km-dev:hasObjectMap _:node1ahf95ktrx12 .
 
-km-dev:PredicateObjectMap_e1a75b1d-869a-420d-a632-4575d36c8a4e rr:objectMap _:node1ahc9tcb2x10 .
+km-dev:PredicateObjectMap_5bbb7cd5-9a99-436e-95c5-c517a8bd7002 rr:objectMap _:node1ahf95ktrx12 .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 rr:predicateObjectMap km-dev:PredicateObjectMap_e1a75b1d-869a-420d-a632-4575d36c8a4e .
+km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 rr:predicateObjectMap km-dev:PredicateObjectMap_5bbb7cd5-9a99-436e-95c5-c517a8bd7002 .
 
-km-dev:PredicateObjectMap_e1a75b1d-869a-420d-a632-4575d36c8a4e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+km-dev:PredicateObjectMap_5bbb7cd5-9a99-436e-95c5-c517a8bd7002 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e1a75b1d-869a-420d-a632-4575d36c8a4e .
+_:node1ahf95ktrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5bbb7cd5-9a99-436e-95c5-c517a8bd7002 .
 
-km-dev:PredicateObjectMap_38237b15-cca5-41cf-a9de-fa633c8766ce rr:predicate scharp:scenarioName .
+km-dev:PredicateObjectMap_12ccb708-1ef8-49a0-bdd7-a0cbacd98cd7 rr:predicate scharp:aircraftType .
 
-_:node1ahc9tcb2x11 rr:column "ScenarioName" ;
+_:node1ahf95ktrx13 rr:column "[\"Values\",\"AircraftType\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasObjectMap _:node1ahc9tcb2x11 .
+_:node1ahf95ktrx1 km-dev:hasObjectMap _:node1ahf95ktrx13 .
 
-km-dev:PredicateObjectMap_38237b15-cca5-41cf-a9de-fa633c8766ce rr:objectMap _:node1ahc9tcb2x11 .
+km-dev:PredicateObjectMap_12ccb708-1ef8-49a0-bdd7-a0cbacd98cd7 rr:objectMap _:node1ahf95ktrx13 .
 
-km-dev:TriplesMap_10d7f10f-bae1-4d00-b0d8-ba2073b19c71 rr:predicateObjectMap km-dev:PredicateObjectMap_38237b15-cca5-41cf-a9de-fa633c8766ce .
+km-dev:TriplesMap_fb581c49-12af-4301-a412-cf87f5ce1427 rr:predicateObjectMap km-dev:PredicateObjectMap_12ccb708-1ef8-49a0-bdd7-a0cbacd98cd7 .
 
-km-dev:PredicateObjectMap_38237b15-cca5-41cf-a9de-fa633c8766ce a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc9tcb2x1 .
+km-dev:PredicateObjectMap_12ccb708-1ef8-49a0-bdd7-a0cbacd98cd7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahf95ktrx1 .
 
-_:node1ahc9tcb2x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_38237b15-cca5-41cf-a9de-fa633c8766ce .
+_:node1ahf95ktrx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_12ccb708-1ef8-49a0-bdd7-a0cbacd98cd7 .

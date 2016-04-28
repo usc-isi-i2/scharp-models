@@ -167,6 +167,11 @@ scharp:SCL rdf:type owl:Class ;
 	rdfs:comment "Standard Conventional Load." 
 	.
 
+scharp:SCLDetail rdf:type owl:Class ;
+	rdfs:label "SCLDetail"@en ;
+	rdfs:comment """Standard Configuration Load Detail."""
+	.
+
 #########################################################
 #
 # Object Properties
@@ -203,6 +208,7 @@ scharp:timeFrame rdf:type owl:ObjectProperty ;
 scharp:detail rdf:type owl:ObjectProperty ;
 	rdfs:label "detail"@en ;
 	rdfs:domain scharp:Sortie ; 
+	rdfs:domain scharp:SCL ; 
 	rdfs:range scharp:flightDetail
 	.
 

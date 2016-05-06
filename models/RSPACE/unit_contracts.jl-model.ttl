@@ -30,12 +30,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1ahc8enkox1 a km-dev:R2RMLMapping ;
+_:node1ai3gvq8bx1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "unit_contracts.jl" ;
-	km-dev:modelPublicationTime "1461774147224"^^xsd:long ;
+	km-dev:modelPublicationTime "1462554847499"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"Start\"}],[{\"columnName\":\"Unit\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window start\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Turn time\"}],[{\"columnName\":\"End\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Sorties\"}],[{\"columnName\":\"A/C\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Duration\"}],[{\"columnName\":\"Recurrence\"}],[{\"columnName\":\"Location\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Exp Sorties\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window duration\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"unit_contract_uri\"}],[{\"columnName\":\"End\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Sorties\"}],[{\"columnName\":\"A/C\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Duration\"}],[{\"columnName\":\"Recurrence\"}],[{\"columnName\":\"Location\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Exp Sorties\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window duration\"}],[{\"columnName\":\"Start\"}],[{\"columnName\":\"Unit\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window start\"}],[{\"columnName\":\"unit_uri\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Turn time\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"A/C\"}],[{\"columnName\":\"Start\"}],[{\"columnName\":\"Unit\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Sorties\"}],[{\"columnName\":\"End\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Duration\"}],[{\"columnName\":\"Recurrence\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window start\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Turn time\"}],[{\"columnName\":\"Location\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Exp Sorties\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window duration\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"A/C\"}],[{\"columnName\":\"unit_contract_uri\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Sorties\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"Duration\"}],[{\"columnName\":\"Recurrence\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window start\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Turn time\"}],[{\"columnName\":\"Location\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Exp Sorties\"}],[{\"columnName\":\"Turn\"},{\"columnName\":\"Go\"},{\"columnName\":\"T/O window duration\"}],[{\"columnName\":\"iso_start\"}],[{\"columnName\":\"Unit\"}],[{\"columnName\":\"iso_end\"}],[{\"columnName\":\"unit_uri\"}]]" ;
 	km-dev:hasModelLabel "unit_contracts.jl" ;
 	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
 	km-dev:hasWorksheetHistory """[
@@ -66,7 +66,7 @@ _:node1ahc8enkox1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"transformationCode\",
                 \"type\": \"other\",
-                \"value\": \"return \\\"unit/\\\"+getValue(\\\"Unit\\\")\"
+                \"value\": \"return \\\"unit/\\\"+getValue(\\\"Unit\\\").replace(\\\" \\\",\\\"_\\\")\"
             },
             {
                 \"name\": \"errorDefaultValue\",
@@ -118,7 +118,7 @@ _:node1ahc8enkox1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"transformationCode\",
                 \"type\": \"other\",
-                \"value\": \"return \\\"unit/\\\"+getValue(\\\"Unit\\\")+\\\"/contract\\\"\"
+                \"value\": \"return \\\"unit/\\\"+getValue(\\\"Unit\\\").replace(\\\" \\\",\\\"_\\\")+\\\"/contract\\\"\"
             },
             {
                 \"name\": \"errorDefaultValue\",
@@ -220,9 +220,14 @@ _:node1ahc8enkox1 a km-dev:R2RMLMapping ;
         \"tags\": [\"Transformation\"]
     },
     {
-        \"commandName\": \"OrganizeColumnsCommand\",
+        \"commandName\": \"SubmitPythonTransformationCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Start\"}]
+            },
             {
                 \"name\": \"worksheetId\",
                 \"type\": \"worksheetId\",
@@ -234,83 +239,47 @@ _:node1ahc8enkox1 a km-dev:R2RMLMapping ;
                 \"value\": \"DEFAULT_TEST\"
             },
             {
-                \"name\": \"orderedColumns\",
-                \"type\": \"orderedColumns\",
-                \"value\": [
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"unit_contract_uri\",
-                        \"id\": [{\"columnName\": \"unit_contract_uri\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"End\",
-                        \"id\": [{\"columnName\": \"End\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"Recurrence\",
-                        \"id\": [{\"columnName\": \"Recurrence\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"A/C\",
-                        \"id\": [{\"columnName\": \"A/C\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"Start\",
-                        \"id\": [{\"columnName\": \"Start\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"unit_uri\",
-                        \"id\": [{\"columnName\": \"unit_uri\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"Unit\",
-                        \"id\": [{\"columnName\": \"Unit\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"Location\",
-                        \"id\": [{\"columnName\": \"Location\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"children\": \"[{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"Exp Sorties\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Exp Sorties\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Duration\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Duration\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Sorties\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Sorties\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"T/O window duration\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"T/O window duration\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"T/O window start\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"T/O window start\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"Go\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"Turn time\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Turn time\\\"}]}]\",
-                        \"hideable\": false,
-                        \"name\": \"Turn\",
-                        \"id\": [{\"columnName\": \"Turn\"}]
-                    }
-                ]
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"iso_start\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return ISOtime(getValue(\\\"Start\\\"))\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
             },
             {
                 \"name\": \"inputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Start\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"iso_start\\\"}]}]\"
             }
         ],
         \"tags\": [\"Transformation\"]
     },
     {
-        \"commandName\": \"OrganizeColumnsCommand\",
+        \"commandName\": \"SubmitPythonTransformationCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"End\"}]
+            },
             {
                 \"name\": \"worksheetId\",
                 \"type\": \"worksheetId\",
@@ -322,75 +291,34 @@ _:node1ahc8enkox1 a km-dev:R2RMLMapping ;
                 \"value\": \"DEFAULT_TEST\"
             },
             {
-                \"name\": \"orderedColumns\",
-                \"type\": \"orderedColumns\",
-                \"value\": [
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"unit_contract_uri\",
-                        \"id\": [{\"columnName\": \"unit_contract_uri\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"unit_uri\",
-                        \"id\": [{\"columnName\": \"unit_uri\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"Unit\",
-                        \"id\": [{\"columnName\": \"Unit\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"Location\",
-                        \"id\": [{\"columnName\": \"Location\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"Recurrence\",
-                        \"id\": [{\"columnName\": \"Recurrence\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"A/C\",
-                        \"id\": [{\"columnName\": \"A/C\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"Start\",
-                        \"id\": [{\"columnName\": \"Start\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"hideable\": false,
-                        \"name\": \"End\",
-                        \"id\": [{\"columnName\": \"End\"}]
-                    },
-                    {
-                        \"visible\": true,
-                        \"children\": \"[{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"Exp Sorties\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Exp Sorties\\\"}]},{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Duration\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Duration\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Sorties\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Sorties\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"T/O window duration\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"T/O window duration\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"T/O window start\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"Turn\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Go\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"T/O window start\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"Go\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Go\\\"}]},{\\\"visible\\\":true,\\\"hideable\\\":false,\\\"name\\\":\\\"Turn time\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"Turn\\\"},{\\\"columnName\\\":\\\"Turn time\\\"}]}]\",
-                        \"hideable\": false,
-                        \"name\": \"Turn\",
-                        \"id\": [{\"columnName\": \"Turn\"}]
-                    }
-                ]
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"iso_end\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return ISOtime(getValue(\\\"End\\\"))\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
             },
             {
                 \"name\": \"inputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"End\\\"}]}]\"
             },
             {
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
-                \"value\": \"[]\"
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"iso_end\\\"}]}]\"
             }
         ],
         \"tags\": [\"Transformation\"]
@@ -444,112 +372,6 @@ _:node1ahc8enkox1 a km-dev:R2RMLMapping ;
                 \"name\": \"outputColumns\",
                 \"type\": \"hNodeIdList\",
                 \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"A/C\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"End\"}]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/end_time\",
-                    \"DomainLabel\": \"scharp:Interval1 (add)\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"End\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"End\\\"}]}]\"
-            }
-        ],
-        \"tags\": [\"SemanticType\"]
-    },
-    {
-        \"commandName\": \"SetSemanticTypeCommand\",
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"type\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"Start\"}]
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"type\": \"worksheetId\",
-                \"value\": \"W\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"type\": \"other\",
-                \"value\": \"DEFAULT_TEST\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"type\": \"other\",
-                \"value\": [{
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/start_time\",
-                    \"DomainLabel\": \"scharp:Interval1\"
-                }]
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"type\": \"other\",
-                \"value\": true
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"type\": \"other\",
-                \"value\": \"\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Start\\\"}]}]\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"type\": \"hNodeIdList\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Start\\\"}]}]\"
             }
         ],
         \"tags\": [\"SemanticType\"]
@@ -1190,6 +1012,112 @@ _:node1ahc8enkox1 a km-dev:R2RMLMapping ;
         \"tags\": [\"SemanticType\"]
     },
     {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"iso_start\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/start_time\",
+                    \"DomainLabel\": \"scharp:Interval1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"iso_start\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"iso_start\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"iso_end\"}]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Interval\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Interval1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/end_time\",
+                    \"DomainLabel\": \"scharp:Interval1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"iso_end\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"iso_end\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
         \"commandName\": \"ChangeInternalNodeLinksCommand\",
         \"model\": \"new\",
         \"inputParameters\": [
@@ -1431,434 +1359,434 @@ _:node1ahc8enkox1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 a rr:TriplesMap .
+km-dev:TriplesMap_dc9d432c-2d31-4be8-b1ef-6f6ef5e9f5fa a rr:TriplesMap .
 
-_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 .
+_:node1ai3gvq8bx1 km-dev:hasTriplesMap km-dev:TriplesMap_dc9d432c-2d31-4be8-b1ef-6f6ef5e9f5fa .
 
-km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:TriplesMap_dc9d432c-2d31-4be8-b1ef-6f6ef5e9f5fa km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox2 rr:tableName "unit_contracts.jl" ;
+_:node1ai3gvq8bx2 rr:tableName "unit_contracts.jl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox2 .
+_:node1ai3gvq8bx1 km-dev:hasLogicalTable _:node1ai3gvq8bx2 .
 
-km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 rr:logicalTable _:node1ahc8enkox2 ;
-	rr:subjectMap _:node1ahc8enkox3 .
+km-dev:TriplesMap_dc9d432c-2d31-4be8-b1ef-6f6ef5e9f5fa rr:logicalTable _:node1ai3gvq8bx2 ;
+	rr:subjectMap _:node1ai3gvq8bx3 .
 
-_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox3 .
+_:node1ai3gvq8bx1 km-dev:hasSubjectMap _:node1ai3gvq8bx3 .
 
-_:node1ahc8enkox3 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+_:node1ai3gvq8bx3 km-dev:isPartOfMapping _:node1ai3gvq8bx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Go1" ;
 	rr:class scharp:Go ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Go1" .
 
-km-dev:PredicateObjectMap_2ad72107-d499-4ac7-8779-bda10768225b rr:predicate scharp:take_off_win .
+km-dev:PredicateObjectMap_6eb5aec9-d580-4496-9eee-5b11102009e8 rr:predicate scharp:take_off_win .
 
-km-dev:RefObjectMap_2ae9470d-875a-4642-a2df-bb159e01f111 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:RefObjectMap_54e8f8ea-d958-4e7f-8f23-7368acff5e30 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_eccdaf26-4f19-47fb-8283-0e548e4aeb94 ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap km-dev:RefObjectMap_2ae9470d-875a-4642-a2df-bb159e01f111 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap km-dev:RefObjectMap_54e8f8ea-d958-4e7f-8f23-7368acff5e30 .
 
-km-dev:PredicateObjectMap_2ad72107-d499-4ac7-8779-bda10768225b rr:objectMap km-dev:RefObjectMap_2ae9470d-875a-4642-a2df-bb159e01f111 .
+km-dev:PredicateObjectMap_6eb5aec9-d580-4496-9eee-5b11102009e8 rr:objectMap km-dev:RefObjectMap_54e8f8ea-d958-4e7f-8f23-7368acff5e30 .
 
-km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 rr:predicateObjectMap km-dev:PredicateObjectMap_2ad72107-d499-4ac7-8779-bda10768225b .
+km-dev:TriplesMap_dc9d432c-2d31-4be8-b1ef-6f6ef5e9f5fa rr:predicateObjectMap km-dev:PredicateObjectMap_6eb5aec9-d580-4496-9eee-5b11102009e8 .
 
-km-dev:PredicateObjectMap_2ad72107-d499-4ac7-8779-bda10768225b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_6eb5aec9-d580-4496-9eee-5b11102009e8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2ad72107-d499-4ac7-8779-bda10768225b .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6eb5aec9-d580-4496-9eee-5b11102009e8 .
 
-km-dev:PredicateObjectMap_ea4bb196-38c9-400f-89f6-81b2eb0d260e rr:predicate scharp:sortie_num .
+km-dev:PredicateObjectMap_3864515e-1554-4e9d-9b98-27a64df269ca rr:predicate scharp:sortie_num .
 
-_:node1ahc8enkox4 rr:column "[\"Turn\",\"Go\",\"Sorties\"]" ;
+_:node1ai3gvq8bx4 rr:column "[\"Turn\",\"Go\",\"Sorties\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox4 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx4 .
 
-km-dev:PredicateObjectMap_ea4bb196-38c9-400f-89f6-81b2eb0d260e rr:objectMap _:node1ahc8enkox4 .
+km-dev:PredicateObjectMap_3864515e-1554-4e9d-9b98-27a64df269ca rr:objectMap _:node1ai3gvq8bx4 .
 
-km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 rr:predicateObjectMap km-dev:PredicateObjectMap_ea4bb196-38c9-400f-89f6-81b2eb0d260e .
+km-dev:TriplesMap_dc9d432c-2d31-4be8-b1ef-6f6ef5e9f5fa rr:predicateObjectMap km-dev:PredicateObjectMap_3864515e-1554-4e9d-9b98-27a64df269ca .
 
-km-dev:PredicateObjectMap_ea4bb196-38c9-400f-89f6-81b2eb0d260e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_3864515e-1554-4e9d-9b98-27a64df269ca a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ea4bb196-38c9-400f-89f6-81b2eb0d260e .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3864515e-1554-4e9d-9b98-27a64df269ca .
 
-km-dev:PredicateObjectMap_cd6d13b5-ad91-4ee4-a682-f5e37623f287 rr:predicate scharp:duration .
+km-dev:PredicateObjectMap_ea88e64d-e5e8-4aaf-9f3b-f5945cb10516 rr:predicate scharp:duration .
 
-_:node1ahc8enkox5 rr:column "[\"Turn\",\"Go\",\"Duration\"]" ;
+_:node1ai3gvq8bx5 rr:column "[\"Turn\",\"Go\",\"Duration\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox5 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx5 .
 
-km-dev:PredicateObjectMap_cd6d13b5-ad91-4ee4-a682-f5e37623f287 rr:objectMap _:node1ahc8enkox5 .
+km-dev:PredicateObjectMap_ea88e64d-e5e8-4aaf-9f3b-f5945cb10516 rr:objectMap _:node1ai3gvq8bx5 .
 
-km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 rr:predicateObjectMap km-dev:PredicateObjectMap_cd6d13b5-ad91-4ee4-a682-f5e37623f287 .
+km-dev:TriplesMap_dc9d432c-2d31-4be8-b1ef-6f6ef5e9f5fa rr:predicateObjectMap km-dev:PredicateObjectMap_ea88e64d-e5e8-4aaf-9f3b-f5945cb10516 .
 
-km-dev:PredicateObjectMap_cd6d13b5-ad91-4ee4-a682-f5e37623f287 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_ea88e64d-e5e8-4aaf-9f3b-f5945cb10516 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cd6d13b5-ad91-4ee4-a682-f5e37623f287 .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ea88e64d-e5e8-4aaf-9f3b-f5945cb10516 .
 
-km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b a rr:TriplesMap .
+km-dev:TriplesMap_eccdaf26-4f19-47fb-8283-0e548e4aeb94 a rr:TriplesMap .
 
-_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b .
+_:node1ai3gvq8bx1 km-dev:hasTriplesMap km-dev:TriplesMap_eccdaf26-4f19-47fb-8283-0e548e4aeb94 .
 
-km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:TriplesMap_eccdaf26-4f19-47fb-8283-0e548e4aeb94 km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox6 rr:tableName "unit_contracts.jl" ;
+_:node1ai3gvq8bx6 rr:tableName "unit_contracts.jl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox6 .
+_:node1ai3gvq8bx1 km-dev:hasLogicalTable _:node1ai3gvq8bx6 .
 
-km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b rr:logicalTable _:node1ahc8enkox6 ;
-	rr:subjectMap _:node1ahc8enkox7 .
+km-dev:TriplesMap_eccdaf26-4f19-47fb-8283-0e548e4aeb94 rr:logicalTable _:node1ai3gvq8bx6 ;
+	rr:subjectMap _:node1ai3gvq8bx7 .
 
-_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox7 .
+_:node1ai3gvq8bx1 km-dev:hasSubjectMap _:node1ai3gvq8bx7 .
 
-_:node1ahc8enkox7 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+_:node1ai3gvq8bx7 km-dev:isPartOfMapping _:node1ai3gvq8bx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Take_off_Win1" ;
 	rr:class scharp:Take_off_Win ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Take_off_Win1" .
 
-km-dev:PredicateObjectMap_527c26b4-f550-43ce-991d-01da3abec61f rr:predicate scharp:take_off_duration .
+km-dev:PredicateObjectMap_abe79a4d-342d-41c2-aa3d-65e59d2f779f rr:predicate scharp:take_off_start .
 
-_:node1ahc8enkox8 rr:column "[\"Turn\",\"Go\",\"T/O window duration\"]" ;
+_:node1ai3gvq8bx8 rr:column "[\"Turn\",\"Go\",\"T/O window start\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox8 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx8 .
 
-km-dev:PredicateObjectMap_527c26b4-f550-43ce-991d-01da3abec61f rr:objectMap _:node1ahc8enkox8 .
+km-dev:PredicateObjectMap_abe79a4d-342d-41c2-aa3d-65e59d2f779f rr:objectMap _:node1ai3gvq8bx8 .
 
-km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b rr:predicateObjectMap km-dev:PredicateObjectMap_527c26b4-f550-43ce-991d-01da3abec61f .
+km-dev:TriplesMap_eccdaf26-4f19-47fb-8283-0e548e4aeb94 rr:predicateObjectMap km-dev:PredicateObjectMap_abe79a4d-342d-41c2-aa3d-65e59d2f779f .
 
-km-dev:PredicateObjectMap_527c26b4-f550-43ce-991d-01da3abec61f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_abe79a4d-342d-41c2-aa3d-65e59d2f779f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_527c26b4-f550-43ce-991d-01da3abec61f .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_abe79a4d-342d-41c2-aa3d-65e59d2f779f .
 
-km-dev:PredicateObjectMap_662af69b-07bb-4d75-81d9-811b8ad5f98b rr:predicate scharp:take_off_start .
+km-dev:PredicateObjectMap_804fb3c6-ea3c-417f-ae54-05968cc32aba rr:predicate scharp:take_off_duration .
 
-_:node1ahc8enkox9 rr:column "[\"Turn\",\"Go\",\"T/O window start\"]" ;
+_:node1ai3gvq8bx9 rr:column "[\"Turn\",\"Go\",\"T/O window duration\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox9 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx9 .
 
-km-dev:PredicateObjectMap_662af69b-07bb-4d75-81d9-811b8ad5f98b rr:objectMap _:node1ahc8enkox9 .
+km-dev:PredicateObjectMap_804fb3c6-ea3c-417f-ae54-05968cc32aba rr:objectMap _:node1ai3gvq8bx9 .
 
-km-dev:TriplesMap_c66ad524-b74f-499d-a729-3765449ca26b rr:predicateObjectMap km-dev:PredicateObjectMap_662af69b-07bb-4d75-81d9-811b8ad5f98b .
+km-dev:TriplesMap_eccdaf26-4f19-47fb-8283-0e548e4aeb94 rr:predicateObjectMap km-dev:PredicateObjectMap_804fb3c6-ea3c-417f-ae54-05968cc32aba .
 
-km-dev:PredicateObjectMap_662af69b-07bb-4d75-81d9-811b8ad5f98b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_804fb3c6-ea3c-417f-ae54-05968cc32aba a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_662af69b-07bb-4d75-81d9-811b8ad5f98b .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_804fb3c6-ea3c-417f-ae54-05968cc32aba .
 
-km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee a rr:TriplesMap .
+km-dev:TriplesMap_73b20a5b-67f7-43e3-b492-a35c7be3f084 a rr:TriplesMap .
 
-_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee .
+_:node1ai3gvq8bx1 km-dev:hasTriplesMap km-dev:TriplesMap_73b20a5b-67f7-43e3-b492-a35c7be3f084 .
 
-km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:TriplesMap_73b20a5b-67f7-43e3-b492-a35c7be3f084 km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox10 rr:tableName "unit_contracts.jl" ;
+_:node1ai3gvq8bx10 rr:tableName "unit_contracts.jl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox10 .
+_:node1ai3gvq8bx1 km-dev:hasLogicalTable _:node1ai3gvq8bx10 .
 
-km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee rr:logicalTable _:node1ahc8enkox10 ;
-	rr:subjectMap _:node1ahc8enkox11 .
+km-dev:TriplesMap_73b20a5b-67f7-43e3-b492-a35c7be3f084 rr:logicalTable _:node1ai3gvq8bx10 ;
+	rr:subjectMap _:node1ai3gvq8bx11 .
 
-_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox11 .
+_:node1ai3gvq8bx1 km-dev:hasSubjectMap _:node1ai3gvq8bx11 .
 
-_:node1ahc8enkox11 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+_:node1ai3gvq8bx11 km-dev:isPartOfMapping _:node1ai3gvq8bx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Turn1" ;
 	rr:class scharp:Turn ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Turn1" .
 
-km-dev:PredicateObjectMap_f2c0ffc2-a5d9-445c-ab68-48ce8ee5750b rr:predicate scharp:go .
+km-dev:PredicateObjectMap_e452928e-90dd-455c-a804-62577113078f rr:predicate scharp:go .
 
-km-dev:RefObjectMap_4f01d2ec-7a59-4578-9d77-78ed3329f9c7 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_10f515f5-33c3-4f0a-82b2-71e1378ac9a3 ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:RefObjectMap_3e4793c0-7a8f-49c9-8ff3-f080e5fa9c38 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_dc9d432c-2d31-4be8-b1ef-6f6ef5e9f5fa ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap km-dev:RefObjectMap_4f01d2ec-7a59-4578-9d77-78ed3329f9c7 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap km-dev:RefObjectMap_3e4793c0-7a8f-49c9-8ff3-f080e5fa9c38 .
 
-km-dev:PredicateObjectMap_f2c0ffc2-a5d9-445c-ab68-48ce8ee5750b rr:objectMap km-dev:RefObjectMap_4f01d2ec-7a59-4578-9d77-78ed3329f9c7 .
+km-dev:PredicateObjectMap_e452928e-90dd-455c-a804-62577113078f rr:objectMap km-dev:RefObjectMap_3e4793c0-7a8f-49c9-8ff3-f080e5fa9c38 .
 
-km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee rr:predicateObjectMap km-dev:PredicateObjectMap_f2c0ffc2-a5d9-445c-ab68-48ce8ee5750b .
+km-dev:TriplesMap_73b20a5b-67f7-43e3-b492-a35c7be3f084 rr:predicateObjectMap km-dev:PredicateObjectMap_e452928e-90dd-455c-a804-62577113078f .
 
-km-dev:PredicateObjectMap_f2c0ffc2-a5d9-445c-ab68-48ce8ee5750b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_e452928e-90dd-455c-a804-62577113078f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f2c0ffc2-a5d9-445c-ab68-48ce8ee5750b .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e452928e-90dd-455c-a804-62577113078f .
 
-km-dev:PredicateObjectMap_e0833597-ae4f-4f86-895c-b72cd4fe249e rr:predicate scharp:exp_sorties .
+km-dev:PredicateObjectMap_77ed8b24-0939-4e15-9d7f-e8628d5a9f41 rr:predicate scharp:turn_time .
 
-_:node1ahc8enkox12 rr:column "[\"Turn\",\"Exp Sorties\"]" ;
+_:node1ai3gvq8bx12 rr:column "[\"Turn\",\"Turn time\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox12 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx12 .
 
-km-dev:PredicateObjectMap_e0833597-ae4f-4f86-895c-b72cd4fe249e rr:objectMap _:node1ahc8enkox12 .
+km-dev:PredicateObjectMap_77ed8b24-0939-4e15-9d7f-e8628d5a9f41 rr:objectMap _:node1ai3gvq8bx12 .
 
-km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee rr:predicateObjectMap km-dev:PredicateObjectMap_e0833597-ae4f-4f86-895c-b72cd4fe249e .
+km-dev:TriplesMap_73b20a5b-67f7-43e3-b492-a35c7be3f084 rr:predicateObjectMap km-dev:PredicateObjectMap_77ed8b24-0939-4e15-9d7f-e8628d5a9f41 .
 
-km-dev:PredicateObjectMap_e0833597-ae4f-4f86-895c-b72cd4fe249e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_77ed8b24-0939-4e15-9d7f-e8628d5a9f41 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e0833597-ae4f-4f86-895c-b72cd4fe249e .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_77ed8b24-0939-4e15-9d7f-e8628d5a9f41 .
 
-km-dev:PredicateObjectMap_b795c9d3-7d84-491b-ae18-8e73da771a7e rr:predicate scharp:turn_time .
+km-dev:PredicateObjectMap_aef9306c-6209-439a-aaf8-284318e0cbfa rr:predicate scharp:exp_sorties .
 
-_:node1ahc8enkox13 rr:column "[\"Turn\",\"Turn time\"]" ;
+_:node1ai3gvq8bx13 rr:column "[\"Turn\",\"Exp Sorties\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox13 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx13 .
 
-km-dev:PredicateObjectMap_b795c9d3-7d84-491b-ae18-8e73da771a7e rr:objectMap _:node1ahc8enkox13 .
+km-dev:PredicateObjectMap_aef9306c-6209-439a-aaf8-284318e0cbfa rr:objectMap _:node1ai3gvq8bx13 .
 
-km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee rr:predicateObjectMap km-dev:PredicateObjectMap_b795c9d3-7d84-491b-ae18-8e73da771a7e .
+km-dev:TriplesMap_73b20a5b-67f7-43e3-b492-a35c7be3f084 rr:predicateObjectMap km-dev:PredicateObjectMap_aef9306c-6209-439a-aaf8-284318e0cbfa .
 
-km-dev:PredicateObjectMap_b795c9d3-7d84-491b-ae18-8e73da771a7e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_aef9306c-6209-439a-aaf8-284318e0cbfa a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b795c9d3-7d84-491b-ae18-8e73da771a7e .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_aef9306c-6209-439a-aaf8-284318e0cbfa .
 
-km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d a rr:TriplesMap .
+km-dev:TriplesMap_fb51f278-bd0e-4cd9-84f3-5dedd3ddc81b a rr:TriplesMap .
 
-_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d .
+_:node1ai3gvq8bx1 km-dev:hasTriplesMap km-dev:TriplesMap_fb51f278-bd0e-4cd9-84f3-5dedd3ddc81b .
 
-km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:TriplesMap_fb51f278-bd0e-4cd9-84f3-5dedd3ddc81b km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox14 rr:tableName "unit_contracts.jl" ;
+_:node1ai3gvq8bx14 rr:tableName "unit_contracts.jl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox14 .
+_:node1ai3gvq8bx1 km-dev:hasLogicalTable _:node1ai3gvq8bx14 .
 
-km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:logicalTable _:node1ahc8enkox14 ;
-	rr:subjectMap _:node1ahc8enkox15 .
+km-dev:TriplesMap_fb51f278-bd0e-4cd9-84f3-5dedd3ddc81b rr:logicalTable _:node1ai3gvq8bx14 ;
+	rr:subjectMap _:node1ai3gvq8bx15 .
 
-_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox15 .
+_:node1ai3gvq8bx1 km-dev:hasSubjectMap _:node1ai3gvq8bx15 .
 
-_:node1ahc8enkox15 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+_:node1ai3gvq8bx15 km-dev:isPartOfMapping _:node1ai3gvq8bx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Unit_Contract1" ;
 	rr:class scharp:Unit_Contract ;
-	rr:template "unit/{Unit}/contract" ;
+	rr:template "{unit_contract_uri}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_1146fd09-c40f-415c-a527-67432965e00a rr:predicate scharp:valid_duration .
+km-dev:PredicateObjectMap_342dcfd6-2e50-4e67-ac7b-a32dd853b22c rr:predicate scharp:valid_duration .
 
-km-dev:RefObjectMap_e5ec7a81-512d-428c-9af8-759911b46d02 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:RefObjectMap_6f037a06-426b-44ce-a1e3-27b34ada250c a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_0ff3abe4-3c1e-4824-83f1-0647dbb259d3 ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap km-dev:RefObjectMap_e5ec7a81-512d-428c-9af8-759911b46d02 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap km-dev:RefObjectMap_6f037a06-426b-44ce-a1e3-27b34ada250c .
 
-km-dev:PredicateObjectMap_1146fd09-c40f-415c-a527-67432965e00a rr:objectMap km-dev:RefObjectMap_e5ec7a81-512d-428c-9af8-759911b46d02 .
+km-dev:PredicateObjectMap_342dcfd6-2e50-4e67-ac7b-a32dd853b22c rr:objectMap km-dev:RefObjectMap_6f037a06-426b-44ce-a1e3-27b34ada250c .
 
-km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:predicateObjectMap km-dev:PredicateObjectMap_1146fd09-c40f-415c-a527-67432965e00a .
+km-dev:TriplesMap_fb51f278-bd0e-4cd9-84f3-5dedd3ddc81b rr:predicateObjectMap km-dev:PredicateObjectMap_342dcfd6-2e50-4e67-ac7b-a32dd853b22c .
 
-km-dev:PredicateObjectMap_1146fd09-c40f-415c-a527-67432965e00a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_342dcfd6-2e50-4e67-ac7b-a32dd853b22c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1146fd09-c40f-415c-a527-67432965e00a .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_342dcfd6-2e50-4e67-ac7b-a32dd853b22c .
 
-km-dev:PredicateObjectMap_ecf5e8c8-8a09-4cca-bef8-ad7847a932b3 rr:predicate scharp:turn .
+km-dev:PredicateObjectMap_f2685c20-e477-4ff2-b7e0-4f61cb06fe02 rr:predicate scharp:turn .
 
-km-dev:RefObjectMap_14cb5f5c-aa0f-4a33-bca7-28a4125c8bce a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_613fd652-2fa7-48e6-bfeb-cce8dd6ebaee ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:RefObjectMap_632b1d9b-87fe-4fa7-9020-4397a1dfc67a a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_73b20a5b-67f7-43e3-b492-a35c7be3f084 ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap km-dev:RefObjectMap_14cb5f5c-aa0f-4a33-bca7-28a4125c8bce .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap km-dev:RefObjectMap_632b1d9b-87fe-4fa7-9020-4397a1dfc67a .
 
-km-dev:PredicateObjectMap_ecf5e8c8-8a09-4cca-bef8-ad7847a932b3 rr:objectMap km-dev:RefObjectMap_14cb5f5c-aa0f-4a33-bca7-28a4125c8bce .
+km-dev:PredicateObjectMap_f2685c20-e477-4ff2-b7e0-4f61cb06fe02 rr:objectMap km-dev:RefObjectMap_632b1d9b-87fe-4fa7-9020-4397a1dfc67a .
 
-km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:predicateObjectMap km-dev:PredicateObjectMap_ecf5e8c8-8a09-4cca-bef8-ad7847a932b3 .
+km-dev:TriplesMap_fb51f278-bd0e-4cd9-84f3-5dedd3ddc81b rr:predicateObjectMap km-dev:PredicateObjectMap_f2685c20-e477-4ff2-b7e0-4f61cb06fe02 .
 
-km-dev:PredicateObjectMap_ecf5e8c8-8a09-4cca-bef8-ad7847a932b3 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_f2685c20-e477-4ff2-b7e0-4f61cb06fe02 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ecf5e8c8-8a09-4cca-bef8-ad7847a932b3 .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f2685c20-e477-4ff2-b7e0-4f61cb06fe02 .
 
-km-dev:PredicateObjectMap_8b06b28f-c0ef-4e5b-8af7-da7d545360bb rr:predicate scharp:contract .
+km-dev:PredicateObjectMap_4b478416-d76b-4edc-8de8-c519955151f5 rr:predicate scharp:contract .
 
-km-dev:RefObjectMap_98a29fa8-0d7e-426a-9c68-8ca3013b797d a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:RefObjectMap_2092077b-2f4d-4169-873e-68bb5376b0d8 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_3c896681-eb68-455b-b4c2-cc031cba934a ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap km-dev:RefObjectMap_98a29fa8-0d7e-426a-9c68-8ca3013b797d .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap km-dev:RefObjectMap_2092077b-2f4d-4169-873e-68bb5376b0d8 .
 
-km-dev:PredicateObjectMap_8b06b28f-c0ef-4e5b-8af7-da7d545360bb rr:objectMap km-dev:RefObjectMap_98a29fa8-0d7e-426a-9c68-8ca3013b797d .
+km-dev:PredicateObjectMap_4b478416-d76b-4edc-8de8-c519955151f5 rr:objectMap km-dev:RefObjectMap_2092077b-2f4d-4169-873e-68bb5376b0d8 .
 
-km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:predicateObjectMap km-dev:PredicateObjectMap_8b06b28f-c0ef-4e5b-8af7-da7d545360bb .
+km-dev:TriplesMap_fb51f278-bd0e-4cd9-84f3-5dedd3ddc81b rr:predicateObjectMap km-dev:PredicateObjectMap_4b478416-d76b-4edc-8de8-c519955151f5 .
 
-km-dev:PredicateObjectMap_8b06b28f-c0ef-4e5b-8af7-da7d545360bb a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_4b478416-d76b-4edc-8de8-c519955151f5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8b06b28f-c0ef-4e5b-8af7-da7d545360bb .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4b478416-d76b-4edc-8de8-c519955151f5 .
 
-km-dev:PredicateObjectMap_9c565aca-bcc4-4766-9ecf-940a20adda7c rr:predicate scharp:aircraft .
+km-dev:PredicateObjectMap_c276390a-a341-4743-b7f6-c06cb40612c3 rr:predicate scharp:aircraft .
 
-_:node1ahc8enkox16 rr:column "A/C" ;
+_:node1ai3gvq8bx16 rr:column "A/C" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox16 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx16 .
 
-km-dev:PredicateObjectMap_9c565aca-bcc4-4766-9ecf-940a20adda7c rr:objectMap _:node1ahc8enkox16 .
+km-dev:PredicateObjectMap_c276390a-a341-4743-b7f6-c06cb40612c3 rr:objectMap _:node1ai3gvq8bx16 .
 
-km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:predicateObjectMap km-dev:PredicateObjectMap_9c565aca-bcc4-4766-9ecf-940a20adda7c .
+km-dev:TriplesMap_fb51f278-bd0e-4cd9-84f3-5dedd3ddc81b rr:predicateObjectMap km-dev:PredicateObjectMap_c276390a-a341-4743-b7f6-c06cb40612c3 .
 
-km-dev:PredicateObjectMap_9c565aca-bcc4-4766-9ecf-940a20adda7c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_c276390a-a341-4743-b7f6-c06cb40612c3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9c565aca-bcc4-4766-9ecf-940a20adda7c .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c276390a-a341-4743-b7f6-c06cb40612c3 .
 
-km-dev:PredicateObjectMap_2dd8d4f9-0911-4b17-b629-6ecffd813fc1 rr:predicate scharp:recurrence .
+km-dev:PredicateObjectMap_825dbd4c-c60f-4ceb-9142-5b609ea57144 rr:predicate scharp:recurrence .
 
-_:node1ahc8enkox17 rr:column "Recurrence" ;
+_:node1ai3gvq8bx17 rr:column "Recurrence" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox17 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx17 .
 
-km-dev:PredicateObjectMap_2dd8d4f9-0911-4b17-b629-6ecffd813fc1 rr:objectMap _:node1ahc8enkox17 .
+km-dev:PredicateObjectMap_825dbd4c-c60f-4ceb-9142-5b609ea57144 rr:objectMap _:node1ai3gvq8bx17 .
 
-km-dev:TriplesMap_fbbf5793-64fc-48e8-b0d6-675b5d77623d rr:predicateObjectMap km-dev:PredicateObjectMap_2dd8d4f9-0911-4b17-b629-6ecffd813fc1 .
+km-dev:TriplesMap_fb51f278-bd0e-4cd9-84f3-5dedd3ddc81b rr:predicateObjectMap km-dev:PredicateObjectMap_825dbd4c-c60f-4ceb-9142-5b609ea57144 .
 
-km-dev:PredicateObjectMap_2dd8d4f9-0911-4b17-b629-6ecffd813fc1 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_825dbd4c-c60f-4ceb-9142-5b609ea57144 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2dd8d4f9-0911-4b17-b629-6ecffd813fc1 .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_825dbd4c-c60f-4ceb-9142-5b609ea57144 .
 
-km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 a rr:TriplesMap .
+km-dev:TriplesMap_0ff3abe4-3c1e-4824-83f1-0647dbb259d3 a rr:TriplesMap .
 
-_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 .
+_:node1ai3gvq8bx1 km-dev:hasTriplesMap km-dev:TriplesMap_0ff3abe4-3c1e-4824-83f1-0647dbb259d3 .
 
-km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:TriplesMap_0ff3abe4-3c1e-4824-83f1-0647dbb259d3 km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox18 rr:tableName "unit_contracts.jl" ;
+_:node1ai3gvq8bx18 rr:tableName "unit_contracts.jl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox18 .
+_:node1ai3gvq8bx1 km-dev:hasLogicalTable _:node1ai3gvq8bx18 .
 
-km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 rr:logicalTable _:node1ahc8enkox18 ;
-	rr:subjectMap _:node1ahc8enkox19 .
+km-dev:TriplesMap_0ff3abe4-3c1e-4824-83f1-0647dbb259d3 rr:logicalTable _:node1ai3gvq8bx18 ;
+	rr:subjectMap _:node1ai3gvq8bx19 .
 
-_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox19 .
+_:node1ai3gvq8bx1 km-dev:hasSubjectMap _:node1ai3gvq8bx19 .
 
-_:node1ahc8enkox19 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+_:node1ai3gvq8bx19 km-dev:isPartOfMapping _:node1ai3gvq8bx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Interval1" ;
 	rr:class scharp:Interval ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Interval1" .
 
-km-dev:PredicateObjectMap_5bb21e65-da5b-4f47-bd14-e7ef9d35eb9f rr:predicate scharp:end_time .
+km-dev:PredicateObjectMap_13aed2d2-97b4-4b7d-a2f2-7ca107887c91 rr:predicate scharp:start_time .
 
-_:node1ahc8enkox20 rr:column "End" ;
+_:node1ai3gvq8bx20 rr:column "iso_start" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox20 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx20 .
 
-km-dev:PredicateObjectMap_5bb21e65-da5b-4f47-bd14-e7ef9d35eb9f rr:objectMap _:node1ahc8enkox20 .
+km-dev:PredicateObjectMap_13aed2d2-97b4-4b7d-a2f2-7ca107887c91 rr:objectMap _:node1ai3gvq8bx20 .
 
-km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 rr:predicateObjectMap km-dev:PredicateObjectMap_5bb21e65-da5b-4f47-bd14-e7ef9d35eb9f .
+km-dev:TriplesMap_0ff3abe4-3c1e-4824-83f1-0647dbb259d3 rr:predicateObjectMap km-dev:PredicateObjectMap_13aed2d2-97b4-4b7d-a2f2-7ca107887c91 .
 
-km-dev:PredicateObjectMap_5bb21e65-da5b-4f47-bd14-e7ef9d35eb9f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_13aed2d2-97b4-4b7d-a2f2-7ca107887c91 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5bb21e65-da5b-4f47-bd14-e7ef9d35eb9f .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_13aed2d2-97b4-4b7d-a2f2-7ca107887c91 .
 
-km-dev:PredicateObjectMap_99e57ca0-b25e-4234-be22-df8bcaadfe79 rr:predicate scharp:start_time .
+km-dev:PredicateObjectMap_676fc521-3097-4440-883d-446c313091ec rr:predicate scharp:end_time .
 
-_:node1ahc8enkox21 rr:column "Start" ;
+_:node1ai3gvq8bx21 rr:column "iso_end" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox21 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx21 .
 
-km-dev:PredicateObjectMap_99e57ca0-b25e-4234-be22-df8bcaadfe79 rr:objectMap _:node1ahc8enkox21 .
+km-dev:PredicateObjectMap_676fc521-3097-4440-883d-446c313091ec rr:objectMap _:node1ai3gvq8bx21 .
 
-km-dev:TriplesMap_45da1cd2-9753-4707-af9d-0a80172d71a7 rr:predicateObjectMap km-dev:PredicateObjectMap_99e57ca0-b25e-4234-be22-df8bcaadfe79 .
+km-dev:TriplesMap_0ff3abe4-3c1e-4824-83f1-0647dbb259d3 rr:predicateObjectMap km-dev:PredicateObjectMap_676fc521-3097-4440-883d-446c313091ec .
 
-km-dev:PredicateObjectMap_99e57ca0-b25e-4234-be22-df8bcaadfe79 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_676fc521-3097-4440-883d-446c313091ec a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_99e57ca0-b25e-4234-be22-df8bcaadfe79 .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_676fc521-3097-4440-883d-446c313091ec .
 
-km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af a rr:TriplesMap .
+km-dev:TriplesMap_3c896681-eb68-455b-b4c2-cc031cba934a a rr:TriplesMap .
 
-_:node1ahc8enkox1 km-dev:hasTriplesMap km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af .
+_:node1ai3gvq8bx1 km-dev:hasTriplesMap km-dev:TriplesMap_3c896681-eb68-455b-b4c2-cc031cba934a .
 
-km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:TriplesMap_3c896681-eb68-455b-b4c2-cc031cba934a km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox22 rr:tableName "unit_contracts.jl" ;
+_:node1ai3gvq8bx22 rr:tableName "unit_contracts.jl" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasLogicalTable _:node1ahc8enkox22 .
+_:node1ai3gvq8bx1 km-dev:hasLogicalTable _:node1ai3gvq8bx22 .
 
-km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af rr:logicalTable _:node1ahc8enkox22 ;
-	rr:subjectMap _:node1ahc8enkox23 .
+km-dev:TriplesMap_3c896681-eb68-455b-b4c2-cc031cba934a rr:logicalTable _:node1ai3gvq8bx22 ;
+	rr:subjectMap _:node1ai3gvq8bx23 .
 
-_:node1ahc8enkox1 km-dev:hasSubjectMap _:node1ahc8enkox23 .
+_:node1ai3gvq8bx1 km-dev:hasSubjectMap _:node1ai3gvq8bx23 .
 
-_:node1ahc8enkox23 km-dev:isPartOfMapping _:node1ahc8enkox1 ;
+_:node1ai3gvq8bx23 km-dev:isPartOfMapping _:node1ai3gvq8bx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Unit1" ;
 	rr:class scharp:Unit ;
-	rr:template "unit/{Unit}" .
+	rr:template "{unit_uri}" .
 
-km-dev:PredicateObjectMap_62b6c483-6cf2-470b-9630-d48e2ca34758 rr:predicate scharp:locatein .
+km-dev:PredicateObjectMap_ecfdf473-85a9-4898-acd4-857e71e889c4 rr:predicate scharp:locatein .
 
-_:node1ahc8enkox24 rr:column "Location" ;
+_:node1ai3gvq8bx24 rr:column "Location" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox24 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx24 .
 
-km-dev:PredicateObjectMap_62b6c483-6cf2-470b-9630-d48e2ca34758 rr:objectMap _:node1ahc8enkox24 .
+km-dev:PredicateObjectMap_ecfdf473-85a9-4898-acd4-857e71e889c4 rr:objectMap _:node1ai3gvq8bx24 .
 
-km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af rr:predicateObjectMap km-dev:PredicateObjectMap_62b6c483-6cf2-470b-9630-d48e2ca34758 .
+km-dev:TriplesMap_3c896681-eb68-455b-b4c2-cc031cba934a rr:predicateObjectMap km-dev:PredicateObjectMap_ecfdf473-85a9-4898-acd4-857e71e889c4 .
 
-km-dev:PredicateObjectMap_62b6c483-6cf2-470b-9630-d48e2ca34758 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_ecfdf473-85a9-4898-acd4-857e71e889c4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_62b6c483-6cf2-470b-9630-d48e2ca34758 .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ecfdf473-85a9-4898-acd4-857e71e889c4 .
 
-km-dev:PredicateObjectMap_d117ecd5-2ec5-475f-8844-0200adeb9470 rr:predicate scharp:callsign .
+km-dev:PredicateObjectMap_3f587cab-15ac-41a3-b840-dd06b19ebe1c rr:predicate scharp:callsign .
 
-_:node1ahc8enkox25 rr:column "Unit" ;
+_:node1ai3gvq8bx25 rr:column "Unit" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasObjectMap _:node1ahc8enkox25 .
+_:node1ai3gvq8bx1 km-dev:hasObjectMap _:node1ai3gvq8bx25 .
 
-km-dev:PredicateObjectMap_d117ecd5-2ec5-475f-8844-0200adeb9470 rr:objectMap _:node1ahc8enkox25 .
+km-dev:PredicateObjectMap_3f587cab-15ac-41a3-b840-dd06b19ebe1c rr:objectMap _:node1ai3gvq8bx25 .
 
-km-dev:TriplesMap_7ec77c19-021d-4f53-8f54-08ddf3e316af rr:predicateObjectMap km-dev:PredicateObjectMap_d117ecd5-2ec5-475f-8844-0200adeb9470 .
+km-dev:TriplesMap_3c896681-eb68-455b-b4c2-cc031cba934a rr:predicateObjectMap km-dev:PredicateObjectMap_3f587cab-15ac-41a3-b840-dd06b19ebe1c .
 
-km-dev:PredicateObjectMap_d117ecd5-2ec5-475f-8844-0200adeb9470 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ahc8enkox1 .
+km-dev:PredicateObjectMap_3f587cab-15ac-41a3-b840-dd06b19ebe1c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ai3gvq8bx1 .
 
-_:node1ahc8enkox1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d117ecd5-2ec5-475f-8844-0200adeb9470 .
+_:node1ai3gvq8bx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3f587cab-15ac-41a3-b840-dd06b19ebe1c .

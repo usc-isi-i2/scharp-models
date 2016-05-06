@@ -1,0 +1,1371 @@
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix dpla: <http://dp.la/about/map/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1ahro1226x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "AirspaceSegments.xml" ;
+	km-dev:modelPublicationTime "1462293792838"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"Key\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"EndLon\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"Width\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"StartLon\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"MaxAltitude\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"MinAltitude\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"EndLat\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"AirspaceKey\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"StartLat\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"Key\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"airspace_uri\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"EndLon\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"Width\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"StartLon\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"MaxAltitude\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"airspacesegment_uri\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"MinAltitude\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"EndLat\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"AirspaceKey\"}],[{\"columnName\":\"AirspaceSegments\"},{\"columnName\":\"AirspaceSegment\"},{\"columnName\":\"StartLat\"}]]" ;
+	km-dev:hasModelLabel "AirspaceSegments.xml" ;
+	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"AirspaceKey\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"airspace_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return \\\"airspace/\\\"+getValue(\\\"AirspaceKey\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"AirspaceKey\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"airspace_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"OrganizeColumnsCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"type\": \"orderedColumns\",
+                \"value\": [{
+                    \"visible\": true,
+                    \"children\": \"[{\\\"visible\\\":true,\\\"children\\\":\\\"[{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"AirspaceKey\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceKey\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"airspace_uri\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"airspace_uri\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Key\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Key\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"Width\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"Width\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"MaxAltitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"MaxAltitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"MaxAltitudeReference\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"MaxAltitudeReference\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"MinAltitude\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"MinAltitude\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":false,\\\\\\\"hideable\\\\\\\":true,\\\\\\\"name\\\\\\\":\\\\\\\"MinAltitudeReference\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"MinAltitudeReference\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"StartLat\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"StartLat\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"StartLon\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"StartLon\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"EndLat\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"EndLat\\\\\\\"}]},{\\\\\\\"visible\\\\\\\":true,\\\\\\\"hideable\\\\\\\":false,\\\\\\\"name\\\\\\\":\\\\\\\"EndLon\\\\\\\",\\\\\\\"id\\\\\\\":[{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegments\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"AirspaceSegment\\\\\\\"},{\\\\\\\"columnName\\\\\\\":\\\\\\\"EndLon\\\\\\\"}]}]\\\",\\\"hideable\\\":false,\\\"name\\\":\\\"AirspaceSegment\\\",\\\"id\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"}]}]\",
+                    \"hideable\": false,
+                    \"name\": \"AirspaceSegments\",
+                    \"id\": [{\"columnName\": \"AirspaceSegments\"}]
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [
+            \"Transformation\",
+            \"IgnoreInBatch\"
+        ]
+    },
+    {
+        \"commandName\": \"SubmitPythonTransformationCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"Key\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"type\": \"other\",
+                \"value\": \"airspacesegment_uri\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"type\": \"other\",
+                \"value\": \"return getValue(\\\"airspace_uri\\\")+\\\"/segment/\\\"+getValue(\\\"Key\\\")\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"type\": \"other\",
+                \"value\": \"false\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"Key\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"airspace_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"airspacesegment_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\",
+                    \"hasPrefix\": false,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetWorksheetPropertiesCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"properties\",
+                \"type\": \"other\",
+                \"value\": {
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false,
+                    \"prefix\": \"scharp\",
+                    \"hasPrefix\": true,
+                    \"hasServiceProperties\": false
+                }
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Transformation\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"AirspaceKey\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airspace\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airspace1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/airspaceKey\",
+                    \"DomainLabel\": \"scharp:Airspace1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"AirspaceKey\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"AirspaceKey\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"EndLat\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
+                    \"DomainLabel\": \"scharp:Point1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"EndLat\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"EndLat\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"EndLon\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/longitude\",
+                    \"DomainLabel\": \"scharp:Point1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"EndLon\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"EndLon\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"Key\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/airspaceSegmentKey\",
+                    \"DomainLabel\": \"scharp:AirspaceSegment1 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"Key\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"Key\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"MaxAltitude\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/maxaltitude\",
+                    \"DomainLabel\": \"scharp:AirspaceSegment1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"MaxAltitude\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"MaxAltitude\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"MinAltitude\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/minaltitude\",
+                    \"DomainLabel\": \"scharp:AirspaceSegment1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"MinAltitude\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"MinAltitude\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"Width\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/width\",
+                    \"DomainLabel\": \"scharp:AirspaceSegment1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"Width\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"Width\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"StartLat\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
+                    \"DomainLabel\": \"scharp:Point2 (add)\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"StartLat\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"StartLat\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetSemanticTypeCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"StartLon\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point2\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/longitude\",
+                    \"DomainLabel\": \"scharp:Point2\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"StartLon\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"StartLon\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"airspace_uri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Airspace\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Airspace1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airspace\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airspace1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:Airspace1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"airspace_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"airspace_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"SetMetaPropertyCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"type\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"AirspaceSegments\"},
+                    {\"columnName\": \"AirspaceSegment\"},
+                    {\"columnName\": \"airspacesegment_uri\"}
+                ]
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"type\": \"other\",
+                \"value\": \"isUriOfClass\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"type\": \"other\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment1\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment1\",
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:AirspaceSegment1\"
+                }]
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"type\": \"other\",
+                \"value\": true
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"type\": \"other\",
+                \"value\": \"\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"airspacesegment_uri\\\"}]}]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"AirspaceSegments\\\"},{\\\"columnName\\\":\\\"AirspaceSegment\\\"},{\\\"columnName\\\":\\\"airspacesegment_uri\\\"}]}]\"
+            }
+        ],
+        \"tags\": [\"SemanticType\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP9:WS179AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/endpoint\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP9:WS179AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point2\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/startpoint\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    },
+    {
+        \"commandName\": \"ChangeInternalNodeLinksCommand\",
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"type\": \"worksheetId\",
+                \"value\": \"W\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"type\": \"other\",
+                \"value\": \"DEFAULT_TEST\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"type\": \"other\",
+                \"value\": []
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"type\": \"other\",
+                \"value\": \"WSP9:WS179AL\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"type\": \"other\",
+                \"value\": [{
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment1\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/airspacesegment\",
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/AirspaceSegment\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Airspace1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Airspace\"
+                }]
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"type\": \"hNodeIdList\",
+                \"value\": \"[]\"
+            }
+        ],
+        \"tags\": [\"Modeling\"]
+    }
+]""" .
+
+km-dev:TriplesMap_cfd30748-663a-4fea-91e5-3a79d28c3585 a rr:TriplesMap .
+
+_:node1ahro1226x1 km-dev:hasTriplesMap km-dev:TriplesMap_cfd30748-663a-4fea-91e5-3a79d28c3585 .
+
+km-dev:TriplesMap_cfd30748-663a-4fea-91e5-3a79d28c3585 km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x2 rr:tableName "AirspaceSegments.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasLogicalTable _:node1ahro1226x2 .
+
+km-dev:TriplesMap_cfd30748-663a-4fea-91e5-3a79d28c3585 rr:logicalTable _:node1ahro1226x2 ;
+	rr:subjectMap _:node1ahro1226x3 .
+
+_:node1ahro1226x1 km-dev:hasSubjectMap _:node1ahro1226x3 .
+
+_:node1ahro1226x3 km-dev:isPartOfMapping _:node1ahro1226x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Airspace1" ;
+	rr:class scharp:Airspace ;
+	rr:template "airspace/{[\"AirspaceSegments\",\"AirspaceSegment\",\"AirspaceKey\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_371fae38-77b4-4924-9206-00e73d52d1f6 rr:predicate scharp:airspacesegment .
+
+km-dev:RefObjectMap_291d9725-7faa-46b5-9ae5-d5709d6ab745 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap km-dev:RefObjectMap_291d9725-7faa-46b5-9ae5-d5709d6ab745 .
+
+km-dev:PredicateObjectMap_371fae38-77b4-4924-9206-00e73d52d1f6 rr:objectMap km-dev:RefObjectMap_291d9725-7faa-46b5-9ae5-d5709d6ab745 .
+
+km-dev:TriplesMap_cfd30748-663a-4fea-91e5-3a79d28c3585 rr:predicateObjectMap km-dev:PredicateObjectMap_371fae38-77b4-4924-9206-00e73d52d1f6 .
+
+km-dev:PredicateObjectMap_371fae38-77b4-4924-9206-00e73d52d1f6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_371fae38-77b4-4924-9206-00e73d52d1f6 .
+
+km-dev:PredicateObjectMap_09f19ca1-f0d5-42d0-94ab-257a65c1c2d9 rr:predicate scharp:airspaceKey .
+
+_:node1ahro1226x4 rr:column "[\"AirspaceSegments\",\"AirspaceSegment\",\"AirspaceKey\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap _:node1ahro1226x4 .
+
+km-dev:PredicateObjectMap_09f19ca1-f0d5-42d0-94ab-257a65c1c2d9 rr:objectMap _:node1ahro1226x4 .
+
+km-dev:TriplesMap_cfd30748-663a-4fea-91e5-3a79d28c3585 rr:predicateObjectMap km-dev:PredicateObjectMap_09f19ca1-f0d5-42d0-94ab-257a65c1c2d9 .
+
+km-dev:PredicateObjectMap_09f19ca1-f0d5-42d0-94ab-257a65c1c2d9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_09f19ca1-f0d5-42d0-94ab-257a65c1c2d9 .
+
+km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b a rr:TriplesMap .
+
+_:node1ahro1226x1 km-dev:hasTriplesMap km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b .
+
+km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x5 rr:tableName "AirspaceSegments.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasLogicalTable _:node1ahro1226x5 .
+
+km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b rr:logicalTable _:node1ahro1226x5 ;
+	rr:subjectMap _:node1ahro1226x6 .
+
+_:node1ahro1226x1 km-dev:hasSubjectMap _:node1ahro1226x6 .
+
+_:node1ahro1226x6 km-dev:isPartOfMapping _:node1ahro1226x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirspaceSegment1" ;
+	rr:class scharp:AirspaceSegment ;
+	rr:template "{[\"AirspaceSegments\",\"AirspaceSegment\",\"airspace_uri\"]}/segment/{[\"AirspaceSegments\",\"AirspaceSegment\",\"Key\"]}" .
+
+km-dev:PredicateObjectMap_dafa1f70-6bf6-4efd-9eb6-efe2a93d3c00 rr:predicate scharp:endpoint .
+
+km-dev:RefObjectMap_f0956462-1faf-4bb1-ba25-31382a062e35 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c4620eba-2927-4ad8-a398-ddf0d3143790 ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap km-dev:RefObjectMap_f0956462-1faf-4bb1-ba25-31382a062e35 .
+
+km-dev:PredicateObjectMap_dafa1f70-6bf6-4efd-9eb6-efe2a93d3c00 rr:objectMap km-dev:RefObjectMap_f0956462-1faf-4bb1-ba25-31382a062e35 .
+
+km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b rr:predicateObjectMap km-dev:PredicateObjectMap_dafa1f70-6bf6-4efd-9eb6-efe2a93d3c00 .
+
+km-dev:PredicateObjectMap_dafa1f70-6bf6-4efd-9eb6-efe2a93d3c00 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dafa1f70-6bf6-4efd-9eb6-efe2a93d3c00 .
+
+km-dev:PredicateObjectMap_be39982b-bdbc-4a40-93d4-84eb8b86729e rr:predicate scharp:startpoint .
+
+km-dev:RefObjectMap_2aecd41e-f979-4aa8-970f-fc018231c2ce a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_ec0bf0ad-b00d-44a9-980c-c3972b751766 ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap km-dev:RefObjectMap_2aecd41e-f979-4aa8-970f-fc018231c2ce .
+
+km-dev:PredicateObjectMap_be39982b-bdbc-4a40-93d4-84eb8b86729e rr:objectMap km-dev:RefObjectMap_2aecd41e-f979-4aa8-970f-fc018231c2ce .
+
+km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b rr:predicateObjectMap km-dev:PredicateObjectMap_be39982b-bdbc-4a40-93d4-84eb8b86729e .
+
+km-dev:PredicateObjectMap_be39982b-bdbc-4a40-93d4-84eb8b86729e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_be39982b-bdbc-4a40-93d4-84eb8b86729e .
+
+km-dev:PredicateObjectMap_b983d426-96bf-40c9-b5d4-f59b7bc1287e rr:predicate scharp:airspaceSegmentKey .
+
+_:node1ahro1226x7 rr:column "[\"AirspaceSegments\",\"AirspaceSegment\",\"Key\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap _:node1ahro1226x7 .
+
+km-dev:PredicateObjectMap_b983d426-96bf-40c9-b5d4-f59b7bc1287e rr:objectMap _:node1ahro1226x7 .
+
+km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b rr:predicateObjectMap km-dev:PredicateObjectMap_b983d426-96bf-40c9-b5d4-f59b7bc1287e .
+
+km-dev:PredicateObjectMap_b983d426-96bf-40c9-b5d4-f59b7bc1287e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b983d426-96bf-40c9-b5d4-f59b7bc1287e .
+
+km-dev:PredicateObjectMap_6af6948b-cd64-4082-963d-0452d5794fc6 rr:predicate scharp:width .
+
+_:node1ahro1226x8 rr:column "[\"AirspaceSegments\",\"AirspaceSegment\",\"Width\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap _:node1ahro1226x8 .
+
+km-dev:PredicateObjectMap_6af6948b-cd64-4082-963d-0452d5794fc6 rr:objectMap _:node1ahro1226x8 .
+
+km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b rr:predicateObjectMap km-dev:PredicateObjectMap_6af6948b-cd64-4082-963d-0452d5794fc6 .
+
+km-dev:PredicateObjectMap_6af6948b-cd64-4082-963d-0452d5794fc6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6af6948b-cd64-4082-963d-0452d5794fc6 .
+
+km-dev:PredicateObjectMap_54c8d443-be6f-49ed-8cd6-2d89834fabb5 rr:predicate scharp:maxaltitude .
+
+_:node1ahro1226x9 rr:column "[\"AirspaceSegments\",\"AirspaceSegment\",\"MaxAltitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap _:node1ahro1226x9 .
+
+km-dev:PredicateObjectMap_54c8d443-be6f-49ed-8cd6-2d89834fabb5 rr:objectMap _:node1ahro1226x9 .
+
+km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b rr:predicateObjectMap km-dev:PredicateObjectMap_54c8d443-be6f-49ed-8cd6-2d89834fabb5 .
+
+km-dev:PredicateObjectMap_54c8d443-be6f-49ed-8cd6-2d89834fabb5 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_54c8d443-be6f-49ed-8cd6-2d89834fabb5 .
+
+km-dev:PredicateObjectMap_a0596323-f6de-42d2-845f-389cd568769c rr:predicate scharp:minaltitude .
+
+_:node1ahro1226x10 rr:column "[\"AirspaceSegments\",\"AirspaceSegment\",\"MinAltitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap _:node1ahro1226x10 .
+
+km-dev:PredicateObjectMap_a0596323-f6de-42d2-845f-389cd568769c rr:objectMap _:node1ahro1226x10 .
+
+km-dev:TriplesMap_9b3d9090-c5e9-4253-ae34-2f607893616b rr:predicateObjectMap km-dev:PredicateObjectMap_a0596323-f6de-42d2-845f-389cd568769c .
+
+km-dev:PredicateObjectMap_a0596323-f6de-42d2-845f-389cd568769c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a0596323-f6de-42d2-845f-389cd568769c .
+
+km-dev:TriplesMap_c4620eba-2927-4ad8-a398-ddf0d3143790 a rr:TriplesMap .
+
+_:node1ahro1226x1 km-dev:hasTriplesMap km-dev:TriplesMap_c4620eba-2927-4ad8-a398-ddf0d3143790 .
+
+km-dev:TriplesMap_c4620eba-2927-4ad8-a398-ddf0d3143790 km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x11 rr:tableName "AirspaceSegments.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasLogicalTable _:node1ahro1226x11 .
+
+km-dev:TriplesMap_c4620eba-2927-4ad8-a398-ddf0d3143790 rr:logicalTable _:node1ahro1226x11 ;
+	rr:subjectMap _:node1ahro1226x12 .
+
+_:node1ahro1226x1 km-dev:hasSubjectMap _:node1ahro1226x12 .
+
+_:node1ahro1226x12 km-dev:isPartOfMapping _:node1ahro1226x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
+	rr:class scharp:Point ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Point1" .
+
+km-dev:PredicateObjectMap_89336b53-dea0-48a2-9025-26080a308c7c rr:predicate scharp:longitude .
+
+_:node1ahro1226x13 rr:column "[\"AirspaceSegments\",\"AirspaceSegment\",\"EndLon\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap _:node1ahro1226x13 .
+
+km-dev:PredicateObjectMap_89336b53-dea0-48a2-9025-26080a308c7c rr:objectMap _:node1ahro1226x13 .
+
+km-dev:TriplesMap_c4620eba-2927-4ad8-a398-ddf0d3143790 rr:predicateObjectMap km-dev:PredicateObjectMap_89336b53-dea0-48a2-9025-26080a308c7c .
+
+km-dev:PredicateObjectMap_89336b53-dea0-48a2-9025-26080a308c7c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_89336b53-dea0-48a2-9025-26080a308c7c .
+
+km-dev:PredicateObjectMap_872b205e-23dc-4b27-ab64-78412f771907 rr:predicate scharp:latitude .
+
+_:node1ahro1226x14 rr:column "[\"AirspaceSegments\",\"AirspaceSegment\",\"EndLat\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap _:node1ahro1226x14 .
+
+km-dev:PredicateObjectMap_872b205e-23dc-4b27-ab64-78412f771907 rr:objectMap _:node1ahro1226x14 .
+
+km-dev:TriplesMap_c4620eba-2927-4ad8-a398-ddf0d3143790 rr:predicateObjectMap km-dev:PredicateObjectMap_872b205e-23dc-4b27-ab64-78412f771907 .
+
+km-dev:PredicateObjectMap_872b205e-23dc-4b27-ab64-78412f771907 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_872b205e-23dc-4b27-ab64-78412f771907 .
+
+km-dev:TriplesMap_ec0bf0ad-b00d-44a9-980c-c3972b751766 a rr:TriplesMap .
+
+_:node1ahro1226x1 km-dev:hasTriplesMap km-dev:TriplesMap_ec0bf0ad-b00d-44a9-980c-c3972b751766 .
+
+km-dev:TriplesMap_ec0bf0ad-b00d-44a9-980c-c3972b751766 km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x15 rr:tableName "AirspaceSegments.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasLogicalTable _:node1ahro1226x15 .
+
+km-dev:TriplesMap_ec0bf0ad-b00d-44a9-980c-c3972b751766 rr:logicalTable _:node1ahro1226x15 ;
+	rr:subjectMap _:node1ahro1226x16 .
+
+_:node1ahro1226x1 km-dev:hasSubjectMap _:node1ahro1226x16 .
+
+_:node1ahro1226x16 km-dev:isPartOfMapping _:node1ahro1226x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point2" ;
+	rr:class scharp:Point ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Point2" .
+
+km-dev:PredicateObjectMap_d612b788-5d5b-42af-b9bd-5682020f303b rr:predicate scharp:longitude .
+
+_:node1ahro1226x17 rr:column "[\"AirspaceSegments\",\"AirspaceSegment\",\"StartLon\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap _:node1ahro1226x17 .
+
+km-dev:PredicateObjectMap_d612b788-5d5b-42af-b9bd-5682020f303b rr:objectMap _:node1ahro1226x17 .
+
+km-dev:TriplesMap_ec0bf0ad-b00d-44a9-980c-c3972b751766 rr:predicateObjectMap km-dev:PredicateObjectMap_d612b788-5d5b-42af-b9bd-5682020f303b .
+
+km-dev:PredicateObjectMap_d612b788-5d5b-42af-b9bd-5682020f303b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d612b788-5d5b-42af-b9bd-5682020f303b .
+
+km-dev:PredicateObjectMap_6c7542c3-5fd8-4ada-adaa-f00330dbcce7 rr:predicate scharp:latitude .
+
+_:node1ahro1226x18 rr:column "[\"AirspaceSegments\",\"AirspaceSegment\",\"StartLat\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasObjectMap _:node1ahro1226x18 .
+
+km-dev:PredicateObjectMap_6c7542c3-5fd8-4ada-adaa-f00330dbcce7 rr:objectMap _:node1ahro1226x18 .
+
+km-dev:TriplesMap_ec0bf0ad-b00d-44a9-980c-c3972b751766 rr:predicateObjectMap km-dev:PredicateObjectMap_6c7542c3-5fd8-4ada-adaa-f00330dbcce7 .
+
+km-dev:PredicateObjectMap_6c7542c3-5fd8-4ada-adaa-f00330dbcce7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ahro1226x1 .
+
+_:node1ahro1226x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6c7542c3-5fd8-4ada-adaa-f00330dbcce7 .

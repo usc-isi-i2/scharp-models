@@ -157,6 +157,11 @@ scharp:Airspace rdf:type owl:Class ;
 	rdfs:comment "Air Space." 
 	.
 
+scharp:AirspaceSegment rdf:type owl:Class ;
+	rdfs:label "Air space segment"@en ;
+	rdfs:comment "Air Space Segment." 
+	.
+
 scharp:Take_off_Win rdf:type owl:Class ;
 	rdfs:label "Take_off_Win"@en ;
 	rdfs:comment "Take_off_Win." 
@@ -170,6 +175,11 @@ scharp:SCL rdf:type owl:Class ;
 scharp:SCLDetail rdf:type owl:Class ;
 	rdfs:label "SCLDetail"@en ;
 	rdfs:comment """Standard Configuration Load Detail."""
+	.
+
+scharp:SAMSite rdf:type owl:Class ;
+	rdfs:label "SAMSite"@en ;
+	rdfs:comment """Surface-to-Air-Missile Site."""
 	.
 
 #########################################################
@@ -247,7 +257,6 @@ scharp:hasSortie rdf:type owl:ObjectProperty ;
 
 scharp:location rdf:type owl:ObjectProperty ;
 	rdfs:label "locatein"@en ;
-	rdfs:domain scharp:Unit;
 	rdfs:comment "The location information." 
 	.
 
@@ -306,9 +315,27 @@ scharp:go rdf:type owl:ObjectProperty ;
 	rdfs:range scharp:Go ; 
 	.
 
-scharp:hasvertice rdf:type owl:ObjectProperty ;
+scharp:aiespacepoint rdf:type owl:ObjectProperty ;
+	rdfs:label "points"@en ;
+	rdfs:domain scharp:Airspace ;
+	rdfs:range scharp:Point ; 
+	.
+
+scharp:airspacesegment rdf:type owl:ObjectProperty ;
 	rdfs:label "vertice"@en ;
 	rdfs:domain scharp:Airspace ;
+	rdfs:range scharp:AirspaceSegment ; 
+	.
+
+scharp:startpoint rdf:type owl:ObjectProperty ;
+	rdfs:label "start point"@en ;
+	rdfs:domain scharp:AirspaceSegment ;
+	rdfs:range scharp:Point ; 
+	.
+
+scharp:endpoint rdf:type owl:ObjectProperty ;
+	rdfs:label "end point"@en ;
+	rdfs:domain scharp:AirspaceSegment ;
 	rdfs:range scharp:Point ; 
 	.
 
@@ -625,6 +652,36 @@ scharp:airspaceId rdf:type rdf:Property ;
 	rdfs:comment "The ID of an air space." 
 	.
 
+scharp:airspaceKey rdf:type rdf:Property ;
+	rdfs:label "airspaceKey"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The key of an air space." 
+	.
+
+scharp:airspaceSegmentKey rdf:type rdf:Property ;
+	rdfs:label "airspaceSegmentKey"@en ;
+	rdfs:domain scharp:AirspaceSegment;
+	rdfs:comment "The key of an air space segment." 
+	.
+
+scharp:airspacePointKey rdf:type rdf:Property ;
+	rdfs:label "airspacePointKey"@en ;
+	rdfs:domain scharp:Point;
+	rdfs:comment "The key of an air space point." 
+	.
+
+scharp:maxaltitude rdf:type rdf:Property ;
+	rdfs:label "maxaltitude"@en ;
+	rdfs:domain scharp:AirspaceSegment;
+	rdfs:comment "max altitude." 
+	.
+
+scharp:minaltitude rdf:type rdf:Property ;
+	rdfs:label "minaltitude"@en ;
+	rdfs:domain scharp:AirspaceSegment;
+	rdfs:comment "min altitude." 
+	.
+
 scharp:shape rdf:type rdf:Property ;
 	rdfs:label "shape"@en ;
 	rdfs:domain scharp:Airspace;
@@ -643,14 +700,44 @@ scharp:flightLevel rdf:type rdf:Property ;
 	rdfs:comment "The flight level of an air space." 
 	.
 
+scharp:areatype rdf:type rdf:Property ;
+	rdfs:label "type"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The type." 
+	.
+
+scharp:numofpoints rdf:type rdf:Property ;
+	rdfs:label "numofpoints"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The number of points." 
+	.
+
 scharp:type rdf:type rdf:Property ;
 	rdfs:label "type"@en ;
 	rdfs:comment "The type." 
 	.
 
+scharp:ceiling rdf:type rdf:Property ;
+	rdfs:label "ceiling"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The ceiling." 
+	.
+
+scharp:floor rdf:type rdf:Property ;
+	rdfs:label "floor"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The floor." 
+	.
+
+scharp:Areatype rdf:type rdf:Property ;
+	rdfs:label "type"@en ;
+	rdfs:domain scharp:Airspace;
+	rdfs:comment "The type." 
+	.
+
 scharp:width rdf:type rdf:Property ;
 	rdfs:label "width"@en ;
-	rdfs:domain scharp:Airspace;
+	rdfs:domain scharp:AirspaceSegment;
 	rdfs:comment "The width level of an air space." 
 	.
 
@@ -724,7 +811,8 @@ scharp:quantity rdf:type rdf:Property ;
 
 scharp:index rdf:type rdf:Property ;
 	rdfs:label "Index"@en ;
-	rdfs:domain scharp:SCL
+	rdfs:domain scharp:SCL ;
+	rdfs:domain scharp:SAMSite 
 	.
 
 scharp:team rdf:type rdf:Property ;
@@ -739,5 +827,86 @@ scharp:source rdf:type rdf:Property ;
 
 scharp:scenarioName rdf:type rdf:Property ;
 	rdfs:label "ScenarioName"@en ;
-	rdfs:domain scharp:SCL
+	rdfs:domain scharp:SCL ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:BeNumber rdf:type rdf:Property ;
+	rdfs:label "BeNumber"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:currentStatus rdf:type rdf:Property ;
+	rdfs:label "currentStatus"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:engRange rdf:type rdf:Property ;
+	rdfs:label "engRange"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:samSiteId rdf:type rdf:Property ;
+	rdfs:label "ID"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:include rdf:type rdf:Property ;
+	rdfs:label "include"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:name rdf:type rdf:Property ;
+	rdfs:label "name"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:numMissiles rdf:type rdf:Property ;
+	rdfs:label "numMissiles"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:originalTeam rdf:type rdf:Property ;
+	rdfs:label "originalTeam"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:platform rdf:type rdf:Property ;
+	rdfs:label "platform"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:source rdf:type rdf:Property ;
+	rdfs:label "source"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:status rdf:type rdf:Property ;
+	rdfs:label "status"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:surRange rdf:type rdf:Property ;
+	rdfs:label "surRange"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:team rdf:type rdf:Property ;
+	rdfs:label "team"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:originalTeam rdf:type rdf:Property ;
+	rdfs:label "originalTeam"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:country rdf:type rdf:Property ;
+	rdfs:label "country"@en ;
+	rdfs:domain scharp:SAMSite
+	.
+
+scharp:shipName rdf:type rdf:Property ;
+	rdfs:label "Ship Name"@en ;
+	rdfs:domain scharp:SAMSite
 	.

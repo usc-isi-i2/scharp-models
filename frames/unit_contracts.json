@@ -8,7 +8,6 @@
   "usage": {},
   "flightLevel": {},
   "airspaceId": {},
-  "type": {},
   "contract": {
     "@type": "Unit",
     "@explicit": true,

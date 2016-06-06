@@ -1,0 +1,19 @@
+{
+  "@type": "SCL",
+  "@explicit": true,
+  "uri": {},
+  "a": {},
+  "configurationName": {},
+  "detail": {
+    "@type": "SCLDetail",
+    "@explicit": true,
+    "aircraftType": {},
+    "quantity": {},
+    "a": {},
+    "index": {},
+    "componentName": {},
+    "source": {},
+    "team": {},
+    "scenarioName": {}
+  }
+}

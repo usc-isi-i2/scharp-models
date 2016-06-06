@@ -1,0 +1,48 @@
+{
+  "@type": "Unit_Contract",
+  "@explicit": true,
+  "uri": {},
+  "a": {},
+  "recurrence": {},
+  "aircraft": {},
+  "usage": {},
+  "flightLevel": {},
+  "airspaceId": {},
+  "type": {},
+  "contract": {
+    "@type": "Unit",
+    "@explicit": true,
+    "uri": {},
+    "callsign": {},
+    "locatein": {},
+    "a": {}
+  },
+  "valid_duration": {
+    "@type": "Interval",
+    "@explicit": true,
+    "start_time": {},
+    "end_time": {},
+    "a": {}
+  },
+  "turn": {
+    "@type": "Turn",
+    "@explicit": true,
+    "exp_sorties": {},
+    "turn_time": {},
+    "go": {
+      "@type": "Go",
+      "@explicit": true,
+      "duration": {},
+      "sortie_num": {},
+      "take_off_win": {
+        "@type": "Take_off_Win",
+        "@explicit": true,
+        "take_off_duration": {},
+        "take_off_start": {},
+        "a": {}
+      },
+      "a": {}
+    },
+    "a": {}
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "@type": "Airspace",
+  "@explicit": true,
+  "uri": {},
+  "a": {},
+  "alignmt": {},
+  "shape": {},
+  "usage": {},
+  "flightLevel": {},
+  "airspaceId": {},
+  "type": {},
+  "airspacepoint": {
+    "@type": "Point",
+    "@explicit": true,
+    "uri": {},
+    "latitude": {},
+    "longitude": {},
+    "a": {}
+  }
+}

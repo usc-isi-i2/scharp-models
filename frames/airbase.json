@@ -1,0 +1,19 @@
+{
+  "@type": "Airbase",
+  "@explicit": true,
+  "uri": {},
+  "a": {},
+  "currentStatus": {},
+  "name": {},
+  "index": {},
+  "facilityName": {},
+  "scenarioName": {},
+  "operatingStatus": {},
+  "locatein": {
+    "@type": "Point",
+    "@explicit": true,
+    "latitude": {},
+    "longitude": {},
+    "a": {}
+  }
+}

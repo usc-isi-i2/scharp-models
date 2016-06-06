@@ -12,7 +12,6 @@
   "airspacepoint": {
     "@type": "Point",
     "@explicit": true,
-    "uri": {},
     "latitude": {},
     "longitude": {},
     "a": {}

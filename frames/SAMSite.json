@@ -1,0 +1,28 @@
+{
+  "@type": "SAMSite",
+  "@explicit": true,
+  "uri": {},
+  "a": {},
+  "originalTeam": {},
+  "include": {},
+  "currentStatus": {},
+  "engRange": {},
+  "source": {},
+  "team": {},
+  "BeNumber": {},
+  "platform": {},
+  "surRange": {},
+  "samSiteId": {},
+  "numNissiles": {},
+  "name": {},
+  "scenarioName": {},
+  "status": {},
+  "team": {},
+  "locatein": {
+    "@type": "Point",
+    "@explicit": true,
+    "latitude": {},
+    "longitude": {},
+    "a": {}
+  }
+}

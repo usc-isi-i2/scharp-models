@@ -108,11 +108,6 @@ scharp:flightLeader rdf:type owl:Class ;
 	rdfs:comment "Flight Leader" ;
 	.
 
-scharp:Elevation rdf:type owl:Class ;
-	rdfs:label "Elevation" ;
-	rdfs:comment """elevation""" ;
-	.
-
 scharp:operationSituation rdf:type owl:Class ;
 	rdfs:label "operationSituation" ;
 	rdfs:comment """operationSituation""" ;
@@ -272,9 +267,10 @@ scharp:weather rdf:type owl:ObjectProperty ;
 	.
 
 
-scharp:trackedBy rdf:type owl:ObjectProperty ;
-	rdfs:domain scharp:Unit;
-	rdfs:label "trackedBy" ;
+scharp:track rdf:type owl:ObjectProperty ;
+	rdfs:range scharp:Unit;
+	rdfs:domain scharp:Track;
+	rdfs:label "track" ;
 	rdfs:comment "a unit track." 
 	.
 
@@ -286,11 +282,6 @@ scharp:leader rdf:type owl:ObjectProperty ;
 scharp:commander rdf:type owl:ObjectProperty ;
 	rdfs:domain scharp:AirSortie ;
 	rdfs:label "commander" 
-	.
-
-scharp:elevation rdf:type owl:ObjectProperty ;
-	rdfs:domain scharp:Unit ;
-	rdfs:label "elevation" 
 	.
 
 scharp:valid_duration rdf:type owl:ObjectProperty ;
@@ -465,12 +456,25 @@ scharp:altitudeSource rdf:type rdf:Property ;
 	memex:es_directive memex:ES_not_analyzed ;
 	rdfs:comment "The source that proveides the altitute." 
 	.
+
+scharp:elevation rdf:type rdf:Property ;
+	rdfs:domain scharp:Unit;
+	rdfs:label "elevation" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:comment "The elevation." 
+	.
 	
 scharp:callsign rdf:type rdf:Property ;
 	rdfs:label "callsign" ;
 	rdfs:domain scharp:Unit ;
 	memex:es_directive memex:ES_not_analyzed ;
 	rdfs:comment "call sign." 
+	.
+
+scharp:trackIdentity rdf:type rdf:Property ;
+	rdfs:label "trackIdentity" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:Track
 	.
 
 scharp:metThreat rdf:type rdf:Property ;
@@ -560,12 +564,6 @@ scharp:trackNum rdf:type rdf:Property ;
 	rdfs:domain scharp:Track;
 	memex:es_directive memex:ES_not_analyzed ;
 	rdfs:comment "The track number." 
-	.
-
-scharp:Quality rdf:type rdf:Property ;
-	rdfs:label "Quality" ;
-	memex:es_directive memex:ES_not_analyzed ;
-	rdfs:comment "The quality." 
 	.
 
 scharp:timeStamp rdf:type rdf:Property ;

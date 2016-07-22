@@ -6,7 +6,7 @@
     "track": {"@id": "http://scharp.usc.isi.edu/ontology/track"},
     "Track": {
         "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/AirTrack"
+        "@id": "http://scharp.usc.isi.edu/ontology/Track"
     },
     "callsign": {"@id": "http://scharp.usc.isi.edu/ontology/callsign"},
     "uri": "@id",

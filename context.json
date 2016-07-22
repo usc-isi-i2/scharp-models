@@ -54,6 +54,8 @@
         "@id": "http://scharp.usc.isi.edu/ontology/Message"
     },
     "mention": {"@id": "http://scharp.usc.isi.edu/ontology/mention"},
+    "course": {"@id": "http://scharp.usc.isi.edu/ontology/course"},
+    "speed": {"@id": "http://scharp.usc.isi.edu/ontology/speed"},
     "timeStamp": {"@id": "http://scharp.usc.isi.edu/ontology/timeStamp"}
 }}
 

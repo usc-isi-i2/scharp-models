@@ -11,9 +11,9 @@
     "callsign": {"@id": "http://scharp.usc.isi.edu/ontology/callsign"},
     "uri": "@id",
     "identity": {"@id": "http://scharp.usc.isi.edu/ontology/identity"},
-    "AirSortie": {
+    "AirUnit": {
         "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/AirSortie"
+        "@id": "http://scharp.usc.isi.edu/ontology/AirUnit"
     },
     "altitute": {"@id": "http://scharp.usc.isi.edu/ontology/altitute"},
     "longitude": {"@id": "http://scharp.usc.isi.edu/ontology/longitude"},

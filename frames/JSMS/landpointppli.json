@@ -1,0 +1,26 @@
+{
+  "@type": "Message",
+  "@explicit": true,
+  "timeStamp": {},
+  "a": {},
+  "mention": {
+    "@type": "Unit",
+    "@explicit": true,
+    "course": {},
+    "speed": {},
+    "location": {
+      "@type": "Point",
+      "@explicit": true,
+      "a": {},
+      "longitude": {},
+      "latitude": {}
+    },
+    "strength": {},
+    "a": {},
+    "callsign": {},
+    "airActivity": {},
+    "controlChannel": {},
+    "uri": {}
+  },
+  "uri": {}
+}

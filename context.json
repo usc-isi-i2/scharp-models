@@ -4,7 +4,7 @@
     "a": "@type",
     "trackQuality": {"@id": "http://scharp.usc.isi.edu/ontology/trackQuality"},
     "track": {"@id": "http://scharp.usc.isi.edu/ontology/track"},
-    "AirTrack": {
+    "Track": {
         "@type": "@id",
         "@id": "http://scharp.usc.isi.edu/ontology/AirTrack"
     },

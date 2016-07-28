@@ -197,13 +197,19 @@ scharp:mention rdf:type owl:ObjectProperty ;
 	rdfs:comment "The object that the message mentioned." 
 	.
 
+scharp:aircraft rdf:type owl:ObjectProperty ; 
+	rdfs:label "aircraft" ;
+	rdfs:domain scharp:Message ;
+	rdfs:comment "The object that the message mentioned." 
+	.
+
 scharp:object rdf:type owl:ObjectProperty ; 
 	rdfs:label "object" ;
 	rdfs:domain scharp:Message ;
 	rdfs:comment "The object that the message mentioned." 
 	.
 
-scharp:attr rdf:type owl:ObjectProperty ; 
+scharp:attributes rdf:type owl:ObjectProperty ; 
 	rdfs:label "object" ;
 	rdfs:domain scharp:Message ;
 	rdfs:comment "The attributes that the message mentioned." 
@@ -486,6 +492,13 @@ scharp:callsign rdf:type rdf:Property ;
 	rdfs:comment "call sign." 
 	.
 
+scharp:link16 rdf:type rdf:Property ;
+	rdfs:label "link16" ;
+	rdfs:domain scharp:Unit ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:comment "link16 abbr call sign." 
+	.
+
 scharp:trackIdentity rdf:type rdf:Property ;
 	rdfs:label "trackIdentity" ;
 	memex:es_directive memex:ES_not_analyzed ;
@@ -585,6 +598,12 @@ scharp:timeStamp rdf:type rdf:Property ;
 	rdfs:label "timeStamp" ;
 	memex:es_directive memex:ES_not_analyzed ;
 	rdfs:comment "The message time stamp." 
+	.
+
+scharp:eventTime rdf:type rdf:Property ;
+	rdfs:label "eventTime" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:comment "The event time." 
 	.
 
 scharp:speed rdf:type rdf:Property ;
@@ -1059,4 +1078,10 @@ scharp:identifier rdf:type rdf:Property ;
 	rdfs:label "identifier" ;
 	memex:es_directive memex:ES_not_analyzed ;
 	rdfs:domain scharp:Unit
+	.
+
+scharp:event rdf:type rdf:Property ;
+	rdfs:label "event" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:Message
 	.

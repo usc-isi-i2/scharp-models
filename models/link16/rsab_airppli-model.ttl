@@ -31,15 +31,67 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1aohk16mlx1 a km-dev:R2RMLMapping ;
+_:node1aope338tx1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "part-00000 (1)" ;
-	km-dev:modelPublicationTime "1469470251733"^^xsd:long ;
+	km-dev:modelPublicationTime "1469732457758"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_group\"},{\"columnName\":\"sequence_number\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"altitude_25_ft\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"latitude_0_0013_minute\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"speed\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"longitude_0_0013_minute\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"voice_call_sign\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"course\"},{\"columnName\":\"descriptor\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_group\"},{\"columnName\":\"sequence_number\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"altitude_25_ft\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"iso_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"latitude_0_0013_minute\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_group\"},{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"speed\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"longitude_0_0013_minute\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"voice_call_sign\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"voice_call_sign\"},{\"columnName\":\"unit_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"course\"},{\"columnName\":\"descriptor\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"longitude_0_0013_minute\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_group\"},{\"columnName\":\"sequence_number\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"course\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"voice_call_sign\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"latitude_0_0013_minute\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"speed\"},{\"columnName\":\"descriptor\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"longitude_0_0013_minute\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"course\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"event\"}],[{\"columnName\":\"event_time\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"voice_call_sign\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"voice_call_sign\"},{\"columnName\":\"unit_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"latitude_0_0013_minute\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_group\"},{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"extension_0_word\"},{\"columnName\":\"speed\"},{\"columnName\":\"descriptor\"}]]" ;
 	km-dev:hasModelLabel "part-00000 (1)" ;
 	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
 	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"_timestamp\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"event_time\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return  DM().iso8601date(getValue(\\\"_timestamp\\\"))\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"event_time\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
     {
         \"tags\": [\"Transformation\"],
         \"model\": \"new\",
@@ -75,7 +127,7 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"transformationCode\",
-                \"value\": \"return \\\"unit/\\\"+getValue(\\\"descriptor\\\")\",
+                \"value\": \"return \\\"airunit/\\\"+getValue(\\\"descriptor\\\")\",
                 \"type\": \"other\"
             },
             {
@@ -96,6 +148,66 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"outputColumns\",
                 \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"continuation_2_word\\\"},{\\\"columnName\\\":\\\"voice_call_sign\\\"},{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ns4:jreapEnvelope\"},
+                    {\"columnName\": \"ns3:messageProduct\"},
+                    {\"columnName\": \"message_data\"},
+                    {\"columnName\": \"message_representation\"},
+                    {\"columnName\": \"message_identity\"},
+                    {\"columnName\": \"name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"event\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"AircraftStatusUpdate\\\"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"message_identity\\\"},{\\\"columnName\\\":\\\"event\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
@@ -177,82 +289,6 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
                 \"name\": \"properties\",
                 \"value\": {
                     \"hasServiceProperties\": false,
-                    \"hasPrefix\": false,
-                    \"graphLabel\": \"\",
-                    \"hasBaseURI\": true,
-                    \"baseURI\": \"http://scharp.usc.isi.edu/\"
-                },
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetWorksheetPropertiesCommand\"
-    },
-    {
-        \"tags\": [\"Transformation\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"properties\",
-                \"value\": {
-                    \"hasServiceProperties\": false,
-                    \"hasPrefix\": true,
-                    \"prefix\": \"scgaro\",
-                    \"graphLabel\": \"\",
-                    \"hasBaseURI\": false
-                },
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetWorksheetPropertiesCommand\"
-    },
-    {
-        \"tags\": [\"Transformation\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"properties\",
-                \"value\": {
-                    \"hasServiceProperties\": false,
                     \"hasPrefix\": true,
                     \"prefix\": \"scharp\",
                     \"graphLabel\": \"\",
@@ -278,8 +314,46 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
         \"model\": \"new\",
         \"inputParameters\": [
             {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
                 \"name\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"_timestamp\"}],
+                \"value\": [{\"columnName\": \"event_time\"}],
                 \"type\": \"hNodeId\"
             },
             {
@@ -293,37 +367,43 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
                 \"type\": \"other\"
             },
             {
-                \"name\": \"newColumnName\",
-                \"value\": \"iso_timestamp\",
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/eventTime\",
+                    \"DomainLabel\": \"scharp:Message1 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
                 \"type\": \"other\"
             },
             {
-                \"name\": \"transformationCode\",
-                \"value\": \"return DM().iso8601date(getValue(\\\"_timestamp\\\"))\",
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
                 \"type\": \"other\"
             },
             {
-                \"name\": \"errorDefaultValue\",
+                \"name\": \"rdfLiteralType\",
                 \"value\": \"\",
                 \"type\": \"other\"
             },
             {
-                \"name\": \"isJSONOutput\",
-                \"value\": \"false\",
+                \"name\": \"language\",
+                \"value\": \"\",
                 \"type\": \"other\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"event_time\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"iso_timestamp\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"event_time\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
-        \"commandName\": \"SubmitPythonTransformationCommand\"
+        \"commandName\": \"SetSemanticTypeCommand\"
     },
     {
         \"tags\": [\"SemanticType\"],
@@ -356,8 +436,8 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/callsign\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/link16\",
                     \"DomainLabel\": \"scharp:AirUnit1 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
@@ -387,6 +467,274 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"outputColumns\",
                 \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"continuation_2_word\\\"},{\\\"columnName\\\":\\\"voice_call_sign\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ns4:jreapEnvelope\"},
+                    {\"columnName\": \"ns3:messageProduct\"},
+                    {\"columnName\": \"message_data\"},
+                    {\"columnName\": \"message_representation\"},
+                    {\"columnName\": \"extension_0_word\"},
+                    {\"columnName\": \"speed\"},
+                    {\"columnName\": \"descriptor\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/speed\",
+                    \"DomainLabel\": \"scharp:Attributes1 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"speed\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"speed\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ns4:jreapEnvelope\"},
+                    {\"columnName\": \"ns3:messageProduct\"},
+                    {\"columnName\": \"message_data\"},
+                    {\"columnName\": \"message_representation\"},
+                    {\"columnName\": \"extension_0_word\"},
+                    {\"columnName\": \"course\"},
+                    {\"columnName\": \"descriptor\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/course\",
+                    \"DomainLabel\": \"scharp:Attributes1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"course\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"course\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ns4:jreapEnvelope\"},
+                    {\"columnName\": \"ns3:messageProduct\"},
+                    {\"columnName\": \"message_data\"},
+                    {\"columnName\": \"message_representation\"},
+                    {\"columnName\": \"extension_0_word\"},
+                    {\"columnName\": \"longitude_0_0013_minute\"},
+                    {\"columnName\": \"descriptor\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/longitude\",
+                    \"DomainLabel\": \"scharp:Point1 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"longitude_0_0013_minute\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"longitude_0_0013_minute\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"_jsonRep\"},
+                    {\"columnName\": \"ns4:jreapEnvelope\"},
+                    {\"columnName\": \"ns3:messageProduct\"},
+                    {\"columnName\": \"message_data\"},
+                    {\"columnName\": \"message_representation\"},
+                    {\"columnName\": \"extension_0_word\"},
+                    {\"columnName\": \"latitude_0_0013_minute\"},
+                    {\"columnName\": \"descriptor\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
+                    \"DomainLabel\": \"scharp:Point1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"latitude_0_0013_minute\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"latitude_0_0013_minute\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
@@ -438,8 +786,8 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
                     \"DomainLabel\": \"scharp:AirUnit1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
@@ -486,9 +834,8 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
                     {\"columnName\": \"ns3:messageProduct\"},
                     {\"columnName\": \"message_data\"},
                     {\"columnName\": \"message_representation\"},
-                    {\"columnName\": \"extension_0_word\"},
-                    {\"columnName\": \"speed\"},
-                    {\"columnName\": \"descriptor\"}
+                    {\"columnName\": \"message_identity\"},
+                    {\"columnName\": \"event\"}
                 ],
                 \"type\": \"hNodeId\"
             },
@@ -505,340 +852,8 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/speed\",
                     \"isPrimary\": true,
-                    \"DomainLabel\": \"scharp:AirUnit1\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"speed\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"speed\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetSemanticTypeCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"_jsonRep\"},
-                    {\"columnName\": \"ns4:jreapEnvelope\"},
-                    {\"columnName\": \"ns3:messageProduct\"},
-                    {\"columnName\": \"message_data\"},
-                    {\"columnName\": \"message_representation\"},
-                    {\"columnName\": \"extension_0_word\"},
-                    {\"columnName\": \"latitude_0_0013_minute\"},
-                    {\"columnName\": \"descriptor\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
-                    \"isPrimary\": true,
-                    \"DomainLabel\": \"scharp:Point1 (add)\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"latitude_0_0013_minute\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"latitude_0_0013_minute\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetSemanticTypeCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"_jsonRep\"},
-                    {\"columnName\": \"ns4:jreapEnvelope\"},
-                    {\"columnName\": \"ns3:messageProduct\"},
-                    {\"columnName\": \"message_data\"},
-                    {\"columnName\": \"message_representation\"},
-                    {\"columnName\": \"extension_0_word\"},
-                    {\"columnName\": \"longitude_0_0013_minute\"},
-                    {\"columnName\": \"descriptor\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/longitude\",
-                    \"isPrimary\": true,
-                    \"DomainLabel\": \"scharp:Point1\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"longitude_0_0013_minute\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"longitude_0_0013_minute\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetSemanticTypeCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"_jsonRep\"},
-                    {\"columnName\": \"ns4:jreapEnvelope\"},
-                    {\"columnName\": \"ns3:messageProduct\"},
-                    {\"columnName\": \"message_data\"},
-                    {\"columnName\": \"message_representation\"},
-                    {\"columnName\": \"extension_0_word\"},
-                    {\"columnName\": \"course\"},
-                    {\"columnName\": \"descriptor\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/course\",
-                    \"isPrimary\": true,
-                    \"DomainLabel\": \"scharp:AirUnit1\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"course\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"extension_0_word\\\"},{\\\"columnName\\\":\\\"course\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetSemanticTypeCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"_jsonRep\"},
-                    {\"columnName\": \"ns4:jreapEnvelope\"},
-                    {\"columnName\": \"ns3:messageProduct\"},
-                    {\"columnName\": \"message_data\"},
-                    {\"columnName\": \"message_representation\"},
-                    {\"columnName\": \"initial_word\"},
-                    {\"columnName\": \"altitude_25_ft\"},
-                    {\"columnName\": \"descriptor\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/altitude\",
-                    \"isPrimary\": true,
-                    \"DomainLabel\": \"scharp:Point1\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"initial_word\\\"},{\\\"columnName\\\":\\\"altitude_25_ft\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"initial_word\\\"},{\\\"columnName\\\":\\\"altitude_25_ft\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetSemanticTypeCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [
-                    {\"columnName\": \"_jsonRep\"},
-                    {\"columnName\": \"ns4:jreapEnvelope\"},
-                    {\"columnName\": \"ns3:messageProduct\"},
-                    {\"columnName\": \"message_group\"},
-                    {\"columnName\": \"sequence_number\"}
-                ],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/identifier\",
-                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/event\",
                     \"DomainLabel\": \"scharp:Message1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
@@ -862,12 +877,12 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_group\\\"},{\\\"columnName\\\":\\\"sequence_number\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"message_identity\\\"},{\\\"columnName\\\":\\\"event\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_group\\\"},{\\\"columnName\\\":\\\"sequence_number\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"message_identity\\\"},{\\\"columnName\\\":\\\"event\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
@@ -916,8 +931,8 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
                     \"DomainLabel\": \"scharp:Message1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
@@ -953,14 +968,9 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
         \"commandName\": \"SetMetaPropertyCommand\"
     },
     {
-        \"tags\": [\"SemanticType\"],
+        \"tags\": [\"Modeling\"],
         \"model\": \"new\",
         \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"iso_timestamp\"}],
-                \"type\": \"hNodeId\"
-            },
             {
                 \"name\": \"worksheetId\",
                 \"value\": \"W\",
@@ -972,43 +982,42 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
                 \"type\": \"other\"
             },
             {
-                \"name\": \"SemanticTypesArray\",
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/timeStamp\",
-                    \"isPrimary\": true,
-                    \"DomainLabel\": \"scharp:Message1\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/mention\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\"
                 }],
                 \"type\": \"other\"
             },
             {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/aircraft\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
                 \"type\": \"other\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"iso_timestamp\\\"}]}]\",
+                \"value\": \"[]\",
                 \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"iso_timestamp\\\"}]}]\",
+                \"value\": \"[]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
-        \"commandName\": \"SetSemanticTypeCommand\"
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
     },
     {
         \"tags\": [\"Modeling\"],
@@ -1020,35 +1029,81 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
                 \"type\": \"worksheetId\"
             },
             {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
                 \"name\": \"initialEdges\",
-                \"value\": [
-                    {
-                        \"edgeId\": \"http://scharp.usc.isi.edu/ontology/mention\",
-                        \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
-                        \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\"
-                    },
-                    {
-                        \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
-                        \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
-                        \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\"
-                    }
-                ],
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS5AL\",
                 \"type\": \"other\"
             },
             {
                 \"name\": \"newEdges\",
-                \"value\": [
-                    {
-                        \"edgeId\": \"http://scharp.usc.isi.edu/ontology/mention\",
-                        \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
-                        \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\"
-                    },
-                    {
-                        \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
-                        \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
-                        \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\"
-                    }
-                ],
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/attributes\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Unit1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
                 \"type\": \"other\"
             },
             {
@@ -1066,243 +1121,267 @@ _:node1aohk16mlx1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_342441c6-2976-4440-bd82-09200d772acc a rr:TriplesMap .
+km-dev:TriplesMap_bfd481df-7b50-4079-af89-9f009f120f7d a rr:TriplesMap .
 
-_:node1aohk16mlx1 km-dev:hasTriplesMap km-dev:TriplesMap_342441c6-2976-4440-bd82-09200d772acc .
+_:node1aope338tx1 km-dev:hasTriplesMap km-dev:TriplesMap_bfd481df-7b50-4079-af89-9f009f120f7d .
 
-km-dev:TriplesMap_342441c6-2976-4440-bd82-09200d772acc km-dev:isPartOfMapping _:node1aohk16mlx1 .
+km-dev:TriplesMap_bfd481df-7b50-4079-af89-9f009f120f7d km-dev:isPartOfMapping _:node1aope338tx1 .
 
-_:node1aohk16mlx2 rr:tableName "part-00000 (1)" ;
+_:node1aope338tx2 rr:tableName "part-00000 (1)" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
+	km-dev:isPartOfMapping _:node1aope338tx1 .
 
-_:node1aohk16mlx1 km-dev:hasLogicalTable _:node1aohk16mlx2 .
+_:node1aope338tx1 km-dev:hasLogicalTable _:node1aope338tx2 .
 
-km-dev:TriplesMap_342441c6-2976-4440-bd82-09200d772acc rr:logicalTable _:node1aohk16mlx2 ;
-	rr:subjectMap _:node1aohk16mlx3 .
+km-dev:TriplesMap_bfd481df-7b50-4079-af89-9f009f120f7d rr:logicalTable _:node1aope338tx2 ;
+	rr:subjectMap _:node1aope338tx3 .
 
-_:node1aohk16mlx1 km-dev:hasSubjectMap _:node1aohk16mlx3 .
+_:node1aope338tx1 km-dev:hasSubjectMap _:node1aope338tx3 .
 
-_:node1aohk16mlx3 km-dev:isPartOfMapping _:node1aohk16mlx1 ;
-	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirUnit1" ;
-	rr:class scharp:AirUnit ;
-	rr:template "unit/{[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"voice_call_sign\",\"descriptor\"]}" .
-
-km-dev:PredicateObjectMap_15282668-6c0b-4500-b593-7a660c135e3a rr:predicate scharp:location .
-
-km-dev:RefObjectMap_288a2eca-1200-4096-9d74-aeba9160f45c a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_5242c59b-de74-4fb8-939b-addf37e5e464 ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasObjectMap km-dev:RefObjectMap_288a2eca-1200-4096-9d74-aeba9160f45c .
-
-km-dev:PredicateObjectMap_15282668-6c0b-4500-b593-7a660c135e3a rr:objectMap km-dev:RefObjectMap_288a2eca-1200-4096-9d74-aeba9160f45c .
-
-km-dev:TriplesMap_342441c6-2976-4440-bd82-09200d772acc rr:predicateObjectMap km-dev:PredicateObjectMap_15282668-6c0b-4500-b593-7a660c135e3a .
-
-km-dev:PredicateObjectMap_15282668-6c0b-4500-b593-7a660c135e3a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_15282668-6c0b-4500-b593-7a660c135e3a .
-
-km-dev:PredicateObjectMap_27369279-39bc-4c1c-a1fc-727cc0ef9456 rr:predicate scharp:speed .
-
-_:node1aohk16mlx4 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"extension_0_word\",\"speed\",\"descriptor\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasObjectMap _:node1aohk16mlx4 .
-
-km-dev:PredicateObjectMap_27369279-39bc-4c1c-a1fc-727cc0ef9456 rr:objectMap _:node1aohk16mlx4 .
-
-km-dev:TriplesMap_342441c6-2976-4440-bd82-09200d772acc rr:predicateObjectMap km-dev:PredicateObjectMap_27369279-39bc-4c1c-a1fc-727cc0ef9456 .
-
-km-dev:PredicateObjectMap_27369279-39bc-4c1c-a1fc-727cc0ef9456 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_27369279-39bc-4c1c-a1fc-727cc0ef9456 .
-
-km-dev:PredicateObjectMap_05826f8c-bba3-4f2b-9bf6-d151455cd21f rr:predicate scharp:callsign .
-
-_:node1aohk16mlx5 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"voice_call_sign\",\"descriptor\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasObjectMap _:node1aohk16mlx5 .
-
-km-dev:PredicateObjectMap_05826f8c-bba3-4f2b-9bf6-d151455cd21f rr:objectMap _:node1aohk16mlx5 .
-
-km-dev:TriplesMap_342441c6-2976-4440-bd82-09200d772acc rr:predicateObjectMap km-dev:PredicateObjectMap_05826f8c-bba3-4f2b-9bf6-d151455cd21f .
-
-km-dev:PredicateObjectMap_05826f8c-bba3-4f2b-9bf6-d151455cd21f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_05826f8c-bba3-4f2b-9bf6-d151455cd21f .
-
-km-dev:PredicateObjectMap_ae135e9a-0e1e-43e3-9016-fd7a01d1c208 rr:predicate scharp:course .
-
-_:node1aohk16mlx6 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"extension_0_word\",\"course\",\"descriptor\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasObjectMap _:node1aohk16mlx6 .
-
-km-dev:PredicateObjectMap_ae135e9a-0e1e-43e3-9016-fd7a01d1c208 rr:objectMap _:node1aohk16mlx6 .
-
-km-dev:TriplesMap_342441c6-2976-4440-bd82-09200d772acc rr:predicateObjectMap km-dev:PredicateObjectMap_ae135e9a-0e1e-43e3-9016-fd7a01d1c208 .
-
-km-dev:PredicateObjectMap_ae135e9a-0e1e-43e3-9016-fd7a01d1c208 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ae135e9a-0e1e-43e3-9016-fd7a01d1c208 .
-
-km-dev:TriplesMap_5242c59b-de74-4fb8-939b-addf37e5e464 a rr:TriplesMap .
-
-_:node1aohk16mlx1 km-dev:hasTriplesMap km-dev:TriplesMap_5242c59b-de74-4fb8-939b-addf37e5e464 .
-
-km-dev:TriplesMap_5242c59b-de74-4fb8-939b-addf37e5e464 km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx7 rr:tableName "part-00000 (1)" ;
-	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasLogicalTable _:node1aohk16mlx7 .
-
-km-dev:TriplesMap_5242c59b-de74-4fb8-939b-addf37e5e464 rr:logicalTable _:node1aohk16mlx7 ;
-	rr:subjectMap _:node1aohk16mlx8 .
-
-_:node1aohk16mlx1 km-dev:hasSubjectMap _:node1aohk16mlx8 .
-
-_:node1aohk16mlx8 km-dev:isPartOfMapping _:node1aohk16mlx1 ;
-	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
-	rr:class scharp:Point ;
-	rr:termType rr:BlankNode ;
-	km-dev:namePrefix "scharp:Point1" .
-
-km-dev:PredicateObjectMap_a234378d-3fa1-455e-9451-5884060d9552 rr:predicate scharp:altitude .
-
-_:node1aohk16mlx9 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"initial_word\",\"altitude_25_ft\",\"descriptor\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasObjectMap _:node1aohk16mlx9 .
-
-km-dev:PredicateObjectMap_a234378d-3fa1-455e-9451-5884060d9552 rr:objectMap _:node1aohk16mlx9 .
-
-km-dev:TriplesMap_5242c59b-de74-4fb8-939b-addf37e5e464 rr:predicateObjectMap km-dev:PredicateObjectMap_a234378d-3fa1-455e-9451-5884060d9552 .
-
-km-dev:PredicateObjectMap_a234378d-3fa1-455e-9451-5884060d9552 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a234378d-3fa1-455e-9451-5884060d9552 .
-
-km-dev:PredicateObjectMap_a3a61e28-e01d-438e-9ced-c68993dc9014 rr:predicate scharp:latitude .
-
-_:node1aohk16mlx10 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"extension_0_word\",\"latitude_0_0013_minute\",\"descriptor\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasObjectMap _:node1aohk16mlx10 .
-
-km-dev:PredicateObjectMap_a3a61e28-e01d-438e-9ced-c68993dc9014 rr:objectMap _:node1aohk16mlx10 .
-
-km-dev:TriplesMap_5242c59b-de74-4fb8-939b-addf37e5e464 rr:predicateObjectMap km-dev:PredicateObjectMap_a3a61e28-e01d-438e-9ced-c68993dc9014 .
-
-km-dev:PredicateObjectMap_a3a61e28-e01d-438e-9ced-c68993dc9014 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a3a61e28-e01d-438e-9ced-c68993dc9014 .
-
-km-dev:PredicateObjectMap_76460d0b-d6dc-47dd-80c2-a78b56c16d70 rr:predicate scharp:longitude .
-
-_:node1aohk16mlx11 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"extension_0_word\",\"longitude_0_0013_minute\",\"descriptor\"]" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasObjectMap _:node1aohk16mlx11 .
-
-km-dev:PredicateObjectMap_76460d0b-d6dc-47dd-80c2-a78b56c16d70 rr:objectMap _:node1aohk16mlx11 .
-
-km-dev:TriplesMap_5242c59b-de74-4fb8-939b-addf37e5e464 rr:predicateObjectMap km-dev:PredicateObjectMap_76460d0b-d6dc-47dd-80c2-a78b56c16d70 .
-
-km-dev:PredicateObjectMap_76460d0b-d6dc-47dd-80c2-a78b56c16d70 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_76460d0b-d6dc-47dd-80c2-a78b56c16d70 .
-
-km-dev:TriplesMap_ca3697eb-3d72-4705-b82d-f7b2520f33f2 a rr:TriplesMap .
-
-_:node1aohk16mlx1 km-dev:hasTriplesMap km-dev:TriplesMap_ca3697eb-3d72-4705-b82d-f7b2520f33f2 .
-
-km-dev:TriplesMap_ca3697eb-3d72-4705-b82d-f7b2520f33f2 km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx12 rr:tableName "part-00000 (1)" ;
-	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
-
-_:node1aohk16mlx1 km-dev:hasLogicalTable _:node1aohk16mlx12 .
-
-km-dev:TriplesMap_ca3697eb-3d72-4705-b82d-f7b2520f33f2 rr:logicalTable _:node1aohk16mlx12 ;
-	rr:subjectMap _:node1aohk16mlx13 .
-
-_:node1aohk16mlx1 km-dev:hasSubjectMap _:node1aohk16mlx13 .
-
-_:node1aohk16mlx13 km-dev:isPartOfMapping _:node1aohk16mlx1 ;
+_:node1aope338tx3 km-dev:isPartOfMapping _:node1aope338tx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Message1" ;
 	rr:class scharp:Message ;
 	rr:template "message/airppli/{[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_group\",\"sequence_number\"]}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_f9bf2136-fe95-4d79-b5fb-fea4747a5c08 rr:predicate scharp:mention .
+km-dev:PredicateObjectMap_b7cf1d5c-bce5-4786-8dd0-9fb7090d8a7a rr:predicate scharp:aircraft .
 
-km-dev:RefObjectMap_01f8d4ee-51a8-47cd-bbeb-4148383ee8a3 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_342441c6-2976-4440-bd82-09200d772acc ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
+km-dev:RefObjectMap_4b4adb72-4acd-4244-8675-801c9c418a4f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_c1cfb66e-3e31-4020-ac3c-3c71bf711f5d ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
 
-_:node1aohk16mlx1 km-dev:hasObjectMap km-dev:RefObjectMap_01f8d4ee-51a8-47cd-bbeb-4148383ee8a3 .
+_:node1aope338tx1 km-dev:hasObjectMap km-dev:RefObjectMap_4b4adb72-4acd-4244-8675-801c9c418a4f .
 
-km-dev:PredicateObjectMap_f9bf2136-fe95-4d79-b5fb-fea4747a5c08 rr:objectMap km-dev:RefObjectMap_01f8d4ee-51a8-47cd-bbeb-4148383ee8a3 .
+km-dev:PredicateObjectMap_b7cf1d5c-bce5-4786-8dd0-9fb7090d8a7a rr:objectMap km-dev:RefObjectMap_4b4adb72-4acd-4244-8675-801c9c418a4f .
 
-km-dev:TriplesMap_ca3697eb-3d72-4705-b82d-f7b2520f33f2 rr:predicateObjectMap km-dev:PredicateObjectMap_f9bf2136-fe95-4d79-b5fb-fea4747a5c08 .
+km-dev:TriplesMap_bfd481df-7b50-4079-af89-9f009f120f7d rr:predicateObjectMap km-dev:PredicateObjectMap_b7cf1d5c-bce5-4786-8dd0-9fb7090d8a7a .
 
-km-dev:PredicateObjectMap_f9bf2136-fe95-4d79-b5fb-fea4747a5c08 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
+km-dev:PredicateObjectMap_b7cf1d5c-bce5-4786-8dd0-9fb7090d8a7a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
 
-_:node1aohk16mlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f9bf2136-fe95-4d79-b5fb-fea4747a5c08 .
+_:node1aope338tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b7cf1d5c-bce5-4786-8dd0-9fb7090d8a7a .
 
-km-dev:PredicateObjectMap_6e4fa06a-cf82-45e4-94b0-5022724c0a46 rr:predicate scharp:identifier .
+km-dev:PredicateObjectMap_5ae7fc4b-8563-4cf1-ae4f-bd60db749cc0 rr:predicate scharp:attributes .
 
-_:node1aohk16mlx14 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_group\",\"sequence_number\"]" ;
+km-dev:RefObjectMap_7a62763d-a9b8-4d27-b75b-e2be379205af a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_01d81615-0192-4520-9291-d54d30922877 ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasObjectMap km-dev:RefObjectMap_7a62763d-a9b8-4d27-b75b-e2be379205af .
+
+km-dev:PredicateObjectMap_5ae7fc4b-8563-4cf1-ae4f-bd60db749cc0 rr:objectMap km-dev:RefObjectMap_7a62763d-a9b8-4d27-b75b-e2be379205af .
+
+km-dev:TriplesMap_bfd481df-7b50-4079-af89-9f009f120f7d rr:predicateObjectMap km-dev:PredicateObjectMap_5ae7fc4b-8563-4cf1-ae4f-bd60db749cc0 .
+
+km-dev:PredicateObjectMap_5ae7fc4b-8563-4cf1-ae4f-bd60db749cc0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5ae7fc4b-8563-4cf1-ae4f-bd60db749cc0 .
+
+km-dev:PredicateObjectMap_a2a3bd91-d4ac-4686-b6fc-90d651387ac8 rr:predicate scharp:location .
+
+km-dev:RefObjectMap_a60f43c5-e976-4a3b-8e99-71b7244f6546 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_65b83a0d-bf6b-4c94-a99a-60766ac29ffa ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasObjectMap km-dev:RefObjectMap_a60f43c5-e976-4a3b-8e99-71b7244f6546 .
+
+km-dev:PredicateObjectMap_a2a3bd91-d4ac-4686-b6fc-90d651387ac8 rr:objectMap km-dev:RefObjectMap_a60f43c5-e976-4a3b-8e99-71b7244f6546 .
+
+km-dev:TriplesMap_bfd481df-7b50-4079-af89-9f009f120f7d rr:predicateObjectMap km-dev:PredicateObjectMap_a2a3bd91-d4ac-4686-b6fc-90d651387ac8 .
+
+km-dev:PredicateObjectMap_a2a3bd91-d4ac-4686-b6fc-90d651387ac8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a2a3bd91-d4ac-4686-b6fc-90d651387ac8 .
+
+km-dev:PredicateObjectMap_77596010-b62b-4d61-8a9d-a213d4d1fea9 rr:predicate scharp:event .
+
+_:node1aope338tx4 rr:constant "AircraftStatusUpdate" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
+	km-dev:isPartOfMapping _:node1aope338tx1 .
 
-_:node1aohk16mlx1 km-dev:hasObjectMap _:node1aohk16mlx14 .
+_:node1aope338tx1 km-dev:hasObjectMap _:node1aope338tx4 .
 
-km-dev:PredicateObjectMap_6e4fa06a-cf82-45e4-94b0-5022724c0a46 rr:objectMap _:node1aohk16mlx14 .
+km-dev:PredicateObjectMap_77596010-b62b-4d61-8a9d-a213d4d1fea9 rr:objectMap _:node1aope338tx4 .
 
-km-dev:TriplesMap_ca3697eb-3d72-4705-b82d-f7b2520f33f2 rr:predicateObjectMap km-dev:PredicateObjectMap_6e4fa06a-cf82-45e4-94b0-5022724c0a46 .
+km-dev:TriplesMap_bfd481df-7b50-4079-af89-9f009f120f7d rr:predicateObjectMap km-dev:PredicateObjectMap_77596010-b62b-4d61-8a9d-a213d4d1fea9 .
 
-km-dev:PredicateObjectMap_6e4fa06a-cf82-45e4-94b0-5022724c0a46 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
+km-dev:PredicateObjectMap_77596010-b62b-4d61-8a9d-a213d4d1fea9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
 
-_:node1aohk16mlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6e4fa06a-cf82-45e4-94b0-5022724c0a46 .
+_:node1aope338tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_77596010-b62b-4d61-8a9d-a213d4d1fea9 .
 
-km-dev:PredicateObjectMap_6f7129ec-d564-4711-a935-32e9571cbbea rr:predicate scharp:timeStamp .
+km-dev:PredicateObjectMap_048fc25a-69e0-47de-8a0f-dca4c834fc4f rr:predicate scharp:eventTime .
 
-_:node1aohk16mlx15 rr:column "iso_timestamp" ;
+_:node1aope338tx5 rr:column "event_time" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
+	km-dev:isPartOfMapping _:node1aope338tx1 .
 
-_:node1aohk16mlx1 km-dev:hasObjectMap _:node1aohk16mlx15 .
+_:node1aope338tx1 km-dev:hasObjectMap _:node1aope338tx5 .
 
-km-dev:PredicateObjectMap_6f7129ec-d564-4711-a935-32e9571cbbea rr:objectMap _:node1aohk16mlx15 .
+km-dev:PredicateObjectMap_048fc25a-69e0-47de-8a0f-dca4c834fc4f rr:objectMap _:node1aope338tx5 .
 
-km-dev:TriplesMap_ca3697eb-3d72-4705-b82d-f7b2520f33f2 rr:predicateObjectMap km-dev:PredicateObjectMap_6f7129ec-d564-4711-a935-32e9571cbbea .
+km-dev:TriplesMap_bfd481df-7b50-4079-af89-9f009f120f7d rr:predicateObjectMap km-dev:PredicateObjectMap_048fc25a-69e0-47de-8a0f-dca4c834fc4f .
 
-km-dev:PredicateObjectMap_6f7129ec-d564-4711-a935-32e9571cbbea a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aohk16mlx1 .
+km-dev:PredicateObjectMap_048fc25a-69e0-47de-8a0f-dca4c834fc4f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
 
-_:node1aohk16mlx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6f7129ec-d564-4711-a935-32e9571cbbea .
+_:node1aope338tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_048fc25a-69e0-47de-8a0f-dca4c834fc4f .
+
+km-dev:TriplesMap_c1cfb66e-3e31-4020-ac3c-3c71bf711f5d a rr:TriplesMap .
+
+_:node1aope338tx1 km-dev:hasTriplesMap km-dev:TriplesMap_c1cfb66e-3e31-4020-ac3c-3c71bf711f5d .
+
+km-dev:TriplesMap_c1cfb66e-3e31-4020-ac3c-3c71bf711f5d km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx6 rr:tableName "part-00000 (1)" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasLogicalTable _:node1aope338tx6 .
+
+km-dev:TriplesMap_c1cfb66e-3e31-4020-ac3c-3c71bf711f5d rr:logicalTable _:node1aope338tx6 ;
+	rr:subjectMap _:node1aope338tx7 .
+
+_:node1aope338tx1 km-dev:hasSubjectMap _:node1aope338tx7 .
+
+_:node1aope338tx7 km-dev:isPartOfMapping _:node1aope338tx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirUnit1" ;
+	rr:class scharp:AirUnit ;
+	rr:template "airunit/{[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"voice_call_sign\",\"descriptor\"]}" .
+
+km-dev:PredicateObjectMap_565f6d95-593d-4ec6-9a56-5fefd4a4c067 rr:predicate scharp:link16 .
+
+_:node1aope338tx8 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"voice_call_sign\",\"descriptor\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasObjectMap _:node1aope338tx8 .
+
+km-dev:PredicateObjectMap_565f6d95-593d-4ec6-9a56-5fefd4a4c067 rr:objectMap _:node1aope338tx8 .
+
+km-dev:TriplesMap_c1cfb66e-3e31-4020-ac3c-3c71bf711f5d rr:predicateObjectMap km-dev:PredicateObjectMap_565f6d95-593d-4ec6-9a56-5fefd4a4c067 .
+
+km-dev:PredicateObjectMap_565f6d95-593d-4ec6-9a56-5fefd4a4c067 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_565f6d95-593d-4ec6-9a56-5fefd4a4c067 .
+
+km-dev:TriplesMap_01d81615-0192-4520-9291-d54d30922877 a rr:TriplesMap .
+
+_:node1aope338tx1 km-dev:hasTriplesMap km-dev:TriplesMap_01d81615-0192-4520-9291-d54d30922877 .
+
+km-dev:TriplesMap_01d81615-0192-4520-9291-d54d30922877 km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx9 rr:tableName "part-00000 (1)" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasLogicalTable _:node1aope338tx9 .
+
+km-dev:TriplesMap_01d81615-0192-4520-9291-d54d30922877 rr:logicalTable _:node1aope338tx9 ;
+	rr:subjectMap _:node1aope338tx10 .
+
+_:node1aope338tx1 km-dev:hasSubjectMap _:node1aope338tx10 .
+
+_:node1aope338tx10 km-dev:isPartOfMapping _:node1aope338tx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Attributes1" ;
+	rr:class scharp:Attributes ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Attributes1" .
+
+km-dev:PredicateObjectMap_78284a80-e613-4613-83d1-c2423f9cfff0 rr:predicate scharp:course .
+
+_:node1aope338tx11 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"extension_0_word\",\"course\",\"descriptor\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasObjectMap _:node1aope338tx11 .
+
+km-dev:PredicateObjectMap_78284a80-e613-4613-83d1-c2423f9cfff0 rr:objectMap _:node1aope338tx11 .
+
+km-dev:TriplesMap_01d81615-0192-4520-9291-d54d30922877 rr:predicateObjectMap km-dev:PredicateObjectMap_78284a80-e613-4613-83d1-c2423f9cfff0 .
+
+km-dev:PredicateObjectMap_78284a80-e613-4613-83d1-c2423f9cfff0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_78284a80-e613-4613-83d1-c2423f9cfff0 .
+
+km-dev:PredicateObjectMap_e60db3a7-89f3-41ab-8a8a-b4e1dc6def21 rr:predicate scharp:speed .
+
+_:node1aope338tx12 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"extension_0_word\",\"speed\",\"descriptor\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasObjectMap _:node1aope338tx12 .
+
+km-dev:PredicateObjectMap_e60db3a7-89f3-41ab-8a8a-b4e1dc6def21 rr:objectMap _:node1aope338tx12 .
+
+km-dev:TriplesMap_01d81615-0192-4520-9291-d54d30922877 rr:predicateObjectMap km-dev:PredicateObjectMap_e60db3a7-89f3-41ab-8a8a-b4e1dc6def21 .
+
+km-dev:PredicateObjectMap_e60db3a7-89f3-41ab-8a8a-b4e1dc6def21 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e60db3a7-89f3-41ab-8a8a-b4e1dc6def21 .
+
+km-dev:TriplesMap_65b83a0d-bf6b-4c94-a99a-60766ac29ffa a rr:TriplesMap .
+
+_:node1aope338tx1 km-dev:hasTriplesMap km-dev:TriplesMap_65b83a0d-bf6b-4c94-a99a-60766ac29ffa .
+
+km-dev:TriplesMap_65b83a0d-bf6b-4c94-a99a-60766ac29ffa km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx13 rr:tableName "part-00000 (1)" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasLogicalTable _:node1aope338tx13 .
+
+km-dev:TriplesMap_65b83a0d-bf6b-4c94-a99a-60766ac29ffa rr:logicalTable _:node1aope338tx13 ;
+	rr:subjectMap _:node1aope338tx14 .
+
+_:node1aope338tx1 km-dev:hasSubjectMap _:node1aope338tx14 .
+
+_:node1aope338tx14 km-dev:isPartOfMapping _:node1aope338tx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
+	rr:class scharp:Point ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Point1" .
+
+km-dev:PredicateObjectMap_b1ef3a52-4fb9-4f4e-b04b-0dc13861101c rr:predicate scharp:longitude .
+
+_:node1aope338tx15 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"extension_0_word\",\"longitude_0_0013_minute\",\"descriptor\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasObjectMap _:node1aope338tx15 .
+
+km-dev:PredicateObjectMap_b1ef3a52-4fb9-4f4e-b04b-0dc13861101c rr:objectMap _:node1aope338tx15 .
+
+km-dev:TriplesMap_65b83a0d-bf6b-4c94-a99a-60766ac29ffa rr:predicateObjectMap km-dev:PredicateObjectMap_b1ef3a52-4fb9-4f4e-b04b-0dc13861101c .
+
+km-dev:PredicateObjectMap_b1ef3a52-4fb9-4f4e-b04b-0dc13861101c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b1ef3a52-4fb9-4f4e-b04b-0dc13861101c .
+
+km-dev:PredicateObjectMap_4883bc51-db71-4bb9-86ec-b8b31cfd8d18 rr:predicate scharp:latitude .
+
+_:node1aope338tx16 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"extension_0_word\",\"latitude_0_0013_minute\",\"descriptor\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasObjectMap _:node1aope338tx16 .
+
+km-dev:PredicateObjectMap_4883bc51-db71-4bb9-86ec-b8b31cfd8d18 rr:objectMap _:node1aope338tx16 .
+
+km-dev:TriplesMap_65b83a0d-bf6b-4c94-a99a-60766ac29ffa rr:predicateObjectMap km-dev:PredicateObjectMap_4883bc51-db71-4bb9-86ec-b8b31cfd8d18 .
+
+km-dev:PredicateObjectMap_4883bc51-db71-4bb9-86ec-b8b31cfd8d18 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aope338tx1 .
+
+_:node1aope338tx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4883bc51-db71-4bb9-86ec-b8b31cfd8d18 .

@@ -1,0 +1,23 @@
+{
+  "@type": "Message",
+  "@explicit": true,
+  "event": {},
+  "eventTime": {},
+  "aircraft": {
+    "@type": "AirUnit",
+    "@explicit": true,
+    "link16": {}
+  },
+  "location": {
+    "@type": "Point",
+    "@explicit": true,
+    "latitude": {},
+    "longitude": {}
+  },
+  "attributes": {
+    "@type": "Attributes",
+    "@explicit": true,
+    "speed": {},
+    "course": {}
+  }
+}

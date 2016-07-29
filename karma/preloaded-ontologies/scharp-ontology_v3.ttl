@@ -1091,3 +1091,9 @@ scharp:fuelQuantity rdf:type rdf:Property ;
 	memex:es_directive memex:ES_not_analyzed ;
 	rdfs:domain scharp:Message
 	.
+
+scharp:fuelQuantityUnit rdf:type rdf:Property ;
+	rdfs:label "fuelQuantityUnit" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:Message
+	.

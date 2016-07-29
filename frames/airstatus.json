@@ -1,0 +1,9 @@
+{
+  "@type": "Message",
+  "@explicit": true,
+  "event": {},
+  "eventTime": {},
+  "track":{},
+  "aircraftType":{},
+  "fuelQuantity":{}
+}

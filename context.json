@@ -3,6 +3,7 @@
     "location": {"@id": "http://scharp.usc.isi.edu/ontology/location"},
     "link16": {"@id": "http://scharp.usc.isi.edu/ontology/link16"},
     "aircraft": {"@id": "http://scharp.usc.isi.edu/ontology/aircraft"},
+    "aircraftType": {"@id": "http://scharp.usc.isi.edu/ontology/aircraftType"},
     "attributes": {"@id": "http://scharp.usc.isi.edu/ontology/attributes"},
     "event": {"@id": "http://scharp.usc.isi.edu/ontology/event"},
     "eventTime": {"@id": "http://scharp.usc.isi.edu/ontology/eventTime"},

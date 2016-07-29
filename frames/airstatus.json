@@ -3,7 +3,7 @@
   "@explicit": true,
   "event": {},
   "eventTime": {},
-  "track":{},
+  "trackNum":{},
   "aircraftType":{},
   "fuelQuantity":{}
 }

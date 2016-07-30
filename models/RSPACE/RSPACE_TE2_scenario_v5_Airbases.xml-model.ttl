@@ -1,0 +1,1076 @@
+@prefix radion: <http://www.w3.org/ns/radion#> .
+@prefix dpla: <http://dp.la/about/map/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix DOLCE-Lite: <http://www.loa-cnr.it/ontologies/DOLCE-Lite.owl#> .
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix wgs84_pos: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix cnt: <http://www.w3.org/2011/content#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix edm: <http://www.europeana.eu/schemas/edm/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix voaf: <http://purl.org/vocommons/voaf#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix frbr_core: <http://purl.org/vocab/frbr/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix ore: <http://www.openarchives.org/ore/terms/> .
+@prefix abc: <http://metadata.net/harmony/abc#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix rdfg: <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix memex: <http://schema.dig.isi.edu/ontology/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1aosc1l57x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "RSPACE_TE2_scenario_v5_Airbases.xml" ;
+	km-dev:modelPublicationTime "1469830976679"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"OperatingStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ShipName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Index\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"FacilityName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"CurrentStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Longitude\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"OperatingStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ShipName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Index\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"airbase_uri\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"FacilityName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"CurrentStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Longitude\"}]]" ;
+	km-dev:hasModelLabel "RSPACE_TE2_scenario_v5_Airbases.xml" ;
+	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"Index\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"airbase_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"airbase/\\\"+getValue(\\\"Index\\\")\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Index\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"airbase_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": true,
+                    \"prefix\": \"scharp\",
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"CurrentStatus\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/currentStatus\",
+                    \"DomainLabel\": \"scharp:Airbase1 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"CurrentStatus\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"CurrentStatus\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"FacilityName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/facilityName\",
+                    \"DomainLabel\": \"scharp:Airbase1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"FacilityName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"FacilityName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"Index\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/index\",
+                    \"DomainLabel\": \"scharp:Airbase1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Index\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Index\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"airbase_uri\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Airbase\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"scharp:Airbase1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"airbase_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"airbase_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"Latitude\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
+                    \"DomainLabel\": \"scharp:Point1 (add)\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Latitude\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Latitude\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"Longitude\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/longitude\",
+                    \"DomainLabel\": \"scharp:Point1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Longitude\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Longitude\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"Name\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/name\",
+                    \"DomainLabel\": \"scharp:Airbase1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Name\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"ScenarioName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/scenarioName\",
+                    \"DomainLabel\": \"scharp:Airbase1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"ScenarioName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"ScenarioName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"OperatingStatus\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/operatingStatus\",
+                    \"DomainLabel\": \"scharp:Airbase1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"OperatingStatus\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"OperatingStatus\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [
+                    {\"columnName\": \"Airbases\"},
+                    {\"columnName\": \"Airbase\"},
+                    {\"columnName\": \"ShipName\"}
+                ],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/shipName\",
+                    \"DomainLabel\": \"scharp:Airbase1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"ShipName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"ShipName\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP25:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/locatein\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 a rr:TriplesMap .
+
+_:node1aosc1l57x1 km-dev:hasTriplesMap km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x2 rr:tableName "RSPACE_TE2_scenario_v5_Airbases.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasLogicalTable _:node1aosc1l57x2 .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 rr:logicalTable _:node1aosc1l57x2 ;
+	rr:subjectMap _:node1aosc1l57x3 .
+
+_:node1aosc1l57x1 km-dev:hasSubjectMap _:node1aosc1l57x3 .
+
+_:node1aosc1l57x3 km-dev:isPartOfMapping _:node1aosc1l57x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Airbase1" ;
+	rr:class scharp:Airbase ;
+	rr:template "airbase/{[\"Airbases\",\"Airbase\",\"Index\"]}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_8fcfa7b2-4593-4e98-a58a-0d4ad617bc02 rr:predicate scharp:locatein .
+
+km-dev:RefObjectMap_8585032f-e22d-47bc-817a-9d530e7d5170 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_31c4ca80-be3f-4d2b-bb23-cc1e4a827f80 ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasObjectMap km-dev:RefObjectMap_8585032f-e22d-47bc-817a-9d530e7d5170 .
+
+km-dev:PredicateObjectMap_8fcfa7b2-4593-4e98-a58a-0d4ad617bc02 rr:objectMap km-dev:RefObjectMap_8585032f-e22d-47bc-817a-9d530e7d5170 .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 rr:predicateObjectMap km-dev:PredicateObjectMap_8fcfa7b2-4593-4e98-a58a-0d4ad617bc02 .
+
+km-dev:PredicateObjectMap_8fcfa7b2-4593-4e98-a58a-0d4ad617bc02 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8fcfa7b2-4593-4e98-a58a-0d4ad617bc02 .
+
+km-dev:PredicateObjectMap_7877a412-eff4-41dd-8e13-787967e3456b rr:predicate scharp:operatingStatus .
+
+_:node1aosc1l57x4 rr:column "[\"Airbases\",\"Airbase\",\"OperatingStatus\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasObjectMap _:node1aosc1l57x4 .
+
+km-dev:PredicateObjectMap_7877a412-eff4-41dd-8e13-787967e3456b rr:objectMap _:node1aosc1l57x4 .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 rr:predicateObjectMap km-dev:PredicateObjectMap_7877a412-eff4-41dd-8e13-787967e3456b .
+
+km-dev:PredicateObjectMap_7877a412-eff4-41dd-8e13-787967e3456b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7877a412-eff4-41dd-8e13-787967e3456b .
+
+km-dev:PredicateObjectMap_962c5fe2-b165-445a-bd63-8dcf023e100b rr:predicate scharp:scenarioName .
+
+_:node1aosc1l57x5 rr:column "[\"Airbases\",\"Airbase\",\"ScenarioName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasObjectMap _:node1aosc1l57x5 .
+
+km-dev:PredicateObjectMap_962c5fe2-b165-445a-bd63-8dcf023e100b rr:objectMap _:node1aosc1l57x5 .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 rr:predicateObjectMap km-dev:PredicateObjectMap_962c5fe2-b165-445a-bd63-8dcf023e100b .
+
+km-dev:PredicateObjectMap_962c5fe2-b165-445a-bd63-8dcf023e100b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_962c5fe2-b165-445a-bd63-8dcf023e100b .
+
+km-dev:PredicateObjectMap_8a2f96bc-2232-4104-b343-7402208e57d7 rr:predicate scharp:shipName .
+
+_:node1aosc1l57x6 rr:column "[\"Airbases\",\"Airbase\",\"ShipName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasObjectMap _:node1aosc1l57x6 .
+
+km-dev:PredicateObjectMap_8a2f96bc-2232-4104-b343-7402208e57d7 rr:objectMap _:node1aosc1l57x6 .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 rr:predicateObjectMap km-dev:PredicateObjectMap_8a2f96bc-2232-4104-b343-7402208e57d7 .
+
+km-dev:PredicateObjectMap_8a2f96bc-2232-4104-b343-7402208e57d7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8a2f96bc-2232-4104-b343-7402208e57d7 .
+
+km-dev:PredicateObjectMap_9afbe2c7-7465-4cab-8e92-03e9864b9419 rr:predicate scharp:index .
+
+_:node1aosc1l57x7 rr:column "[\"Airbases\",\"Airbase\",\"Index\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasObjectMap _:node1aosc1l57x7 .
+
+km-dev:PredicateObjectMap_9afbe2c7-7465-4cab-8e92-03e9864b9419 rr:objectMap _:node1aosc1l57x7 .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 rr:predicateObjectMap km-dev:PredicateObjectMap_9afbe2c7-7465-4cab-8e92-03e9864b9419 .
+
+km-dev:PredicateObjectMap_9afbe2c7-7465-4cab-8e92-03e9864b9419 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9afbe2c7-7465-4cab-8e92-03e9864b9419 .
+
+km-dev:PredicateObjectMap_c9c9f922-6157-4c1b-9946-e7b2ba0bdea2 rr:predicate scharp:name .
+
+_:node1aosc1l57x8 rr:column "[\"Airbases\",\"Airbase\",\"Name\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasObjectMap _:node1aosc1l57x8 .
+
+km-dev:PredicateObjectMap_c9c9f922-6157-4c1b-9946-e7b2ba0bdea2 rr:objectMap _:node1aosc1l57x8 .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 rr:predicateObjectMap km-dev:PredicateObjectMap_c9c9f922-6157-4c1b-9946-e7b2ba0bdea2 .
+
+km-dev:PredicateObjectMap_c9c9f922-6157-4c1b-9946-e7b2ba0bdea2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_c9c9f922-6157-4c1b-9946-e7b2ba0bdea2 .
+
+km-dev:PredicateObjectMap_72bd3101-4fa2-40e2-8659-9e0f5787541f rr:predicate scharp:facilityName .
+
+_:node1aosc1l57x9 rr:column "[\"Airbases\",\"Airbase\",\"FacilityName\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasObjectMap _:node1aosc1l57x9 .
+
+km-dev:PredicateObjectMap_72bd3101-4fa2-40e2-8659-9e0f5787541f rr:objectMap _:node1aosc1l57x9 .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 rr:predicateObjectMap km-dev:PredicateObjectMap_72bd3101-4fa2-40e2-8659-9e0f5787541f .
+
+km-dev:PredicateObjectMap_72bd3101-4fa2-40e2-8659-9e0f5787541f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_72bd3101-4fa2-40e2-8659-9e0f5787541f .
+
+km-dev:PredicateObjectMap_27cb00cd-445c-4793-b267-7b2c599e194f rr:predicate scharp:currentStatus .
+
+_:node1aosc1l57x10 rr:column "[\"Airbases\",\"Airbase\",\"CurrentStatus\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasObjectMap _:node1aosc1l57x10 .
+
+km-dev:PredicateObjectMap_27cb00cd-445c-4793-b267-7b2c599e194f rr:objectMap _:node1aosc1l57x10 .
+
+km-dev:TriplesMap_e68b0dbf-3adf-44f1-a8b1-298e2ce2c8d5 rr:predicateObjectMap km-dev:PredicateObjectMap_27cb00cd-445c-4793-b267-7b2c599e194f .
+
+km-dev:PredicateObjectMap_27cb00cd-445c-4793-b267-7b2c599e194f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_27cb00cd-445c-4793-b267-7b2c599e194f .
+
+km-dev:TriplesMap_31c4ca80-be3f-4d2b-bb23-cc1e4a827f80 a rr:TriplesMap .
+
+_:node1aosc1l57x1 km-dev:hasTriplesMap km-dev:TriplesMap_31c4ca80-be3f-4d2b-bb23-cc1e4a827f80 .
+
+km-dev:TriplesMap_31c4ca80-be3f-4d2b-bb23-cc1e4a827f80 km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x11 rr:tableName "RSPACE_TE2_scenario_v5_Airbases.xml" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasLogicalTable _:node1aosc1l57x11 .
+
+km-dev:TriplesMap_31c4ca80-be3f-4d2b-bb23-cc1e4a827f80 rr:logicalTable _:node1aosc1l57x11 ;
+	rr:subjectMap _:node1aosc1l57x12 .
+
+_:node1aosc1l57x1 km-dev:hasSubjectMap _:node1aosc1l57x12 .
+
+_:node1aosc1l57x12 km-dev:isPartOfMapping _:node1aosc1l57x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
+	rr:class scharp:Point ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "scharp:Point1" .
+
+km-dev:PredicateObjectMap_ec446f55-02db-4fb3-9614-9da296b17f9c rr:predicate scharp:latitude .
+
+_:node1aosc1l57x13 rr:column "[\"Airbases\",\"Airbase\",\"Latitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasObjectMap _:node1aosc1l57x13 .
+
+km-dev:PredicateObjectMap_ec446f55-02db-4fb3-9614-9da296b17f9c rr:objectMap _:node1aosc1l57x13 .
+
+km-dev:TriplesMap_31c4ca80-be3f-4d2b-bb23-cc1e4a827f80 rr:predicateObjectMap km-dev:PredicateObjectMap_ec446f55-02db-4fb3-9614-9da296b17f9c .
+
+km-dev:PredicateObjectMap_ec446f55-02db-4fb3-9614-9da296b17f9c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ec446f55-02db-4fb3-9614-9da296b17f9c .
+
+km-dev:PredicateObjectMap_ea93514b-6e56-4b56-bfb1-ffd0ceb8e976 rr:predicate scharp:longitude .
+
+_:node1aosc1l57x14 rr:column "[\"Airbases\",\"Airbase\",\"Longitude\"]" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasObjectMap _:node1aosc1l57x14 .
+
+km-dev:PredicateObjectMap_ea93514b-6e56-4b56-bfb1-ffd0ceb8e976 rr:objectMap _:node1aosc1l57x14 .
+
+km-dev:TriplesMap_31c4ca80-be3f-4d2b-bb23-cc1e4a827f80 rr:predicateObjectMap km-dev:PredicateObjectMap_ea93514b-6e56-4b56-bfb1-ffd0ceb8e976 .
+
+km-dev:PredicateObjectMap_ea93514b-6e56-4b56-bfb1-ffd0ceb8e976 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1aosc1l57x1 .
+
+_:node1aosc1l57x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ea93514b-6e56-4b56-bfb1-ffd0ceb8e976 .

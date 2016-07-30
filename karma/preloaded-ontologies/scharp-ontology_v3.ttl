@@ -186,6 +186,11 @@ scharp:Attributes rdf:type owl:Class ;
 	rdfs:label "Attributes"
 	.
 
+scharp:JDPI rdf:type owl:Class ;
+	rdfs:label "JDPI" ;
+	rdfs:comment """The JDPI."""
+	.
+
 #########################################################
 #
 # Object Properties
@@ -356,6 +361,13 @@ scharp:endpoint rdf:type owl:ObjectProperty ;
 	rdfs:domain scharp:AirspaceSegment ;
 	rdfs:range scharp:Point ; 
 	.
+
+scharp:jdpi rdf:type owl:ObjectProperty ;
+	rdfs:label "JDPI" ;
+	rdfs:domain scharp:Target ;
+	rdfs:range scharp:JDPI ; 
+	.
+
 
 #########################################################
 #
@@ -1096,4 +1108,16 @@ scharp:fuelQuantityUnit rdf:type rdf:Property ;
 	rdfs:label "fuelQuantityUnit" ;
 	memex:es_directive memex:ES_not_analyzed ;
 	rdfs:domain scharp:Message
+	.
+
+scharp:jdpiId rdf:type rdf:Property ;
+	rdfs:label "jdpiId" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:JDPI
+	.
+
+scharp:jdpiName rdf:type rdf:Property ;
+	rdfs:label "jdpiName" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:JDPI
 	.

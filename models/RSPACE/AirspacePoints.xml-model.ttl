@@ -31,12 +31,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
+_:node1ape1u4sgx1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "AirspacePoints.xml" ;
-	km-dev:modelPublicationTime "1469841399415"^^xsd:long ;
+	km-dev:modelPublicationTime "1470424355728"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"AirspaceKey\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Key\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"airspace_uri\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"point_uri\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"AirspaceKey\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Key\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"AirspaceKey\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Key\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Longitude\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"AirspaceKey\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Key\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"point_uri\"}],[{\"columnName\":\"AirspacePoints\"},{\"columnName\":\"AirspacePoint\"},{\"columnName\":\"airspace_uri\"}]]" ;
 	km-dev:hasModelLabel "AirspacePoints.xml" ;
 	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
 	km-dev:hasWorksheetHistory """[
@@ -341,6 +341,82 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
         \"commandName\": \"SubmitPythonTransformationCommand\"
     },
     {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": true,
+                    \"prefix\": \"scharp\",
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
         \"tags\": [\"SemanticType\"],
         \"model\": \"new\",
         \"inputParameters\": [
@@ -366,8 +442,8 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/airspaceKey\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Airspace1 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airspace1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airspace\"
@@ -428,8 +504,8 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/airspacePointKey\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Point1 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
@@ -490,8 +566,8 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Point1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
@@ -505,7 +581,7 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
+                \"value\": \"xsd:float\",
                 \"type\": \"other\"
             },
             {
@@ -552,8 +628,8 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/longitude\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Point1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
@@ -567,7 +643,7 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
+                \"value\": \"xsd:float\",
                 \"type\": \"other\"
             },
             {
@@ -629,8 +705,8 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Airspace1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airspace1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airspace\"
@@ -706,8 +782,8 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Point1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
@@ -771,8 +847,8 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/airspacepoint\",
-                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
                     \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Airspace1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Airspace\"
                 }],
                 \"type\": \"other\"
@@ -792,134 +868,136 @@ _:node1aoslvnjnx1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_36dbd82a-7fb2-482c-bda9-86ce6a8fa14f a rr:TriplesMap .
+km-dev:TriplesMap_3fd7d317-2114-4a7f-b88d-9855912c8abc a rr:TriplesMap .
 
-_:node1aoslvnjnx1 km-dev:hasTriplesMap km-dev:TriplesMap_36dbd82a-7fb2-482c-bda9-86ce6a8fa14f .
+_:node1ape1u4sgx1 km-dev:hasTriplesMap km-dev:TriplesMap_3fd7d317-2114-4a7f-b88d-9855912c8abc .
 
-km-dev:TriplesMap_36dbd82a-7fb2-482c-bda9-86ce6a8fa14f km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+km-dev:TriplesMap_3fd7d317-2114-4a7f-b88d-9855912c8abc km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx2 rr:tableName "AirspacePoints.xml" ;
+_:node1ape1u4sgx2 rr:tableName "AirspacePoints.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasLogicalTable _:node1aoslvnjnx2 .
+_:node1ape1u4sgx1 km-dev:hasLogicalTable _:node1ape1u4sgx2 .
 
-km-dev:TriplesMap_36dbd82a-7fb2-482c-bda9-86ce6a8fa14f rr:logicalTable _:node1aoslvnjnx2 ;
-	rr:subjectMap _:node1aoslvnjnx3 .
+km-dev:TriplesMap_3fd7d317-2114-4a7f-b88d-9855912c8abc rr:logicalTable _:node1ape1u4sgx2 ;
+	rr:subjectMap _:node1ape1u4sgx3 .
 
-_:node1aoslvnjnx1 km-dev:hasSubjectMap _:node1aoslvnjnx3 .
+_:node1ape1u4sgx1 km-dev:hasSubjectMap _:node1ape1u4sgx3 .
 
-_:node1aoslvnjnx3 km-dev:isPartOfMapping _:node1aoslvnjnx1 ;
+_:node1ape1u4sgx3 km-dev:isPartOfMapping _:node1ape1u4sgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Airspace1" ;
 	rr:class scharp:Airspace ;
 	rr:template "airspace/{[\"AirspacePoints\",\"AirspacePoint\",\"AirspaceKey\"]}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_6cf56323-adf2-4e25-b1b2-e29c3300e0d1 rr:predicate scharp:airspacepoint .
+km-dev:PredicateObjectMap_7e9c0b4f-2c6f-4131-a387-a09de0cd1cc0 rr:predicate scharp:airspacepoint .
 
-km-dev:RefObjectMap_d49e5716-ee6d-4d50-8262-5bae3602f24b a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_bd7e55bd-f7df-45cb-b649-db2f72bd4672 ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+km-dev:RefObjectMap_33cb8c93-d192-4d32-b9df-5a373ce2f35f a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_d3c9585c-05f3-43af-9806-780b91359c4c ;
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasObjectMap km-dev:RefObjectMap_d49e5716-ee6d-4d50-8262-5bae3602f24b .
+_:node1ape1u4sgx1 km-dev:hasObjectMap km-dev:RefObjectMap_33cb8c93-d192-4d32-b9df-5a373ce2f35f .
 
-km-dev:PredicateObjectMap_6cf56323-adf2-4e25-b1b2-e29c3300e0d1 rr:objectMap km-dev:RefObjectMap_d49e5716-ee6d-4d50-8262-5bae3602f24b .
+km-dev:PredicateObjectMap_7e9c0b4f-2c6f-4131-a387-a09de0cd1cc0 rr:objectMap km-dev:RefObjectMap_33cb8c93-d192-4d32-b9df-5a373ce2f35f .
 
-km-dev:TriplesMap_36dbd82a-7fb2-482c-bda9-86ce6a8fa14f rr:predicateObjectMap km-dev:PredicateObjectMap_6cf56323-adf2-4e25-b1b2-e29c3300e0d1 .
+km-dev:TriplesMap_3fd7d317-2114-4a7f-b88d-9855912c8abc rr:predicateObjectMap km-dev:PredicateObjectMap_7e9c0b4f-2c6f-4131-a387-a09de0cd1cc0 .
 
-km-dev:PredicateObjectMap_6cf56323-adf2-4e25-b1b2-e29c3300e0d1 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+km-dev:PredicateObjectMap_7e9c0b4f-2c6f-4131-a387-a09de0cd1cc0 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6cf56323-adf2-4e25-b1b2-e29c3300e0d1 .
+_:node1ape1u4sgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7e9c0b4f-2c6f-4131-a387-a09de0cd1cc0 .
 
-km-dev:PredicateObjectMap_adb31289-1100-4391-b8af-ed0e2378a79c rr:predicate scharp:airspaceKey .
+km-dev:PredicateObjectMap_1ce12c32-8120-40af-b6e1-0ad2e8804e9d rr:predicate scharp:airspaceKey .
 
-_:node1aoslvnjnx4 rr:column "[\"AirspacePoints\",\"AirspacePoint\",\"AirspaceKey\"]" ;
+_:node1ape1u4sgx4 rr:column "[\"AirspacePoints\",\"AirspacePoint\",\"AirspaceKey\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasObjectMap _:node1aoslvnjnx4 .
+_:node1ape1u4sgx1 km-dev:hasObjectMap _:node1ape1u4sgx4 .
 
-km-dev:PredicateObjectMap_adb31289-1100-4391-b8af-ed0e2378a79c rr:objectMap _:node1aoslvnjnx4 .
+km-dev:PredicateObjectMap_1ce12c32-8120-40af-b6e1-0ad2e8804e9d rr:objectMap _:node1ape1u4sgx4 .
 
-km-dev:TriplesMap_36dbd82a-7fb2-482c-bda9-86ce6a8fa14f rr:predicateObjectMap km-dev:PredicateObjectMap_adb31289-1100-4391-b8af-ed0e2378a79c .
+km-dev:TriplesMap_3fd7d317-2114-4a7f-b88d-9855912c8abc rr:predicateObjectMap km-dev:PredicateObjectMap_1ce12c32-8120-40af-b6e1-0ad2e8804e9d .
 
-km-dev:PredicateObjectMap_adb31289-1100-4391-b8af-ed0e2378a79c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+km-dev:PredicateObjectMap_1ce12c32-8120-40af-b6e1-0ad2e8804e9d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_adb31289-1100-4391-b8af-ed0e2378a79c .
+_:node1ape1u4sgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1ce12c32-8120-40af-b6e1-0ad2e8804e9d .
 
-km-dev:TriplesMap_bd7e55bd-f7df-45cb-b649-db2f72bd4672 a rr:TriplesMap .
+km-dev:TriplesMap_d3c9585c-05f3-43af-9806-780b91359c4c a rr:TriplesMap .
 
-_:node1aoslvnjnx1 km-dev:hasTriplesMap km-dev:TriplesMap_bd7e55bd-f7df-45cb-b649-db2f72bd4672 .
+_:node1ape1u4sgx1 km-dev:hasTriplesMap km-dev:TriplesMap_d3c9585c-05f3-43af-9806-780b91359c4c .
 
-km-dev:TriplesMap_bd7e55bd-f7df-45cb-b649-db2f72bd4672 km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+km-dev:TriplesMap_d3c9585c-05f3-43af-9806-780b91359c4c km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx5 rr:tableName "AirspacePoints.xml" ;
+_:node1ape1u4sgx5 rr:tableName "AirspacePoints.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasLogicalTable _:node1aoslvnjnx5 .
+_:node1ape1u4sgx1 km-dev:hasLogicalTable _:node1ape1u4sgx5 .
 
-km-dev:TriplesMap_bd7e55bd-f7df-45cb-b649-db2f72bd4672 rr:logicalTable _:node1aoslvnjnx5 ;
-	rr:subjectMap _:node1aoslvnjnx6 .
+km-dev:TriplesMap_d3c9585c-05f3-43af-9806-780b91359c4c rr:logicalTable _:node1ape1u4sgx5 ;
+	rr:subjectMap _:node1ape1u4sgx6 .
 
-_:node1aoslvnjnx1 km-dev:hasSubjectMap _:node1aoslvnjnx6 .
+_:node1ape1u4sgx1 km-dev:hasSubjectMap _:node1ape1u4sgx6 .
 
-_:node1aoslvnjnx6 km-dev:isPartOfMapping _:node1aoslvnjnx1 ;
+_:node1ape1u4sgx6 km-dev:isPartOfMapping _:node1ape1u4sgx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
 	rr:class scharp:Point ;
 	rr:template "airspace/point/{[\"AirspacePoints\",\"AirspacePoint\",\"Key\"]}" .
 
-km-dev:PredicateObjectMap_f920f40a-8b3e-40a6-915f-027e0470730a rr:predicate scharp:longitude .
+km-dev:PredicateObjectMap_e41f4cc4-a24c-44be-bc2b-decdd8842bf8 rr:predicate scharp:airspacePointKey .
 
-_:node1aoslvnjnx7 rr:column "[\"AirspacePoints\",\"AirspacePoint\",\"Longitude\"]" ;
+_:node1ape1u4sgx7 rr:column "[\"AirspacePoints\",\"AirspacePoint\",\"Key\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasObjectMap _:node1aoslvnjnx7 .
+_:node1ape1u4sgx1 km-dev:hasObjectMap _:node1ape1u4sgx7 .
 
-km-dev:PredicateObjectMap_f920f40a-8b3e-40a6-915f-027e0470730a rr:objectMap _:node1aoslvnjnx7 .
+km-dev:PredicateObjectMap_e41f4cc4-a24c-44be-bc2b-decdd8842bf8 rr:objectMap _:node1ape1u4sgx7 .
 
-km-dev:TriplesMap_bd7e55bd-f7df-45cb-b649-db2f72bd4672 rr:predicateObjectMap km-dev:PredicateObjectMap_f920f40a-8b3e-40a6-915f-027e0470730a .
+km-dev:TriplesMap_d3c9585c-05f3-43af-9806-780b91359c4c rr:predicateObjectMap km-dev:PredicateObjectMap_e41f4cc4-a24c-44be-bc2b-decdd8842bf8 .
 
-km-dev:PredicateObjectMap_f920f40a-8b3e-40a6-915f-027e0470730a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+km-dev:PredicateObjectMap_e41f4cc4-a24c-44be-bc2b-decdd8842bf8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f920f40a-8b3e-40a6-915f-027e0470730a .
+_:node1ape1u4sgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e41f4cc4-a24c-44be-bc2b-decdd8842bf8 .
 
-km-dev:PredicateObjectMap_9e50792f-ed22-4d75-a973-d9e45b8889af rr:predicate scharp:latitude .
+km-dev:PredicateObjectMap_be6d1915-4406-4e19-ba74-06358541f0f8 rr:predicate scharp:latitude .
 
-_:node1aoslvnjnx8 rr:column "[\"AirspacePoints\",\"AirspacePoint\",\"Latitude\"]" ;
+_:node1ape1u4sgx8 rr:column "[\"AirspacePoints\",\"AirspacePoint\",\"Latitude\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasObjectMap _:node1aoslvnjnx8 .
+_:node1ape1u4sgx1 km-dev:hasObjectMap _:node1ape1u4sgx8 .
 
-km-dev:PredicateObjectMap_9e50792f-ed22-4d75-a973-d9e45b8889af rr:objectMap _:node1aoslvnjnx8 .
+km-dev:PredicateObjectMap_be6d1915-4406-4e19-ba74-06358541f0f8 rr:objectMap _:node1ape1u4sgx8 .
 
-km-dev:TriplesMap_bd7e55bd-f7df-45cb-b649-db2f72bd4672 rr:predicateObjectMap km-dev:PredicateObjectMap_9e50792f-ed22-4d75-a973-d9e45b8889af .
+km-dev:TriplesMap_d3c9585c-05f3-43af-9806-780b91359c4c rr:predicateObjectMap km-dev:PredicateObjectMap_be6d1915-4406-4e19-ba74-06358541f0f8 .
 
-km-dev:PredicateObjectMap_9e50792f-ed22-4d75-a973-d9e45b8889af a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+km-dev:PredicateObjectMap_be6d1915-4406-4e19-ba74-06358541f0f8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9e50792f-ed22-4d75-a973-d9e45b8889af .
+_:node1ape1u4sgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_be6d1915-4406-4e19-ba74-06358541f0f8 .
 
-km-dev:PredicateObjectMap_67d7dfad-aa37-44fa-af07-5f3e7dfbea13 rr:predicate scharp:airspacePointKey .
+km-dev:PredicateObjectMap_b1227299-122d-475d-8188-711593928ae9 rr:predicate scharp:longitude .
 
-_:node1aoslvnjnx9 rr:column "[\"AirspacePoints\",\"AirspacePoint\",\"Key\"]" ;
+_:node1ape1u4sgx9 rr:column "[\"AirspacePoints\",\"AirspacePoint\",\"Longitude\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasObjectMap _:node1aoslvnjnx9 .
+_:node1ape1u4sgx1 km-dev:hasObjectMap _:node1ape1u4sgx9 .
 
-km-dev:PredicateObjectMap_67d7dfad-aa37-44fa-af07-5f3e7dfbea13 rr:objectMap _:node1aoslvnjnx9 .
+km-dev:PredicateObjectMap_b1227299-122d-475d-8188-711593928ae9 rr:objectMap _:node1ape1u4sgx9 .
 
-km-dev:TriplesMap_bd7e55bd-f7df-45cb-b649-db2f72bd4672 rr:predicateObjectMap km-dev:PredicateObjectMap_67d7dfad-aa37-44fa-af07-5f3e7dfbea13 .
+km-dev:TriplesMap_d3c9585c-05f3-43af-9806-780b91359c4c rr:predicateObjectMap km-dev:PredicateObjectMap_b1227299-122d-475d-8188-711593928ae9 .
 
-km-dev:PredicateObjectMap_67d7dfad-aa37-44fa-af07-5f3e7dfbea13 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aoslvnjnx1 .
+km-dev:PredicateObjectMap_b1227299-122d-475d-8188-711593928ae9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1u4sgx1 .
 
-_:node1aoslvnjnx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_67d7dfad-aa37-44fa-af07-5f3e7dfbea13 .
+_:node1ape1u4sgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b1227299-122d-475d-8188-711593928ae9 .

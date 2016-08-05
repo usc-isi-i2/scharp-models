@@ -31,13 +31,13 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1aos7gb03x1 a km-dev:R2RMLMapping ;
-	km-dev:sourceName "SAMSites.xml" ;
-	km-dev:modelPublicationTime "1469826214915"^^xsd:long ;
+_:node1ape1fmtdx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "RSPACE TE2 SAMSites.xml" ;
+	km-dev:modelPublicationTime "1470423882669"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Team\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"SurRange\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Status\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Source\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"CurrentStatus\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Index\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"EngRange\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"OriginalTeam\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Platform\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"NumMissiles\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Include\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Country\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"BeNumber\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"ID\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Team\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"SurRange\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Status\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Source\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"CurrentStatus\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Index\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"EngRange\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"OriginalTeam\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Platform\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"NumMissiles\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Include\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Country\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"BeNumber\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"ID\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"samsite_uri\"}]]" ;
-	km-dev:hasModelLabel "SAMSites.xml" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Country\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"CurrentStatus\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Team\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"BeNumber\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Source\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"NumMissiles\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"SurRange\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Include\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"EngRange\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Platform\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"ID\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Index\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"OriginalTeam\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Status\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Country\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"CurrentStatus\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Team\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"BeNumber\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Source\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"NumMissiles\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"SurRange\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Include\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"EngRange\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Platform\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"samsite_uri\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"ID\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Index\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"OriginalTeam\"}],[{\"columnName\":\"SAMSites\"},{\"columnName\":\"SAMSite\"},{\"columnName\":\"Status\"}]]" ;
+	km-dev:hasModelLabel "RSPACE TE2 SAMSites.xml" ;
 	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
 	km-dev:hasWorksheetHistory """[
     {
@@ -249,6 +249,82 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
         \"commandName\": \"SetWorksheetPropertiesCommand\"
     },
     {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": true,
+                    \"prefix\": \"scharp\",
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
         \"tags\": [\"SemanticType\"],
         \"model\": \"new\",
         \"inputParameters\": [
@@ -274,8 +350,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/originalTeam\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/originalTeam\",
                     \"DomainLabel\": \"scharp:SAMSite1 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -336,8 +412,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/include\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/include\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -398,8 +474,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/currentStatus\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/currentStatus\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -475,7 +551,7 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
+                \"value\": \"xsd:integer\",
                 \"type\": \"other\"
             },
             {
@@ -522,8 +598,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/index\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/index\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -584,8 +660,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/source\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/source\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -646,8 +722,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/team\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/team\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -723,7 +799,7 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
+                \"value\": \"xsd:integer\",
                 \"type\": \"other\"
             },
             {
@@ -770,8 +846,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/BeNumber\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/BeNumber\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -832,8 +908,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/country\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/country\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -894,8 +970,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/samSiteId\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/samSiteId\",
                     \"DomainLabel\": \"SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -958,7 +1034,7 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
                     \"isPrimary\": true,
-                    \"DomainLabel\": \"scharp:Point1 (add)\",
+                    \"DomainLabel\": \"scharp:Point1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
                 }],
@@ -971,7 +1047,7 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
+                \"value\": \"xsd:float\",
                 \"type\": \"other\"
             },
             {
@@ -1033,7 +1109,7 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
+                \"value\": \"xsd:float\",
                 \"type\": \"other\"
             },
             {
@@ -1080,8 +1156,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/numMissiles\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/numMissiles\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -1142,8 +1218,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/platform\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/platform\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -1204,8 +1280,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/scenarioName\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/scenarioName\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -1266,8 +1342,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/status\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/status\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -1328,8 +1404,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/name\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/name\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -1405,8 +1481,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
                     \"DomainLabel\": \"scharp:SAMSite1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
@@ -1470,8 +1546,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
-                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
                 }],
                 \"type\": \"other\"
@@ -1507,8 +1583,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
                 \"name\": \"initialEdges\",
                 \"value\": [{
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
-                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
-                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\"
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\"
                 }],
                 \"type\": \"other\"
             },
@@ -1564,8 +1640,8 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/locatein\",
-                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/SAMSite1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/SAMSite\"
                 }],
                 \"type\": \"other\"
@@ -1585,373 +1661,377 @@ _:node1aos7gb03x1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b a rr:TriplesMap .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b a rr:TriplesMap .
 
-_:node1aos7gb03x1 km-dev:hasTriplesMap km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b .
+_:node1ape1fmtdx1 km-dev:hasTriplesMap km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x2 rr:tableName "SAMSites.xml" ;
+_:node1ape1fmtdx2 rr:tableName "RSPACE TE2 SAMSites.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasLogicalTable _:node1aos7gb03x2 .
+_:node1ape1fmtdx1 km-dev:hasLogicalTable _:node1ape1fmtdx2 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:logicalTable _:node1aos7gb03x2 ;
-	rr:subjectMap _:node1aos7gb03x3 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:logicalTable _:node1ape1fmtdx2 ;
+	rr:subjectMap _:node1ape1fmtdx3 .
 
-_:node1aos7gb03x1 km-dev:hasSubjectMap _:node1aos7gb03x3 .
+_:node1ape1fmtdx1 km-dev:hasSubjectMap _:node1ape1fmtdx3 .
 
-_:node1aos7gb03x3 km-dev:isPartOfMapping _:node1aos7gb03x1 ;
+_:node1ape1fmtdx3 km-dev:isPartOfMapping _:node1ape1fmtdx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/SAMSite1" ;
 	rr:class scharp:SAMSite ;
 	rr:template "SAMSite/{[\"SAMSites\",\"SAMSite\",\"BeNumber\"]}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_021b4194-7fac-45b6-b404-5361f0a0377d rr:predicate scharp:locatein .
+km-dev:PredicateObjectMap_50f1ed18-1531-44cd-960b-cfcc5b605b51 rr:predicate scharp:locatein .
 
-km-dev:RefObjectMap_e04cc068-511f-44e3-a168-9e92e8660ab9 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_db0655a2-e00e-4ee0-96a3-7839b85dc848 ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:RefObjectMap_f79abab2-06ac-43d5-843a-ddeec14c9d34 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9a9874a2-9aad-4633-8566-38c138f12394 ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap km-dev:RefObjectMap_e04cc068-511f-44e3-a168-9e92e8660ab9 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap km-dev:RefObjectMap_f79abab2-06ac-43d5-843a-ddeec14c9d34 .
 
-km-dev:PredicateObjectMap_021b4194-7fac-45b6-b404-5361f0a0377d rr:objectMap km-dev:RefObjectMap_e04cc068-511f-44e3-a168-9e92e8660ab9 .
+km-dev:PredicateObjectMap_50f1ed18-1531-44cd-960b-cfcc5b605b51 rr:objectMap km-dev:RefObjectMap_f79abab2-06ac-43d5-843a-ddeec14c9d34 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_021b4194-7fac-45b6-b404-5361f0a0377d .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_50f1ed18-1531-44cd-960b-cfcc5b605b51 .
 
-km-dev:PredicateObjectMap_021b4194-7fac-45b6-b404-5361f0a0377d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_50f1ed18-1531-44cd-960b-cfcc5b605b51 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_021b4194-7fac-45b6-b404-5361f0a0377d .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_50f1ed18-1531-44cd-960b-cfcc5b605b51 .
 
-km-dev:PredicateObjectMap_a2f16261-d291-497d-af05-a07ece16a35d rr:predicate scharp:team .
+km-dev:PredicateObjectMap_709615e3-f151-4668-b4b3-4aac5cdc379f rr:predicate scharp:country .
 
-_:node1aos7gb03x4 rr:column "[\"SAMSites\",\"SAMSite\",\"Team\"]" ;
+_:node1ape1fmtdx4 rr:column "[\"SAMSites\",\"SAMSite\",\"Country\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x4 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx4 .
 
-km-dev:PredicateObjectMap_a2f16261-d291-497d-af05-a07ece16a35d rr:objectMap _:node1aos7gb03x4 .
+km-dev:PredicateObjectMap_709615e3-f151-4668-b4b3-4aac5cdc379f rr:objectMap _:node1ape1fmtdx4 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_a2f16261-d291-497d-af05-a07ece16a35d .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_709615e3-f151-4668-b4b3-4aac5cdc379f .
 
-km-dev:PredicateObjectMap_a2f16261-d291-497d-af05-a07ece16a35d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_709615e3-f151-4668-b4b3-4aac5cdc379f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a2f16261-d291-497d-af05-a07ece16a35d .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_709615e3-f151-4668-b4b3-4aac5cdc379f .
 
-km-dev:PredicateObjectMap_e22b944e-ae4c-413c-a0f2-f515f6643d04 rr:predicate scharp:surRange .
+km-dev:PredicateObjectMap_d8d9d225-e6d1-41ee-9904-b3748785ce56 rr:predicate scharp:currentStatus .
 
-_:node1aos7gb03x5 rr:column "[\"SAMSites\",\"SAMSite\",\"SurRange\"]" ;
+_:node1ape1fmtdx5 rr:column "[\"SAMSites\",\"SAMSite\",\"CurrentStatus\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x5 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx5 .
 
-km-dev:PredicateObjectMap_e22b944e-ae4c-413c-a0f2-f515f6643d04 rr:objectMap _:node1aos7gb03x5 .
+km-dev:PredicateObjectMap_d8d9d225-e6d1-41ee-9904-b3748785ce56 rr:objectMap _:node1ape1fmtdx5 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_e22b944e-ae4c-413c-a0f2-f515f6643d04 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_d8d9d225-e6d1-41ee-9904-b3748785ce56 .
 
-km-dev:PredicateObjectMap_e22b944e-ae4c-413c-a0f2-f515f6643d04 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_d8d9d225-e6d1-41ee-9904-b3748785ce56 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e22b944e-ae4c-413c-a0f2-f515f6643d04 .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d8d9d225-e6d1-41ee-9904-b3748785ce56 .
 
-km-dev:PredicateObjectMap_2b9c075f-0c87-47d0-a692-7e2fcc0d435b rr:predicate scharp:status .
+km-dev:PredicateObjectMap_1a6edfb9-2e8f-48d7-b44b-ad1d7df35a53 rr:predicate scharp:team .
 
-_:node1aos7gb03x6 rr:column "[\"SAMSites\",\"SAMSite\",\"Status\"]" ;
+_:node1ape1fmtdx6 rr:column "[\"SAMSites\",\"SAMSite\",\"Team\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x6 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx6 .
 
-km-dev:PredicateObjectMap_2b9c075f-0c87-47d0-a692-7e2fcc0d435b rr:objectMap _:node1aos7gb03x6 .
+km-dev:PredicateObjectMap_1a6edfb9-2e8f-48d7-b44b-ad1d7df35a53 rr:objectMap _:node1ape1fmtdx6 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_2b9c075f-0c87-47d0-a692-7e2fcc0d435b .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_1a6edfb9-2e8f-48d7-b44b-ad1d7df35a53 .
 
-km-dev:PredicateObjectMap_2b9c075f-0c87-47d0-a692-7e2fcc0d435b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_1a6edfb9-2e8f-48d7-b44b-ad1d7df35a53 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2b9c075f-0c87-47d0-a692-7e2fcc0d435b .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1a6edfb9-2e8f-48d7-b44b-ad1d7df35a53 .
 
-km-dev:PredicateObjectMap_faf82d0f-1eb5-4c1e-9b74-9994f55b0f73 rr:predicate scharp:source .
+km-dev:PredicateObjectMap_29ee3337-0541-4bd5-ac6f-af5e7dede84f rr:predicate scharp:BeNumber .
 
-_:node1aos7gb03x7 rr:column "[\"SAMSites\",\"SAMSite\",\"Source\"]" ;
+_:node1ape1fmtdx7 rr:column "[\"SAMSites\",\"SAMSite\",\"BeNumber\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x7 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx7 .
 
-km-dev:PredicateObjectMap_faf82d0f-1eb5-4c1e-9b74-9994f55b0f73 rr:objectMap _:node1aos7gb03x7 .
+km-dev:PredicateObjectMap_29ee3337-0541-4bd5-ac6f-af5e7dede84f rr:objectMap _:node1ape1fmtdx7 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_faf82d0f-1eb5-4c1e-9b74-9994f55b0f73 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_29ee3337-0541-4bd5-ac6f-af5e7dede84f .
 
-km-dev:PredicateObjectMap_faf82d0f-1eb5-4c1e-9b74-9994f55b0f73 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_29ee3337-0541-4bd5-ac6f-af5e7dede84f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_faf82d0f-1eb5-4c1e-9b74-9994f55b0f73 .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_29ee3337-0541-4bd5-ac6f-af5e7dede84f .
 
-km-dev:PredicateObjectMap_8c2f29b7-76e6-43e3-9ca8-ec3fecb8f772 rr:predicate scharp:currentStatus .
+km-dev:PredicateObjectMap_7c43d58b-0e72-45a1-98ba-6049dba27d2a rr:predicate scharp:source .
 
-_:node1aos7gb03x8 rr:column "[\"SAMSites\",\"SAMSite\",\"CurrentStatus\"]" ;
+_:node1ape1fmtdx8 rr:column "[\"SAMSites\",\"SAMSite\",\"Source\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x8 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx8 .
 
-km-dev:PredicateObjectMap_8c2f29b7-76e6-43e3-9ca8-ec3fecb8f772 rr:objectMap _:node1aos7gb03x8 .
+km-dev:PredicateObjectMap_7c43d58b-0e72-45a1-98ba-6049dba27d2a rr:objectMap _:node1ape1fmtdx8 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_8c2f29b7-76e6-43e3-9ca8-ec3fecb8f772 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_7c43d58b-0e72-45a1-98ba-6049dba27d2a .
 
-km-dev:PredicateObjectMap_8c2f29b7-76e6-43e3-9ca8-ec3fecb8f772 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_7c43d58b-0e72-45a1-98ba-6049dba27d2a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_8c2f29b7-76e6-43e3-9ca8-ec3fecb8f772 .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7c43d58b-0e72-45a1-98ba-6049dba27d2a .
 
-km-dev:PredicateObjectMap_d21fc615-00d6-4364-8cfa-497a50e0d7e5 rr:predicate scharp:index .
+km-dev:PredicateObjectMap_421fe474-35cb-419f-b769-aff335d3370e rr:predicate scharp:numMissiles .
 
-_:node1aos7gb03x9 rr:column "[\"SAMSites\",\"SAMSite\",\"Index\"]" ;
+_:node1ape1fmtdx9 rr:column "[\"SAMSites\",\"SAMSite\",\"NumMissiles\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x9 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx9 .
 
-km-dev:PredicateObjectMap_d21fc615-00d6-4364-8cfa-497a50e0d7e5 rr:objectMap _:node1aos7gb03x9 .
+km-dev:PredicateObjectMap_421fe474-35cb-419f-b769-aff335d3370e rr:objectMap _:node1ape1fmtdx9 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_d21fc615-00d6-4364-8cfa-497a50e0d7e5 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_421fe474-35cb-419f-b769-aff335d3370e .
 
-km-dev:PredicateObjectMap_d21fc615-00d6-4364-8cfa-497a50e0d7e5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_421fe474-35cb-419f-b769-aff335d3370e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d21fc615-00d6-4364-8cfa-497a50e0d7e5 .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_421fe474-35cb-419f-b769-aff335d3370e .
 
-km-dev:PredicateObjectMap_bc30160a-e15d-4f4d-af2c-d84112034e1d rr:predicate scharp:engRange .
+km-dev:PredicateObjectMap_7a8c7ecd-bc0f-428a-a7e9-8e0fafe470a8 rr:predicate scharp:surRange .
 
-_:node1aos7gb03x10 rr:column "[\"SAMSites\",\"SAMSite\",\"EngRange\"]" ;
+_:node1ape1fmtdx10 rr:column "[\"SAMSites\",\"SAMSite\",\"SurRange\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x10 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx10 .
 
-km-dev:PredicateObjectMap_bc30160a-e15d-4f4d-af2c-d84112034e1d rr:objectMap _:node1aos7gb03x10 .
+km-dev:PredicateObjectMap_7a8c7ecd-bc0f-428a-a7e9-8e0fafe470a8 rr:objectMap _:node1ape1fmtdx10 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_bc30160a-e15d-4f4d-af2c-d84112034e1d .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_7a8c7ecd-bc0f-428a-a7e9-8e0fafe470a8 .
 
-km-dev:PredicateObjectMap_bc30160a-e15d-4f4d-af2c-d84112034e1d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_7a8c7ecd-bc0f-428a-a7e9-8e0fafe470a8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bc30160a-e15d-4f4d-af2c-d84112034e1d .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7a8c7ecd-bc0f-428a-a7e9-8e0fafe470a8 .
 
-km-dev:PredicateObjectMap_23e33081-c5a9-4a99-9415-cf84574cbad3 rr:predicate scharp:originalTeam .
+km-dev:PredicateObjectMap_3fdbef8d-5c64-4e4a-a967-494a3e477ac2 rr:predicate scharp:scenarioName .
 
-_:node1aos7gb03x11 rr:column "[\"SAMSites\",\"SAMSite\",\"OriginalTeam\"]" ;
+_:node1ape1fmtdx11 rr:column "[\"SAMSites\",\"SAMSite\",\"ScenarioName\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x11 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx11 .
 
-km-dev:PredicateObjectMap_23e33081-c5a9-4a99-9415-cf84574cbad3 rr:objectMap _:node1aos7gb03x11 .
+km-dev:PredicateObjectMap_3fdbef8d-5c64-4e4a-a967-494a3e477ac2 rr:objectMap _:node1ape1fmtdx11 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_23e33081-c5a9-4a99-9415-cf84574cbad3 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_3fdbef8d-5c64-4e4a-a967-494a3e477ac2 .
 
-km-dev:PredicateObjectMap_23e33081-c5a9-4a99-9415-cf84574cbad3 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_3fdbef8d-5c64-4e4a-a967-494a3e477ac2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_23e33081-c5a9-4a99-9415-cf84574cbad3 .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3fdbef8d-5c64-4e4a-a967-494a3e477ac2 .
 
-km-dev:PredicateObjectMap_e1d70983-4503-4221-b48c-df8dc2c39fa8 rr:predicate scharp:platform .
+km-dev:PredicateObjectMap_cc7030fa-90f4-47de-bf7f-78c3b4eab07e rr:predicate scharp:include .
 
-_:node1aos7gb03x12 rr:column "[\"SAMSites\",\"SAMSite\",\"Platform\"]" ;
+_:node1ape1fmtdx12 rr:column "[\"SAMSites\",\"SAMSite\",\"Include\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x12 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx12 .
 
-km-dev:PredicateObjectMap_e1d70983-4503-4221-b48c-df8dc2c39fa8 rr:objectMap _:node1aos7gb03x12 .
+km-dev:PredicateObjectMap_cc7030fa-90f4-47de-bf7f-78c3b4eab07e rr:objectMap _:node1ape1fmtdx12 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_e1d70983-4503-4221-b48c-df8dc2c39fa8 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_cc7030fa-90f4-47de-bf7f-78c3b4eab07e .
 
-km-dev:PredicateObjectMap_e1d70983-4503-4221-b48c-df8dc2c39fa8 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_cc7030fa-90f4-47de-bf7f-78c3b4eab07e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e1d70983-4503-4221-b48c-df8dc2c39fa8 .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cc7030fa-90f4-47de-bf7f-78c3b4eab07e .
 
-km-dev:PredicateObjectMap_206c78b8-7c7d-4f57-9444-e10a68f3e266 rr:predicate scharp:numMissiles .
+km-dev:PredicateObjectMap_d6f9ec5b-c2a9-4f29-ba52-70a25636bc97 rr:predicate scharp:engRange .
 
-_:node1aos7gb03x13 rr:column "[\"SAMSites\",\"SAMSite\",\"NumMissiles\"]" ;
+_:node1ape1fmtdx13 rr:column "[\"SAMSites\",\"SAMSite\",\"EngRange\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#integer" ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x13 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx13 .
 
-km-dev:PredicateObjectMap_206c78b8-7c7d-4f57-9444-e10a68f3e266 rr:objectMap _:node1aos7gb03x13 .
+km-dev:PredicateObjectMap_d6f9ec5b-c2a9-4f29-ba52-70a25636bc97 rr:objectMap _:node1ape1fmtdx13 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_206c78b8-7c7d-4f57-9444-e10a68f3e266 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_d6f9ec5b-c2a9-4f29-ba52-70a25636bc97 .
 
-km-dev:PredicateObjectMap_206c78b8-7c7d-4f57-9444-e10a68f3e266 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_d6f9ec5b-c2a9-4f29-ba52-70a25636bc97 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_206c78b8-7c7d-4f57-9444-e10a68f3e266 .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d6f9ec5b-c2a9-4f29-ba52-70a25636bc97 .
 
-km-dev:PredicateObjectMap_a6708862-9dd0-4833-a62d-8a31b64c7528 rr:predicate scharp:scenarioName .
+km-dev:PredicateObjectMap_97da69d1-d200-4969-b81a-6a0f3454d89a rr:predicate scharp:samSiteId .
 
-_:node1aos7gb03x14 rr:column "[\"SAMSites\",\"SAMSite\",\"ScenarioName\"]" ;
+_:node1ape1fmtdx14 rr:column "[\"SAMSites\",\"SAMSite\",\"ID\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x14 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx14 .
 
-km-dev:PredicateObjectMap_a6708862-9dd0-4833-a62d-8a31b64c7528 rr:objectMap _:node1aos7gb03x14 .
+km-dev:PredicateObjectMap_97da69d1-d200-4969-b81a-6a0f3454d89a rr:objectMap _:node1ape1fmtdx14 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_a6708862-9dd0-4833-a62d-8a31b64c7528 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_97da69d1-d200-4969-b81a-6a0f3454d89a .
 
-km-dev:PredicateObjectMap_a6708862-9dd0-4833-a62d-8a31b64c7528 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_97da69d1-d200-4969-b81a-6a0f3454d89a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a6708862-9dd0-4833-a62d-8a31b64c7528 .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_97da69d1-d200-4969-b81a-6a0f3454d89a .
 
-km-dev:PredicateObjectMap_da8554b0-f050-451a-afa3-ca35056e761b rr:predicate scharp:include .
+km-dev:PredicateObjectMap_d9495b64-a279-41d3-ac14-a7ef12e8a5c3 rr:predicate scharp:platform .
 
-_:node1aos7gb03x15 rr:column "[\"SAMSites\",\"SAMSite\",\"Include\"]" ;
+_:node1ape1fmtdx15 rr:column "[\"SAMSites\",\"SAMSite\",\"Platform\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x15 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx15 .
 
-km-dev:PredicateObjectMap_da8554b0-f050-451a-afa3-ca35056e761b rr:objectMap _:node1aos7gb03x15 .
+km-dev:PredicateObjectMap_d9495b64-a279-41d3-ac14-a7ef12e8a5c3 rr:objectMap _:node1ape1fmtdx15 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_da8554b0-f050-451a-afa3-ca35056e761b .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_d9495b64-a279-41d3-ac14-a7ef12e8a5c3 .
 
-km-dev:PredicateObjectMap_da8554b0-f050-451a-afa3-ca35056e761b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_d9495b64-a279-41d3-ac14-a7ef12e8a5c3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_da8554b0-f050-451a-afa3-ca35056e761b .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d9495b64-a279-41d3-ac14-a7ef12e8a5c3 .
 
-km-dev:PredicateObjectMap_5d8e875a-9950-453e-be8c-b12982906e6a rr:predicate scharp:name .
+km-dev:PredicateObjectMap_18776047-b106-4e6c-892a-d06f54902d2f rr:predicate scharp:name .
 
-_:node1aos7gb03x16 rr:column "[\"SAMSites\",\"SAMSite\",\"Name\"]" ;
+_:node1ape1fmtdx16 rr:column "[\"SAMSites\",\"SAMSite\",\"Name\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x16 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx16 .
 
-km-dev:PredicateObjectMap_5d8e875a-9950-453e-be8c-b12982906e6a rr:objectMap _:node1aos7gb03x16 .
+km-dev:PredicateObjectMap_18776047-b106-4e6c-892a-d06f54902d2f rr:objectMap _:node1ape1fmtdx16 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_5d8e875a-9950-453e-be8c-b12982906e6a .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_18776047-b106-4e6c-892a-d06f54902d2f .
 
-km-dev:PredicateObjectMap_5d8e875a-9950-453e-be8c-b12982906e6a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_18776047-b106-4e6c-892a-d06f54902d2f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5d8e875a-9950-453e-be8c-b12982906e6a .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_18776047-b106-4e6c-892a-d06f54902d2f .
 
-km-dev:PredicateObjectMap_af3516f5-de94-42e9-bc06-9d3ab37715e7 rr:predicate scharp:country .
+km-dev:PredicateObjectMap_16066aea-f7c7-4b9e-b51f-98e6282a9fc2 rr:predicate scharp:index .
 
-_:node1aos7gb03x17 rr:column "[\"SAMSites\",\"SAMSite\",\"Country\"]" ;
+_:node1ape1fmtdx17 rr:column "[\"SAMSites\",\"SAMSite\",\"Index\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x17 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx17 .
 
-km-dev:PredicateObjectMap_af3516f5-de94-42e9-bc06-9d3ab37715e7 rr:objectMap _:node1aos7gb03x17 .
+km-dev:PredicateObjectMap_16066aea-f7c7-4b9e-b51f-98e6282a9fc2 rr:objectMap _:node1ape1fmtdx17 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_af3516f5-de94-42e9-bc06-9d3ab37715e7 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_16066aea-f7c7-4b9e-b51f-98e6282a9fc2 .
 
-km-dev:PredicateObjectMap_af3516f5-de94-42e9-bc06-9d3ab37715e7 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_16066aea-f7c7-4b9e-b51f-98e6282a9fc2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_af3516f5-de94-42e9-bc06-9d3ab37715e7 .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_16066aea-f7c7-4b9e-b51f-98e6282a9fc2 .
 
-km-dev:PredicateObjectMap_e422aca7-a097-499e-8a1c-f26b0b0767c2 rr:predicate scharp:BeNumber .
+km-dev:PredicateObjectMap_2bbd27a9-6c77-4a12-96fa-30203c28724b rr:predicate scharp:originalTeam .
 
-_:node1aos7gb03x18 rr:column "[\"SAMSites\",\"SAMSite\",\"BeNumber\"]" ;
+_:node1ape1fmtdx18 rr:column "[\"SAMSites\",\"SAMSite\",\"OriginalTeam\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x18 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx18 .
 
-km-dev:PredicateObjectMap_e422aca7-a097-499e-8a1c-f26b0b0767c2 rr:objectMap _:node1aos7gb03x18 .
+km-dev:PredicateObjectMap_2bbd27a9-6c77-4a12-96fa-30203c28724b rr:objectMap _:node1ape1fmtdx18 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_e422aca7-a097-499e-8a1c-f26b0b0767c2 .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_2bbd27a9-6c77-4a12-96fa-30203c28724b .
 
-km-dev:PredicateObjectMap_e422aca7-a097-499e-8a1c-f26b0b0767c2 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_2bbd27a9-6c77-4a12-96fa-30203c28724b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e422aca7-a097-499e-8a1c-f26b0b0767c2 .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2bbd27a9-6c77-4a12-96fa-30203c28724b .
 
-km-dev:PredicateObjectMap_4edabd58-db70-4753-b6e0-a67e658c3c1b rr:predicate scharp:samSiteId .
+km-dev:PredicateObjectMap_d4b8245c-7b2c-47ef-9421-50b0684df27f rr:predicate scharp:status .
 
-_:node1aos7gb03x19 rr:column "[\"SAMSites\",\"SAMSite\",\"ID\"]" ;
+_:node1ape1fmtdx19 rr:column "[\"SAMSites\",\"SAMSite\",\"Status\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x19 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx19 .
 
-km-dev:PredicateObjectMap_4edabd58-db70-4753-b6e0-a67e658c3c1b rr:objectMap _:node1aos7gb03x19 .
+km-dev:PredicateObjectMap_d4b8245c-7b2c-47ef-9421-50b0684df27f rr:objectMap _:node1ape1fmtdx19 .
 
-km-dev:TriplesMap_e301e336-9934-4305-a9df-c2e3ee6af05b rr:predicateObjectMap km-dev:PredicateObjectMap_4edabd58-db70-4753-b6e0-a67e658c3c1b .
+km-dev:TriplesMap_9baed0f1-d690-48da-ae76-9597c3c0894b rr:predicateObjectMap km-dev:PredicateObjectMap_d4b8245c-7b2c-47ef-9421-50b0684df27f .
 
-km-dev:PredicateObjectMap_4edabd58-db70-4753-b6e0-a67e658c3c1b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_d4b8245c-7b2c-47ef-9421-50b0684df27f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4edabd58-db70-4753-b6e0-a67e658c3c1b .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d4b8245c-7b2c-47ef-9421-50b0684df27f .
 
-km-dev:TriplesMap_db0655a2-e00e-4ee0-96a3-7839b85dc848 a rr:TriplesMap .
+km-dev:TriplesMap_9a9874a2-9aad-4633-8566-38c138f12394 a rr:TriplesMap .
 
-_:node1aos7gb03x1 km-dev:hasTriplesMap km-dev:TriplesMap_db0655a2-e00e-4ee0-96a3-7839b85dc848 .
+_:node1ape1fmtdx1 km-dev:hasTriplesMap km-dev:TriplesMap_9a9874a2-9aad-4633-8566-38c138f12394 .
 
-km-dev:TriplesMap_db0655a2-e00e-4ee0-96a3-7839b85dc848 km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:TriplesMap_9a9874a2-9aad-4633-8566-38c138f12394 km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x20 rr:tableName "SAMSites.xml" ;
+_:node1ape1fmtdx20 rr:tableName "RSPACE TE2 SAMSites.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasLogicalTable _:node1aos7gb03x20 .
+_:node1ape1fmtdx1 km-dev:hasLogicalTable _:node1ape1fmtdx20 .
 
-km-dev:TriplesMap_db0655a2-e00e-4ee0-96a3-7839b85dc848 rr:logicalTable _:node1aos7gb03x20 ;
-	rr:subjectMap _:node1aos7gb03x21 .
+km-dev:TriplesMap_9a9874a2-9aad-4633-8566-38c138f12394 rr:logicalTable _:node1ape1fmtdx20 ;
+	rr:subjectMap _:node1ape1fmtdx21 .
 
-_:node1aos7gb03x1 km-dev:hasSubjectMap _:node1aos7gb03x21 .
+_:node1ape1fmtdx1 km-dev:hasSubjectMap _:node1ape1fmtdx21 .
 
-_:node1aos7gb03x21 km-dev:isPartOfMapping _:node1aos7gb03x1 ;
+_:node1ape1fmtdx21 km-dev:isPartOfMapping _:node1ape1fmtdx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
 	rr:class scharp:Point ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Point1" .
 
-km-dev:PredicateObjectMap_99ddb41b-bfae-4538-80ef-b9297512964f rr:predicate scharp:longitude .
+km-dev:PredicateObjectMap_951d7cc0-7549-4dae-b5cc-5185607a7113 rr:predicate scharp:longitude .
 
-_:node1aos7gb03x22 rr:column "[\"SAMSites\",\"SAMSite\",\"Longitude\"]" ;
+_:node1ape1fmtdx22 rr:column "[\"SAMSites\",\"SAMSite\",\"Longitude\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x22 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx22 .
 
-km-dev:PredicateObjectMap_99ddb41b-bfae-4538-80ef-b9297512964f rr:objectMap _:node1aos7gb03x22 .
+km-dev:PredicateObjectMap_951d7cc0-7549-4dae-b5cc-5185607a7113 rr:objectMap _:node1ape1fmtdx22 .
 
-km-dev:TriplesMap_db0655a2-e00e-4ee0-96a3-7839b85dc848 rr:predicateObjectMap km-dev:PredicateObjectMap_99ddb41b-bfae-4538-80ef-b9297512964f .
+km-dev:TriplesMap_9a9874a2-9aad-4633-8566-38c138f12394 rr:predicateObjectMap km-dev:PredicateObjectMap_951d7cc0-7549-4dae-b5cc-5185607a7113 .
 
-km-dev:PredicateObjectMap_99ddb41b-bfae-4538-80ef-b9297512964f a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_951d7cc0-7549-4dae-b5cc-5185607a7113 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_99ddb41b-bfae-4538-80ef-b9297512964f .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_951d7cc0-7549-4dae-b5cc-5185607a7113 .
 
-km-dev:PredicateObjectMap_dcabc59c-9bc2-493c-944c-63cfac5e3d9a rr:predicate scharp:latitude .
+km-dev:PredicateObjectMap_5ec314df-37b1-4cc1-ae7e-6bdb2fd8591b rr:predicate scharp:latitude .
 
-_:node1aos7gb03x23 rr:column "[\"SAMSites\",\"SAMSite\",\"Latitude\"]" ;
+_:node1ape1fmtdx23 rr:column "[\"SAMSites\",\"SAMSite\",\"Latitude\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasObjectMap _:node1aos7gb03x23 .
+_:node1ape1fmtdx1 km-dev:hasObjectMap _:node1ape1fmtdx23 .
 
-km-dev:PredicateObjectMap_dcabc59c-9bc2-493c-944c-63cfac5e3d9a rr:objectMap _:node1aos7gb03x23 .
+km-dev:PredicateObjectMap_5ec314df-37b1-4cc1-ae7e-6bdb2fd8591b rr:objectMap _:node1ape1fmtdx23 .
 
-km-dev:TriplesMap_db0655a2-e00e-4ee0-96a3-7839b85dc848 rr:predicateObjectMap km-dev:PredicateObjectMap_dcabc59c-9bc2-493c-944c-63cfac5e3d9a .
+km-dev:TriplesMap_9a9874a2-9aad-4633-8566-38c138f12394 rr:predicateObjectMap km-dev:PredicateObjectMap_5ec314df-37b1-4cc1-ae7e-6bdb2fd8591b .
 
-km-dev:PredicateObjectMap_dcabc59c-9bc2-493c-944c-63cfac5e3d9a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1aos7gb03x1 .
+km-dev:PredicateObjectMap_5ec314df-37b1-4cc1-ae7e-6bdb2fd8591b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1ape1fmtdx1 .
 
-_:node1aos7gb03x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dcabc59c-9bc2-493c-944c-63cfac5e3d9a .
+_:node1ape1fmtdx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5ec314df-37b1-4cc1-ae7e-6bdb2fd8591b .

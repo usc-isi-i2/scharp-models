@@ -31,12 +31,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
+_:node1apls71u0x1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "Airbases.xml" ;
-	km-dev:modelPublicationTime "1470424804348"^^xsd:long ;
+	km-dev:modelPublicationTime "1470686791616"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"OperatingStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"CurrentStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ShipName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"FacilityName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Index\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"OperatingStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"CurrentStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"airbase_uri\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ShipName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"FacilityName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Index\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ShipName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Index\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"OperatingStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"CurrentStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"FacilityName\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ShipName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"ScenarioName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Index\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Longitude\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"OperatingStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Latitude\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"CurrentStatus\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"Name\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"FacilityName\"}],[{\"columnName\":\"Airbases\"},{\"columnName\":\"Airbase\"},{\"columnName\":\"airbase_uri\"}]]" ;
 	km-dev:hasModelLabel "Airbases.xml" ;
 	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
 	km-dev:hasWorksheetHistory """[
@@ -70,7 +70,7 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"transformationCode\",
-                \"value\": \"return \\\"airbase/\\\"+getValue(\\\"Index\\\")\",
+                \"value\": \"return \\\"airbase/\\\"+getValue(\\\"Name\\\")\",
                 \"type\": \"other\"
             },
             {
@@ -85,7 +85,7 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Index\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Airbases\\\"},{\\\"columnName\\\":\\\"Airbase\\\"},{\\\"columnName\\\":\\\"Name\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             },
             {
@@ -95,6 +95,82 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             }
         ],
         \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": true,
+                    \"prefix\": \"scharp\",
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
     },
     {
         \"tags\": [\"Transformation\"],
@@ -274,8 +350,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/currentStatus\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/currentStatus\",
                     \"DomainLabel\": \"scharp:Airbase1 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
@@ -336,8 +412,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/facilityName\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/facilityName\",
                     \"DomainLabel\": \"scharp:Airbase1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
@@ -398,8 +474,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/index\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/index\",
                     \"DomainLabel\": \"scharp:Airbase1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
@@ -475,8 +551,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
                     \"DomainLabel\": \"scharp:Airbase1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
@@ -537,8 +613,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/latitude\",
                     \"DomainLabel\": \"scharp:Point1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
@@ -599,8 +675,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/longitude\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/longitude\",
                     \"DomainLabel\": \"scharp:Point1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Point\"
@@ -661,8 +737,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/name\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/name\",
                     \"DomainLabel\": \"scharp:Airbase1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
@@ -723,8 +799,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/scenarioName\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/scenarioName\",
                     \"DomainLabel\": \"scharp:Airbase1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
@@ -785,8 +861,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/operatingStatus\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/operatingStatus\",
                     \"DomainLabel\": \"scharp:Airbase1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
@@ -847,8 +923,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/shipName\",
                     \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/shipName\",
                     \"DomainLabel\": \"scharp:Airbase1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
@@ -912,8 +988,8 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Point\",
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/locatein\",
-                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
                     \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Point1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
                 }],
                 \"type\": \"other\"
@@ -933,222 +1009,222 @@ _:node1ape2bqvsx1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 a rr:TriplesMap .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 a rr:TriplesMap .
 
-_:node1ape2bqvsx1 km-dev:hasTriplesMap km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 .
+_:node1apls71u0x1 km-dev:hasTriplesMap km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx2 rr:tableName "Airbases.xml" ;
+_:node1apls71u0x2 rr:tableName "Airbases.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasLogicalTable _:node1ape2bqvsx2 .
+_:node1apls71u0x1 km-dev:hasLogicalTable _:node1apls71u0x2 .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 rr:logicalTable _:node1ape2bqvsx2 ;
-	rr:subjectMap _:node1ape2bqvsx3 .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 rr:logicalTable _:node1apls71u0x2 ;
+	rr:subjectMap _:node1apls71u0x3 .
 
-_:node1ape2bqvsx1 km-dev:hasSubjectMap _:node1ape2bqvsx3 .
+_:node1apls71u0x1 km-dev:hasSubjectMap _:node1apls71u0x3 .
 
-_:node1ape2bqvsx3 km-dev:isPartOfMapping _:node1ape2bqvsx1 ;
+_:node1apls71u0x3 km-dev:isPartOfMapping _:node1apls71u0x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Airbase1" ;
 	rr:class scharp:Airbase ;
-	rr:template "airbase/{[\"Airbases\",\"Airbase\",\"Index\"]}" ;
+	rr:template "airbase/{[\"Airbases\",\"Airbase\",\"Name\"]}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_6879329a-aa18-4dee-8525-ba94afde4288 rr:predicate scharp:locatein .
+km-dev:PredicateObjectMap_d6bf530b-30cb-44f2-a3cf-d61959feeab8 rr:predicate scharp:locatein .
 
-km-dev:RefObjectMap_c7be5b55-d099-47a8-a414-ae433726dd86 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_dd13f255-4d8b-45ba-b46e-ea15a9e85553 ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:RefObjectMap_19cda589-9eea-4bd1-88e1-2d52b4a9a524 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_7740b67a-1192-44c8-ab9a-f8439d3bb27e ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasObjectMap km-dev:RefObjectMap_c7be5b55-d099-47a8-a414-ae433726dd86 .
+_:node1apls71u0x1 km-dev:hasObjectMap km-dev:RefObjectMap_19cda589-9eea-4bd1-88e1-2d52b4a9a524 .
 
-km-dev:PredicateObjectMap_6879329a-aa18-4dee-8525-ba94afde4288 rr:objectMap km-dev:RefObjectMap_c7be5b55-d099-47a8-a414-ae433726dd86 .
+km-dev:PredicateObjectMap_d6bf530b-30cb-44f2-a3cf-d61959feeab8 rr:objectMap km-dev:RefObjectMap_19cda589-9eea-4bd1-88e1-2d52b4a9a524 .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 rr:predicateObjectMap km-dev:PredicateObjectMap_6879329a-aa18-4dee-8525-ba94afde4288 .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 rr:predicateObjectMap km-dev:PredicateObjectMap_d6bf530b-30cb-44f2-a3cf-d61959feeab8 .
 
-km-dev:PredicateObjectMap_6879329a-aa18-4dee-8525-ba94afde4288 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:PredicateObjectMap_d6bf530b-30cb-44f2-a3cf-d61959feeab8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6879329a-aa18-4dee-8525-ba94afde4288 .
+_:node1apls71u0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d6bf530b-30cb-44f2-a3cf-d61959feeab8 .
 
-km-dev:PredicateObjectMap_34d96849-61f7-4a2d-b341-46e431d3da9c rr:predicate scharp:operatingStatus .
+km-dev:PredicateObjectMap_6376497f-d2ed-417a-a70a-6b845edc31ca rr:predicate scharp:shipName .
 
-_:node1ape2bqvsx4 rr:column "[\"Airbases\",\"Airbase\",\"OperatingStatus\"]" ;
+_:node1apls71u0x4 rr:column "[\"Airbases\",\"Airbase\",\"ShipName\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasObjectMap _:node1ape2bqvsx4 .
+_:node1apls71u0x1 km-dev:hasObjectMap _:node1apls71u0x4 .
 
-km-dev:PredicateObjectMap_34d96849-61f7-4a2d-b341-46e431d3da9c rr:objectMap _:node1ape2bqvsx4 .
+km-dev:PredicateObjectMap_6376497f-d2ed-417a-a70a-6b845edc31ca rr:objectMap _:node1apls71u0x4 .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 rr:predicateObjectMap km-dev:PredicateObjectMap_34d96849-61f7-4a2d-b341-46e431d3da9c .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 rr:predicateObjectMap km-dev:PredicateObjectMap_6376497f-d2ed-417a-a70a-6b845edc31ca .
 
-km-dev:PredicateObjectMap_34d96849-61f7-4a2d-b341-46e431d3da9c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:PredicateObjectMap_6376497f-d2ed-417a-a70a-6b845edc31ca a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_34d96849-61f7-4a2d-b341-46e431d3da9c .
+_:node1apls71u0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6376497f-d2ed-417a-a70a-6b845edc31ca .
 
-km-dev:PredicateObjectMap_cf85f016-d722-4fc9-82a0-8f9e03dea634 rr:predicate scharp:currentStatus .
+km-dev:PredicateObjectMap_1810117c-b2c3-42fe-a93c-8dfeafa5b3a9 rr:predicate scharp:scenarioName .
 
-_:node1ape2bqvsx5 rr:column "[\"Airbases\",\"Airbase\",\"CurrentStatus\"]" ;
+_:node1apls71u0x5 rr:column "[\"Airbases\",\"Airbase\",\"ScenarioName\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasObjectMap _:node1ape2bqvsx5 .
+_:node1apls71u0x1 km-dev:hasObjectMap _:node1apls71u0x5 .
 
-km-dev:PredicateObjectMap_cf85f016-d722-4fc9-82a0-8f9e03dea634 rr:objectMap _:node1ape2bqvsx5 .
+km-dev:PredicateObjectMap_1810117c-b2c3-42fe-a93c-8dfeafa5b3a9 rr:objectMap _:node1apls71u0x5 .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 rr:predicateObjectMap km-dev:PredicateObjectMap_cf85f016-d722-4fc9-82a0-8f9e03dea634 .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 rr:predicateObjectMap km-dev:PredicateObjectMap_1810117c-b2c3-42fe-a93c-8dfeafa5b3a9 .
 
-km-dev:PredicateObjectMap_cf85f016-d722-4fc9-82a0-8f9e03dea634 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:PredicateObjectMap_1810117c-b2c3-42fe-a93c-8dfeafa5b3a9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_cf85f016-d722-4fc9-82a0-8f9e03dea634 .
+_:node1apls71u0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_1810117c-b2c3-42fe-a93c-8dfeafa5b3a9 .
 
-km-dev:PredicateObjectMap_0642cf02-c0bc-4e35-8dbc-be6371432e80 rr:predicate scharp:name .
+km-dev:PredicateObjectMap_ccec72ec-ac9a-4aff-9a58-9a92599b3708 rr:predicate scharp:index .
 
-_:node1ape2bqvsx6 rr:column "[\"Airbases\",\"Airbase\",\"Name\"]" ;
+_:node1apls71u0x6 rr:column "[\"Airbases\",\"Airbase\",\"Index\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasObjectMap _:node1ape2bqvsx6 .
+_:node1apls71u0x1 km-dev:hasObjectMap _:node1apls71u0x6 .
 
-km-dev:PredicateObjectMap_0642cf02-c0bc-4e35-8dbc-be6371432e80 rr:objectMap _:node1ape2bqvsx6 .
+km-dev:PredicateObjectMap_ccec72ec-ac9a-4aff-9a58-9a92599b3708 rr:objectMap _:node1apls71u0x6 .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 rr:predicateObjectMap km-dev:PredicateObjectMap_0642cf02-c0bc-4e35-8dbc-be6371432e80 .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 rr:predicateObjectMap km-dev:PredicateObjectMap_ccec72ec-ac9a-4aff-9a58-9a92599b3708 .
 
-km-dev:PredicateObjectMap_0642cf02-c0bc-4e35-8dbc-be6371432e80 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:PredicateObjectMap_ccec72ec-ac9a-4aff-9a58-9a92599b3708 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0642cf02-c0bc-4e35-8dbc-be6371432e80 .
+_:node1apls71u0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ccec72ec-ac9a-4aff-9a58-9a92599b3708 .
 
-km-dev:PredicateObjectMap_3cc82d1f-682a-45c6-b26d-acb85c089128 rr:predicate scharp:scenarioName .
+km-dev:PredicateObjectMap_691fefcc-f4b4-43c6-bd87-2e9a6ba28edb rr:predicate scharp:operatingStatus .
 
-_:node1ape2bqvsx7 rr:column "[\"Airbases\",\"Airbase\",\"ScenarioName\"]" ;
+_:node1apls71u0x7 rr:column "[\"Airbases\",\"Airbase\",\"OperatingStatus\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasObjectMap _:node1ape2bqvsx7 .
+_:node1apls71u0x1 km-dev:hasObjectMap _:node1apls71u0x7 .
 
-km-dev:PredicateObjectMap_3cc82d1f-682a-45c6-b26d-acb85c089128 rr:objectMap _:node1ape2bqvsx7 .
+km-dev:PredicateObjectMap_691fefcc-f4b4-43c6-bd87-2e9a6ba28edb rr:objectMap _:node1apls71u0x7 .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 rr:predicateObjectMap km-dev:PredicateObjectMap_3cc82d1f-682a-45c6-b26d-acb85c089128 .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 rr:predicateObjectMap km-dev:PredicateObjectMap_691fefcc-f4b4-43c6-bd87-2e9a6ba28edb .
 
-km-dev:PredicateObjectMap_3cc82d1f-682a-45c6-b26d-acb85c089128 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:PredicateObjectMap_691fefcc-f4b4-43c6-bd87-2e9a6ba28edb a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3cc82d1f-682a-45c6-b26d-acb85c089128 .
+_:node1apls71u0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_691fefcc-f4b4-43c6-bd87-2e9a6ba28edb .
 
-km-dev:PredicateObjectMap_70e8cfcb-f308-4de6-971d-e22f8e1b288a rr:predicate scharp:facilityName .
+km-dev:PredicateObjectMap_20f247db-e8bf-48d7-a2ea-1f9d36c86f86 rr:predicate scharp:currentStatus .
 
-_:node1ape2bqvsx8 rr:column "[\"Airbases\",\"Airbase\",\"FacilityName\"]" ;
+_:node1apls71u0x8 rr:column "[\"Airbases\",\"Airbase\",\"CurrentStatus\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasObjectMap _:node1ape2bqvsx8 .
+_:node1apls71u0x1 km-dev:hasObjectMap _:node1apls71u0x8 .
 
-km-dev:PredicateObjectMap_70e8cfcb-f308-4de6-971d-e22f8e1b288a rr:objectMap _:node1ape2bqvsx8 .
+km-dev:PredicateObjectMap_20f247db-e8bf-48d7-a2ea-1f9d36c86f86 rr:objectMap _:node1apls71u0x8 .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 rr:predicateObjectMap km-dev:PredicateObjectMap_70e8cfcb-f308-4de6-971d-e22f8e1b288a .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 rr:predicateObjectMap km-dev:PredicateObjectMap_20f247db-e8bf-48d7-a2ea-1f9d36c86f86 .
 
-km-dev:PredicateObjectMap_70e8cfcb-f308-4de6-971d-e22f8e1b288a a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:PredicateObjectMap_20f247db-e8bf-48d7-a2ea-1f9d36c86f86 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_70e8cfcb-f308-4de6-971d-e22f8e1b288a .
+_:node1apls71u0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_20f247db-e8bf-48d7-a2ea-1f9d36c86f86 .
 
-km-dev:PredicateObjectMap_0e3d3ed7-99da-4e95-88bd-985e0540261e rr:predicate scharp:shipName .
+km-dev:PredicateObjectMap_4956e737-7e51-43c2-9eec-daa00006402d rr:predicate scharp:name .
 
-_:node1ape2bqvsx9 rr:column "[\"Airbases\",\"Airbase\",\"ShipName\"]" ;
+_:node1apls71u0x9 rr:column "[\"Airbases\",\"Airbase\",\"Name\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasObjectMap _:node1ape2bqvsx9 .
+_:node1apls71u0x1 km-dev:hasObjectMap _:node1apls71u0x9 .
 
-km-dev:PredicateObjectMap_0e3d3ed7-99da-4e95-88bd-985e0540261e rr:objectMap _:node1ape2bqvsx9 .
+km-dev:PredicateObjectMap_4956e737-7e51-43c2-9eec-daa00006402d rr:objectMap _:node1apls71u0x9 .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 rr:predicateObjectMap km-dev:PredicateObjectMap_0e3d3ed7-99da-4e95-88bd-985e0540261e .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 rr:predicateObjectMap km-dev:PredicateObjectMap_4956e737-7e51-43c2-9eec-daa00006402d .
 
-km-dev:PredicateObjectMap_0e3d3ed7-99da-4e95-88bd-985e0540261e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:PredicateObjectMap_4956e737-7e51-43c2-9eec-daa00006402d a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0e3d3ed7-99da-4e95-88bd-985e0540261e .
+_:node1apls71u0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4956e737-7e51-43c2-9eec-daa00006402d .
 
-km-dev:PredicateObjectMap_45ee0139-39cb-4a91-a3c7-0e217e2afa52 rr:predicate scharp:index .
+km-dev:PredicateObjectMap_95eb1f12-0b0a-4700-ad80-223a92a598f3 rr:predicate scharp:facilityName .
 
-_:node1ape2bqvsx10 rr:column "[\"Airbases\",\"Airbase\",\"Index\"]" ;
+_:node1apls71u0x10 rr:column "[\"Airbases\",\"Airbase\",\"FacilityName\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasObjectMap _:node1ape2bqvsx10 .
+_:node1apls71u0x1 km-dev:hasObjectMap _:node1apls71u0x10 .
 
-km-dev:PredicateObjectMap_45ee0139-39cb-4a91-a3c7-0e217e2afa52 rr:objectMap _:node1ape2bqvsx10 .
+km-dev:PredicateObjectMap_95eb1f12-0b0a-4700-ad80-223a92a598f3 rr:objectMap _:node1apls71u0x10 .
 
-km-dev:TriplesMap_c54dbfbe-d10d-457a-a5df-98d7300cc8e5 rr:predicateObjectMap km-dev:PredicateObjectMap_45ee0139-39cb-4a91-a3c7-0e217e2afa52 .
+km-dev:TriplesMap_522bdac6-64ad-4f57-9d8d-8fa59b0a18c3 rr:predicateObjectMap km-dev:PredicateObjectMap_95eb1f12-0b0a-4700-ad80-223a92a598f3 .
 
-km-dev:PredicateObjectMap_45ee0139-39cb-4a91-a3c7-0e217e2afa52 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:PredicateObjectMap_95eb1f12-0b0a-4700-ad80-223a92a598f3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_45ee0139-39cb-4a91-a3c7-0e217e2afa52 .
+_:node1apls71u0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_95eb1f12-0b0a-4700-ad80-223a92a598f3 .
 
-km-dev:TriplesMap_dd13f255-4d8b-45ba-b46e-ea15a9e85553 a rr:TriplesMap .
+km-dev:TriplesMap_7740b67a-1192-44c8-ab9a-f8439d3bb27e a rr:TriplesMap .
 
-_:node1ape2bqvsx1 km-dev:hasTriplesMap km-dev:TriplesMap_dd13f255-4d8b-45ba-b46e-ea15a9e85553 .
+_:node1apls71u0x1 km-dev:hasTriplesMap km-dev:TriplesMap_7740b67a-1192-44c8-ab9a-f8439d3bb27e .
 
-km-dev:TriplesMap_dd13f255-4d8b-45ba-b46e-ea15a9e85553 km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:TriplesMap_7740b67a-1192-44c8-ab9a-f8439d3bb27e km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx11 rr:tableName "Airbases.xml" ;
+_:node1apls71u0x11 rr:tableName "Airbases.xml" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasLogicalTable _:node1ape2bqvsx11 .
+_:node1apls71u0x1 km-dev:hasLogicalTable _:node1apls71u0x11 .
 
-km-dev:TriplesMap_dd13f255-4d8b-45ba-b46e-ea15a9e85553 rr:logicalTable _:node1ape2bqvsx11 ;
-	rr:subjectMap _:node1ape2bqvsx12 .
+km-dev:TriplesMap_7740b67a-1192-44c8-ab9a-f8439d3bb27e rr:logicalTable _:node1apls71u0x11 ;
+	rr:subjectMap _:node1apls71u0x12 .
 
-_:node1ape2bqvsx1 km-dev:hasSubjectMap _:node1ape2bqvsx12 .
+_:node1apls71u0x1 km-dev:hasSubjectMap _:node1apls71u0x12 .
 
-_:node1ape2bqvsx12 km-dev:isPartOfMapping _:node1ape2bqvsx1 ;
+_:node1apls71u0x12 km-dev:isPartOfMapping _:node1apls71u0x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Point1" ;
 	rr:class scharp:Point ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Point1" .
 
-km-dev:PredicateObjectMap_83897222-a43a-4481-a233-11b21827fd6c rr:predicate scharp:longitude .
+km-dev:PredicateObjectMap_0756fd39-16e1-4abe-bfd5-ae1da64b96c2 rr:predicate scharp:longitude .
 
-_:node1ape2bqvsx13 rr:column "[\"Airbases\",\"Airbase\",\"Longitude\"]" ;
+_:node1apls71u0x13 rr:column "[\"Airbases\",\"Airbase\",\"Longitude\"]" ;
 	a rr:ObjectMap ;
 	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasObjectMap _:node1ape2bqvsx13 .
+_:node1apls71u0x1 km-dev:hasObjectMap _:node1apls71u0x13 .
 
-km-dev:PredicateObjectMap_83897222-a43a-4481-a233-11b21827fd6c rr:objectMap _:node1ape2bqvsx13 .
+km-dev:PredicateObjectMap_0756fd39-16e1-4abe-bfd5-ae1da64b96c2 rr:objectMap _:node1apls71u0x13 .
 
-km-dev:TriplesMap_dd13f255-4d8b-45ba-b46e-ea15a9e85553 rr:predicateObjectMap km-dev:PredicateObjectMap_83897222-a43a-4481-a233-11b21827fd6c .
+km-dev:TriplesMap_7740b67a-1192-44c8-ab9a-f8439d3bb27e rr:predicateObjectMap km-dev:PredicateObjectMap_0756fd39-16e1-4abe-bfd5-ae1da64b96c2 .
 
-km-dev:PredicateObjectMap_83897222-a43a-4481-a233-11b21827fd6c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:PredicateObjectMap_0756fd39-16e1-4abe-bfd5-ae1da64b96c2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_83897222-a43a-4481-a233-11b21827fd6c .
+_:node1apls71u0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0756fd39-16e1-4abe-bfd5-ae1da64b96c2 .
 
-km-dev:PredicateObjectMap_0949ace5-83a5-47ef-b7a2-8c0c12130363 rr:predicate scharp:latitude .
+km-dev:PredicateObjectMap_5b25cdea-6825-4243-abdd-5ef002613fc3 rr:predicate scharp:latitude .
 
-_:node1ape2bqvsx14 rr:column "[\"Airbases\",\"Airbase\",\"Latitude\"]" ;
+_:node1apls71u0x14 rr:column "[\"Airbases\",\"Airbase\",\"Latitude\"]" ;
 	a rr:ObjectMap ;
 	rr:datatype "http://www.w3.org/2001/XMLSchema#float" ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasObjectMap _:node1ape2bqvsx14 .
+_:node1apls71u0x1 km-dev:hasObjectMap _:node1apls71u0x14 .
 
-km-dev:PredicateObjectMap_0949ace5-83a5-47ef-b7a2-8c0c12130363 rr:objectMap _:node1ape2bqvsx14 .
+km-dev:PredicateObjectMap_5b25cdea-6825-4243-abdd-5ef002613fc3 rr:objectMap _:node1apls71u0x14 .
 
-km-dev:TriplesMap_dd13f255-4d8b-45ba-b46e-ea15a9e85553 rr:predicateObjectMap km-dev:PredicateObjectMap_0949ace5-83a5-47ef-b7a2-8c0c12130363 .
+km-dev:TriplesMap_7740b67a-1192-44c8-ab9a-f8439d3bb27e rr:predicateObjectMap km-dev:PredicateObjectMap_5b25cdea-6825-4243-abdd-5ef002613fc3 .
 
-km-dev:PredicateObjectMap_0949ace5-83a5-47ef-b7a2-8c0c12130363 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1ape2bqvsx1 .
+km-dev:PredicateObjectMap_5b25cdea-6825-4243-abdd-5ef002613fc3 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1apls71u0x1 .
 
-_:node1ape2bqvsx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0949ace5-83a5-47ef-b7a2-8c0c12130363 .
+_:node1apls71u0x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5b25cdea-6825-4243-abdd-5ef002613fc3 .

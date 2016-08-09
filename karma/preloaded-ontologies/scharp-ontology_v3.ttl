@@ -368,6 +368,11 @@ scharp:jdpi rdf:type owl:ObjectProperty ;
 	rdfs:range scharp:JDPI ; 
 	.
 
+scharp:inMission rdf:type owl:ObjectProperty ;
+	rdfs:label "in mission" ;
+	rdfs:domain scharp:AirUnit ;
+	rdfs:range scharp:AirMission ; 
+	.
 
 #########################################################
 #
@@ -1120,4 +1125,18 @@ scharp:jdpiName rdf:type rdf:Property ;
 	rdfs:label "jdpiName" ;
 	memex:es_directive memex:ES_not_analyzed ;
 	rdfs:domain scharp:JDPI
+	.
+
+scharp:output rdf:type rdf:Property ;
+	rdfs:label "status message output" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:AirUnit ;
+	rdfs:domain scharp:Airbase
+	.
+
+scharp:action rdf:type rdf:Property ;
+	rdfs:label "status message action" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:AirUnit ;
+	rdfs:domain scharp:Airbase
 	.

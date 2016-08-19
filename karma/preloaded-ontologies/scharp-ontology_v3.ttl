@@ -623,6 +623,12 @@ scharp:eventTime rdf:type rdf:Property ;
 	rdfs:comment "The event time." 
 	.
 
+scharp:eventRealTime rdf:type rdf:Property ;
+	rdfs:label "eventRealTime" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:comment "The event time in real to,e." 
+	.
+
 scharp:speed rdf:type rdf:Property ;
 	rdfs:label "speed" ;
 	rdfs:domain scharp:Unit ;

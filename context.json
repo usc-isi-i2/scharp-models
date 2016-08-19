@@ -7,6 +7,7 @@
     "attributes": {"@id": "http://scharp.usc.isi.edu/ontology/attributes"},
     "event": {"@id": "http://scharp.usc.isi.edu/ontology/event"},
     "eventTime": {"@id": "http://scharp.usc.isi.edu/ontology/eventTime"},
+    "eventRealTime": {"@id": "http://scharp.usc.isi.edu/ontology/eventRealTime"},
     "fuelQuantity":{"@id": "http://scharp.usc.isi.edu/ontology/fuelQuantity"},
     "a": "@type",
     "trackQuality": {"@id": "http://scharp.usc.isi.edu/ontology/trackQuality"},

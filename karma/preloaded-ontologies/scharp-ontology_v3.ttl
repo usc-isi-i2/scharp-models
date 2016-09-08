@@ -1146,3 +1146,9 @@ scharp:action rdf:type rdf:Property ;
 	rdfs:domain scharp:AirUnit ;
 	rdfs:domain scharp:Airbase
 	.
+
+scharp:alterUri rdf:type rdf:Property ;
+	rdfs:label "alternative uri" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:Airspace
+	.

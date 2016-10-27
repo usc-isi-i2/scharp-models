@@ -191,6 +191,11 @@ scharp:JDPI rdf:type owl:Class ;
 	rdfs:comment """The JDPI."""
 	.
 
+scharp:Stores rdf:type owl:Class ;
+	rdfs:label "Stores" ;
+	rdfs:comment """The Weapon Stores."""
+	.
+
 #########################################################
 #
 # Object Properties
@@ -372,6 +377,12 @@ scharp:inMission rdf:type owl:ObjectProperty ;
 	rdfs:label "in mission" ;
 	rdfs:domain scharp:AirUnit ;
 	rdfs:range scharp:AirMission ; 
+	.
+
+scharp:hasStores rdf:type owl:ObjectProperty ;
+	rdfs:label "has stores" ;
+	rdfs:domain scharp:AirUnit ;
+	rdfs:range scharp:Stores ; 
 	.
 
 #########################################################
@@ -1151,4 +1162,22 @@ scharp:alterUri rdf:type rdf:Property ;
 	rdfs:label "alternative uri" ;
 	memex:es_directive memex:ES_not_analyzed ;
 	rdfs:domain scharp:Airspace
+	.
+
+scharp:typeOfStores rdf:type rdf:Property ;
+	rdfs:label "type of stores" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:Stores
+	.
+
+scharp:numberOfStores rdf:type rdf:Property ;
+	rdfs:label "number of stores" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:Stores
+	.
+
+scharp:timeReport rdf:type rdf:Property ;
+	rdfs:label "time report function" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:Attributes
 	.

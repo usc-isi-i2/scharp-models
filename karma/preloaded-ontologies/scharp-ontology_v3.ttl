@@ -494,16 +494,16 @@ scharp:longitude rdf:type rdf:Property ;
 
 scharp:altitude rdf:type rdf:Property ;
 	rdfs:domain scharp:Point;
-	rdfs:label "altitute" ;
+	rdfs:label "altitude" ;
 	memex:es_directive memex:ES_not_analyzed ;
-	rdfs:comment "The altitute." 
+	rdfs:comment "The altitude." 
 	.
 
 scharp:altitudeSource rdf:type rdf:Property ;
 	rdfs:domain scharp:Point;
 	rdfs:label "altitudeSource" ;
 	memex:es_directive memex:ES_not_analyzed ;
-	rdfs:comment "The source that proveides the altitute." 
+	rdfs:comment "The source that proveides the altitude." 
 	.
 
 scharp:elevation rdf:type rdf:Property ;

@@ -1,70 +1,149 @@
-{"@context": {
-    "trackNum": {"@id": "http://scharp.usc.isi.edu/ontology/trackNum"},
-    "location": {"@id": "http://scharp.usc.isi.edu/ontology/location"},
-    "link16": {"@id": "http://scharp.usc.isi.edu/ontology/link16"},
-    "aircraft": {"@id": "http://scharp.usc.isi.edu/ontology/aircraft"},
-    "aircraftType": {"@id": "http://scharp.usc.isi.edu/ontology/aircraftType"},
-    "attributes": {"@id": "http://scharp.usc.isi.edu/ontology/attributes"},
-    "event": {"@id": "http://scharp.usc.isi.edu/ontology/event"},
-    "eventTime": {"@id": "http://scharp.usc.isi.edu/ontology/eventTime"},
-    "eventRealTime": {"@id": "http://scharp.usc.isi.edu/ontology/eventRealTime"},
-    "fuelQuantity":{"@id": "http://scharp.usc.isi.edu/ontology/fuelQuantity"},
+{
+  "@context": {
+    "trackNum": {
+      "@id": "http://scharp.usc.isi.edu/ontology/trackNum"
+    },
+    "location": {
+      "@id": "http://scharp.usc.isi.edu/ontology/location"
+    },
+    "link16": {
+      "@id": "http://scharp.usc.isi.edu/ontology/link16"
+    },
+    "aircraft": {
+      "@id": "http://scharp.usc.isi.edu/ontology/aircraft"
+    },
+    "aircraftType": {
+      "@id": "http://scharp.usc.isi.edu/ontology/aircraftType"
+    },
+    "attributes": {
+      "@id": "http://scharp.usc.isi.edu/ontology/attributes"
+    },
+    "event": {
+      "@id": "http://scharp.usc.isi.edu/ontology/event"
+    },
+    "eventTime": {
+      "@id": "http://scharp.usc.isi.edu/ontology/eventTime"
+    },
+    "eventRealTime": {
+      "@id": "http://scharp.usc.isi.edu/ontology/eventRealTime"
+    },
+    "fuelQuantity": {
+      "@id": "http://scharp.usc.isi.edu/ontology/fuelQuantity"
+    },
     "a": "@type",
-    "trackQuality": {"@id": "http://scharp.usc.isi.edu/ontology/trackQuality"},
-    "track": {"@id": "http://scharp.usc.isi.edu/ontology/track"},
+    "trackQuality": {
+      "@id": "http://scharp.usc.isi.edu/ontology/trackQuality"
+    },
+    "track": {
+      "@id": "http://scharp.usc.isi.edu/ontology/track"
+    },
     "Track": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/Track"
+      "@type": "@id",
+      "@id": "http://scharp.usc.isi.edu/ontology/Track"
     },
-    "callsign": {"@id": "http://scharp.usc.isi.edu/ontology/callsign"},
+    "callsign": {
+      "@id": "http://scharp.usc.isi.edu/ontology/callsign"
+    },
     "uri": "@id",
-    "identity": {"@id": "http://scharp.usc.isi.edu/ontology/identity"},
+    "identity": {
+      "@id": "http://scharp.usc.isi.edu/ontology/identity"
+    },
     "AirUnit": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/AirUnit"
+      "@type": "@id",
+      "@id": "http://scharp.usc.isi.edu/ontology/AirUnit"
     },
-    "altitute": {"@id": "http://scharp.usc.isi.edu/ontology/altitute"},
-    "longitude": {"@id": "http://scharp.usc.isi.edu/ontology/longitude"},
-    "latitude": {"@id": "http://scharp.usc.isi.edu/ontology/latitude"},
+    "altitude": {
+      "@id": "http://scharp.usc.isi.edu/ontology/altitude"
+    },
+    "longitude": {
+      "@id": "http://scharp.usc.isi.edu/ontology/longitude"
+    },
+    "latitude": {
+      "@id": "http://scharp.usc.isi.edu/ontology/latitude"
+    },
     "Point": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/Point"
+      "@type": "@id",
+      "@id": "http://scharp.usc.isi.edu/ontology/Point"
     },
-    "stop": {"@id": "http://scharp.usc.isi.edu/ontology/stop"},
-    "takeoff": {"@id": "http://scharp.usc.isi.edu/ontology/takeoff"},
+    "stop": {
+      "@id": "http://scharp.usc.isi.edu/ontology/stop"
+    },
+    "takeoff": {
+      "@id": "http://scharp.usc.isi.edu/ontology/takeoff"
+    },
     "flightDetail": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/flightDetail"
+      "@type": "@id",
+      "@id": "http://scharp.usc.isi.edu/ontology/flightDetail"
     },
-    "detail": {"@id": "http://scharp.usc.isi.edu/ontology/detail"},
+    "detail": {
+      "@id": "http://scharp.usc.isi.edu/ontology/detail"
+    },
     "Interval": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/Interval"
+      "@type": "@id",
+      "@id": "http://scharp.usc.isi.edu/ontology/Interval"
     },
     "AirMission": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/AirMission"
+      "@type": "@id",
+      "@id": "http://scharp.usc.isi.edu/ontology/AirMission"
     },
-    "type": {"@id": "http://scharp.usc.isi.edu/ontology/type"},
-    "timeFrame": {"@id": "http://scharp.usc.isi.edu/ontology/timeFrame"},
-    "missionId": {"@id": "http://scharp.usc.isi.edu/ontology/missionId"},
-    "hasSortie": {"@id": "http://scharp.usc.isi.edu/ontology/hasSortie"},
-    "landing": {"@id": "http://scharp.usc.isi.edu/ontology/landing"},
-    "start": {"@id": "http://scharp.usc.isi.edu/ontology/start"},
-    "TargetName": {"@id": "http://scharp.usc.isi.edu/ontology/TargetName"},
+    "type": {
+      "@id": "http://scharp.usc.isi.edu/ontology/type"
+    },
+    "timeFrame": {
+      "@id": "http://scharp.usc.isi.edu/ontology/timeFrame"
+    },
+    "missionId": {
+      "@id": "http://scharp.usc.isi.edu/ontology/missionId"
+    },
+    "hasSortie": {
+      "@id": "http://scharp.usc.isi.edu/ontology/hasSortie"
+    },
+    "landing": {
+      "@id": "http://scharp.usc.isi.edu/ontology/landing"
+    },
+    "start": {
+      "@id": "http://scharp.usc.isi.edu/ontology/start"
+    },
+    "TargetName": {
+      "@id": "http://scharp.usc.isi.edu/ontology/TargetName"
+    },
     "Target": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/Target"
+      "@type": "@id",
+      "@id": "http://scharp.usc.isi.edu/ontology/Target"
     },
-    "targetId": {"@id": "http://scharp.usc.isi.edu/ontology/targetId"},
+    "targetId": {
+      "@id": "http://scharp.usc.isi.edu/ontology/targetId"
+    },
     "Message": {
-        "@type": "@id",
-        "@id": "http://scharp.usc.isi.edu/ontology/Message"
+      "@type": "@id",
+      "@id": "http://scharp.usc.isi.edu/ontology/Message"
     },
-    "mention": {"@id": "http://scharp.usc.isi.edu/ontology/mention"},
-    "course": {"@id": "http://scharp.usc.isi.edu/ontology/course"},
-    "speed": {"@id": "http://scharp.usc.isi.edu/ontology/speed"},
-    "timeStamp": {"@id": "http://scharp.usc.isi.edu/ontology/timeStamp"}
-}}
-
-   
+    "mention": {
+      "@id": "http://scharp.usc.isi.edu/ontology/mention"
+    },
+    "course": {
+      "@id": "http://scharp.usc.isi.edu/ontology/course"
+    },
+    "speed": {
+      "@id": "http://scharp.usc.isi.edu/ontology/speed"
+    },
+    "timeStamp": {
+      "@id": "http://scharp.usc.isi.edu/ontology/timeStamp"
+    },
+    "numberOfStores": {
+      "@id": "http://scharp.usc.isi.edu/ontology/numberOfStores"
+    },
+    "typeOfStores": {
+      "@id": "http://scharp.usc.isi.edu/ontology/typeOfStores"
+    },
+    "hasStores": {
+      "@id": "http://scharp.usc.isi.edu/ontology/hasStores"
+    },
+    "timeReport": {
+      "@id": "http://scharp.usc.isi.edu/ontology/timeReport"
+    },
+    "trackIdentity": {
+      "@id": "http://scharp.usc.isi.edu/ontology/trackIdentity"
+    }
+  }
+}

@@ -379,9 +379,9 @@ scharp:inMission rdf:type owl:ObjectProperty ;
 	rdfs:range scharp:AirMission ; 
 	.
 
-scharp:hasStores rdf:type owl:ObjectProperty ;
+scharp:stores rdf:type owl:ObjectProperty ;
 	rdfs:label "has stores" ;
-	rdfs:domain scharp:AirUnit ;
+	rdfs:domain scharp:Attributes ;
 	rdfs:range scharp:Stores ; 
 	.
 

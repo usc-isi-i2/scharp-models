@@ -31,12 +31,12 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1b24aggqmx1 a km-dev:R2RMLMapping ;
+_:node1b26n3n72x1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "AirPlatformAndSystemStatus.json" ;
-	km-dev:modelPublicationTime "1479761478487"^^xsd:long ;
+	km-dev:modelPublicationTime "1479841799394"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_1_word\"},{\"columnName\":\"air_specific_type\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_1\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_2\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"name\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_3\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"time_report_function\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_4\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"track_number_reference\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"track_identifier\"},{\"columnName\":\"value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_4\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"fuel\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_3\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_1\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_2\"},{\"columnName\":\"bit_value\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_1_word\"},{\"columnName\":\"air_specific_type\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"event_time\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_4\"},{\"columnName\":\"stores4_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"track_identifier\"},{\"columnName\":\"unit_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_1\"},{\"columnName\":\"stores1_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_1\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_3\"},{\"columnName\":\"stores3_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_2\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_2\"},{\"columnName\":\"stores2_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"name\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_3\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"fuel\"},{\"columnName\":\"fuelQ\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"time_report_function\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_4\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"fuel\"},{\"columnName\":\"fuelU\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"track_identifier\"},{\"columnName\":\"value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_4\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_3\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_1\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_2\"},{\"columnName\":\"bit_value\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"fuel\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_4\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_3\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_timestamp\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_2\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_3\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_1\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"time_report_function\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"track_identifier\"},{\"columnName\":\"value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_4\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_1_word\"},{\"columnName\":\"air_specific_type\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_1\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_2\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"track_number_reference\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"name\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_4\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_3\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"fuel\"},{\"columnName\":\"fuelU\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_2\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_2\"},{\"columnName\":\"stores2_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_3\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_1\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"track_identifier\"},{\"columnName\":\"unit_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"time_report_function\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"number_of_stores_4\"},{\"columnName\":\"bit_value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_1\"},{\"columnName\":\"stores1_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"track_identifier\"},{\"columnName\":\"value\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_1_word\"},{\"columnName\":\"air_specific_type\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"event_time\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"initial_word\"},{\"columnName\":\"fuel\"},{\"columnName\":\"fuelQ\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_3\"},{\"columnName\":\"stores3_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_4\"},{\"columnName\":\"stores4_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_1\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"continuation_2_word\"},{\"columnName\":\"type_of_stores_2\"},{\"columnName\":\"descriptor\"}],[{\"columnName\":\"message_uri\"}],[{\"columnName\":\"_jsonRep\"},{\"columnName\":\"ns4:jreapEnvelope\"},{\"columnName\":\"ns3:messageProduct\"},{\"columnName\":\"message_data\"},{\"columnName\":\"message_representation\"},{\"columnName\":\"message_identity\"},{\"columnName\":\"name\"}]]" ;
 	km-dev:hasModelLabel "AirPlatformAndSystemStatus.json" ;
 	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
 	km-dev:hasWorksheetHistory """[
@@ -118,7 +118,7 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"transformationCode\",
-                \"value\": \"return \\\"message/\\\"+getValue(\\\"_timestamp\\\")\",
+                \"value\": \"track_num = eval(getValue(\\\"_jsonRep\\\"))[0][\\\"ns4:jreapEnvelope\\\"][0][\\\"ns3:messageProduct\\\"][0][\\\"message_data\\\"][0][\\\"message_representation\\\"][0][\\\"message_identity\\\"][0][\\\"track_identifier\\\"][0][\\\"value\\\"]\\n\\nreturn \\\"message/\\\"+track_num+\\\"_\\\"+getValue(\\\"_timestamp\\\")\",
                 \"type\": \"other\"
             },
             {
@@ -133,7 +133,7 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_timestamp\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             },
             {
@@ -453,7 +453,7 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"initial_word\\\"},{\\\"columnName\\\":\\\"track_number_reference\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"continuation_2_word\\\"},{\\\"columnName\\\":\\\"type_of_stores_1\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"continuation_2_word\\\"},{\\\"columnName\\\":\\\"type_of_stores_1\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"initial_word\\\"},{\\\"columnName\\\":\\\"track_number_reference\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             },
             {
@@ -514,7 +514,7 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"initial_word\\\"},{\\\"columnName\\\":\\\"track_number_reference\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"continuation_2_word\\\"},{\\\"columnName\\\":\\\"type_of_stores_2\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"continuation_2_word\\\"},{\\\"columnName\\\":\\\"type_of_stores_2\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"initial_word\\\"},{\\\"columnName\\\":\\\"track_number_reference\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             },
             {
@@ -575,7 +575,7 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"initial_word\\\"},{\\\"columnName\\\":\\\"track_number_reference\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"continuation_2_word\\\"},{\\\"columnName\\\":\\\"type_of_stores_3\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"continuation_2_word\\\"},{\\\"columnName\\\":\\\"type_of_stores_3\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]},{\\\"value\\\":[{\\\"columnName\\\":\\\"_jsonRep\\\"},{\\\"columnName\\\":\\\"ns4:jreapEnvelope\\\"},{\\\"columnName\\\":\\\"ns3:messageProduct\\\"},{\\\"columnName\\\":\\\"message_data\\\"},{\\\"columnName\\\":\\\"message_representation\\\"},{\\\"columnName\\\":\\\"initial_word\\\"},{\\\"columnName\\\":\\\"track_number_reference\\\"},{\\\"columnName\\\":\\\"descriptor\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             },
             {
@@ -648,6 +648,82 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
         \"commandName\": \"SubmitPythonTransformationCommand\"
     },
     {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": true,
+                    \"prefix\": \"scharp\",
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
         \"tags\": [\"SemanticType\"],
         \"model\": \"new\",
         \"inputParameters\": [
@@ -684,8 +760,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Message1 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
@@ -742,8 +818,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/eventTime\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Message1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
@@ -808,8 +884,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/event\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Message1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
@@ -890,8 +966,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:AirUnit1 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
@@ -957,8 +1033,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/trackNum\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:AirUnit1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
@@ -1024,8 +1100,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/fuelQuantityUnit\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Attributes1 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\"
@@ -1091,8 +1167,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/fuelQuantity\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Attributes1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\"
@@ -1200,8 +1276,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/timeReport\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Attributes1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\"
@@ -1267,8 +1343,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/typeOfStores\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores1 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -1334,8 +1410,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/typeOfStores\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores2 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores2\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -1401,8 +1477,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/typeOfStores\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores3 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores3\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -1468,8 +1544,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/typeOfStores\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores4 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores4\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -1535,8 +1611,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/numberOfStores\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -1602,8 +1678,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/numberOfStores\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores4\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores4\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -1669,8 +1745,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/numberOfStores\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores2\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores2\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -1736,8 +1812,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/numberOfStores\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores3\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores3\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -1818,8 +1894,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -1900,8 +1976,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores2\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores2\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -1982,8 +2058,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores3\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores3\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -2064,8 +2140,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Stores4\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Stores4\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Stores\"
@@ -2131,8 +2207,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"isPrimary\": true,
                     \"FullType\": \"http://scharp.usc.isi.edu/ontology/aircraftType\",
+                    \"isPrimary\": true,
                     \"DomainLabel\": \"scharp:Attributes1\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\"
@@ -2196,8 +2272,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/aircraft\",
-                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
                     \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
                 }],
                 \"type\": \"other\"
@@ -2281,8 +2357,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\",
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/attributes\",
-                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
                 }],
                 \"type\": \"other\"
@@ -2329,8 +2405,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Stores\",
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/stores\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Stores2\",
-                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\"
                 }],
                 \"type\": \"other\"
@@ -2377,8 +2453,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Stores\",
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/stores\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Stores3\",
-                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\"
                 }],
                 \"type\": \"other\"
@@ -2425,8 +2501,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Stores\",
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/stores\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Stores4\",
-                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\"
                 }],
                 \"type\": \"other\"
@@ -2473,8 +2549,8 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
                 \"value\": [{
                     \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Stores\",
                     \"edgeId\": \"http://scharp.usc.isi.edu/ontology/stores\",
-                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Stores1\",
                     \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Attributes1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Stores1\",
                     \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Attributes\"
                 }],
                 \"type\": \"other\"
@@ -2494,522 +2570,522 @@ _:node1b24aggqmx1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 a rr:TriplesMap .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a a rr:TriplesMap .
 
-_:node1b24aggqmx1 km-dev:hasTriplesMap km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 .
+_:node1b26n3n72x1 km-dev:hasTriplesMap km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx2 rr:tableName "AirPlatformAndSystemStatus.json" ;
+_:node1b26n3n72x2 rr:tableName "AirPlatformAndSystemStatus.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasLogicalTable _:node1b24aggqmx2 .
+_:node1b26n3n72x1 km-dev:hasLogicalTable _:node1b26n3n72x2 .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 rr:logicalTable _:node1b24aggqmx2 ;
-	rr:subjectMap _:node1b24aggqmx3 .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a rr:logicalTable _:node1b26n3n72x2 ;
+	rr:subjectMap _:node1b26n3n72x3 .
 
-_:node1b24aggqmx1 km-dev:hasSubjectMap _:node1b24aggqmx3 .
+_:node1b26n3n72x1 km-dev:hasSubjectMap _:node1b26n3n72x3 .
 
-_:node1b24aggqmx3 km-dev:isPartOfMapping _:node1b24aggqmx1 ;
+_:node1b26n3n72x3 km-dev:isPartOfMapping _:node1b26n3n72x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Attributes1" ;
 	rr:class scharp:Attributes ;
 	rr:termType rr:BlankNode ;
 	km-dev:namePrefix "scharp:Attributes1" .
 
-km-dev:PredicateObjectMap_2f0dce34-f24f-40f4-87a4-8c7faaf161ed rr:predicate scharp:stores .
+km-dev:PredicateObjectMap_98bf480b-97a8-44c0-b5e2-891e8f1ecd91 rr:predicate scharp:stores .
 
-km-dev:RefObjectMap_1186adf4-7fd2-4f1b-bbcc-ebf5abfc4d1e a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_2d2b3c0b-9c26-458e-a158-7d2b01f59745 ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:RefObjectMap_594a610c-859f-463b-a930-39d37ed82766 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_6dbfcfd8-2361-45fc-a14c-4151b077f96c ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap km-dev:RefObjectMap_1186adf4-7fd2-4f1b-bbcc-ebf5abfc4d1e .
+_:node1b26n3n72x1 km-dev:hasObjectMap km-dev:RefObjectMap_594a610c-859f-463b-a930-39d37ed82766 .
 
-km-dev:PredicateObjectMap_2f0dce34-f24f-40f4-87a4-8c7faaf161ed rr:objectMap km-dev:RefObjectMap_1186adf4-7fd2-4f1b-bbcc-ebf5abfc4d1e .
+km-dev:PredicateObjectMap_98bf480b-97a8-44c0-b5e2-891e8f1ecd91 rr:objectMap km-dev:RefObjectMap_594a610c-859f-463b-a930-39d37ed82766 .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 rr:predicateObjectMap km-dev:PredicateObjectMap_2f0dce34-f24f-40f4-87a4-8c7faaf161ed .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a rr:predicateObjectMap km-dev:PredicateObjectMap_98bf480b-97a8-44c0-b5e2-891e8f1ecd91 .
 
-km-dev:PredicateObjectMap_2f0dce34-f24f-40f4-87a4-8c7faaf161ed a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_98bf480b-97a8-44c0-b5e2-891e8f1ecd91 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2f0dce34-f24f-40f4-87a4-8c7faaf161ed .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_98bf480b-97a8-44c0-b5e2-891e8f1ecd91 .
 
-km-dev:PredicateObjectMap_3b7e3f2a-ca0d-4139-93d8-856177951b86 rr:predicate scharp:stores .
+km-dev:PredicateObjectMap_5ec4e6c8-493f-405c-9fff-df089dcbcb6e rr:predicate scharp:stores .
 
-km-dev:RefObjectMap_36ce5a9a-f39c-4593-8b3a-c0d64d484eab a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_b7e7e115-a37b-4a60-96f9-ffd3fdde7ad3 ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:RefObjectMap_50678618-90f8-4754-9b6c-0d7c880efad5 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_4447fd5e-66a2-4ba9-a87f-f810ee55b1d2 ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap km-dev:RefObjectMap_36ce5a9a-f39c-4593-8b3a-c0d64d484eab .
+_:node1b26n3n72x1 km-dev:hasObjectMap km-dev:RefObjectMap_50678618-90f8-4754-9b6c-0d7c880efad5 .
 
-km-dev:PredicateObjectMap_3b7e3f2a-ca0d-4139-93d8-856177951b86 rr:objectMap km-dev:RefObjectMap_36ce5a9a-f39c-4593-8b3a-c0d64d484eab .
+km-dev:PredicateObjectMap_5ec4e6c8-493f-405c-9fff-df089dcbcb6e rr:objectMap km-dev:RefObjectMap_50678618-90f8-4754-9b6c-0d7c880efad5 .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 rr:predicateObjectMap km-dev:PredicateObjectMap_3b7e3f2a-ca0d-4139-93d8-856177951b86 .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a rr:predicateObjectMap km-dev:PredicateObjectMap_5ec4e6c8-493f-405c-9fff-df089dcbcb6e .
 
-km-dev:PredicateObjectMap_3b7e3f2a-ca0d-4139-93d8-856177951b86 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_5ec4e6c8-493f-405c-9fff-df089dcbcb6e a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3b7e3f2a-ca0d-4139-93d8-856177951b86 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5ec4e6c8-493f-405c-9fff-df089dcbcb6e .
 
-km-dev:PredicateObjectMap_0fbfbfbd-e8d5-4a6e-87c2-f719292667ed rr:predicate scharp:stores .
+km-dev:PredicateObjectMap_f1a9cdd0-ad39-4576-b687-6b48b2765f49 rr:predicate scharp:stores .
 
-km-dev:RefObjectMap_24a9b745-5982-4f37-98c3-8e238d77eb91 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_42b4472c-3a0e-46b9-b9b0-38263267960e ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:RefObjectMap_a40267e5-b536-44d7-90f7-226009ed4710 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_9aa40ec5-db43-4fc0-9d6e-cace5d85072d ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap km-dev:RefObjectMap_24a9b745-5982-4f37-98c3-8e238d77eb91 .
+_:node1b26n3n72x1 km-dev:hasObjectMap km-dev:RefObjectMap_a40267e5-b536-44d7-90f7-226009ed4710 .
 
-km-dev:PredicateObjectMap_0fbfbfbd-e8d5-4a6e-87c2-f719292667ed rr:objectMap km-dev:RefObjectMap_24a9b745-5982-4f37-98c3-8e238d77eb91 .
+km-dev:PredicateObjectMap_f1a9cdd0-ad39-4576-b687-6b48b2765f49 rr:objectMap km-dev:RefObjectMap_a40267e5-b536-44d7-90f7-226009ed4710 .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 rr:predicateObjectMap km-dev:PredicateObjectMap_0fbfbfbd-e8d5-4a6e-87c2-f719292667ed .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a rr:predicateObjectMap km-dev:PredicateObjectMap_f1a9cdd0-ad39-4576-b687-6b48b2765f49 .
 
-km-dev:PredicateObjectMap_0fbfbfbd-e8d5-4a6e-87c2-f719292667ed a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_f1a9cdd0-ad39-4576-b687-6b48b2765f49 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_0fbfbfbd-e8d5-4a6e-87c2-f719292667ed .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f1a9cdd0-ad39-4576-b687-6b48b2765f49 .
 
-km-dev:PredicateObjectMap_4f33384f-ba52-4c50-8f5f-c4678fe06eb5 rr:predicate scharp:stores .
+km-dev:PredicateObjectMap_36acf148-7c01-4391-9a65-c513073cfab2 rr:predicate scharp:stores .
 
-km-dev:RefObjectMap_9ad95420-03c7-452d-9f4e-e0595040d459 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_b30ba442-e72c-4ed3-99f8-b31d6be3c4ef ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:RefObjectMap_429d769a-8b1c-4ec4-9a2f-6e64c1189638 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_a58a5537-ec4f-4eed-8a49-2abcea0c003f ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap km-dev:RefObjectMap_9ad95420-03c7-452d-9f4e-e0595040d459 .
+_:node1b26n3n72x1 km-dev:hasObjectMap km-dev:RefObjectMap_429d769a-8b1c-4ec4-9a2f-6e64c1189638 .
 
-km-dev:PredicateObjectMap_4f33384f-ba52-4c50-8f5f-c4678fe06eb5 rr:objectMap km-dev:RefObjectMap_9ad95420-03c7-452d-9f4e-e0595040d459 .
+km-dev:PredicateObjectMap_36acf148-7c01-4391-9a65-c513073cfab2 rr:objectMap km-dev:RefObjectMap_429d769a-8b1c-4ec4-9a2f-6e64c1189638 .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 rr:predicateObjectMap km-dev:PredicateObjectMap_4f33384f-ba52-4c50-8f5f-c4678fe06eb5 .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a rr:predicateObjectMap km-dev:PredicateObjectMap_36acf148-7c01-4391-9a65-c513073cfab2 .
 
-km-dev:PredicateObjectMap_4f33384f-ba52-4c50-8f5f-c4678fe06eb5 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_36acf148-7c01-4391-9a65-c513073cfab2 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4f33384f-ba52-4c50-8f5f-c4678fe06eb5 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_36acf148-7c01-4391-9a65-c513073cfab2 .
 
-km-dev:PredicateObjectMap_e66ba41c-a96f-4636-bead-c4816da61798 rr:predicate scharp:aircraftType .
+km-dev:PredicateObjectMap_9cc7659d-c566-4659-8006-73fcb4cdafb1 rr:predicate scharp:fuelQuantityUnit .
 
-_:node1b24aggqmx4 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_1_word\",\"air_specific_type\",\"descriptor\"]" ;
+_:node1b26n3n72x4 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"initial_word\",\"fuel\",\"fuelU\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx4 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x4 .
 
-km-dev:PredicateObjectMap_e66ba41c-a96f-4636-bead-c4816da61798 rr:objectMap _:node1b24aggqmx4 .
+km-dev:PredicateObjectMap_9cc7659d-c566-4659-8006-73fcb4cdafb1 rr:objectMap _:node1b26n3n72x4 .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 rr:predicateObjectMap km-dev:PredicateObjectMap_e66ba41c-a96f-4636-bead-c4816da61798 .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a rr:predicateObjectMap km-dev:PredicateObjectMap_9cc7659d-c566-4659-8006-73fcb4cdafb1 .
 
-km-dev:PredicateObjectMap_e66ba41c-a96f-4636-bead-c4816da61798 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_9cc7659d-c566-4659-8006-73fcb4cdafb1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_e66ba41c-a96f-4636-bead-c4816da61798 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9cc7659d-c566-4659-8006-73fcb4cdafb1 .
 
-km-dev:PredicateObjectMap_7213e95b-3015-4330-a6d8-be5263e50e3d rr:predicate scharp:fuelQuantity .
+km-dev:PredicateObjectMap_7aaa4fa4-7558-4575-8616-15ed8ab01b2a rr:predicate scharp:timeReport .
 
-_:node1b24aggqmx5 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"initial_word\",\"fuel\",\"fuelQ\"]" ;
+_:node1b26n3n72x5 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"initial_word\",\"time_report_function\",\"descriptor\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx5 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x5 .
 
-km-dev:PredicateObjectMap_7213e95b-3015-4330-a6d8-be5263e50e3d rr:objectMap _:node1b24aggqmx5 .
+km-dev:PredicateObjectMap_7aaa4fa4-7558-4575-8616-15ed8ab01b2a rr:objectMap _:node1b26n3n72x5 .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 rr:predicateObjectMap km-dev:PredicateObjectMap_7213e95b-3015-4330-a6d8-be5263e50e3d .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a rr:predicateObjectMap km-dev:PredicateObjectMap_7aaa4fa4-7558-4575-8616-15ed8ab01b2a .
 
-km-dev:PredicateObjectMap_7213e95b-3015-4330-a6d8-be5263e50e3d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_7aaa4fa4-7558-4575-8616-15ed8ab01b2a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7213e95b-3015-4330-a6d8-be5263e50e3d .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_7aaa4fa4-7558-4575-8616-15ed8ab01b2a .
 
-km-dev:PredicateObjectMap_9ff4e831-d3ff-4093-b561-2076fc620099 rr:predicate scharp:timeReport .
+km-dev:PredicateObjectMap_05775a68-3671-4a17-91bb-4967a8e5defa rr:predicate scharp:aircraftType .
 
-_:node1b24aggqmx6 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"initial_word\",\"time_report_function\",\"descriptor\"]" ;
+_:node1b26n3n72x6 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_1_word\",\"air_specific_type\",\"descriptor\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx6 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x6 .
 
-km-dev:PredicateObjectMap_9ff4e831-d3ff-4093-b561-2076fc620099 rr:objectMap _:node1b24aggqmx6 .
+km-dev:PredicateObjectMap_05775a68-3671-4a17-91bb-4967a8e5defa rr:objectMap _:node1b26n3n72x6 .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 rr:predicateObjectMap km-dev:PredicateObjectMap_9ff4e831-d3ff-4093-b561-2076fc620099 .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a rr:predicateObjectMap km-dev:PredicateObjectMap_05775a68-3671-4a17-91bb-4967a8e5defa .
 
-km-dev:PredicateObjectMap_9ff4e831-d3ff-4093-b561-2076fc620099 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_05775a68-3671-4a17-91bb-4967a8e5defa a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9ff4e831-d3ff-4093-b561-2076fc620099 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_05775a68-3671-4a17-91bb-4967a8e5defa .
 
-km-dev:PredicateObjectMap_5982fc12-fc95-4912-b106-cf80fabdd564 rr:predicate scharp:fuelQuantityUnit .
+km-dev:PredicateObjectMap_379bcc66-518c-4907-8a85-9c8b19fbe5c6 rr:predicate scharp:fuelQuantity .
 
-_:node1b24aggqmx7 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"initial_word\",\"fuel\",\"fuelU\"]" ;
+_:node1b26n3n72x7 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"initial_word\",\"fuel\",\"fuelQ\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx7 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x7 .
 
-km-dev:PredicateObjectMap_5982fc12-fc95-4912-b106-cf80fabdd564 rr:objectMap _:node1b24aggqmx7 .
+km-dev:PredicateObjectMap_379bcc66-518c-4907-8a85-9c8b19fbe5c6 rr:objectMap _:node1b26n3n72x7 .
 
-km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 rr:predicateObjectMap km-dev:PredicateObjectMap_5982fc12-fc95-4912-b106-cf80fabdd564 .
+km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a rr:predicateObjectMap km-dev:PredicateObjectMap_379bcc66-518c-4907-8a85-9c8b19fbe5c6 .
 
-km-dev:PredicateObjectMap_5982fc12-fc95-4912-b106-cf80fabdd564 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_379bcc66-518c-4907-8a85-9c8b19fbe5c6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5982fc12-fc95-4912-b106-cf80fabdd564 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_379bcc66-518c-4907-8a85-9c8b19fbe5c6 .
 
-km-dev:TriplesMap_2d2b3c0b-9c26-458e-a158-7d2b01f59745 a rr:TriplesMap .
+km-dev:TriplesMap_6dbfcfd8-2361-45fc-a14c-4151b077f96c a rr:TriplesMap .
 
-_:node1b24aggqmx1 km-dev:hasTriplesMap km-dev:TriplesMap_2d2b3c0b-9c26-458e-a158-7d2b01f59745 .
+_:node1b26n3n72x1 km-dev:hasTriplesMap km-dev:TriplesMap_6dbfcfd8-2361-45fc-a14c-4151b077f96c .
 
-km-dev:TriplesMap_2d2b3c0b-9c26-458e-a158-7d2b01f59745 km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:TriplesMap_6dbfcfd8-2361-45fc-a14c-4151b077f96c km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx8 rr:tableName "AirPlatformAndSystemStatus.json" ;
+_:node1b26n3n72x8 rr:tableName "AirPlatformAndSystemStatus.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasLogicalTable _:node1b24aggqmx8 .
+_:node1b26n3n72x1 km-dev:hasLogicalTable _:node1b26n3n72x8 .
 
-km-dev:TriplesMap_2d2b3c0b-9c26-458e-a158-7d2b01f59745 rr:logicalTable _:node1b24aggqmx8 ;
-	rr:subjectMap _:node1b24aggqmx9 .
+km-dev:TriplesMap_6dbfcfd8-2361-45fc-a14c-4151b077f96c rr:logicalTable _:node1b26n3n72x8 ;
+	rr:subjectMap _:node1b26n3n72x9 .
 
-_:node1b24aggqmx1 km-dev:hasSubjectMap _:node1b24aggqmx9 .
+_:node1b26n3n72x1 km-dev:hasSubjectMap _:node1b26n3n72x9 .
 
-_:node1b24aggqmx9 km-dev:isPartOfMapping _:node1b24aggqmx1 ;
+_:node1b26n3n72x9 km-dev:isPartOfMapping _:node1b26n3n72x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Stores1" ;
 	rr:class scharp:Stores ;
 	rr:template "{[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_1\",\"stores1_uri\"]}" .
 
-km-dev:PredicateObjectMap_b8341020-488f-4715-a075-c3cb3909a3c4 rr:predicate scharp:typeOfStores .
+km-dev:PredicateObjectMap_eb157b34-77e0-4d37-8143-ebef6c5e4b8c rr:predicate scharp:numberOfStores .
 
-_:node1b24aggqmx10 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_1\",\"descriptor\"]" ;
+_:node1b26n3n72x10 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"number_of_stores_1\",\"bit_value\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx10 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x10 .
 
-km-dev:PredicateObjectMap_b8341020-488f-4715-a075-c3cb3909a3c4 rr:objectMap _:node1b24aggqmx10 .
+km-dev:PredicateObjectMap_eb157b34-77e0-4d37-8143-ebef6c5e4b8c rr:objectMap _:node1b26n3n72x10 .
 
-km-dev:TriplesMap_2d2b3c0b-9c26-458e-a158-7d2b01f59745 rr:predicateObjectMap km-dev:PredicateObjectMap_b8341020-488f-4715-a075-c3cb3909a3c4 .
+km-dev:TriplesMap_6dbfcfd8-2361-45fc-a14c-4151b077f96c rr:predicateObjectMap km-dev:PredicateObjectMap_eb157b34-77e0-4d37-8143-ebef6c5e4b8c .
 
-km-dev:PredicateObjectMap_b8341020-488f-4715-a075-c3cb3909a3c4 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_eb157b34-77e0-4d37-8143-ebef6c5e4b8c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b8341020-488f-4715-a075-c3cb3909a3c4 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_eb157b34-77e0-4d37-8143-ebef6c5e4b8c .
 
-km-dev:PredicateObjectMap_5786ebdd-4c0e-4603-9e4c-17593d3c8a92 rr:predicate scharp:numberOfStores .
+km-dev:PredicateObjectMap_a4bb4675-44d7-47e5-b0df-48fa2ec99680 rr:predicate scharp:typeOfStores .
 
-_:node1b24aggqmx11 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"number_of_stores_1\",\"bit_value\"]" ;
+_:node1b26n3n72x11 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_1\",\"descriptor\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx11 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x11 .
 
-km-dev:PredicateObjectMap_5786ebdd-4c0e-4603-9e4c-17593d3c8a92 rr:objectMap _:node1b24aggqmx11 .
+km-dev:PredicateObjectMap_a4bb4675-44d7-47e5-b0df-48fa2ec99680 rr:objectMap _:node1b26n3n72x11 .
 
-km-dev:TriplesMap_2d2b3c0b-9c26-458e-a158-7d2b01f59745 rr:predicateObjectMap km-dev:PredicateObjectMap_5786ebdd-4c0e-4603-9e4c-17593d3c8a92 .
+km-dev:TriplesMap_6dbfcfd8-2361-45fc-a14c-4151b077f96c rr:predicateObjectMap km-dev:PredicateObjectMap_a4bb4675-44d7-47e5-b0df-48fa2ec99680 .
 
-km-dev:PredicateObjectMap_5786ebdd-4c0e-4603-9e4c-17593d3c8a92 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_a4bb4675-44d7-47e5-b0df-48fa2ec99680 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5786ebdd-4c0e-4603-9e4c-17593d3c8a92 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_a4bb4675-44d7-47e5-b0df-48fa2ec99680 .
 
-km-dev:TriplesMap_b7e7e115-a37b-4a60-96f9-ffd3fdde7ad3 a rr:TriplesMap .
+km-dev:TriplesMap_4447fd5e-66a2-4ba9-a87f-f810ee55b1d2 a rr:TriplesMap .
 
-_:node1b24aggqmx1 km-dev:hasTriplesMap km-dev:TriplesMap_b7e7e115-a37b-4a60-96f9-ffd3fdde7ad3 .
+_:node1b26n3n72x1 km-dev:hasTriplesMap km-dev:TriplesMap_4447fd5e-66a2-4ba9-a87f-f810ee55b1d2 .
 
-km-dev:TriplesMap_b7e7e115-a37b-4a60-96f9-ffd3fdde7ad3 km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:TriplesMap_4447fd5e-66a2-4ba9-a87f-f810ee55b1d2 km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx12 rr:tableName "AirPlatformAndSystemStatus.json" ;
+_:node1b26n3n72x12 rr:tableName "AirPlatformAndSystemStatus.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasLogicalTable _:node1b24aggqmx12 .
+_:node1b26n3n72x1 km-dev:hasLogicalTable _:node1b26n3n72x12 .
 
-km-dev:TriplesMap_b7e7e115-a37b-4a60-96f9-ffd3fdde7ad3 rr:logicalTable _:node1b24aggqmx12 ;
-	rr:subjectMap _:node1b24aggqmx13 .
+km-dev:TriplesMap_4447fd5e-66a2-4ba9-a87f-f810ee55b1d2 rr:logicalTable _:node1b26n3n72x12 ;
+	rr:subjectMap _:node1b26n3n72x13 .
 
-_:node1b24aggqmx1 km-dev:hasSubjectMap _:node1b24aggqmx13 .
+_:node1b26n3n72x1 km-dev:hasSubjectMap _:node1b26n3n72x13 .
 
-_:node1b24aggqmx13 km-dev:isPartOfMapping _:node1b24aggqmx1 ;
+_:node1b26n3n72x13 km-dev:isPartOfMapping _:node1b26n3n72x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Stores2" ;
 	rr:class scharp:Stores ;
 	rr:template "{[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_2\",\"stores2_uri\"]}" .
 
-km-dev:PredicateObjectMap_6fe5880f-02c4-4d8d-aa2e-c2ab5db9127b rr:predicate scharp:typeOfStores .
+km-dev:PredicateObjectMap_98b7f77b-b0c1-4d35-8979-875cee251b08 rr:predicate scharp:numberOfStores .
 
-_:node1b24aggqmx14 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_2\",\"descriptor\"]" ;
+_:node1b26n3n72x14 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"number_of_stores_2\",\"bit_value\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx14 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x14 .
 
-km-dev:PredicateObjectMap_6fe5880f-02c4-4d8d-aa2e-c2ab5db9127b rr:objectMap _:node1b24aggqmx14 .
+km-dev:PredicateObjectMap_98b7f77b-b0c1-4d35-8979-875cee251b08 rr:objectMap _:node1b26n3n72x14 .
 
-km-dev:TriplesMap_b7e7e115-a37b-4a60-96f9-ffd3fdde7ad3 rr:predicateObjectMap km-dev:PredicateObjectMap_6fe5880f-02c4-4d8d-aa2e-c2ab5db9127b .
+km-dev:TriplesMap_4447fd5e-66a2-4ba9-a87f-f810ee55b1d2 rr:predicateObjectMap km-dev:PredicateObjectMap_98b7f77b-b0c1-4d35-8979-875cee251b08 .
 
-km-dev:PredicateObjectMap_6fe5880f-02c4-4d8d-aa2e-c2ab5db9127b a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_98b7f77b-b0c1-4d35-8979-875cee251b08 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6fe5880f-02c4-4d8d-aa2e-c2ab5db9127b .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_98b7f77b-b0c1-4d35-8979-875cee251b08 .
 
-km-dev:PredicateObjectMap_dbc8ba08-8d89-44c7-9c0a-7471b9ba2abb rr:predicate scharp:numberOfStores .
+km-dev:PredicateObjectMap_f993261a-cc2a-4181-94f3-ecf22dc90282 rr:predicate scharp:typeOfStores .
 
-_:node1b24aggqmx15 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"number_of_stores_2\",\"bit_value\"]" ;
+_:node1b26n3n72x15 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_2\",\"descriptor\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx15 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x15 .
 
-km-dev:PredicateObjectMap_dbc8ba08-8d89-44c7-9c0a-7471b9ba2abb rr:objectMap _:node1b24aggqmx15 .
+km-dev:PredicateObjectMap_f993261a-cc2a-4181-94f3-ecf22dc90282 rr:objectMap _:node1b26n3n72x15 .
 
-km-dev:TriplesMap_b7e7e115-a37b-4a60-96f9-ffd3fdde7ad3 rr:predicateObjectMap km-dev:PredicateObjectMap_dbc8ba08-8d89-44c7-9c0a-7471b9ba2abb .
+km-dev:TriplesMap_4447fd5e-66a2-4ba9-a87f-f810ee55b1d2 rr:predicateObjectMap km-dev:PredicateObjectMap_f993261a-cc2a-4181-94f3-ecf22dc90282 .
 
-km-dev:PredicateObjectMap_dbc8ba08-8d89-44c7-9c0a-7471b9ba2abb a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_f993261a-cc2a-4181-94f3-ecf22dc90282 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dbc8ba08-8d89-44c7-9c0a-7471b9ba2abb .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f993261a-cc2a-4181-94f3-ecf22dc90282 .
 
-km-dev:TriplesMap_42b4472c-3a0e-46b9-b9b0-38263267960e a rr:TriplesMap .
+km-dev:TriplesMap_9aa40ec5-db43-4fc0-9d6e-cace5d85072d a rr:TriplesMap .
 
-_:node1b24aggqmx1 km-dev:hasTriplesMap km-dev:TriplesMap_42b4472c-3a0e-46b9-b9b0-38263267960e .
+_:node1b26n3n72x1 km-dev:hasTriplesMap km-dev:TriplesMap_9aa40ec5-db43-4fc0-9d6e-cace5d85072d .
 
-km-dev:TriplesMap_42b4472c-3a0e-46b9-b9b0-38263267960e km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:TriplesMap_9aa40ec5-db43-4fc0-9d6e-cace5d85072d km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx16 rr:tableName "AirPlatformAndSystemStatus.json" ;
+_:node1b26n3n72x16 rr:tableName "AirPlatformAndSystemStatus.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasLogicalTable _:node1b24aggqmx16 .
+_:node1b26n3n72x1 km-dev:hasLogicalTable _:node1b26n3n72x16 .
 
-km-dev:TriplesMap_42b4472c-3a0e-46b9-b9b0-38263267960e rr:logicalTable _:node1b24aggqmx16 ;
-	rr:subjectMap _:node1b24aggqmx17 .
+km-dev:TriplesMap_9aa40ec5-db43-4fc0-9d6e-cace5d85072d rr:logicalTable _:node1b26n3n72x16 ;
+	rr:subjectMap _:node1b26n3n72x17 .
 
-_:node1b24aggqmx1 km-dev:hasSubjectMap _:node1b24aggqmx17 .
+_:node1b26n3n72x1 km-dev:hasSubjectMap _:node1b26n3n72x17 .
 
-_:node1b24aggqmx17 km-dev:isPartOfMapping _:node1b24aggqmx1 ;
+_:node1b26n3n72x17 km-dev:isPartOfMapping _:node1b26n3n72x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Stores3" ;
 	rr:class scharp:Stores ;
 	rr:template "{[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_3\",\"stores3_uri\"]}" .
 
-km-dev:PredicateObjectMap_6b490c17-1c3a-4ad6-9ce2-da9962a6fee8 rr:predicate scharp:typeOfStores .
+km-dev:PredicateObjectMap_f0eeae33-7bfb-488a-90e7-f5af47ffabad rr:predicate scharp:typeOfStores .
 
-_:node1b24aggqmx18 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_3\",\"descriptor\"]" ;
+_:node1b26n3n72x18 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_3\",\"descriptor\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx18 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x18 .
 
-km-dev:PredicateObjectMap_6b490c17-1c3a-4ad6-9ce2-da9962a6fee8 rr:objectMap _:node1b24aggqmx18 .
+km-dev:PredicateObjectMap_f0eeae33-7bfb-488a-90e7-f5af47ffabad rr:objectMap _:node1b26n3n72x18 .
 
-km-dev:TriplesMap_42b4472c-3a0e-46b9-b9b0-38263267960e rr:predicateObjectMap km-dev:PredicateObjectMap_6b490c17-1c3a-4ad6-9ce2-da9962a6fee8 .
+km-dev:TriplesMap_9aa40ec5-db43-4fc0-9d6e-cace5d85072d rr:predicateObjectMap km-dev:PredicateObjectMap_f0eeae33-7bfb-488a-90e7-f5af47ffabad .
 
-km-dev:PredicateObjectMap_6b490c17-1c3a-4ad6-9ce2-da9962a6fee8 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_f0eeae33-7bfb-488a-90e7-f5af47ffabad a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6b490c17-1c3a-4ad6-9ce2-da9962a6fee8 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f0eeae33-7bfb-488a-90e7-f5af47ffabad .
 
-km-dev:PredicateObjectMap_9de7d31f-0011-496c-8c1f-d75f248d4411 rr:predicate scharp:numberOfStores .
+km-dev:PredicateObjectMap_dd761462-fa3b-4d76-a083-d90e4014e567 rr:predicate scharp:numberOfStores .
 
-_:node1b24aggqmx19 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"number_of_stores_3\",\"bit_value\"]" ;
+_:node1b26n3n72x19 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"number_of_stores_3\",\"bit_value\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx19 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x19 .
 
-km-dev:PredicateObjectMap_9de7d31f-0011-496c-8c1f-d75f248d4411 rr:objectMap _:node1b24aggqmx19 .
+km-dev:PredicateObjectMap_dd761462-fa3b-4d76-a083-d90e4014e567 rr:objectMap _:node1b26n3n72x19 .
 
-km-dev:TriplesMap_42b4472c-3a0e-46b9-b9b0-38263267960e rr:predicateObjectMap km-dev:PredicateObjectMap_9de7d31f-0011-496c-8c1f-d75f248d4411 .
+km-dev:TriplesMap_9aa40ec5-db43-4fc0-9d6e-cace5d85072d rr:predicateObjectMap km-dev:PredicateObjectMap_dd761462-fa3b-4d76-a083-d90e4014e567 .
 
-km-dev:PredicateObjectMap_9de7d31f-0011-496c-8c1f-d75f248d4411 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_dd761462-fa3b-4d76-a083-d90e4014e567 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_9de7d31f-0011-496c-8c1f-d75f248d4411 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_dd761462-fa3b-4d76-a083-d90e4014e567 .
 
-km-dev:TriplesMap_b30ba442-e72c-4ed3-99f8-b31d6be3c4ef a rr:TriplesMap .
+km-dev:TriplesMap_a58a5537-ec4f-4eed-8a49-2abcea0c003f a rr:TriplesMap .
 
-_:node1b24aggqmx1 km-dev:hasTriplesMap km-dev:TriplesMap_b30ba442-e72c-4ed3-99f8-b31d6be3c4ef .
+_:node1b26n3n72x1 km-dev:hasTriplesMap km-dev:TriplesMap_a58a5537-ec4f-4eed-8a49-2abcea0c003f .
 
-km-dev:TriplesMap_b30ba442-e72c-4ed3-99f8-b31d6be3c4ef km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:TriplesMap_a58a5537-ec4f-4eed-8a49-2abcea0c003f km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx20 rr:tableName "AirPlatformAndSystemStatus.json" ;
+_:node1b26n3n72x20 rr:tableName "AirPlatformAndSystemStatus.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasLogicalTable _:node1b24aggqmx20 .
+_:node1b26n3n72x1 km-dev:hasLogicalTable _:node1b26n3n72x20 .
 
-km-dev:TriplesMap_b30ba442-e72c-4ed3-99f8-b31d6be3c4ef rr:logicalTable _:node1b24aggqmx20 ;
-	rr:subjectMap _:node1b24aggqmx21 .
+km-dev:TriplesMap_a58a5537-ec4f-4eed-8a49-2abcea0c003f rr:logicalTable _:node1b26n3n72x20 ;
+	rr:subjectMap _:node1b26n3n72x21 .
 
-_:node1b24aggqmx1 km-dev:hasSubjectMap _:node1b24aggqmx21 .
+_:node1b26n3n72x1 km-dev:hasSubjectMap _:node1b26n3n72x21 .
 
-_:node1b24aggqmx21 km-dev:isPartOfMapping _:node1b24aggqmx1 ;
+_:node1b26n3n72x21 km-dev:isPartOfMapping _:node1b26n3n72x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Stores4" ;
 	rr:class scharp:Stores ;
 	rr:template "{[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_4\",\"stores4_uri\"]}" .
 
-km-dev:PredicateObjectMap_d1010a47-ea29-4277-889d-6c0405409de4 rr:predicate scharp:typeOfStores .
+km-dev:PredicateObjectMap_610363f4-5127-4b6e-bfa3-c97a58de8a4a rr:predicate scharp:typeOfStores .
 
-_:node1b24aggqmx22 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_4\",\"descriptor\"]" ;
+_:node1b26n3n72x22 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"type_of_stores_4\",\"descriptor\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx22 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x22 .
 
-km-dev:PredicateObjectMap_d1010a47-ea29-4277-889d-6c0405409de4 rr:objectMap _:node1b24aggqmx22 .
+km-dev:PredicateObjectMap_610363f4-5127-4b6e-bfa3-c97a58de8a4a rr:objectMap _:node1b26n3n72x22 .
 
-km-dev:TriplesMap_b30ba442-e72c-4ed3-99f8-b31d6be3c4ef rr:predicateObjectMap km-dev:PredicateObjectMap_d1010a47-ea29-4277-889d-6c0405409de4 .
+km-dev:TriplesMap_a58a5537-ec4f-4eed-8a49-2abcea0c003f rr:predicateObjectMap km-dev:PredicateObjectMap_610363f4-5127-4b6e-bfa3-c97a58de8a4a .
 
-km-dev:PredicateObjectMap_d1010a47-ea29-4277-889d-6c0405409de4 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_610363f4-5127-4b6e-bfa3-c97a58de8a4a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d1010a47-ea29-4277-889d-6c0405409de4 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_610363f4-5127-4b6e-bfa3-c97a58de8a4a .
 
-km-dev:PredicateObjectMap_21f32d9d-6335-4172-ae0c-3584bb05b3c2 rr:predicate scharp:numberOfStores .
+km-dev:PredicateObjectMap_04cd3cf1-d582-44a4-935a-dd10a69cd1f4 rr:predicate scharp:numberOfStores .
 
-_:node1b24aggqmx23 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"number_of_stores_4\",\"bit_value\"]" ;
+_:node1b26n3n72x23 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"continuation_2_word\",\"number_of_stores_4\",\"bit_value\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx23 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x23 .
 
-km-dev:PredicateObjectMap_21f32d9d-6335-4172-ae0c-3584bb05b3c2 rr:objectMap _:node1b24aggqmx23 .
+km-dev:PredicateObjectMap_04cd3cf1-d582-44a4-935a-dd10a69cd1f4 rr:objectMap _:node1b26n3n72x23 .
 
-km-dev:TriplesMap_b30ba442-e72c-4ed3-99f8-b31d6be3c4ef rr:predicateObjectMap km-dev:PredicateObjectMap_21f32d9d-6335-4172-ae0c-3584bb05b3c2 .
+km-dev:TriplesMap_a58a5537-ec4f-4eed-8a49-2abcea0c003f rr:predicateObjectMap km-dev:PredicateObjectMap_04cd3cf1-d582-44a4-935a-dd10a69cd1f4 .
 
-km-dev:PredicateObjectMap_21f32d9d-6335-4172-ae0c-3584bb05b3c2 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_04cd3cf1-d582-44a4-935a-dd10a69cd1f4 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_21f32d9d-6335-4172-ae0c-3584bb05b3c2 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_04cd3cf1-d582-44a4-935a-dd10a69cd1f4 .
 
-km-dev:TriplesMap_bf3c1261-7015-405c-8fa9-b16a83873fc4 a rr:TriplesMap .
+km-dev:TriplesMap_284d051f-1a63-4f1d-ab9c-ae9330f495fb a rr:TriplesMap .
 
-_:node1b24aggqmx1 km-dev:hasTriplesMap km-dev:TriplesMap_bf3c1261-7015-405c-8fa9-b16a83873fc4 .
+_:node1b26n3n72x1 km-dev:hasTriplesMap km-dev:TriplesMap_284d051f-1a63-4f1d-ab9c-ae9330f495fb .
 
-km-dev:TriplesMap_bf3c1261-7015-405c-8fa9-b16a83873fc4 km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:TriplesMap_284d051f-1a63-4f1d-ab9c-ae9330f495fb km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx24 rr:tableName "AirPlatformAndSystemStatus.json" ;
+_:node1b26n3n72x24 rr:tableName "AirPlatformAndSystemStatus.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasLogicalTable _:node1b24aggqmx24 .
+_:node1b26n3n72x1 km-dev:hasLogicalTable _:node1b26n3n72x24 .
 
-km-dev:TriplesMap_bf3c1261-7015-405c-8fa9-b16a83873fc4 rr:logicalTable _:node1b24aggqmx24 ;
-	rr:subjectMap _:node1b24aggqmx25 .
+km-dev:TriplesMap_284d051f-1a63-4f1d-ab9c-ae9330f495fb rr:logicalTable _:node1b26n3n72x24 ;
+	rr:subjectMap _:node1b26n3n72x25 .
 
-_:node1b24aggqmx1 km-dev:hasSubjectMap _:node1b24aggqmx25 .
+_:node1b26n3n72x1 km-dev:hasSubjectMap _:node1b26n3n72x25 .
 
-_:node1b24aggqmx25 km-dev:isPartOfMapping _:node1b24aggqmx1 ;
+_:node1b26n3n72x25 km-dev:isPartOfMapping _:node1b26n3n72x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Message1" ;
 	rr:class scharp:Message ;
-	rr:template "message/{_timestamp}" ;
+	rr:template "{message_uri}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_82c41e00-6fdb-4c0f-a641-9732412dabfa rr:predicate scharp:aircraft .
+km-dev:PredicateObjectMap_09224b83-7658-4b7a-8bf8-f15c5365c095 rr:predicate scharp:aircraft .
 
-km-dev:RefObjectMap_688577b9-d2a5-40e3-aabd-4ba29de63dfa a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_cefcc5f1-039c-40b5-91fb-0f2c405c2ff8 ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:RefObjectMap_8161f1f7-2362-4173-982a-67a2ebddc7a7 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_3ae34c52-fdc5-4290-9e7d-3639d5492517 ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap km-dev:RefObjectMap_688577b9-d2a5-40e3-aabd-4ba29de63dfa .
+_:node1b26n3n72x1 km-dev:hasObjectMap km-dev:RefObjectMap_8161f1f7-2362-4173-982a-67a2ebddc7a7 .
 
-km-dev:PredicateObjectMap_82c41e00-6fdb-4c0f-a641-9732412dabfa rr:objectMap km-dev:RefObjectMap_688577b9-d2a5-40e3-aabd-4ba29de63dfa .
+km-dev:PredicateObjectMap_09224b83-7658-4b7a-8bf8-f15c5365c095 rr:objectMap km-dev:RefObjectMap_8161f1f7-2362-4173-982a-67a2ebddc7a7 .
 
-km-dev:TriplesMap_bf3c1261-7015-405c-8fa9-b16a83873fc4 rr:predicateObjectMap km-dev:PredicateObjectMap_82c41e00-6fdb-4c0f-a641-9732412dabfa .
+km-dev:TriplesMap_284d051f-1a63-4f1d-ab9c-ae9330f495fb rr:predicateObjectMap km-dev:PredicateObjectMap_09224b83-7658-4b7a-8bf8-f15c5365c095 .
 
-km-dev:PredicateObjectMap_82c41e00-6fdb-4c0f-a641-9732412dabfa a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_09224b83-7658-4b7a-8bf8-f15c5365c095 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_82c41e00-6fdb-4c0f-a641-9732412dabfa .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_09224b83-7658-4b7a-8bf8-f15c5365c095 .
 
-km-dev:PredicateObjectMap_d34b9c6a-2631-4c9c-84dc-e576b41e24cb rr:predicate scharp:attributes .
+km-dev:PredicateObjectMap_34fe8d15-e193-4fb7-9aa6-fc3effea950f rr:predicate scharp:attributes .
 
-km-dev:RefObjectMap_08bdac49-835f-479e-82b6-ca96d2ad230f a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_17dbe289-d7ee-47c8-9a4a-aabd759a7af1 ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:RefObjectMap_85bff27a-1522-46b4-911f-347d285cc5e1 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_bd5dd23d-265a-4fda-938e-43a22ab18b5a ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap km-dev:RefObjectMap_08bdac49-835f-479e-82b6-ca96d2ad230f .
+_:node1b26n3n72x1 km-dev:hasObjectMap km-dev:RefObjectMap_85bff27a-1522-46b4-911f-347d285cc5e1 .
 
-km-dev:PredicateObjectMap_d34b9c6a-2631-4c9c-84dc-e576b41e24cb rr:objectMap km-dev:RefObjectMap_08bdac49-835f-479e-82b6-ca96d2ad230f .
+km-dev:PredicateObjectMap_34fe8d15-e193-4fb7-9aa6-fc3effea950f rr:objectMap km-dev:RefObjectMap_85bff27a-1522-46b4-911f-347d285cc5e1 .
 
-km-dev:TriplesMap_bf3c1261-7015-405c-8fa9-b16a83873fc4 rr:predicateObjectMap km-dev:PredicateObjectMap_d34b9c6a-2631-4c9c-84dc-e576b41e24cb .
+km-dev:TriplesMap_284d051f-1a63-4f1d-ab9c-ae9330f495fb rr:predicateObjectMap km-dev:PredicateObjectMap_34fe8d15-e193-4fb7-9aa6-fc3effea950f .
 
-km-dev:PredicateObjectMap_d34b9c6a-2631-4c9c-84dc-e576b41e24cb a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_34fe8d15-e193-4fb7-9aa6-fc3effea950f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d34b9c6a-2631-4c9c-84dc-e576b41e24cb .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_34fe8d15-e193-4fb7-9aa6-fc3effea950f .
 
-km-dev:PredicateObjectMap_4664169e-b3be-42fa-a0b5-211c1746734d rr:predicate scharp:eventTime .
+km-dev:PredicateObjectMap_6161ba80-b948-4aff-a5ae-d5a89bd25f9c rr:predicate scharp:eventTime .
 
-_:node1b24aggqmx26 rr:column "event_time" ;
+_:node1b26n3n72x26 rr:column "event_time" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx26 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x26 .
 
-km-dev:PredicateObjectMap_4664169e-b3be-42fa-a0b5-211c1746734d rr:objectMap _:node1b24aggqmx26 .
+km-dev:PredicateObjectMap_6161ba80-b948-4aff-a5ae-d5a89bd25f9c rr:objectMap _:node1b26n3n72x26 .
 
-km-dev:TriplesMap_bf3c1261-7015-405c-8fa9-b16a83873fc4 rr:predicateObjectMap km-dev:PredicateObjectMap_4664169e-b3be-42fa-a0b5-211c1746734d .
+km-dev:TriplesMap_284d051f-1a63-4f1d-ab9c-ae9330f495fb rr:predicateObjectMap km-dev:PredicateObjectMap_6161ba80-b948-4aff-a5ae-d5a89bd25f9c .
 
-km-dev:PredicateObjectMap_4664169e-b3be-42fa-a0b5-211c1746734d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_6161ba80-b948-4aff-a5ae-d5a89bd25f9c a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4664169e-b3be-42fa-a0b5-211c1746734d .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6161ba80-b948-4aff-a5ae-d5a89bd25f9c .
 
-km-dev:PredicateObjectMap_18c3c89f-5727-48d3-9098-f64716114d91 rr:predicate scharp:event .
+km-dev:PredicateObjectMap_d328e3f4-a697-42d9-b9a0-7afd74fa139f rr:predicate scharp:event .
 
-_:node1b24aggqmx27 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"message_identity\",\"name\"]" ;
+_:node1b26n3n72x27 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"message_identity\",\"name\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx27 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x27 .
 
-km-dev:PredicateObjectMap_18c3c89f-5727-48d3-9098-f64716114d91 rr:objectMap _:node1b24aggqmx27 .
+km-dev:PredicateObjectMap_d328e3f4-a697-42d9-b9a0-7afd74fa139f rr:objectMap _:node1b26n3n72x27 .
 
-km-dev:TriplesMap_bf3c1261-7015-405c-8fa9-b16a83873fc4 rr:predicateObjectMap km-dev:PredicateObjectMap_18c3c89f-5727-48d3-9098-f64716114d91 .
+km-dev:TriplesMap_284d051f-1a63-4f1d-ab9c-ae9330f495fb rr:predicateObjectMap km-dev:PredicateObjectMap_d328e3f4-a697-42d9-b9a0-7afd74fa139f .
 
-km-dev:PredicateObjectMap_18c3c89f-5727-48d3-9098-f64716114d91 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_d328e3f4-a697-42d9-b9a0-7afd74fa139f a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_18c3c89f-5727-48d3-9098-f64716114d91 .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d328e3f4-a697-42d9-b9a0-7afd74fa139f .
 
-km-dev:TriplesMap_cefcc5f1-039c-40b5-91fb-0f2c405c2ff8 a rr:TriplesMap .
+km-dev:TriplesMap_3ae34c52-fdc5-4290-9e7d-3639d5492517 a rr:TriplesMap .
 
-_:node1b24aggqmx1 km-dev:hasTriplesMap km-dev:TriplesMap_cefcc5f1-039c-40b5-91fb-0f2c405c2ff8 .
+_:node1b26n3n72x1 km-dev:hasTriplesMap km-dev:TriplesMap_3ae34c52-fdc5-4290-9e7d-3639d5492517 .
 
-km-dev:TriplesMap_cefcc5f1-039c-40b5-91fb-0f2c405c2ff8 km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:TriplesMap_3ae34c52-fdc5-4290-9e7d-3639d5492517 km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx28 rr:tableName "AirPlatformAndSystemStatus.json" ;
+_:node1b26n3n72x28 rr:tableName "AirPlatformAndSystemStatus.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasLogicalTable _:node1b24aggqmx28 .
+_:node1b26n3n72x1 km-dev:hasLogicalTable _:node1b26n3n72x28 .
 
-km-dev:TriplesMap_cefcc5f1-039c-40b5-91fb-0f2c405c2ff8 rr:logicalTable _:node1b24aggqmx28 ;
-	rr:subjectMap _:node1b24aggqmx29 .
+km-dev:TriplesMap_3ae34c52-fdc5-4290-9e7d-3639d5492517 rr:logicalTable _:node1b26n3n72x28 ;
+	rr:subjectMap _:node1b26n3n72x29 .
 
-_:node1b24aggqmx1 km-dev:hasSubjectMap _:node1b24aggqmx29 .
+_:node1b26n3n72x1 km-dev:hasSubjectMap _:node1b26n3n72x29 .
 
-_:node1b24aggqmx29 km-dev:isPartOfMapping _:node1b24aggqmx1 ;
+_:node1b26n3n72x29 km-dev:isPartOfMapping _:node1b26n3n72x1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirUnit1" ;
 	rr:class scharp:AirUnit ;
 	rr:template "airunit/{[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"message_identity\",\"track_identifier\",\"value\"]}" .
 
-km-dev:PredicateObjectMap_b91d5b59-ecf6-424a-bb90-bc79a0f29eae rr:predicate scharp:trackNum .
+km-dev:PredicateObjectMap_fc53b6e5-9e07-4aeb-bd2e-55f16ea96561 rr:predicate scharp:trackNum .
 
-_:node1b24aggqmx30 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"message_identity\",\"track_identifier\",\"value\"]" ;
+_:node1b26n3n72x30 rr:column "[\"_jsonRep\",\"ns4:jreapEnvelope\",\"ns3:messageProduct\",\"message_data\",\"message_representation\",\"message_identity\",\"track_identifier\",\"value\"]" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasObjectMap _:node1b24aggqmx30 .
+_:node1b26n3n72x1 km-dev:hasObjectMap _:node1b26n3n72x30 .
 
-km-dev:PredicateObjectMap_b91d5b59-ecf6-424a-bb90-bc79a0f29eae rr:objectMap _:node1b24aggqmx30 .
+km-dev:PredicateObjectMap_fc53b6e5-9e07-4aeb-bd2e-55f16ea96561 rr:objectMap _:node1b26n3n72x30 .
 
-km-dev:TriplesMap_cefcc5f1-039c-40b5-91fb-0f2c405c2ff8 rr:predicateObjectMap km-dev:PredicateObjectMap_b91d5b59-ecf6-424a-bb90-bc79a0f29eae .
+km-dev:TriplesMap_3ae34c52-fdc5-4290-9e7d-3639d5492517 rr:predicateObjectMap km-dev:PredicateObjectMap_fc53b6e5-9e07-4aeb-bd2e-55f16ea96561 .
 
-km-dev:PredicateObjectMap_b91d5b59-ecf6-424a-bb90-bc79a0f29eae a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b24aggqmx1 .
+km-dev:PredicateObjectMap_fc53b6e5-9e07-4aeb-bd2e-55f16ea96561 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b26n3n72x1 .
 
-_:node1b24aggqmx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b91d5b59-ecf6-424a-bb90-bc79a0f29eae .
+_:node1b26n3n72x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_fc53b6e5-9e07-4aeb-bd2e-55f16ea96561 .

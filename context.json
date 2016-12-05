@@ -144,6 +144,9 @@
     },
     "trackIdentity": {
       "@id": "http://scharp.usc.isi.edu/ontology/trackIdentity"
+    },
+    "store": {
+      "@id": "http://scharp.usc.isi.edu/ontology/store"
     }
   }
 }

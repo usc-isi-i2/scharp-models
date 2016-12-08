@@ -156,6 +156,12 @@
     },
     "name": {
       "@id": "http://scharp.usc.isi.edu/ontology/name"
+    },
+    "airspaceId": {
+      "@id": "http://scharp.usc.isi.edu/ontology/airspaceId"
+    },
+    "alterUri": {
+      "@id": "http://scharp.usc.isi.edu/ontology/alterUri"
     }
   }
 }

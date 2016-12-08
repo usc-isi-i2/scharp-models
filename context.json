@@ -162,6 +162,9 @@
     },
     "alterUri": {
       "@id": "http://scharp.usc.isi.edu/ontology/alterUri"
+    },
+    "inMission": {
+      "@id": "http://scharp.usc.isi.edu/ontology/inMission"
     }
   }
 }

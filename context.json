@@ -148,8 +148,14 @@
     "stores": {
       "@id": "http://scharp.usc.isi.edu/ontology/stores"
     },
-    "fuelQuantityUnit": {
-      "@id": "http://scharp.usc.isi.edu/ontology/fuelQuantityUnit"
+    "action": {
+      "@id": "http://scharp.usc.isi.edu/ontology/action"
+    },
+    "output": {
+      "@id": "http://scharp.usc.isi.edu/ontology/output"
+    },
+    "name": {
+      "@id": "http://scharp.usc.isi.edu/ontology/name"
     }
   }
 }

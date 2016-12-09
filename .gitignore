@@ -8,3 +8,5 @@ karma/semantic-type-files/*
 karma/textual-semantic-type-files/*
 karma/user-uploaded-files/*
 karma/user-preferences/*
+
+.DS_Store

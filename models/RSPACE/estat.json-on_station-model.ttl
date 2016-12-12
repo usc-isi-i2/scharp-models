@@ -31,18 +31,18 @@
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
+_:node1b3qkjhnvx1 a km-dev:R2RMLMapping ;
 	km-dev:sourceName "estat_onstation.json" ;
-	km-dev:modelPublicationTime "1481320792556"^^xsd:long ;
+	km-dev:modelPublicationTime "1481584002815"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
-	km-dev:hasInputColumns "[[{\"columnName\":\"output\"}],[{\"columnName\":\"action\"}],[{\"columnName\":\"simtime\"}],[{\"columnName\":\"value\"}],[{\"columnName\":\"missionname\"}],[{\"columnName\":\"unit\"}]]" ;
-	km-dev:hasOutputColumns "[[{\"columnName\":\"output\"}],[{\"columnName\":\"action\"}],[{\"columnName\":\"simtime\"}],[{\"columnName\":\"value\"}],[{\"columnName\":\"link16\"}],[{\"columnName\":\"missionname\"}],[{\"columnName\":\"event_time\"}],[{\"columnName\":\"alter_uri\"}],[{\"columnName\":\"unit\"}],[{\"columnName\":\"uri\"}],[{\"columnName\":\"mission_uri\"}]]" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"simtime\"}],[{\"columnName\":\"unit\"}],[{\"columnName\":\"value\"}],[{\"columnName\":\"missionname\"}],[{\"columnName\":\"action\"}],[{\"columnName\":\"output\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"event_time\"}],[{\"columnName\":\"simtime\"}],[{\"columnName\":\"airspace_uri\"}],[{\"columnName\":\"link16\"}],[{\"columnName\":\"unit\"}],[{\"columnName\":\"mission_uri\"}],[{\"columnName\":\"value\"}],[{\"columnName\":\"unit_uri\"}],[{\"columnName\":\"missionname\"}],[{\"columnName\":\"uri\"}],[{\"columnName\":\"action\"}],[{\"columnName\":\"output\"}]]" ;
 	km-dev:hasModelLabel "estat_onstation.json" ;
 	km-dev:hasBaseURI "http://scharp.usc.isi.edu/" ;
 	km-dev:hasWorksheetHistory """[
     {
         \"tags\": [\"Transformation\"],
-        \"model\": \"new\",
+        \"model\": \"http://localhost:8080/publish/R2RML/estat.json-model.ttl\",
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
@@ -94,7 +94,7 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
     },
     {
         \"tags\": [\"Transformation\"],
-        \"model\": \"new\",
+        \"model\": \"http://localhost:8080/publish/R2RML/estat.json-model.ttl\",
         \"inputParameters\": [
             {
                 \"name\": \"worksheetId\",
@@ -132,7 +132,7 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
     },
     {
         \"tags\": [\"Transformation\"],
-        \"model\": \"new\",
+        \"model\": \"http://localhost:8080/publish/R2RML/estat.json-model.ttl\",
         \"inputParameters\": [
             {
                 \"name\": \"worksheetId\",
@@ -170,7 +170,7 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
     },
     {
         \"tags\": [\"Transformation\"],
-        \"model\": \"new\",
+        \"model\": \"http://localhost:8080/publish/R2RML/estat.json-model.ttl\",
         \"inputParameters\": [
             {
                 \"name\": \"worksheetId\",
@@ -208,7 +208,7 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
     },
     {
         \"tags\": [\"Transformation\"],
-        \"model\": \"new\",
+        \"model\": \"http://localhost:8080/publish/R2RML/estat.json-model.ttl\",
         \"inputParameters\": [
             {
                 \"name\": \"worksheetId\",
@@ -505,6 +505,82 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
         \"model\": \"new\",
         \"inputParameters\": [
             {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": true,
+                    \"prefix\": \"scharp\",
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
                 \"name\": \"hNodeId\",
                 \"value\": [{\"columnName\": \"value\"}],
                 \"type\": \"hNodeId\"
@@ -521,12 +597,12 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"newColumnName\",
-                \"value\": \"alter_uri\",
+                \"value\": \"airspace_uri\",
                 \"type\": \"other\"
             },
             {
                 \"name\": \"transformationCode\",
-                \"value\": \"return \\\"airspace/\\\"+getValue(\\\"value\\\").lower().replace(\\\" \\\",\\\"_\\\")\",
+                \"value\": \"return \\\"airspace/\\\"+getValue(\\\"value\\\").replace(\\\" \\\",\\\"_\\\")\",
                 \"type\": \"other\"
             },
             {
@@ -546,7 +622,59 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"alter_uri\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"airspace_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"unit\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"unit_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"airunit/\\\"+getValue(\\\"link16\\\")\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"link16\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
@@ -610,7 +738,7 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"simtime\"}],
+                \"value\": [{\"columnName\": \"event_time\"}],
                 \"type\": \"hNodeId\"
             },
             {
@@ -733,14 +861,9 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
         \"commandName\": \"SetWorksheetPropertiesCommand\"
     },
     {
-        \"tags\": [\"SemanticType\"],
+        \"tags\": [\"Transformation\"],
         \"model\": \"new\",
         \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"link16\"}],
-                \"type\": \"hNodeId\"
-            },
             {
                 \"name\": \"worksheetId\",
                 \"value\": \"W\",
@@ -752,53 +875,33 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
                 \"type\": \"other\"
             },
             {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/link16\",
-                    \"DomainLabel\": \"AirUnit1\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://scharp.usc.isi.edu/\"
+                },
                 \"type\": \"other\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"link16\\\"}]}]\",
+                \"value\": \"[]\",
                 \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"link16\\\"}]}]\",
+                \"value\": \"[]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
-        \"commandName\": \"SetSemanticTypeCommand\"
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
     },
     {
-        \"tags\": [\"SemanticType\"],
+        \"tags\": [\"Transformation\"],
         \"model\": \"new\",
         \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"unit\"}],
-                \"type\": \"hNodeId\"
-            },
             {
                 \"name\": \"worksheetId\",
                 \"value\": \"W\",
@@ -810,159 +913,28 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
                 \"type\": \"other\"
             },
             {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/callsign\",
-                    \"DomainLabel\": \"scharp:AirUnit1\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": true,
+                    \"prefix\": \"scharp\",
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": false
+                },
                 \"type\": \"other\"
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit\\\"}]}]\",
+                \"value\": \"[]\",
                 \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit\\\"}]}]\",
+                \"value\": \"[]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
-        \"commandName\": \"SetSemanticTypeCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"missionname\"}],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/missionId\",
-                    \"DomainLabel\": \"scharp:AirMission1 (add)\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"missionname\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"missionname\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetSemanticTypeCommand\"
-    },
-    {
-        \"tags\": [\"SemanticType\"],
-        \"model\": \"new\",
-        \"inputParameters\": [
-            {
-                \"name\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"value\"}],
-                \"type\": \"hNodeId\"
-            },
-            {
-                \"name\": \"worksheetId\",
-                \"value\": \"W\",
-                \"type\": \"worksheetId\"
-            },
-            {
-                \"name\": \"selectionName\",
-                \"value\": \"DEFAULT_TEST\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"SemanticTypesArray\",
-                \"value\": [{
-                    \"isPrimary\": true,
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/airspaceId\",
-                    \"DomainLabel\": \"scharp:Airspace1\",
-                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airspace1\",
-                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airspace\"
-                }],
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"trainAndShowUpdates\",
-                \"value\": true,
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"rdfLiteralType\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"language\",
-                \"value\": \"\",
-                \"type\": \"other\"
-            },
-            {
-                \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"value\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            },
-            {
-                \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"value\\\"}]}]\",
-                \"type\": \"hNodeIdList\"
-            }
-        ],
-        \"commandName\": \"SetSemanticTypeCommand\"
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
     },
     {
         \"tags\": [\"SemanticType\"],
@@ -1449,7 +1421,7 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"alter_uri\"}],
+                \"value\": [{\"columnName\": \"value\"}],
                 \"type\": \"hNodeId\"
             },
             {
@@ -1465,9 +1437,9 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
             {
                 \"name\": \"SemanticTypesArray\",
                 \"value\": [{
-                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/alterUri\",
                     \"isPrimary\": true,
-                    \"DomainLabel\": \"scharp:Airspace1\",
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/name\",
+                    \"DomainLabel\": \"scharp:Airspace1 (add)\",
                     \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airspace1\",
                     \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airspace\"
                 }],
@@ -1490,16 +1462,162 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"alter_uri\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"value\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"alter_uri\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"value\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
         \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"airspace_uri\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Airbase\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:Airbase1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"airspace_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"airspace_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"unit_uri\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"scharp:AirUnit1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"unit_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
     },
     {
         \"tags\": [\"SemanticType\"],
@@ -1558,6 +1676,38 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
             }
         ],
         \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"simtime\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"simtime\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"simtime\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"UnassignSemanticTypeCommand\"
     },
     {
         \"tags\": [\"SemanticType\"],
@@ -1638,7 +1788,7 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
         \"inputParameters\": [
             {
                 \"name\": \"hNodeId\",
-                \"value\": [{\"columnName\": \"simtime\"}],
+                \"value\": [{\"columnName\": \"output\"}],
                 \"type\": \"hNodeId\"
             },
             {
@@ -1653,16 +1803,226 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
             },
             {
                 \"name\": \"inputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"simtime\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"output\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             },
             {
                 \"name\": \"outputColumns\",
-                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"simtime\\\"}]}]\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"output\\\"}]}]\",
                 \"type\": \"hNodeIdList\"
             }
         ],
         \"commandName\": \"UnassignSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"action\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"action\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"action\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"UnassignSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"action\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/event\",
+                    \"DomainLabel\": \"scharp:Message1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"action\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"action\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"output\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://scharp.usc.isi.edu/ontology/output\",
+                    \"DomainLabel\": \"scharp:Message1\",
+                    \"DomainId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"DomainUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"output\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"output\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"airspace_uri\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Airspace\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://scharp.usc.isi.edu/ontology/Airspace1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"language\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"airspace_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"airspace_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
     },
     {
         \"tags\": [\"Modeling\"],
@@ -1859,287 +2219,654 @@ _:node1b3ipj0fcx1 a km-dev:R2RMLMapping ;
             }
         ],
         \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Airspace1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP8:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP8:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/inMission\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP6:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP6:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP6:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/mention\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/AirUnit\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/aircraft\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirUnit1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP6:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Airbase\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP6:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/AirMission\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/inMission\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/AirMission1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP8:WS5AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Airbase1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://scharp.usc.isi.edu/ontology/Airspace\",
+                    \"edgeId\": \"http://scharp.usc.isi.edu/ontology/location\",
+                    \"edgeTargetId\": \"http://scharp.usc.isi.edu/ontology/Airspace1\",
+                    \"edgeSourceId\": \"http://scharp.usc.isi.edu/ontology/Message1\",
+                    \"edgeSourceUri\": \"http://scharp.usc.isi.edu/ontology/Message\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
     }
 ]""" .
 
-km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe a rr:TriplesMap .
+km-dev:TriplesMap_aa196019-b151-4dee-8b66-3ac87ea7c1f3 a rr:TriplesMap .
 
-_:node1b3ipj0fcx1 km-dev:hasTriplesMap km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe .
+_:node1b3qkjhnvx1 km-dev:hasTriplesMap km-dev:TriplesMap_aa196019-b151-4dee-8b66-3ac87ea7c1f3 .
 
-km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
+km-dev:TriplesMap_aa196019-b151-4dee-8b66-3ac87ea7c1f3 km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
 
-_:node1b3ipj0fcx2 rr:tableName "estat_onstation.json" ;
+_:node1b3qkjhnvx2 rr:tableName "estat_onstation.json" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
 
-_:node1b3ipj0fcx1 km-dev:hasLogicalTable _:node1b3ipj0fcx2 .
+_:node1b3qkjhnvx1 km-dev:hasLogicalTable _:node1b3qkjhnvx2 .
 
-km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe rr:logicalTable _:node1b3ipj0fcx2 ;
-	rr:subjectMap _:node1b3ipj0fcx3 .
+km-dev:TriplesMap_aa196019-b151-4dee-8b66-3ac87ea7c1f3 rr:logicalTable _:node1b3qkjhnvx2 ;
+	rr:subjectMap _:node1b3qkjhnvx3 .
 
-_:node1b3ipj0fcx1 km-dev:hasSubjectMap _:node1b3ipj0fcx3 .
+_:node1b3qkjhnvx1 km-dev:hasSubjectMap _:node1b3qkjhnvx3 .
 
-_:node1b3ipj0fcx3 km-dev:isPartOfMapping _:node1b3ipj0fcx1 ;
-	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirUnit1" ;
-	rr:class scharp:AirUnit ;
-	rr:termType rr:BlankNode ;
-	km-dev:namePrefix "scharp:AirUnit1" .
-
-km-dev:PredicateObjectMap_07cb1743-23b2-4636-ab93-7ccf9fa44530 rr:predicate scharp:inMission .
-
-km-dev:RefObjectMap_1267d52f-9816-48fe-abbe-3c4f71fdd160 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_3a6e813a-0f90-41fa-84f9-fbfff570d1ee ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasObjectMap km-dev:RefObjectMap_1267d52f-9816-48fe-abbe-3c4f71fdd160 .
-
-km-dev:PredicateObjectMap_07cb1743-23b2-4636-ab93-7ccf9fa44530 rr:objectMap km-dev:RefObjectMap_1267d52f-9816-48fe-abbe-3c4f71fdd160 .
-
-km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe rr:predicateObjectMap km-dev:PredicateObjectMap_07cb1743-23b2-4636-ab93-7ccf9fa44530 .
-
-km-dev:PredicateObjectMap_07cb1743-23b2-4636-ab93-7ccf9fa44530 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_07cb1743-23b2-4636-ab93-7ccf9fa44530 .
-
-km-dev:PredicateObjectMap_5f8076c9-fbe5-4433-9268-6535b5992e81 rr:predicate scharp:location .
-
-km-dev:RefObjectMap_61863ec1-7ec8-46a8-8408-bca80775c977 a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_ee34bf6b-a0e1-4b65-b123-c5faa7901625 ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasObjectMap km-dev:RefObjectMap_61863ec1-7ec8-46a8-8408-bca80775c977 .
-
-km-dev:PredicateObjectMap_5f8076c9-fbe5-4433-9268-6535b5992e81 rr:objectMap km-dev:RefObjectMap_61863ec1-7ec8-46a8-8408-bca80775c977 .
-
-km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe rr:predicateObjectMap km-dev:PredicateObjectMap_5f8076c9-fbe5-4433-9268-6535b5992e81 .
-
-km-dev:PredicateObjectMap_5f8076c9-fbe5-4433-9268-6535b5992e81 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_5f8076c9-fbe5-4433-9268-6535b5992e81 .
-
-km-dev:PredicateObjectMap_ebeae24a-fc36-48de-9dbc-677e5109b798 rr:predicate scharp:output .
-
-_:node1b3ipj0fcx4 rr:column "output" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasObjectMap _:node1b3ipj0fcx4 .
-
-km-dev:PredicateObjectMap_ebeae24a-fc36-48de-9dbc-677e5109b798 rr:objectMap _:node1b3ipj0fcx4 .
-
-km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe rr:predicateObjectMap km-dev:PredicateObjectMap_ebeae24a-fc36-48de-9dbc-677e5109b798 .
-
-km-dev:PredicateObjectMap_ebeae24a-fc36-48de-9dbc-677e5109b798 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ebeae24a-fc36-48de-9dbc-677e5109b798 .
-
-km-dev:PredicateObjectMap_62bce106-7704-4b39-a57f-f2e411f37ccc rr:predicate scharp:action .
-
-_:node1b3ipj0fcx5 rr:column "action" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasObjectMap _:node1b3ipj0fcx5 .
-
-km-dev:PredicateObjectMap_62bce106-7704-4b39-a57f-f2e411f37ccc rr:objectMap _:node1b3ipj0fcx5 .
-
-km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe rr:predicateObjectMap km-dev:PredicateObjectMap_62bce106-7704-4b39-a57f-f2e411f37ccc .
-
-km-dev:PredicateObjectMap_62bce106-7704-4b39-a57f-f2e411f37ccc a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_62bce106-7704-4b39-a57f-f2e411f37ccc .
-
-km-dev:PredicateObjectMap_d88316d5-6b09-4694-a1f4-2234f08b5888 rr:predicate scharp:link16 .
-
-_:node1b3ipj0fcx6 rr:column "link16" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasObjectMap _:node1b3ipj0fcx6 .
-
-km-dev:PredicateObjectMap_d88316d5-6b09-4694-a1f4-2234f08b5888 rr:objectMap _:node1b3ipj0fcx6 .
-
-km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe rr:predicateObjectMap km-dev:PredicateObjectMap_d88316d5-6b09-4694-a1f4-2234f08b5888 .
-
-km-dev:PredicateObjectMap_d88316d5-6b09-4694-a1f4-2234f08b5888 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d88316d5-6b09-4694-a1f4-2234f08b5888 .
-
-km-dev:PredicateObjectMap_77bc52d8-b4b5-4230-ae32-946d8ffaae7d rr:predicate scharp:callsign .
-
-_:node1b3ipj0fcx7 rr:column "unit" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasObjectMap _:node1b3ipj0fcx7 .
-
-km-dev:PredicateObjectMap_77bc52d8-b4b5-4230-ae32-946d8ffaae7d rr:objectMap _:node1b3ipj0fcx7 .
-
-km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe rr:predicateObjectMap km-dev:PredicateObjectMap_77bc52d8-b4b5-4230-ae32-946d8ffaae7d .
-
-km-dev:PredicateObjectMap_77bc52d8-b4b5-4230-ae32-946d8ffaae7d a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_77bc52d8-b4b5-4230-ae32-946d8ffaae7d .
-
-km-dev:TriplesMap_3a6e813a-0f90-41fa-84f9-fbfff570d1ee a rr:TriplesMap .
-
-_:node1b3ipj0fcx1 km-dev:hasTriplesMap km-dev:TriplesMap_3a6e813a-0f90-41fa-84f9-fbfff570d1ee .
-
-km-dev:TriplesMap_3a6e813a-0f90-41fa-84f9-fbfff570d1ee km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx8 rr:tableName "estat_onstation.json" ;
-	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasLogicalTable _:node1b3ipj0fcx8 .
-
-km-dev:TriplesMap_3a6e813a-0f90-41fa-84f9-fbfff570d1ee rr:logicalTable _:node1b3ipj0fcx8 ;
-	rr:subjectMap _:node1b3ipj0fcx9 .
-
-_:node1b3ipj0fcx1 km-dev:hasSubjectMap _:node1b3ipj0fcx9 .
-
-_:node1b3ipj0fcx9 km-dev:isPartOfMapping _:node1b3ipj0fcx1 ;
-	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirMission1" ;
-	rr:class scharp:AirMission ;
-	rr:template "mission/{missionname}" .
-
-km-dev:PredicateObjectMap_b1c5650a-1f88-408b-96d6-6514ecdfa90e rr:predicate scharp:missionId .
-
-_:node1b3ipj0fcx10 rr:column "missionname" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasObjectMap _:node1b3ipj0fcx10 .
-
-km-dev:PredicateObjectMap_b1c5650a-1f88-408b-96d6-6514ecdfa90e rr:objectMap _:node1b3ipj0fcx10 .
-
-km-dev:TriplesMap_3a6e813a-0f90-41fa-84f9-fbfff570d1ee rr:predicateObjectMap km-dev:PredicateObjectMap_b1c5650a-1f88-408b-96d6-6514ecdfa90e .
-
-km-dev:PredicateObjectMap_b1c5650a-1f88-408b-96d6-6514ecdfa90e a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b1c5650a-1f88-408b-96d6-6514ecdfa90e .
-
-km-dev:TriplesMap_ee34bf6b-a0e1-4b65-b123-c5faa7901625 a rr:TriplesMap .
-
-_:node1b3ipj0fcx1 km-dev:hasTriplesMap km-dev:TriplesMap_ee34bf6b-a0e1-4b65-b123-c5faa7901625 .
-
-km-dev:TriplesMap_ee34bf6b-a0e1-4b65-b123-c5faa7901625 km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx11 rr:tableName "estat_onstation.json" ;
-	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasLogicalTable _:node1b3ipj0fcx11 .
-
-km-dev:TriplesMap_ee34bf6b-a0e1-4b65-b123-c5faa7901625 rr:logicalTable _:node1b3ipj0fcx11 ;
-	rr:subjectMap _:node1b3ipj0fcx12 .
-
-_:node1b3ipj0fcx1 km-dev:hasSubjectMap _:node1b3ipj0fcx12 .
-
-_:node1b3ipj0fcx12 km-dev:isPartOfMapping _:node1b3ipj0fcx1 ;
-	a rr:SubjectMap ;
-	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Airspace1" ;
-	rr:class scharp:Airspace ;
-	rr:termType rr:BlankNode ;
-	km-dev:namePrefix "scharp:Airspace1" .
-
-km-dev:PredicateObjectMap_d3c220ce-67b9-45e1-a495-71389e36ebbc rr:predicate scharp:airspaceId .
-
-_:node1b3ipj0fcx13 rr:column "value" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasObjectMap _:node1b3ipj0fcx13 .
-
-km-dev:PredicateObjectMap_d3c220ce-67b9-45e1-a495-71389e36ebbc rr:objectMap _:node1b3ipj0fcx13 .
-
-km-dev:TriplesMap_ee34bf6b-a0e1-4b65-b123-c5faa7901625 rr:predicateObjectMap km-dev:PredicateObjectMap_d3c220ce-67b9-45e1-a495-71389e36ebbc .
-
-km-dev:PredicateObjectMap_d3c220ce-67b9-45e1-a495-71389e36ebbc a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d3c220ce-67b9-45e1-a495-71389e36ebbc .
-
-km-dev:PredicateObjectMap_67c0ad1b-13c5-4e02-a96e-0ab39f0a131c rr:predicate scharp:alterUri .
-
-_:node1b3ipj0fcx14 rr:column "alter_uri" ;
-	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasObjectMap _:node1b3ipj0fcx14 .
-
-km-dev:PredicateObjectMap_67c0ad1b-13c5-4e02-a96e-0ab39f0a131c rr:objectMap _:node1b3ipj0fcx14 .
-
-km-dev:TriplesMap_ee34bf6b-a0e1-4b65-b123-c5faa7901625 rr:predicateObjectMap km-dev:PredicateObjectMap_67c0ad1b-13c5-4e02-a96e-0ab39f0a131c .
-
-km-dev:PredicateObjectMap_67c0ad1b-13c5-4e02-a96e-0ab39f0a131c a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_67c0ad1b-13c5-4e02-a96e-0ab39f0a131c .
-
-km-dev:TriplesMap_fff76768-19e9-43f9-af95-738a012b6aba a rr:TriplesMap .
-
-_:node1b3ipj0fcx1 km-dev:hasTriplesMap km-dev:TriplesMap_fff76768-19e9-43f9-af95-738a012b6aba .
-
-km-dev:TriplesMap_fff76768-19e9-43f9-af95-738a012b6aba km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx15 rr:tableName "estat_onstation.json" ;
-	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
-
-_:node1b3ipj0fcx1 km-dev:hasLogicalTable _:node1b3ipj0fcx15 .
-
-km-dev:TriplesMap_fff76768-19e9-43f9-af95-738a012b6aba rr:logicalTable _:node1b3ipj0fcx15 ;
-	rr:subjectMap _:node1b3ipj0fcx16 .
-
-_:node1b3ipj0fcx1 km-dev:hasSubjectMap _:node1b3ipj0fcx16 .
-
-_:node1b3ipj0fcx16 km-dev:isPartOfMapping _:node1b3ipj0fcx1 ;
+_:node1b3qkjhnvx3 km-dev:isPartOfMapping _:node1b3qkjhnvx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Message1" ;
 	rr:class scharp:Message ;
 	rr:template "{uri}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_68ab0fee-1170-4d29-85e0-58341ead7a87 rr:predicate scharp:mention .
+km-dev:PredicateObjectMap_46361a9d-7348-4c4b-998d-fa6611b23360 rr:predicate scharp:inMission .
 
-km-dev:RefObjectMap_89012b79-f8d8-49c3-bf49-07f8ba348b0f a rr:RefObjectMap , rr:ObjectMap ;
-	rr:parentTriplesMap km-dev:TriplesMap_0c598ec5-8b1f-43f4-bc5d-23bee8503bbe ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
+km-dev:RefObjectMap_2d5f1f80-8494-41a5-9bee-b272fa47b6b7 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_08efb8ab-97de-4b67-81ea-c4f4b027ffb7 ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
 
-_:node1b3ipj0fcx1 km-dev:hasObjectMap km-dev:RefObjectMap_89012b79-f8d8-49c3-bf49-07f8ba348b0f .
+_:node1b3qkjhnvx1 km-dev:hasObjectMap km-dev:RefObjectMap_2d5f1f80-8494-41a5-9bee-b272fa47b6b7 .
 
-km-dev:PredicateObjectMap_68ab0fee-1170-4d29-85e0-58341ead7a87 rr:objectMap km-dev:RefObjectMap_89012b79-f8d8-49c3-bf49-07f8ba348b0f .
+km-dev:PredicateObjectMap_46361a9d-7348-4c4b-998d-fa6611b23360 rr:objectMap km-dev:RefObjectMap_2d5f1f80-8494-41a5-9bee-b272fa47b6b7 .
 
-km-dev:TriplesMap_fff76768-19e9-43f9-af95-738a012b6aba rr:predicateObjectMap km-dev:PredicateObjectMap_68ab0fee-1170-4d29-85e0-58341ead7a87 .
+km-dev:TriplesMap_aa196019-b151-4dee-8b66-3ac87ea7c1f3 rr:predicateObjectMap km-dev:PredicateObjectMap_46361a9d-7348-4c4b-998d-fa6611b23360 .
 
-km-dev:PredicateObjectMap_68ab0fee-1170-4d29-85e0-58341ead7a87 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
+km-dev:PredicateObjectMap_46361a9d-7348-4c4b-998d-fa6611b23360 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
 
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_68ab0fee-1170-4d29-85e0-58341ead7a87 .
+_:node1b3qkjhnvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_46361a9d-7348-4c4b-998d-fa6611b23360 .
 
-km-dev:PredicateObjectMap_61caa481-d563-4bf9-8f02-cb7b02db9a96 rr:predicate scharp:eventTime .
+km-dev:PredicateObjectMap_347d7143-0ca0-4015-b86a-2eb3d9960779 rr:predicate scharp:aircraft .
 
-_:node1b3ipj0fcx17 rr:column "event_time" ;
+km-dev:RefObjectMap_8834aea1-8385-4a35-879d-5c54f30b6d26 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_169a3f70-99df-4113-b65b-f777230d5070 ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasObjectMap km-dev:RefObjectMap_8834aea1-8385-4a35-879d-5c54f30b6d26 .
+
+km-dev:PredicateObjectMap_347d7143-0ca0-4015-b86a-2eb3d9960779 rr:objectMap km-dev:RefObjectMap_8834aea1-8385-4a35-879d-5c54f30b6d26 .
+
+km-dev:TriplesMap_aa196019-b151-4dee-8b66-3ac87ea7c1f3 rr:predicateObjectMap km-dev:PredicateObjectMap_347d7143-0ca0-4015-b86a-2eb3d9960779 .
+
+km-dev:PredicateObjectMap_347d7143-0ca0-4015-b86a-2eb3d9960779 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_347d7143-0ca0-4015-b86a-2eb3d9960779 .
+
+km-dev:PredicateObjectMap_6c70a9b7-5669-4819-94ea-685a55c482d9 rr:predicate scharp:location .
+
+km-dev:RefObjectMap_55f11856-1541-4d77-b909-716ef9f510cc a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_65b087aa-7bc7-4eff-bad1-d6400db94644 ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasObjectMap km-dev:RefObjectMap_55f11856-1541-4d77-b909-716ef9f510cc .
+
+km-dev:PredicateObjectMap_6c70a9b7-5669-4819-94ea-685a55c482d9 rr:objectMap km-dev:RefObjectMap_55f11856-1541-4d77-b909-716ef9f510cc .
+
+km-dev:TriplesMap_aa196019-b151-4dee-8b66-3ac87ea7c1f3 rr:predicateObjectMap km-dev:PredicateObjectMap_6c70a9b7-5669-4819-94ea-685a55c482d9 .
+
+km-dev:PredicateObjectMap_6c70a9b7-5669-4819-94ea-685a55c482d9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6c70a9b7-5669-4819-94ea-685a55c482d9 .
+
+km-dev:PredicateObjectMap_97e588b9-5f05-4427-a0b5-1a0a8c780fff rr:predicate scharp:eventTime .
+
+_:node1b3qkjhnvx4 rr:column "event_time" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
 
-_:node1b3ipj0fcx1 km-dev:hasObjectMap _:node1b3ipj0fcx17 .
+_:node1b3qkjhnvx1 km-dev:hasObjectMap _:node1b3qkjhnvx4 .
 
-km-dev:PredicateObjectMap_61caa481-d563-4bf9-8f02-cb7b02db9a96 rr:objectMap _:node1b3ipj0fcx17 .
+km-dev:PredicateObjectMap_97e588b9-5f05-4427-a0b5-1a0a8c780fff rr:objectMap _:node1b3qkjhnvx4 .
 
-km-dev:TriplesMap_fff76768-19e9-43f9-af95-738a012b6aba rr:predicateObjectMap km-dev:PredicateObjectMap_61caa481-d563-4bf9-8f02-cb7b02db9a96 .
+km-dev:TriplesMap_aa196019-b151-4dee-8b66-3ac87ea7c1f3 rr:predicateObjectMap km-dev:PredicateObjectMap_97e588b9-5f05-4427-a0b5-1a0a8c780fff .
 
-km-dev:PredicateObjectMap_61caa481-d563-4bf9-8f02-cb7b02db9a96 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1b3ipj0fcx1 .
+km-dev:PredicateObjectMap_97e588b9-5f05-4427-a0b5-1a0a8c780fff a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
 
-_:node1b3ipj0fcx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_61caa481-d563-4bf9-8f02-cb7b02db9a96 .
+_:node1b3qkjhnvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_97e588b9-5f05-4427-a0b5-1a0a8c780fff .
+
+km-dev:PredicateObjectMap_4a5d0888-c104-443f-9c13-384d32b0f715 rr:predicate scharp:event .
+
+_:node1b3qkjhnvx5 rr:column "action" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasObjectMap _:node1b3qkjhnvx5 .
+
+km-dev:PredicateObjectMap_4a5d0888-c104-443f-9c13-384d32b0f715 rr:objectMap _:node1b3qkjhnvx5 .
+
+km-dev:TriplesMap_aa196019-b151-4dee-8b66-3ac87ea7c1f3 rr:predicateObjectMap km-dev:PredicateObjectMap_4a5d0888-c104-443f-9c13-384d32b0f715 .
+
+km-dev:PredicateObjectMap_4a5d0888-c104-443f-9c13-384d32b0f715 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4a5d0888-c104-443f-9c13-384d32b0f715 .
+
+km-dev:PredicateObjectMap_d3e8f5e9-a6f7-4fe2-89be-aa750a06c732 rr:predicate scharp:output .
+
+_:node1b3qkjhnvx6 rr:column "output" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasObjectMap _:node1b3qkjhnvx6 .
+
+km-dev:PredicateObjectMap_d3e8f5e9-a6f7-4fe2-89be-aa750a06c732 rr:objectMap _:node1b3qkjhnvx6 .
+
+km-dev:TriplesMap_aa196019-b151-4dee-8b66-3ac87ea7c1f3 rr:predicateObjectMap km-dev:PredicateObjectMap_d3e8f5e9-a6f7-4fe2-89be-aa750a06c732 .
+
+km-dev:PredicateObjectMap_d3e8f5e9-a6f7-4fe2-89be-aa750a06c732 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d3e8f5e9-a6f7-4fe2-89be-aa750a06c732 .
+
+km-dev:TriplesMap_08efb8ab-97de-4b67-81ea-c4f4b027ffb7 a rr:TriplesMap .
+
+_:node1b3qkjhnvx1 km-dev:hasTriplesMap km-dev:TriplesMap_08efb8ab-97de-4b67-81ea-c4f4b027ffb7 .
+
+km-dev:TriplesMap_08efb8ab-97de-4b67-81ea-c4f4b027ffb7 km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx7 rr:tableName "estat_onstation.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasLogicalTable _:node1b3qkjhnvx7 .
+
+km-dev:TriplesMap_08efb8ab-97de-4b67-81ea-c4f4b027ffb7 rr:logicalTable _:node1b3qkjhnvx7 ;
+	rr:subjectMap _:node1b3qkjhnvx8 .
+
+_:node1b3qkjhnvx1 km-dev:hasSubjectMap _:node1b3qkjhnvx8 .
+
+_:node1b3qkjhnvx8 km-dev:isPartOfMapping _:node1b3qkjhnvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirMission1" ;
+	rr:class scharp:AirMission ;
+	rr:template "mission/{missionname}" .
+
+km-dev:PredicateObjectMap_d7697a32-7d4b-4804-82d3-73451d00ad40 rr:predicate scharp:missionId .
+
+_:node1b3qkjhnvx9 rr:column "missionname" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasObjectMap _:node1b3qkjhnvx9 .
+
+km-dev:PredicateObjectMap_d7697a32-7d4b-4804-82d3-73451d00ad40 rr:objectMap _:node1b3qkjhnvx9 .
+
+km-dev:TriplesMap_08efb8ab-97de-4b67-81ea-c4f4b027ffb7 rr:predicateObjectMap km-dev:PredicateObjectMap_d7697a32-7d4b-4804-82d3-73451d00ad40 .
+
+km-dev:PredicateObjectMap_d7697a32-7d4b-4804-82d3-73451d00ad40 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_d7697a32-7d4b-4804-82d3-73451d00ad40 .
+
+km-dev:TriplesMap_169a3f70-99df-4113-b65b-f777230d5070 a rr:TriplesMap .
+
+_:node1b3qkjhnvx1 km-dev:hasTriplesMap km-dev:TriplesMap_169a3f70-99df-4113-b65b-f777230d5070 .
+
+km-dev:TriplesMap_169a3f70-99df-4113-b65b-f777230d5070 km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx10 rr:tableName "estat_onstation.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasLogicalTable _:node1b3qkjhnvx10 .
+
+km-dev:TriplesMap_169a3f70-99df-4113-b65b-f777230d5070 rr:logicalTable _:node1b3qkjhnvx10 ;
+	rr:subjectMap _:node1b3qkjhnvx11 .
+
+_:node1b3qkjhnvx1 km-dev:hasSubjectMap _:node1b3qkjhnvx11 .
+
+_:node1b3qkjhnvx11 km-dev:isPartOfMapping _:node1b3qkjhnvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/AirUnit1" ;
+	rr:class scharp:AirUnit ;
+	rr:template "airunit/{link16}" .
+
+km-dev:PredicateObjectMap_18438d2b-917b-444b-89a4-fde24d397b58 rr:predicate scharp:link16 .
+
+_:node1b3qkjhnvx12 rr:column "link16" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasObjectMap _:node1b3qkjhnvx12 .
+
+km-dev:PredicateObjectMap_18438d2b-917b-444b-89a4-fde24d397b58 rr:objectMap _:node1b3qkjhnvx12 .
+
+km-dev:TriplesMap_169a3f70-99df-4113-b65b-f777230d5070 rr:predicateObjectMap km-dev:PredicateObjectMap_18438d2b-917b-444b-89a4-fde24d397b58 .
+
+km-dev:PredicateObjectMap_18438d2b-917b-444b-89a4-fde24d397b58 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_18438d2b-917b-444b-89a4-fde24d397b58 .
+
+km-dev:PredicateObjectMap_b009317c-253d-470f-b184-79340ea357f8 rr:predicate scharp:callsign .
+
+_:node1b3qkjhnvx13 rr:column "unit" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasObjectMap _:node1b3qkjhnvx13 .
+
+km-dev:PredicateObjectMap_b009317c-253d-470f-b184-79340ea357f8 rr:objectMap _:node1b3qkjhnvx13 .
+
+km-dev:TriplesMap_169a3f70-99df-4113-b65b-f777230d5070 rr:predicateObjectMap km-dev:PredicateObjectMap_b009317c-253d-470f-b184-79340ea357f8 .
+
+km-dev:PredicateObjectMap_b009317c-253d-470f-b184-79340ea357f8 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b009317c-253d-470f-b184-79340ea357f8 .
+
+km-dev:TriplesMap_65b087aa-7bc7-4eff-bad1-d6400db94644 a rr:TriplesMap .
+
+_:node1b3qkjhnvx1 km-dev:hasTriplesMap km-dev:TriplesMap_65b087aa-7bc7-4eff-bad1-d6400db94644 .
+
+km-dev:TriplesMap_65b087aa-7bc7-4eff-bad1-d6400db94644 km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx14 rr:tableName "estat_onstation.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasLogicalTable _:node1b3qkjhnvx14 .
+
+km-dev:TriplesMap_65b087aa-7bc7-4eff-bad1-d6400db94644 rr:logicalTable _:node1b3qkjhnvx14 ;
+	rr:subjectMap _:node1b3qkjhnvx15 .
+
+_:node1b3qkjhnvx1 km-dev:hasSubjectMap _:node1b3qkjhnvx15 .
+
+_:node1b3qkjhnvx15 km-dev:isPartOfMapping _:node1b3qkjhnvx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://scharp.usc.isi.edu/ontology/Airspace1" ;
+	rr:class scharp:Airspace ;
+	rr:template "{airspace_uri}" .
+
+km-dev:PredicateObjectMap_3c7b8f37-ac48-42bf-ba05-34991ba30a01 rr:predicate scharp:name .
+
+_:node1b3qkjhnvx16 rr:column "value" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasObjectMap _:node1b3qkjhnvx16 .
+
+km-dev:PredicateObjectMap_3c7b8f37-ac48-42bf-ba05-34991ba30a01 rr:objectMap _:node1b3qkjhnvx16 .
+
+km-dev:TriplesMap_65b087aa-7bc7-4eff-bad1-d6400db94644 rr:predicateObjectMap km-dev:PredicateObjectMap_3c7b8f37-ac48-42bf-ba05-34991ba30a01 .
+
+km-dev:PredicateObjectMap_3c7b8f37-ac48-42bf-ba05-34991ba30a01 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1b3qkjhnvx1 .
+
+_:node1b3qkjhnvx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3c7b8f37-ac48-42bf-ba05-34991ba30a01 .

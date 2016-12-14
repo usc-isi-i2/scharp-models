@@ -379,6 +379,11 @@ scharp:inMission rdf:type owl:ObjectProperty ;
 	rdfs:range scharp:AirMission ; 
 	.
 
+scharp:mission rdf:type owl:ObjectProperty ;
+	rdfs:label "in mission" ;
+	rdfs:domain scharp:Message ;
+	.
+
 scharp:stores rdf:type owl:ObjectProperty ;
 	rdfs:label "has stores" ;
 	rdfs:domain scharp:Attributes ;
@@ -1180,4 +1185,14 @@ scharp:timeReport rdf:type rdf:Property ;
 	rdfs:label "time report function" ;
 	memex:es_directive memex:ES_not_analyzed ;
 	rdfs:domain scharp:Attributes
+	.
+
+scharp:value rdf:type rdf:Property ;
+	rdfs:label "value" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	.
+
+scharp:unit rdf:type rdf:Property ;
+	rdfs:label "unit" ;
+	memex:es_directive memex:ES_not_analyzed ;
 	.

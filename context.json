@@ -168,6 +168,9 @@
     },
     "value":{
        "@id": "http://scharp.usc.isi.edu/ontology/value"
+    },
+    "unit":{
+       "@id": "http://scharp.usc.isi.edu/ontology/unit"
     }
   }
 }

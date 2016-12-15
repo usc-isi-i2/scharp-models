@@ -34,3 +34,23 @@ def getLongitude(s,l):
 def ISOtime(s):
 	MM_dict = {"JAN":"01","FEB":"02","MAR":"03","APR":"04","MAY":"05","JUN":"06","JUL":"07","AUG":"08","SEP":"09","OCT":"10","NOV":"11","DEC":"12"}
 	return s[:4]+MM_dict[s[4:7]]+s[7:9]+"T"+s[9:11]+":"+s[11:]
+
+def parseFstatOutput(s):
+	if s[-3:] == "NOP":
+		return "baseClosed"
+	if s[-3:] == "OPR":
+		return "baseOpen" 
+
+def parseEstatAction(action):
+	if action == "ABORT":
+		return "missionAbort"
+	elif action == "LANDED":
+		return "missionLanded"
+	elif action == "REFUEL":
+		return "aircraftRefuel"
+	elif action == "RTB":
+		return "missionReturnToBase"
+	elif action == "TAKEOFF":
+		return "aircraftTakeoff"
+	elif action == "ON STATION":
+		return "missionOnStation"

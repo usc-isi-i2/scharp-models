@@ -164,7 +164,7 @@
       "@id": "http://scharp.usc.isi.edu/ontology/alterUri"
     },
     "mission": {
-      "@id": "http://scharp.usc.isi.edu/ontology/inMission"
+      "@id": "http://scharp.usc.isi.edu/ontology/mission"
     },
     "value":{
        "@id": "http://scharp.usc.isi.edu/ontology/value"

@@ -171,6 +171,9 @@
     },
     "unit":{
        "@id": "http://scharp.usc.isi.edu/ontology/unit"
+    },
+    "fuelQuantityUnit":{
+      "@id": "http://scharp.usc.isi.edu/ontology/fuelQuantityUnit"
     }
   }
 }

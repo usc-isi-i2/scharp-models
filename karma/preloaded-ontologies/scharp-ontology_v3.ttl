@@ -390,6 +390,11 @@ scharp:stores rdf:type owl:ObjectProperty ;
 	rdfs:range scharp:Stores ; 
 	.
 
+scharp:center rdf:type owl:ObjectProperty ; 
+	rdfs:label "center" ;
+	rdfs:domain scharp:Airspace  
+	.
+
 #########################################################
 #
 # Data Properties
@@ -1190,6 +1195,12 @@ scharp:timeReport rdf:type rdf:Property ;
 scharp:value rdf:type rdf:Property ;
 	rdfs:label "value" ;
 	memex:es_directive memex:ES_not_analyzed ;
+	.
+
+scharp:range rdf:type rdf:Property ;
+	rdfs:label "Range" ;
+	memex:es_directive memex:ES_not_analyzed ;
+	rdfs:domain scharp:Airspace
 	.
 
 scharp:unit rdf:type rdf:Property ;

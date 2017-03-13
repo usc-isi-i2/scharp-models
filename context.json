@@ -177,6 +177,14 @@
       "@type": "@id",
        "@id": "http://scharp.usc.isi.edu/ontology/Stores"
     },
+    "Airspace":{
+      "@type": "@id",
+       "@id": "http://scharp.usc.isi.edu/ontology/Airspace"
+    },
+    "Airbase":{
+      "@type": "@id",
+       "@id": "http://scharp.usc.isi.edu/ontology/Airbase"
+    },
     "unit":{
        "@id": "http://scharp.usc.isi.edu/ontology/unit"
     },

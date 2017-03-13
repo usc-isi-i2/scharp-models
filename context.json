@@ -170,7 +170,12 @@
        "@id": "http://scharp.usc.isi.edu/ontology/value"
     },
     "Attributes":{
+      "@type": "@id",
        "@id": "http://scharp.usc.isi.edu/ontology/Attributes"
+    },
+    "Stores":{
+      "@type": "@id",
+       "@id": "http://scharp.usc.isi.edu/ontology/Stores"
     },
     "unit":{
        "@id": "http://scharp.usc.isi.edu/ontology/unit"
